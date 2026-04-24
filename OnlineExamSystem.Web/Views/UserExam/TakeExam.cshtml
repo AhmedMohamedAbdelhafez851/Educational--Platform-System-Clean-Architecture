@@ -1,0 +1,231 @@
+@model OnlineExamSystem.Application.DTOs.Exam.TakeExamDto
+@{
+    ViewData["Title"] = "Take Exam - " + Model.Title;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-gradient-primary text-white py-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h2 class="h4 mb-0">
+                        <i class="bi bi-file-text me-2"></i>
+                        @Model.Title
+                    </h2>
+                    <small class="text-white-50">Please answer all questions carefully</small>
+                </div>
+                <div class="text-end">
+                    <div id="timer" class="badge bg-light text-dark fs-6 px-3 py-2">
+                        <i class="bi bi-clock me-1"></i>
+                        <span id="timeDisplay">00:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-4">
+            <form id="examForm">
+                <input type="hidden" name="examId" value="@Model.ExamId" />
+
+                @if (Model.Questions != null && Model.Questions.Any())
+                {
+                    <div class="questions-container">
+                        @foreach (var question in Model.Questions.OrderBy(q => q.QuestionId))
+                        {
+                            <div class="card mb-4 question-card border-0 shadow-sm">
+                                <div class="card-header bg-light py-3">
+                                    <h5 class="mb-0">
+                                        <span class="badge bg-primary rounded-pill me-2">
+                                            Q@(Model.Questions.ToList().IndexOf(question) + 1)
+                                        </span>
+                                        @question.Title
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    @if (question.Choices != null && question.Choices.Any())
+                                    {
+                                        foreach (var choice in question.Choices.OrderBy(c => c.ChoiceId))
+                                        {
+                                            <div class="form-check mb-3">
+                                                <input class="form-check-input" type="radio"
+                                                       name="answers[@question.QuestionId]"
+                                                       value="@choice.ChoiceId"
+                                                       id="choice_@question.QuestionId@choice.ChoiceId"
+                                                       data-question="@question.QuestionId"
+                                                       required>
+
+                                                <label class="form-check-label"
+                                                       for="choice_@question.QuestionId@choice.ChoiceId">
+                                                    @choice.Text
+                                                </label>
+                                            </div>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <div class="alert alert-warning">
+                                            No choices available for this question.
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+                    <div class="mb-4">
+                        <h6 class="mb-3">Question Navigator:</h6>
+                        <div class="d-flex flex-wrap gap-2" id="questionNavigator">
+                            @for (int i = 0; i < Model.Questions.Count; i++)
+                            {
+                                <button type="button"
+                                        class="btn btn-outline-secondary nav-question"
+                                        data-index="@i">
+                                    @(i + 1)
+                                </button>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
+                        <div>
+                            <span class="text-muted" id="answeredCount">
+                                <i class="bi bi-info-circle me-1"></i>
+                                Answered: 0 / @Model.Questions.Count
+                            </span>
+                        </div>
+                        <div>
+                            <button type="button"
+                                    id="submitExamBtn"
+                                    class="btn btn-success btn-lg px-5">
+                                <i class="bi bi-check2-circle me-2"></i>
+                                Submit Exam
+                            </button>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-warning text-center">
+                        <i class="bi bi-exclamation-triangle fs-1"></i>
+                        <h4>No Questions Available</h4>
+                        <p>This exam doesn't have any questions yet.</p>
+                        <a asp-action="Index" class="btn btn-primary">
+                            Back to Exams
+                        </a>
+                    </div>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        let timeLeft = 0;
+        let timerInterval = null;
+        let answeredQuestions = new Set();
+        let totalQuestions = @Model.Questions.Count
+
+        function updateAnsweredCount() {
+            document.getElementById('answeredCount').innerHTML =
+            `<i class="bi bi-info-circle me-1"></i>Answered: ${answeredQuestions.size} / ${totalQuestions}`;
+        }
+
+        function startTimer(minutes = 60) {
+            timeLeft = minutes * 60;
+            updateTimerDisplay();
+
+            if (timerInterval) clearInterval(timerInterval);
+
+            timerInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    submitExam();
+                } else {
+                    timeLeft--;
+                    updateTimerDisplay();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+
+            document.getElementById('timeDisplay').textContent =
+            `${minutes.toString().padStart(2,'0')}:${seconds.toString().padStart(2,'0')}`;
+        }
+
+        function submitExam() {
+
+            const formData = new FormData(document.getElementById('examForm'));
+            const answers = {};
+
+            for (let [key,value] of formData.entries()) {
+                if (key.startsWith('answers[')) {
+                    const match = key.match(/answers\[(\d+)\]/);
+                    if (match) {
+                        answers[parseInt(match[1])] = parseInt(value);
+                    }
+                }
+            }
+
+            $.ajax({
+                url: '@Url.Action("SubmitExam", "UserExam")',
+                type: 'POST',
+                data: {
+                    examId: @Model.ExamId,
+                    answers: answers
+                },
+                success: function(response) {
+                    if(response.success){
+                        window.location.href =
+                        '@Url.Action("ViewResult", "UserExam")/' + response.submissionId;
+                    }
+                }
+            });
+        }
+
+        $(document).ready(function(){
+            startTimer(60);
+
+            $('input[type="radio"]').change(function(){
+                const index = $('.question-card').index($(this).closest('.question-card'));
+                answeredQuestions.add(index);
+                updateAnsweredCount();
+            });
+
+            $('#submitExamBtn').click(function(){
+                submitExam();
+            });
+
+            updateAnsweredCount();
+        });
+    </script>
+}
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    }
+
+    .question-card {
+        transition: transform .2s;
+    }
+
+        .question-card:hover {
+            transform: translateY(-2px);
+        }
+
+    .nav-question {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+</style>

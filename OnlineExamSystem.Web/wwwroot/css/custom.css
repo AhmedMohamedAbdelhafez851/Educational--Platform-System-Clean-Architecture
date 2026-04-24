@@ -1,0 +1,707 @@
+/* ========================================
+   Online Exam System - Custom Styles
+   Version: 2.0
+   ======================================== */
+
+/* ----------------------------------------
+   CSS Variables
+   ---------------------------------------- */
+:root {
+    --primary-color: #4a90e2;
+    --primary-dark: #1c6fd4;
+    --primary-light: #6ba9f2;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --dark-bg: #1a1a2e;
+    --light-bg: #f8f9fa;
+    --border-radius: 15px;
+    --box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+/* ----------------------------------------
+   Reset & Base Styles
+   ---------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e9ecef 100%);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ----------------------------------------
+   Typography
+   ---------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------------------
+   Navigation Bar
+   ---------------------------------------- */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    box-shadow: var(--box-shadow);
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: white !important;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+    .navbar-brand:hover {
+        transform: translateY(-2px);
+    }
+
+.nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: var(--transition);
+    border-radius: 8px;
+    padding: 0.5rem 1rem !important;
+}
+
+    .nav-link:hover {
+        color: white !important;
+        transform: translateY(-2px);
+        background: rgba(255,255,255,0.1);
+    }
+
+    .nav-link.active {
+        background: rgba(255,255,255,0.2);
+        color: white !important;
+    }
+
+/* ----------------------------------------
+   Layout
+   ---------------------------------------- */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ----------------------------------------
+   Cards
+   ---------------------------------------- */
+.card {
+    border-radius: var(--border-radius);
+    border: none;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    overflow: hidden;
+    background: white;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+.card-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* ----------------------------------------
+   Buttons
+   ---------------------------------------- */
+.btn {
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+}
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .btn:active {
+        transform: translateY(0);
+    }
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    }
+
+.btn-success {
+    background: linear-gradient(135deg, var(--success-color), #218838);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, var(--danger-color), #c82333);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, var(--warning-color), #e0a800);
+}
+
+.btn-info {
+    background: linear-gradient(135deg, var(--info-color), #138496);
+}
+
+/* ----------------------------------------
+   Form Controls
+   ---------------------------------------- */
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-control, .form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.6rem 1rem;
+    transition: var(--transition);
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.2rem rgba(74,144,226,0.25);
+        outline: none;
+    }
+
+.form-check-input {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-top: 0.15rem;
+}
+
+    .form-check-input:checked {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+
+/* ----------------------------------------
+   Tables
+   ---------------------------------------- */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+    .table thead th {
+        background-color: var(--light-bg);
+        border-bottom: 2px solid #dee2e6;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .table tbody tr {
+        transition: background-color 0.2s ease;
+    }
+
+        .table tbody tr:hover {
+            background-color: rgba(74,144,226,0.05);
+        }
+
+    .table tbody td {
+        padding: 1rem;
+        vertical-align: middle;
+    }
+
+/* ----------------------------------------
+   Badges
+   ---------------------------------------- */
+.badge {
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.badge-success {
+    background: linear-gradient(135deg, var(--success-color), #218838);
+}
+
+.badge-danger {
+    background: linear-gradient(135deg, var(--danger-color), #c82333);
+}
+
+.badge-warning {
+    background: linear-gradient(135deg, var(--warning-color), #e0a800);
+}
+
+.badge-info {
+    background: linear-gradient(135deg, var(--info-color), #138496);
+}
+
+/* ----------------------------------------
+   Alerts & Toasts
+   ---------------------------------------- */
+.alert {
+    border-radius: 12px;
+    border: none;
+    padding: 1rem 1.25rem;
+    animation: slideInDown 0.5s ease;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.toast-notification {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 1050;
+    max-width: 400px;
+}
+
+.toast {
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------
+   Progress Bar
+   ---------------------------------------- */
+.progress {
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+}
+
+/* ----------------------------------------
+   Accordion
+   ---------------------------------------- */
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.accordion-button {
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+}
+
+    .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+        color: white;
+    }
+
+/* ----------------------------------------
+   Modal
+   ---------------------------------------- */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    border: none;
+}
+
+    .modal-header .btn-close {
+        filter: brightness(0) invert(1);
+    }
+
+/* ----------------------------------------
+   Footer
+   ---------------------------------------- */
+footer {
+    background: linear-gradient(135deg, var(--dark-bg), #2d2d3d);
+    color: white;
+    padding: 2rem 0;
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.footer-links {
+    margin-bottom: 1.5rem;
+}
+
+    .footer-links a {
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+        margin: 0 1rem;
+        transition: var(--transition);
+        display: inline-block;
+    }
+
+        .footer-links a:hover {
+            color: white;
+            transform: translateY(-2px);
+        }
+
+.social-icons a {
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+    .social-icons a:hover {
+        transform: translateY(-3px) scale(1.1);
+        color: var(--primary-color) !important;
+    }
+
+/* ----------------------------------------
+   Scroll to Top Button
+   ---------------------------------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1000;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+    .scroll-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    }
+
+/* ----------------------------------------
+   Loading Spinner
+   ---------------------------------------- */
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----------------------------------------
+   Utility Classes
+   ---------------------------------------- */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ----------------------------------------
+   Responsive Design - Tablet & Mobile
+   ---------------------------------------- */
+@media (max-width: 768px) {
+    /* Layout */
+    body {
+        padding-top: 0;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        margin: 0.25rem 0;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 12px;
+    }
+
+    /* Cards */
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Tables */
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 0.75rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Toasts */
+    .toast-notification {
+        top: 70px;
+        right: 10px;
+        left: 10px;
+        max-width: calc(100% - 20px);
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+    }
+
+    .footer-links a {
+        margin: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+
+    /* Scroll Button */
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem 0;
+    }
+
+    .footer-links a {
+        margin: 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .social-icons a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* ----------------------------------------
+   iOS Specific Fixes
+   ---------------------------------------- */
+@supports (-webkit-touch-callout: none) {
+    body {
+        height: -webkit-fill-available;
+    }
+}
+
+/* ----------------------------------------
+   Custom Scrollbar
+   ---------------------------------------- */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    border-radius: 10px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    }
+
+/* ----------------------------------------
+   Print Styles
+   ---------------------------------------- */
+@media print {
+    .navbar, footer, .btn, .scroll-to-top, .toast-notification {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        padding-top: 0;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* ----------------------------------------
+   Accessibility - Reduced Motion
+   ---------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

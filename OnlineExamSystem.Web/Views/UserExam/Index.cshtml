@@ -1,0 +1,139 @@
+﻿@model IEnumerable<OnlineExamSystem.Application.DTOs.Exam.ExamListDto>
+@{
+    ViewData["Title"] = "Available Exams";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+<div class="container mt-4">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-gradient-primary text-white py-3">
+            <h3 class="mb-0">
+                <i class="bi bi-journal-bookmark-fill me-2"></i>
+                Available Exams
+            </h3>
+        </div>
+        <div class="card-body p-0">
+            @if (Model.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th class="ps-4">Title</th>
+                                <th>Questions</th>
+                                <th>Status</th>
+                                <th>Latest Score</th>
+                                <th class="pe-4">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var exam in Model)
+                            {
+                                // FIX: Cast ViewBag.SubmissionsGrouped to the correct type
+                                var submissionsGrouped = ViewBag.SubmissionsGrouped as Dictionary<int, List<OnlineExamSystem.Domains.Entities.ExamSubmission>>;
+                                var hasSubmissions = submissionsGrouped != null && submissionsGrouped.ContainsKey(exam.ExamId);
+                                var submissions = hasSubmissions ? submissionsGrouped![exam.ExamId] : new List<OnlineExamSystem.Domains.Entities.ExamSubmission>();
+                                var latestSubmission = submissions.Any() ? submissions.FirstOrDefault() : null;
+                                
+                                <tr>
+                                    <td class="ps-4 fw-semibold">@exam.Title</td>
+                                    <td>@exam.QuestionsCount</td>
+                                    <td>
+                                        @if (latestSubmission != null)
+                                        {
+                                            <span class="badge @(latestSubmission.IsPassed ? "bg-success" : "bg-danger") px-3 py-2">
+                                                <i class="bi @(latestSubmission.IsPassed ? "bi-check-circle" : "bi-x-circle") me-1"></i>
+                                                @(latestSubmission.IsPassed ? "Passed" : "Failed")
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-secondary px-3 py-2">
+                                                <i class="bi bi-hourglass-split me-1"></i>
+                                                Not Taken
+                                            </span>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (latestSubmission != null)
+                                        {
+                                            <span class="fw-bold">@latestSubmission.Score.ToString("F1")%</span>
+                                            <br />
+                                            <small class="text-muted">(@latestSubmission.CorrectAnswers/@latestSubmission.TotalQuestions correct)</small>
+                                        }
+                                        else
+                                        {
+                                            <span class="text-muted">-</span>
+                                        }
+                                    </td>
+                                    <td class="pe-4">
+                                        <div class="btn-group" role="group">
+                                            <a asp-action="TakeExam" asp-route-id="@exam.ExamId" class="btn btn-sm btn-primary">
+                                                <i class="bi bi-play-fill me-1"></i>
+                                                Take Exam
+                                            </a>
+                                            @if (submissions.Any())
+                                            {
+                                                <button type="button" class="btn btn-sm btn-info dropdown-toggle" data-bs-toggle="dropdown">
+                                                    <i class="bi bi-eye-fill me-1"></i>
+                                                    History
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    @foreach (var submission in submissions)
+                                                    {
+                                                        <li>
+                                                            <a class="dropdown-item" asp-action="ViewResult" asp-route-id="@submission.SubmissionId">
+                                                                <i class="bi bi-calendar-check me-2"></i>
+                                                                @submission.SubmissionDate.ToString("MMM dd, yyyy HH:mm") -
+                                                                <span class="@(submission.IsPassed ? "text-success" : "text-danger") fw-bold">
+                                                                    @submission.Score.ToString("F1")%
+                                                                </span>
+                                                                (@submission.CorrectAnswers/@submission.TotalQuestions)
+                                                            </a>
+                                                        </li>
+                                                    }
+                                                </ul>
+                                            }
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-inbox fs-1 text-muted"></i>
+                    <p class="text-muted mt-2">No exams available at the moment.</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    .bg-gradient-primary {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+    }
+
+    .dropdown-menu {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        max-height: 300px;
+        overflow-y: auto;
+    }
+
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+    }
+</style>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+}
