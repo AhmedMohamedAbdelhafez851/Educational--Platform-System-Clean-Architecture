@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using OnlineExamSystem.Application.Abstraction;
 using OnlineExamSystem.Application.DTOs.Exam;
 using OnlineExamSystem.Domains.Entities;
@@ -8,14 +9,19 @@ namespace OnlineExamSystem.Application.Services
     public class ExamService : IExamService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ILogger<ExamService> _logger;
 
-        public ExamService(IUnitOfWork unitOfWork)
+        public ExamService(IUnitOfWork unitOfWork,
+                           ILogger<ExamService> logger)
         {
             _unitOfWork = unitOfWork;
+            _logger = logger;
         }
 
         public async Task<List<ExamListDto>> GetAllExamsAsync(string? userId = null)
         {
+            _logger.LogInformation("Fetching all exams for user {UserId}", userId);
+
             var exams = await _unitOfWork.Repository<Exam>()
                 .GetAllIncludingAsync(e => e.Questions);
 
@@ -31,8 +37,15 @@ namespace OnlineExamSystem.Application.Services
 
         public async Task<CreateExamDto?> GetExamByIdAsync(int examId)
         {
+            _logger.LogInformation("Fetching exam by id {ExamId}", examId);
+
             var exam = await _unitOfWork.Repository<Exam>().GetByIdAsync(examId);
-            if (exam == null) return null;
+
+            if (exam == null)
+            {
+                _logger.LogWarning("Exam {ExamId} not found", examId);
+                return null;
+            }
 
             return new CreateExamDto
             {
@@ -42,6 +55,8 @@ namespace OnlineExamSystem.Application.Services
 
         public async Task CreateExamAsync(CreateExamDto dto)
         {
+            _logger.LogInformation("Creating exam with title {Title}", dto.Title);
+
             var exam = new Exam
             {
                 Title = dto.Title,
@@ -50,31 +65,52 @@ namespace OnlineExamSystem.Application.Services
 
             await _unitOfWork.Repository<Exam>().AddAsync(exam);
             await _unitOfWork.SaveChangesAsync();
+
+            _logger.LogInformation("Exam created successfully");
         }
 
         public async Task EditExamAsync(int id, CreateExamDto dto)
         {
+            _logger.LogInformation("Editing exam {ExamId}", id);
+
             var exam = await _unitOfWork.Repository<Exam>().GetByIdAsync(id);
-            if (exam == null) return;
+
+            if (exam == null)
+            {
+                _logger.LogWarning("Exam {ExamId} not found", id);
+                return;
+            }
 
             exam.Title = dto.Title;
 
             await _unitOfWork.Repository<Exam>().UpdateAsync(exam);
             await _unitOfWork.SaveChangesAsync();
+
+            _logger.LogInformation("Exam {ExamId} updated successfully", id);
         }
 
         public async Task DeleteExamAsync(int examId)
         {
+            _logger.LogInformation("Deleting exam {ExamId}", examId);
+
             var exam = await _unitOfWork.Repository<Exam>().GetByIdAsync(examId);
-            if (exam == null) return;
+
+            if (exam == null)
+            {
+                _logger.LogWarning("Exam {ExamId} not found", examId);
+                return;
+            }
 
             await _unitOfWork.Repository<Exam>().DeleteAsync(exam);
             await _unitOfWork.SaveChangesAsync();
+
+            _logger.LogInformation("Exam {ExamId} deleted successfully", examId);
         }
 
-        // ✅ FIXED METHOD
         public async Task<TakeExamDto?> GetExamForTakingAsync(int examId)
         {
+            _logger.LogInformation("Fetching exam {ExamId} for taking", examId);
+
             var examQuery = await _unitOfWork.Repository<Exam>()
                 .GetAllWithNestedIncludesAsync(query =>
                     query
@@ -100,6 +136,11 @@ namespace OnlineExamSystem.Application.Services
                     }).ToList()
                 })
                 .FirstOrDefaultAsync();
+
+            if (exam == null)
+            {
+                _logger.LogWarning("Exam {ExamId} not found for taking", examId);
+            }
 
             return exam;
         }
