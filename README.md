@@ -26,6 +26,7 @@ This is an online exam system (educational platform) built using ASP.NET Core MV
 * Repository Pattern
 * Unit of Work
 * Bootstrap
+* Logging
 
 ---
 
