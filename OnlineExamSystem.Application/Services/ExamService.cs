@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using OnlineExamSystem.Application.Abstraction;
 using OnlineExamSystem.Application.DTOs.Exam;
 using OnlineExamSystem.Domains.Entities;
+using OnlineExamSystem.Infrastructure.Services;
 
 namespace OnlineExamSystem.Application.Services
 {
@@ -10,12 +11,19 @@ namespace OnlineExamSystem.Application.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<ExamService> _logger;
+        private readonly IAuditService _auditService;
+        private readonly ICurrentUserService _currentUser;
 
-        public ExamService(IUnitOfWork unitOfWork,
-                           ILogger<ExamService> logger)
+        public ExamService(
+            IUnitOfWork unitOfWork,
+            ILogger<ExamService> logger,
+            IAuditService auditService,
+            ICurrentUserService currentUser)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;
+            _auditService = auditService;
+            _currentUser = currentUser;
         }
 
         public async Task<List<ExamListDto>> GetAllExamsAsync(string? userId = null)
@@ -66,6 +74,16 @@ namespace OnlineExamSystem.Application.Services
             await _unitOfWork.Repository<Exam>().AddAsync(exam);
             await _unitOfWork.SaveChangesAsync();
 
+            // ✅ AUDIT LOG
+            await _auditService.LogAsync(
+                _currentUser.GetUserId(),
+                "CREATE",
+                "Exam",
+                exam.ExamId.ToString(),
+                null,
+                new { exam.Title }
+            );
+
             _logger.LogInformation("Exam created successfully");
         }
 
@@ -81,10 +99,26 @@ namespace OnlineExamSystem.Application.Services
                 return;
             }
 
+            // ✅ Capture old values
+            var oldValues = new
+            {
+                exam.Title
+            };
+
             exam.Title = dto.Title;
 
             await _unitOfWork.Repository<Exam>().UpdateAsync(exam);
             await _unitOfWork.SaveChangesAsync();
+
+            // ✅ AUDIT LOG
+            await _auditService.LogAsync(
+                _currentUser.GetUserId(),
+                "UPDATE",
+                "Exam",
+                exam.ExamId.ToString(),
+                oldValues,
+                new { exam.Title }
+            );
 
             _logger.LogInformation("Exam {ExamId} updated successfully", id);
         }
@@ -101,8 +135,24 @@ namespace OnlineExamSystem.Application.Services
                 return;
             }
 
+            // ✅ Capture old values
+            var oldValues = new
+            {
+                exam.Title
+            };
+
             await _unitOfWork.Repository<Exam>().DeleteAsync(exam);
             await _unitOfWork.SaveChangesAsync();
+
+            // ✅ AUDIT LOG
+            await _auditService.LogAsync(
+                _currentUser.GetUserId(),
+                "DELETE",
+                "Exam",
+                exam.ExamId.ToString(),
+                oldValues,
+                null
+            );
 
             _logger.LogInformation("Exam {ExamId} deleted successfully", examId);
         }

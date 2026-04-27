@@ -37,7 +37,7 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+          
             return services;
         }
     }

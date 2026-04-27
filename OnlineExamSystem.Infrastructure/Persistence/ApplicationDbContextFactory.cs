@@ -10,9 +10,12 @@ namespace OnlineExamSystem.BL.Infrastructure.Persistence
     {
         public ApplicationDbContext CreateDbContext(string[] args)
         {
+            // Go to solution root safely
+            var basePath = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "OnlineExamSystem.Web"));
+
             var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json")
+                .SetBasePath(basePath)
+                .AddJsonFile("appsettings.json", optional: false)
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
