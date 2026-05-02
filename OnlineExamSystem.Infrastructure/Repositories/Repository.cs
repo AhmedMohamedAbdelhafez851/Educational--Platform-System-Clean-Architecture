@@ -1,7 +1,7 @@
 ﻿// BL/Repositories/Repository.cs
 using Microsoft.EntityFrameworkCore;
 using OnlineExamSystem.Application.Abstraction;
-using OnlineExamSystem.BL.Infrastructure.Persistence;
+using OnlineExamSystem.Infrastructure.Persistence;
 using System.Linq.Expressions;
 namespace OnlineExamSystem.Infrastructure.Repositories
 {

@@ -1,5 +1,4 @@
-﻿using OnlineExamSystem.BL.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using OnlineExamSystem.Infrastructure.Repositories;
 using OnlineExamSystem.Application.Abstraction;
@@ -92,5 +91,7 @@ namespace OnlineExamSystem.Infrastructure.Persistence
             }
             GC.SuppressFinalize(this);
         }
+
+      
     }
 }

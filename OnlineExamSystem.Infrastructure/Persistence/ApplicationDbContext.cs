@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineExamSystem.Domains.Entities;
 
-namespace OnlineExamSystem.BL.Infrastructure.Persistence
+namespace OnlineExamSystem.Infrastructure.Persistence
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -14,15 +14,15 @@ namespace OnlineExamSystem.BL.Infrastructure.Persistence
         public DbSet<UserAnswer> UserAnswers { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options) { }
+        public ApplicationDbContext(
+            DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<IdentityUserLogin<string>>()
-                .HasKey(ul => new { ul.LoginProvider, ul.ProviderKey });
 
             modelBuilder.Entity<Exam>()
                 .HasMany(e => e.Questions)
@@ -75,7 +75,7 @@ namespace OnlineExamSystem.BL.Infrastructure.Persistence
                 .WithMany()
                 .HasForeignKey(ua => ua.SelectedChoiceId)
                 .OnDelete(DeleteBehavior.Restrict);
-            // Add index for faster queries
+
             modelBuilder.Entity<ExamSubmission>()
                 .HasIndex(es => new { es.UserId, es.ExamId });
 
@@ -83,10 +83,18 @@ namespace OnlineExamSystem.BL.Infrastructure.Persistence
             var userRoleId = "d4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7";
 
             modelBuilder.Entity<IdentityRole>().HasData(
-                new IdentityRole { Id = adminRoleId, Name = "Admin", NormalizedName = "ADMIN" },
-                new IdentityRole { Id = userRoleId, Name = "User", NormalizedName = "USER" });
+                new IdentityRole
+                {
+                    Id = adminRoleId,
+                    Name = "Admin",
+                    NormalizedName = "ADMIN"
+                },
+                new IdentityRole
+                {
+                    Id = userRoleId,
+                    Name = "User",
+                    NormalizedName = "USER"
+                });
         }
     }
 }
-
-

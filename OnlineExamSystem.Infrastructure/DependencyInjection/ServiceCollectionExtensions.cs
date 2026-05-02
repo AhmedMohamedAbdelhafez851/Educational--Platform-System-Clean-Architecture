@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnlineExamSystem.Application.Abstraction;
-using OnlineExamSystem.BL.Infrastructure.Persistence;
-using OnlineExamSystem.Domains.Entities;
 using OnlineExamSystem.Infrastructure.Persistence;
 
 namespace OnlineExamSystem.Infrastructure.DependencyInjection
@@ -19,7 +17,7 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            services.AddIdentity<Domains.Entities.ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequiredLength = 6;

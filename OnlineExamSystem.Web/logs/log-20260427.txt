@@ -629,3 +629,8 @@ Error Number:208,State:1,Class:16
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 20
 2026-04-27 12:31:55.674 +03:00 [INF] Fetching all exams for user null
+2026-04-27 13:34:42.256 +03:00 [INF] Fetching all exams for user null
+2026-04-27 13:34:57.598 +03:00 [INF] Creating exam with title Math_Exam
+2026-04-27 13:34:57.750 +03:00 [INF] Exam created successfully
+2026-04-27 13:34:57.762 +03:00 [INF] Fetching all exams for user null
+2026-04-27 13:34:57.835 +03:00 [INF] Fetching all exams for user null
