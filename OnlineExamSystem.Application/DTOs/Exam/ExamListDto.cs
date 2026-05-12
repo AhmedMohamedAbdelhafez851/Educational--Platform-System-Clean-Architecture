@@ -5,10 +5,11 @@
         public int ExamId { get; set; }
         public string Title { get; set; } = "";
         public int QuestionsCount { get; set; }
+        public int DurationInMinutes { get; set; }
+        public int TotalDegree { get; set; }
         public bool? HasSubmission { get; set; }
         public int? SubmissionId { get; set; }
         public bool? IsPassed { get; set; }
         public double? Score { get; set; }
-
     }
 }

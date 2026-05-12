@@ -1,14 +1,7 @@
-﻿
-namespace OnlineExamSystem.Application.Abstraction
+﻿namespace OnlineExamSystem.Application.Abstraction
 {
     public interface IAuditService
     {
-        Task LogAsync(
-            string userId,
-            string action,
-            string entityName,
-            string entityId,
-            object? oldValues = null,
-            object? newValues = null);
+        Task LogAsync(string userId, string action, string entityName, string entityId, object? oldValues, object? newValues);
     }
 }

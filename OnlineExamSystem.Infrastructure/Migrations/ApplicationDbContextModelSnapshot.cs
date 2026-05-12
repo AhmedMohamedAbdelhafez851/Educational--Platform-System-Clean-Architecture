@@ -57,9 +57,15 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = "d4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7",
-                            Name = "User",
-                            NormalizedName = "USER"
+                            Id = "e4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7",
+                            Name = "Teacher",
+                            NormalizedName = "TEACHER"
+                        },
+                        new
+                        {
+                            Id = "f5d2fb63-0b3f-58c7-0dc2-45b7e723d9f8",
+                            Name = "Student",
+                            NormalizedName = "STUDENT"
                         });
                 });
 
@@ -181,6 +187,9 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -189,8 +198,10 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -250,9 +261,6 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("EntityId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -261,11 +269,17 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("IpAddress")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NewValues")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OldValues")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Timestamp")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -315,9 +329,15 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("DurationInMinutes")
+                        .HasColumnType("int");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TotalDegree")
+                        .HasColumnType("int");
 
                     b.HasKey("ExamId");
 
@@ -400,9 +420,6 @@ namespace OnlineExamSystem.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserAnswerId"));
 
-                    b.Property<int?>("ChoiceId")
-                        .HasColumnType("int");
-
                     b.Property<int>("QuestionId")
                         .HasColumnType("int");
 
@@ -413,8 +430,6 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("UserAnswerId");
-
-                    b.HasIndex("ChoiceId");
 
                     b.HasIndex("QuestionId");
 
@@ -490,7 +505,7 @@ namespace OnlineExamSystem.Infrastructure.Migrations
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamSubmission", b =>
                 {
                     b.HasOne("OnlineExamSystem.Domains.Entities.Exam", "Exam")
-                        .WithMany()
+                        .WithMany("Submissions")
                         .HasForeignKey("ExamId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -526,10 +541,6 @@ namespace OnlineExamSystem.Infrastructure.Migrations
 
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.UserAnswer", b =>
                 {
-                    b.HasOne("OnlineExamSystem.Domains.Entities.Choice", null)
-                        .WithMany("UserAnswers")
-                        .HasForeignKey("ChoiceId");
-
                     b.HasOne("OnlineExamSystem.Domains.Entities.Question", "Question")
                         .WithMany()
                         .HasForeignKey("QuestionId")
@@ -555,14 +566,11 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.Navigation("Submission");
                 });
 
-            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.Choice", b =>
-                {
-                    b.Navigation("UserAnswers");
-                });
-
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.Exam", b =>
                 {
                     b.Navigation("Questions");
+
+                    b.Navigation("Submissions");
                 });
 
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamSubmission", b =>

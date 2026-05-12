@@ -6,6 +6,10 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="bootstrap" Version="5.3.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 		<PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
 		<PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
@@ -15,8 +19,5 @@
 		<ProjectReference Include="..\OnlineExamSystem.Application\OnlineExamSystem.Application.csproj" />
 		<ProjectReference Include="..\OnlineExamSystem.Infrastructure\OnlineExamSystem.Infrastructure.csproj" />
 		<ProjectReference Include="..\OnlineExamSystem.Domains\OnlineExamSystem.Domains.csproj" />
-	</ItemGroup>
-	<ItemGroup>
-		<Folder Include="Filters\" />
 	</ItemGroup>
 </Project>

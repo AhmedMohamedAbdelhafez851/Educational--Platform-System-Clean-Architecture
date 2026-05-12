@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using OnlineExamSystem.Infrastructure.Repositories;
 using OnlineExamSystem.Application.Abstraction;
+using OnlineExamSystem.Infrastructure.Repositories;
 
 namespace OnlineExamSystem.Infrastructure.Persistence
 {
@@ -10,26 +10,11 @@ namespace OnlineExamSystem.Infrastructure.Persistence
         private readonly ApplicationDbContext _context;
         private readonly Dictionary<Type, object> _repositories = new();
         private bool _disposed;
-        private IDbContextTransaction _transaction;
+        private IDbContextTransaction? _transaction;
 
-        // ✅ SINGLE CONSTRUCTOR - remove the duplicate
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
-        }
-
-        // ✅ Optional: Full constructor for dependency injection
-        public UnitOfWork(ApplicationDbContext context, Dictionary<Type, object> repositories, IDbContextTransaction transaction)
-            : this(context)  // Chain to main constructor
-        {
-            if (repositories != null)
-            {
-                foreach (var repo in repositories)
-                {
-                    _repositories[repo.Key] = repo.Value;
-                }
-            }
-            _transaction = transaction;
         }
 
         public IRepository<T> Repository<T>() where T : class
@@ -65,7 +50,8 @@ namespace OnlineExamSystem.Infrastructure.Persistence
             _transaction = null!;
         }
 
-        public async Task DisposeAsync()
+        // ✅ FIXED: Returns ValueTask, not Task
+        public async ValueTask DisposeAsync()
         {
             if (!_disposed)
             {
@@ -80,18 +66,17 @@ namespace OnlineExamSystem.Infrastructure.Persistence
             }
         }
 
+        // ✅ FIXED: Standard Dispose
         public void Dispose()
         {
             if (!_disposed)
             {
                 _transaction?.Dispose();
-                _context?.Dispose();  // ✅ Added null check
+                _context?.Dispose();
                 _repositories.Clear();
                 _disposed = true;
             }
             GC.SuppressFinalize(this);
         }
-
-      
     }
 }

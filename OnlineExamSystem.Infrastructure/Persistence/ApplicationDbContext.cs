@@ -14,9 +14,7 @@ namespace OnlineExamSystem.Infrastructure.Persistence
         public DbSet<UserAnswer> UserAnswers { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
 
-        public ApplicationDbContext(
-            DbContextOptions<ApplicationDbContext> options)
-            : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
 
@@ -54,7 +52,7 @@ namespace OnlineExamSystem.Infrastructure.Persistence
 
             modelBuilder.Entity<ExamSubmission>()
                 .HasOne(es => es.Exam)
-                .WithMany()
+                .WithMany(e => e.Submissions)
                 .HasForeignKey(es => es.ExamId)
                 .OnDelete(DeleteBehavior.Restrict);
 
@@ -79,22 +77,16 @@ namespace OnlineExamSystem.Infrastructure.Persistence
             modelBuilder.Entity<ExamSubmission>()
                 .HasIndex(es => new { es.UserId, es.ExamId });
 
+            // Seed Roles
             var adminRoleId = "8a3b5d7c-fb0b-42c9-a5c2-bd055b43a6c4";
-            var userRoleId = "d4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7";
+            var teacherRoleId = "e4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7";
+            var studentRoleId = "f5d2fb63-0b3f-58c7-0dc2-45b7e723d9f8";
 
             modelBuilder.Entity<IdentityRole>().HasData(
-                new IdentityRole
-                {
-                    Id = adminRoleId,
-                    Name = "Admin",
-                    NormalizedName = "ADMIN"
-                },
-                new IdentityRole
-                {
-                    Id = userRoleId,
-                    Name = "User",
-                    NormalizedName = "USER"
-                });
+                new IdentityRole { Id = adminRoleId, Name = "Admin", NormalizedName = "ADMIN" },
+                new IdentityRole { Id = teacherRoleId, Name = "Teacher", NormalizedName = "TEACHER" },
+                new IdentityRole { Id = studentRoleId, Name = "Student", NormalizedName = "STUDENT" }
+            );
         }
     }
 }

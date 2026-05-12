@@ -8,10 +8,12 @@ namespace OnlineExamSystem.Application.Services
     public class QuestionService : IQuestionService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly ICacheService _cacheService;
 
-        public QuestionService(IUnitOfWork unitOfWork)
+        public QuestionService(IUnitOfWork unitOfWork, ICacheService cacheService)
         {
             _unitOfWork = unitOfWork;
+            _cacheService = cacheService;
         }
 
         public async Task<List<CreateQuestionDto>> GetQuestionsByExamAsync(int examId)
@@ -32,7 +34,8 @@ namespace OnlineExamSystem.Application.Services
                         Text = c.Text,
                         IsCorrect = c.IsCorrect
                     }).ToList()
-                }).ToListAsync();
+                })
+                .ToListAsync();
         }
 
         public async Task<CreateQuestionDto?> GetQuestionByIdAsync(int questionId)
@@ -57,7 +60,6 @@ namespace OnlineExamSystem.Application.Services
             };
 
             dto.CorrectChoiceIndex = dto.Choices.FindIndex(c => c.IsCorrect);
-
             return dto;
         }
 
@@ -77,15 +79,14 @@ namespace OnlineExamSystem.Application.Services
             await _unitOfWork.Repository<Question>().AddAsync(question);
             await _unitOfWork.SaveChangesAsync();
 
-            // 🔥 IMPORTANT FIX
-            var correctChoice = question.Choices
-                .FirstOrDefault(c => c.IsCorrect);
-
+            var correctChoice = question.Choices.FirstOrDefault(c => c.IsCorrect);
             if (correctChoice != null)
             {
                 question.CorrectChoiceId = correctChoice.ChoiceId;
                 await _unitOfWork.SaveChangesAsync();
             }
+
+            _cacheService.Remove("AllExams");
         }
 
         public async Task EditQuestionAsync(CreateQuestionDto dto)
@@ -109,15 +110,14 @@ namespace OnlineExamSystem.Application.Services
 
             await _unitOfWork.SaveChangesAsync();
 
-            // 🔥 IMPORTANT FIX
-            var correctChoice = question.Choices
-                .FirstOrDefault(c => c.IsCorrect);
-
+            var correctChoice = question.Choices.FirstOrDefault(c => c.IsCorrect);
             if (correctChoice != null)
             {
                 question.CorrectChoiceId = correctChoice.ChoiceId;
                 await _unitOfWork.SaveChangesAsync();
             }
+
+            _cacheService.Remove("AllExams");
         }
 
         public async Task DeleteQuestionAsync(int questionId)
@@ -127,6 +127,8 @@ namespace OnlineExamSystem.Application.Services
 
             await _unitOfWork.Repository<Question>().DeleteAsync(question);
             await _unitOfWork.SaveChangesAsync();
+
+            _cacheService.Remove("AllExams");
         }
     }
 }

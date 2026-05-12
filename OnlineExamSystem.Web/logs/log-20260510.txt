@@ -1,0 +1,394 @@
+2026-05-10 19:43:58 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 37.0799 ms
+2026-05-10 19:43:58 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 158.8114 ms
+2026-05-10 19:43:58 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 230.7404 ms
+2026-05-10 19:43:58 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 240.3034 ms
+2026-05-10 19:44:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 36.7483 ms
+2026-05-10 19:44:04 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 54.4301 ms
+2026-05-10 19:44:12 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 503.5023 ms
+2026-05-10 19:44:12 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 510.3933 ms
+2026-05-10 19:44:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5383 ms
+2026-05-10 19:44:12 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 12.3856 ms
+2026-05-10 19:44:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 323.9783 ms
+2026-05-10 19:44:12 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 337.3890 ms
+2026-05-10 19:44:37 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 248 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 19:44:37 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 19:44:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 21270.8931 ms
+2026-05-10 19:44:37 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 21277.2306 ms
+2026-05-10 19:44:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0740 ms
+2026-05-10 19:44:37 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 7.7015 ms
+2026-05-10 19:45:46 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:45:46 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-10 19:45:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 11262.6872 ms
+2026-05-10 19:45:46 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 11273.3505 ms
+2026-05-10 19:45:57 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:45:57 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-10 19:45:58 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 8788.3837 ms
+2026-05-10 19:45:58 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 8793.8785 ms
+2026-05-10 19:46:02 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:46:02 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-10 19:46:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 1482.4383 ms
+2026-05-10 19:46:02 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 1489.8151 ms
+2026-05-10 19:51:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 30.2967 ms
+2026-05-10 19:51:46 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 164.4685 ms
+2026-05-10 19:51:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 425.7637 ms
+2026-05-10 19:51:47 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 448.0458 ms
+2026-05-10 19:51:50 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 342 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 19:51:50 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 19:51:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 691.9988 ms
+2026-05-10 19:51:50 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 715.4774 ms
+2026-05-10 19:51:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.1112 ms
+2026-05-10 19:51:50 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 8.1201 ms
+2026-05-10 19:51:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:51:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-10 19:51:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 59.4833 ms
+2026-05-10 19:51:56 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 67.9514 ms
+2026-05-10 19:52:00 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:52:00 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-10 19:52:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 29.0046 ms
+2026-05-10 19:52:00 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 37.6352 ms
+2026-05-10 19:52:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 42.1922 ms
+2026-05-10 19:52:23 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 190.3381 ms
+2026-05-10 19:52:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 462.1960 ms
+2026-05-10 19:52:24 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 482.1936 ms
+2026-05-10 19:52:26 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 345 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 19:52:26 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 19:52:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 769.1720 ms
+2026-05-10 19:52:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 796.5167 ms
+2026-05-10 19:52:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.1038 ms
+2026-05-10 19:52:26 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 7.2586 ms
+2026-05-10 19:55:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0186 ms
+2026-05-10 19:55:16 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 7.6338 ms
+2026-05-10 19:55:21 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:55:21 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-10 19:55:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 68.8822 ms
+2026-05-10 19:55:21 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 76.7415 ms
+2026-05-10 19:55:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:55:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-10 19:55:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 31.0610 ms
+2026-05-10 19:55:24 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 39.3664 ms
+2026-05-10 19:55:25 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-10 19:55:25 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-10 19:55:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.2688 ms
+2026-05-10 19:55:25 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 31.4046 ms
+2026-05-10 19:57:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 23.2484 ms
+2026-05-10 19:57:18 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 157.1630 ms
+2026-05-10 19:57:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 379.4919 ms
+2026-05-10 19:57:19 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 400.0744 ms
+2026-05-10 19:57:23 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 335 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 19:57:23 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 19:57:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 686.9282 ms
+2026-05-10 19:57:23 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 712.7821 ms
+2026-05-10 19:57:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0825 ms
+2026-05-10 19:57:23 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 5.0775 ms
+2026-05-10 19:59:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 26.3353 ms
+2026-05-10 19:59:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 401.3644 ms
+2026-05-10 19:59:05 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 343 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 19:59:05 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Exam" responded 500 in 518.9938 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-10 19:59:05 [User:] [IP:] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 19:59:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.1857 ms
+2026-05-10 20:00:32 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 395 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 20:00:32 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 653.4218 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-10 20:00:32 [User:] [IP:] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 20:00:32 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.2297 ms
+2026-05-10 20:00:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 33.5690 ms
+2026-05-10 20:00:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 416.4018 ms
+2026-05-10 20:00:56 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 392 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-10 20:00:56 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Exam" responded 500 in 577.4474 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-10 20:00:57 [User:] [IP:] [Error] Unhandled exception
+System.NotImplementedException: The method or operation is not implemented.
+   at OnlineExamSystem.Application.Caching.CacheService.SetAsync[TResponse](String cacheKey, TResponse response, Int32 slidingExpirationInMinutes) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Caching\CacheService.cs:line 57
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 52
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-10 20:00:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.1067 ms
+2026-05-10 20:10:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 500.8446 ms
+2026-05-10 20:10:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 25.6415 ms
+2026-05-10 20:10:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 414.4398 ms
+2026-05-10 20:10:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 37.3213 ms
+2026-05-10 20:10:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 41.5913 ms
+2026-05-10 20:11:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/18" responded 302 in 191.0665 ms
+2026-05-10 20:11:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 28.1188 ms
+2026-05-10 20:11:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 17.3825 ms
+2026-05-10 20:12:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/25" responded 302 in 42.4129 ms
+2026-05-10 20:12:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 16.2584 ms
+2026-05-10 20:12:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 33.8258 ms
+2026-05-10 20:12:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 203.0941 ms
+2026-05-10 20:12:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 92.6710 ms
+2026-05-10 20:12:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 254.9189 ms
+2026-05-10 20:12:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 47.8701 ms
+2026-05-10 20:12:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 19.6650 ms
+2026-05-10 20:12:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 24.7802 ms
+2026-05-10 20:14:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 308.5362 ms
+2026-05-10 20:14:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 27.3118 ms
+2026-05-10 20:16:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 442.0272 ms
+2026-05-10 20:16:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 101.7576 ms
+2026-05-10 20:16:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 382.2301 ms
+2026-05-10 20:16:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.2364 ms
+2026-05-10 20:16:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 16.6026 ms
+2026-05-10 20:16:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.2804 ms
+2026-05-10 20:19:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 72.5886 ms
+2026-05-10 20:33:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 375.4323 ms
+2026-05-10 20:33:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 27.4297 ms
+2026-05-10 20:33:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 405.5011 ms
+2026-05-10 20:33:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 74.4944 ms
+2026-05-10 20:33:32 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 90.4325 ms
+2026-05-10 20:33:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 541.6581 ms
+2026-05-10 20:33:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 20.4234 ms
+2026-05-10 20:33:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 21.0449 ms
+2026-05-10 20:33:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 33.0823 ms
+2026-05-10 20:34:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Edit/1008" responded 200 in 96.4243 ms
+2026-05-10 20:34:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Edit/1008" responded 302 in 121.7136 ms
+2026-05-10 20:34:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.9309 ms
+2026-05-10 20:34:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Edit/1008" responded 200 in 35.8062 ms
+2026-05-10 20:34:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.1779 ms
+2026-05-10 20:34:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 21.6519 ms
+2026-05-10 20:34:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 22.9004 ms
+2026-05-10 20:34:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 25.1123 ms
+2026-05-10 20:40:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 317.2690 ms
+2026-05-10 20:40:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 34.0541 ms
+2026-05-10 20:40:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 34.0461 ms
+2026-05-10 20:41:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 16.7660 ms
+2026-05-10 20:41:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 19.4894 ms
+2026-05-10 20:41:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 49.5044 ms
+2026-05-10 20:41:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 38.7447 ms
+2026-05-10 20:41:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 23.0112 ms
+2026-05-10 20:41:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.8545 ms
+2026-05-10 20:51:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 387.9734 ms
+2026-05-10 20:51:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 34.2001 ms
+2026-05-10 20:51:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 391.7934 ms
+2026-05-10 20:51:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 84.3377 ms
+2026-05-10 20:51:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 512.3479 ms
+2026-05-10 20:51:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.6796 ms
+2026-05-10 20:51:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 32.4661 ms

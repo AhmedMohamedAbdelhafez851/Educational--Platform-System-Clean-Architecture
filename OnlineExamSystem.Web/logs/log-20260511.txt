@@ -1,0 +1,618 @@
+2026-05-11 08:44:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 300.4112 ms
+2026-05-11 08:44:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 46.7409 ms
+2026-05-11 08:44:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 376.8682 ms
+2026-05-11 08:44:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 325.3303 ms
+2026-05-11 08:44:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 22.8076 ms
+2026-05-11 08:44:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 21.6620 ms
+2026-05-11 08:45:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 29.7224 ms
+2026-05-11 08:45:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 30.7725 ms
+2026-05-11 08:45:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 37.7433 ms
+2026-05-11 08:45:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/28" responded 302 in 67.4368 ms
+2026-05-11 08:45:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 30.0078 ms
+2026-05-11 08:45:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 38.0870 ms
+2026-05-11 08:46:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 19.5752 ms
+2026-05-11 08:46:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 14.0932 ms
+2026-05-11 08:46:08 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 1.3911 ms
+2026-05-11 08:46:08 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 70.8510 ms
+2026-05-11 08:46:26 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 312.9863 ms
+2026-05-11 08:46:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.0988 ms
+2026-05-11 08:46:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 92.0547 ms
+2026-05-11 08:46:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 113.6944 ms
+2026-05-11 08:46:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 310.4767 ms
+2026-05-11 08:46:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/1" responded 200 in 137.3085 ms
+2026-05-11 08:47:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 67.0945 ms
+2026-05-11 08:48:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 42.6121 ms
+2026-05-11 08:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 8.8030 ms
+2026-05-11 08:48:42 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 9.0896 ms
+2026-05-11 08:48:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/EditRole/8a3b5d7c-fb0b-42c9-a5c2-bd055b43a6c4" responded 200 in 44.4538 ms
+2026-05-11 08:48:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 12.7309 ms
+2026-05-11 08:49:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 31.2910 ms
+2026-05-11 08:49:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/EditRole/8a3b5d7c-fb0b-42c9-a5c2-bd055b43a6c4" responded 200 in 22.9842 ms
+2026-05-11 08:49:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 85.6961 ms
+2026-05-11 08:49:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 4.4232 ms
+2026-05-11 08:49:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 1.0982 ms
+2026-05-11 08:49:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.6998 ms
+2026-05-11 08:49:40 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 154.7827 ms
+2026-05-11 08:49:40 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.0832 ms
+2026-05-11 08:49:40 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 29.1600 ms
+2026-05-11 08:49:47 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 35.0048 ms
+2026-05-11 08:49:49 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.6288 ms
+2026-05-11 08:51:28 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 59.8032 ms
+2026-05-11 08:52:07 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 66.4959 ms
+2026-05-11 08:52:14 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 29.5450 ms
+2026-05-11 08:52:49 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 38.6858 ms
+2026-05-11 08:53:20 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 46.3306 ms
+2026-05-11 09:05:03 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 141.8163 ms
+2026-05-11 09:05:11 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 796.6587 ms
+2026-05-11 09:05:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 1.3787 ms
+2026-05-11 09:05:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 83.1581 ms
+2026-05-11 09:05:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 47.9271 ms
+2026-05-11 12:26:27 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 12:26:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 320.7453 ms
+2026-05-11 12:26:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 46.1877 ms
+2026-05-11 12:26:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 39.5629 ms
+2026-05-11 12:26:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 22.1347 ms
+2026-05-11 12:26:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 1.8966 ms
+2026-05-11 12:26:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 99.4628 ms
+2026-05-11 12:27:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 18.3991 ms
+2026-05-11 12:27:17 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 318.1961 ms
+2026-05-11 12:27:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 204.1278 ms
+2026-05-11 12:27:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 33.8249 ms
+2026-05-11 12:27:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.6874 ms
+2026-05-11 12:27:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1555 ms
+2026-05-11 12:27:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.0904 ms
+2026-05-11 12:27:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 172.8015 ms
+2026-05-11 12:27:32 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1813 ms
+2026-05-11 12:27:32 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 404 in 0.0673 ms
+2026-05-11 12:27:34 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.3780 ms
+2026-05-11 12:27:42 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 131.3820 ms
+2026-05-11 12:27:42 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.0902 ms
+2026-05-11 12:27:42 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 404 in 0.0088 ms
+2026-05-11 12:27:46 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.6223 ms
+2026-05-11 12:33:36 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 48.0409 ms
+2026-05-11 12:33:48 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 4088.4554 ms
+2026-05-11 12:33:48 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 2.4761 ms
+2026-05-11 12:33:48 [User:Zyad@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 5.5408 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-11 12:33:49 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-11 12:33:49 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0179 ms
+2026-05-11 12:34:15 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.0491 ms
+2026-05-11 12:34:20 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 169.5884 ms
+2026-05-11 12:34:20 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.0881 ms
+2026-05-11 12:34:20 [User:Zyad@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 2.9966 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-11 12:34:21 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-11 12:34:21 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0110 ms
+2026-05-11 12:34:23 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0419 ms
+2026-05-11 12:34:25 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.6150 ms
+2026-05-11 12:34:28 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 8.8261 ms
+2026-05-11 12:34:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1177 ms
+2026-05-11 12:34:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.6482 ms
+2026-05-11 12:34:33 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 336.3893 ms
+2026-05-11 12:34:33 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1100 ms
+2026-05-11 12:34:33 [User:Zyad@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 2.2954 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-11 12:34:34 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-11 12:34:34 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0108 ms
+2026-05-11 12:34:36 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.5174 ms
+2026-05-11 17:37:02 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 17:39:49 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 17:39:54 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 312.8248 ms
+2026-05-11 17:40:08 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 45.6297 ms
+2026-05-11 17:40:12 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 14.9734 ms
+2026-05-11 17:40:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 2.4019 ms
+2026-05-11 17:40:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 99.0082 ms
+2026-05-11 17:40:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 397.6820 ms
+2026-05-11 17:40:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1593 ms
+2026-05-11 17:40:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 404 in 0.0689 ms
+2026-05-11 17:56:31 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 17:56:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 335.5451 ms
+2026-05-11 17:56:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 91.3231 ms
+2026-05-11 17:56:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 532.2960 ms
+2026-05-11 17:56:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 2.1629 ms
+2026-05-11 17:56:50 [User:Kareem@gmail.com123] [IP:::1] [Error] Failed executing DbCommand ("26"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[SubmissionId], [e].[CorrectAnswers], [e].[EarnedDegree], [e].[ExamId], [e].[ExamId1], [e].[FinishedAt], [e].[IsPassed], [e].[Score], [e].[ScorePercentage], [e].[StartedAt], [e].[SubmissionDate], [e].[TimeSpentMinutes], [e].[TotalQuestions], [e].[UserId]
+FROM [ExamSubmissions] AS [e]
+WHERE [e].[UserId] = @__userId_0"
+2026-05-11 17:56:50 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:22f86629-dcfb-425c-b74d-2fcd8939bac7
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:22f86629-dcfb-425c-b74d-2fcd8939bac7
+Error Number:207,State:1,Class:16
+2026-05-11 17:56:51 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 565.5153 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 87
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:22f86629-dcfb-425c-b74d-2fcd8939bac7
+Error Number:207,State:1,Class:16
+2026-05-11 17:56:51 [User:] [IP:] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 87
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:22f86629-dcfb-425c-b74d-2fcd8939bac7
+Error Number:207,State:1,Class:16
+2026-05-11 17:56:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0593 ms
+2026-05-11 17:56:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 15.6394 ms
+2026-05-11 18:00:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 9.2371 ms
+2026-05-11 18:00:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 0.1595 ms
+2026-05-11 18:00:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.6698 ms
+2026-05-11 18:05:52 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 18:05:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 340.8161 ms
+2026-05-11 18:07:01 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 122.1636 ms
+2026-05-11 18:07:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 475.4273 ms
+2026-05-11 18:07:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 1.7748 ms
+2026-05-11 18:07:10 [User:Kareem@gmail.com123] [IP:::1] [Error] Failed executing DbCommand ("9"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[SubmissionId], [e].[CorrectAnswers], [e].[EarnedDegree], [e].[ExamId], [e].[ExamId1], [e].[FinishedAt], [e].[IsPassed], [e].[Score], [e].[ScorePercentage], [e].[StartedAt], [e].[SubmissionDate], [e].[TimeSpentMinutes], [e].[TotalQuestions], [e].[UserId]
+FROM [ExamSubmissions] AS [e]
+WHERE [e].[UserId] = @__userId_0"
+2026-05-11 18:07:10 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:450a3037-3b55-4d47-ad16-75a0d49cca73
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:450a3037-3b55-4d47-ad16-75a0d49cca73
+Error Number:207,State:1,Class:16
+2026-05-11 18:07:10 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 537.3779 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:450a3037-3b55-4d47-ad16-75a0d49cca73
+Error Number:207,State:1,Class:16
+2026-05-11 18:07:11 [User:] [IP:] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:450a3037-3b55-4d47-ad16-75a0d49cca73
+Error Number:207,State:1,Class:16
+2026-05-11 18:07:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0668 ms
+2026-05-11 18:33:49 [User:] [IP:] [Warning] The foreign key property '"ExamSubmission"."ExamId1"' was created in shadow state because a conflicting property with the simple name '"ExamId"' exists in the entity type, but is either not mapped, is already used for another relationship, or is incompatible with the associated primary key type. See https://aka.ms/efcore-relationships for information on mapping relationships in EF Core.
+2026-05-11 18:33:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 422.3583 ms
+2026-05-11 18:34:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 132.7464 ms
+2026-05-11 18:34:13 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 982.9914 ms
+2026-05-11 18:34:21 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 33.5041 ms
+2026-05-11 18:34:27 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 20.7666 ms
+2026-05-11 18:34:35 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 406.6142 ms
+2026-05-11 18:34:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home" responded 302 in 6.8782 ms
+2026-05-11 18:34:36 [User:Kareem@gmail.com123] [IP:::1] [Error] Failed executing DbCommand ("37"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[SubmissionId], [e].[CorrectAnswers], [e].[EarnedDegree], [e].[ExamId], [e].[ExamId1], [e].[FinishedAt], [e].[IsPassed], [e].[Score], [e].[ScorePercentage], [e].[StartedAt], [e].[SubmissionDate], [e].[TimeSpentMinutes], [e].[TotalQuestions], [e].[UserId]
+FROM [ExamSubmissions] AS [e]
+WHERE [e].[UserId] = @__userId_0"
+2026-05-11 18:34:36 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4199bdc4-6517-4848-a2bb-ab855c3c068f
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4199bdc4-6517-4848-a2bb-ab855c3c068f
+Error Number:207,State:1,Class:16
+2026-05-11 18:34:36 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 760.4673 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:4199bdc4-6517-4848-a2bb-ab855c3c068f
+Error Number:207,State:1,Class:16
+2026-05-11 18:34:37 [User:] [IP:] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'EarnedDegree'.
+Invalid column name 'FinishedAt'.
+Invalid column name 'ScorePercentage'.
+Invalid column name 'StartedAt'.
+Invalid column name 'TimeSpentMinutes'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 79
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 35
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:4199bdc4-6517-4848-a2bb-ab855c3c068f
+Error Number:207,State:1,Class:16
+2026-05-11 18:34:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0715 ms
+2026-05-11 20:15:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 48.7171 ms
+2026-05-11 20:15:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 259.2859 ms
+2026-05-11 20:16:06 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 444.1031 ms
+2026-05-11 20:16:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4103 ms
+2026-05-11 20:16:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 356.1339 ms
+2026-05-11 20:17:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 51.2093 ms
+2026-05-11 20:17:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 254.0925 ms
+2026-05-11 20:17:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 390.8524 ms
+2026-05-11 20:17:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4921 ms
+2026-05-11 20:17:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 350.5510 ms
+2026-05-11 20:17:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 68.4092 ms
+2026-05-11 20:17:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 64.3635 ms
+2026-05-11 20:17:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 111.7414 ms
+2026-05-11 20:17:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 16.8634 ms
+2026-05-11 20:17:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 40.1994 ms
+2026-05-11 20:18:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 39.0778 ms
+2026-05-11 20:18:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 53.6191 ms
+2026-05-11 20:18:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 8.0872 ms
+2026-05-11 20:18:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1468 ms
+2026-05-11 20:18:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.5598 ms
+2026-05-11 20:18:15 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 150.2820 ms
+2026-05-11 20:18:15 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1270 ms
+2026-05-11 20:18:15 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 35.4094 ms
+2026-05-11 20:18:28 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 122.9768 ms
+2026-05-11 20:18:39 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 418.4596 ms
+2026-05-11 20:18:39 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/2" responded 200 in 99.8760 ms
+2026-05-11 20:18:53 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 26.3536 ms
+2026-05-11 20:19:13 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 34.9840 ms
+2026-05-11 20:19:18 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1817 ms
+2026-05-11 20:19:19 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 26.5799 ms
+2026-05-11 20:19:22 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.5917 ms
+2026-05-11 20:19:23 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 13.0717 ms
+2026-05-11 20:19:23 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 8.4250 ms
+2026-05-11 20:19:25 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.1533 ms
+2026-05-11 20:19:31 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 149.9887 ms
+2026-05-11 20:19:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 26.4334 ms
+2026-05-11 20:19:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 18.8500 ms
+2026-05-11 20:19:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 118.7153 ms
+2026-05-11 20:19:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 55.5403 ms
+2026-05-11 20:20:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 62.9174 ms
+2026-05-11 20:20:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 46.6252 ms
+2026-05-11 20:20:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 92.0824 ms
+2026-05-11 20:20:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 30.4222 ms
+2026-05-11 20:20:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 15.8637 ms
+2026-05-11 20:20:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.1720 ms
+2026-05-11 20:20:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 29.0379 ms

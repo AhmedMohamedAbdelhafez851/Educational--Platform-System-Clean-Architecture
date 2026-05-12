@@ -1,0 +1,137 @@
+2026-05-12 14:25:52 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 32.8902 ms
+2026-05-12 14:25:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 226.5415 ms
+2026-05-12 14:26:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Analytics" responded 404 in 0.3224 ms
+2026-05-12 14:26:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Analytics/ExamReport" responded 404 in 0.0454 ms
+2026-05-12 14:26:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 53.6586 ms
+2026-05-12 14:26:56 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 441.8960 ms
+2026-05-12 14:26:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 526.4774 ms
+2026-05-12 14:27:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 104.1141 ms
+2026-05-12 14:27:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 23.1363 ms
+2026-05-12 14:27:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 1.0691 ms
+2026-05-12 14:27:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 91.4697 ms
+2026-05-12 14:28:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/26" responded 200 in 133.1843 ms
+2026-05-12 14:28:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 515.5766 ms
+2026-05-12 14:28:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/3" responded 200 in 131.9815 ms
+2026-05-12 14:28:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.3627 ms
+2026-05-12 14:28:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 42.3993 ms
+2026-05-12 14:42:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 33.6685 ms
+2026-05-12 14:42:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 290.8899 ms
+2026-05-12 14:42:22 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 416.7561 ms
+2026-05-12 14:42:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.6392 ms
+2026-05-12 14:42:22 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 9.8477 ms
+System.InvalidOperationException: Unable to resolve service for type 'OnlineExamSystem.Application.Abstraction.IExamService' while attempting to activate 'OnlineExamSystem.Web.Controllers.UserExamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method287(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 14:42:22 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: Unable to resolve service for type 'OnlineExamSystem.Application.Abstraction.IExamService' while attempting to activate 'OnlineExamSystem.Web.Controllers.UserExamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method287(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-12 14:42:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0742 ms
+2026-05-12 14:42:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 20.4040 ms
+2026-05-12 14:43:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 23.6786 ms
+2026-05-12 14:43:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 514.4198 ms
+2026-05-12 14:43:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 182.9629 ms
+2026-05-12 14:43:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 1.4292 ms
+2026-05-12 14:43:49 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 4.8270 ms
+System.InvalidOperationException: Unable to resolve service for type 'OnlineExamSystem.Application.Abstraction.IExamService' while attempting to activate 'OnlineExamSystem.Web.Controllers.UserExamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method396(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-12 14:43:50 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: Unable to resolve service for type 'OnlineExamSystem.Application.Abstraction.IExamService' while attempting to activate 'OnlineExamSystem.Web.Controllers.UserExamController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method396(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-12 14:43:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0138 ms
+2026-05-12 14:44:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 28.2655 ms
+2026-05-12 14:44:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 246.6882 ms
+2026-05-12 14:44:17 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 406.6022 ms
+2026-05-12 14:44:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3819 ms
+2026-05-12 14:44:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 352.8181 ms
+2026-05-12 14:44:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 264.8447 ms
+2026-05-12 14:46:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 176.6561 ms
+2026-05-12 14:46:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 54.6092 ms
+2026-05-12 14:47:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 302 in 290.5293 ms
+2026-05-12 14:47:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 61.6436 ms
+2026-05-12 14:47:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 32.7517 ms
+2026-05-12 14:47:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 37.7577 ms
+2026-05-12 14:47:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 46.8750 ms
+2026-05-12 14:47:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 188.3497 ms
+2026-05-12 14:47:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 35.8201 ms
+2026-05-12 14:47:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 9.8689 ms
+2026-05-12 14:47:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.0863 ms
+2026-05-12 14:47:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.8915 ms
+2026-05-12 14:48:12 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 139.0884 ms
+2026-05-12 14:48:12 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1782 ms
+2026-05-12 14:48:12 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 41.7865 ms
+2026-05-12 14:48:19 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.3717 ms
+2026-05-12 14:48:22 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 152.4118 ms
+2026-05-12 14:48:22 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1290 ms
+2026-05-12 14:48:22 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 29.6607 ms
+2026-05-12 14:48:25 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 43.5493 ms
+2026-05-12 14:48:29 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.6212 ms
+2026-05-12 14:48:29 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 19.9001 ms
+2026-05-12 14:48:30 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 10.8533 ms
+2026-05-12 14:48:30 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.6702 ms
+2026-05-12 14:48:33 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 11.8581 ms
+2026-05-12 14:48:41 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 40.1872 ms
+2026-05-12 14:48:48 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.8425 ms
+2026-05-12 14:48:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.7040 ms
+2026-05-12 14:48:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.8194 ms
+2026-05-12 14:49:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.7015 ms
+2026-05-12 14:49:05 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 176.1171 ms
+2026-05-12 14:49:05 [User:Saber@test.cpm123a] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 38.8240 ms

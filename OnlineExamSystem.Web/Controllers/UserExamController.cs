@@ -13,10 +13,7 @@ namespace OnlineExamSystem.Web.Controllers
         private readonly IExamSubmissionService _submissionService;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public UserExamController(
-            IExamService examService,
-            IExamSubmissionService submissionService,
-            UserManager<ApplicationUser> userManager)
+        public UserExamController(IExamService examService, IExamSubmissionService submissionService, UserManager<ApplicationUser> userManager)
         {
             _examService = examService;
             _submissionService = submissionService;
@@ -26,15 +23,11 @@ namespace OnlineExamSystem.Web.Controllers
         public async Task<IActionResult> Index()
         {
             var userId = _userManager.GetUserId(User);
-            if (string.IsNullOrEmpty(userId))
-            {
-                return Challenge();
-            }
+            if (string.IsNullOrEmpty(userId)) return Challenge();
 
             var exams = await _examService.GetAllExamsAsync();
             var submissions = await _submissionService.GetUserSubmissionsAsync(userId);
 
-            // FIX: Group submissions by ExamId instead of creating a dictionary with duplicate keys
             var submissionsGrouped = submissions
                 .GroupBy(s => s.ExamId)
                 .ToDictionary(g => g.Key, g => g.OrderByDescending(s => s.SubmissionDate).ToList());
@@ -46,11 +39,8 @@ namespace OnlineExamSystem.Web.Controllers
         public async Task<IActionResult> TakeExam(int id)
         {
             var exam = await _examService.GetExamForTakingAsync(id);
-
-            if (exam == null)
-                return NotFound();
-
-            return View(exam); // <-- TakeExamDto
+            if (exam == null) return NotFound();
+            return View(exam);
         }
 
         [HttpPost]
@@ -59,10 +49,7 @@ namespace OnlineExamSystem.Web.Controllers
             try
             {
                 var userId = _userManager.GetUserId(User);
-                if (string.IsNullOrEmpty(userId))
-                {
-                    return Json(new { success = false, message = "User not authenticated." });
-                }
+                if (string.IsNullOrEmpty(userId)) return Json(new { success = false, message = "User not authenticated." });
 
                 var submission = await _submissionService.SubmitExamAsync(userId, examId, answers);
                 return Json(new { success = true, submissionId = submission.SubmissionId });
@@ -76,30 +63,12 @@ namespace OnlineExamSystem.Web.Controllers
         public async Task<IActionResult> ViewResult(int id)
         {
             var userId = _userManager.GetUserId(User);
-            if (string.IsNullOrEmpty(userId))
-            {
-                return Challenge();
-            }
+            if (string.IsNullOrEmpty(userId)) return Challenge();
 
             var submission = await _submissionService.GetSubmissionDetailsAsync(id, userId);
-
             if (submission == null) return NotFound();
 
             return View(submission);
-        }
-
-        public async Task<IActionResult> ViewAttempt(int submissionId)
-        {
-            var userId = _userManager.GetUserId(User);
-            if (string.IsNullOrEmpty(userId))
-            {
-                return Challenge();
-            }
-
-            var submission = await _submissionService.GetSubmissionDetailsAsync(submissionId, userId);
-            if (submission == null) return NotFound();
-
-            return View("ViewResult", submission);
         }
     }
 }

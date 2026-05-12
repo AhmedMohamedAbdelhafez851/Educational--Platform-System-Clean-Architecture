@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using System.Net;
 
 public class ExceptionMiddleware
 {
@@ -21,10 +22,18 @@ public class ExceptionMiddleware
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Unhandled exception occurred");
+            _logger.LogError(ex, "Unhandled exception");
 
-            context.Response.StatusCode = 500;
-            await context.Response.WriteAsync("Internal Server Error");
+            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+            if (context.Request.Headers["Accept"].ToString().Contains("application/json"))
+            {
+                await context.Response.WriteAsync("API Error occurred");
+            }
+            else
+            {
+                context.Response.Redirect("/Home/Error");
+            }
         }
     }
 }

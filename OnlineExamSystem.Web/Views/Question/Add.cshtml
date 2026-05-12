@@ -9,7 +9,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h3 class="mb-0 fw-semibold"><i class="bi bi-question-circle me-2"></i>Add New Question</h3>
-                    <p class="mb-0 opacity-75 small">Exam: @Model.ExamTitle</p>
+                    <p class="mb-0 opacity-75 small">Exam: @Model.Title</p>
                 </div>
                 <a asp-controller="Question" asp-action="Index" asp-route-examId="@Model.ExamId"
                    class="btn btn-outline-light btn-sm px-3">

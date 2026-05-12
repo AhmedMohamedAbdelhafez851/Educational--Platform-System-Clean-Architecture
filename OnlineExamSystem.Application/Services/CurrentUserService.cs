@@ -1,22 +1,22 @@
 ﻿using Microsoft.AspNetCore.Http;
-using OnlineExamSystem.Infrastructure.Services;
+using OnlineExamSystem.Application.Abstraction;
 using System.Security.Claims;
 
-namespace OnlineExamSystem.Application.Services
+namespace OnlineExamSystem.Infrastructure.Services
 {
     public class CurrentUserService : ICurrentUserService
     {
-        private readonly IHttpContextAccessor _httpContext;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CurrentUserService(IHttpContextAccessor httpContext)
+        public CurrentUserService(IHttpContextAccessor httpContextAccessor)
         {
-            _httpContext = httpContext;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public string GetUserId()
-        {
-            return _httpContext.HttpContext?.User?
-                .FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "Anonymous";
-        }
+        public string GetUserId() => _httpContextAccessor.HttpContext?.User?.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "";
+
+        public string GetUserName() => _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? "Anonymous";
+
+        public bool IsAuthenticated() => _httpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated ?? false;
     }
 }

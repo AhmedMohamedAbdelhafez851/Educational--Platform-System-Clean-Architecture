@@ -1,62 +1,51 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using OnlineExamSystem.Application.Abstraction;
+﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using OnlineExamSystem.Application.DTOs.Exam;
+using OnlineExamSystem.Application.Features.Exams.Commands.CreateExam;
+using OnlineExamSystem.Application.Features.Exams.Commands.DeleteExam;
+using OnlineExamSystem.Application.Features.Exams.Commands.UpdateExam;
+using OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams;
 
 namespace OnlineExamSystem.Web.Controllers
 {
+    [Authorize(Roles = "Admin,Teacher")]
     public class ExamController : Controller
     {
-        private readonly IExamService _examService;
+        private readonly IMediator _mediator;
 
-        public ExamController(IExamService examService)
+        public ExamController(IMediator mediator)
         {
-            _examService = examService;
+            _mediator = mediator;
         }
 
         public async Task<IActionResult> Index()
         {
-            var exams = await _examService.GetAllExamsAsync();
+            var exams = await _mediator.Send(new GetAllExamsQuery());
             return View(exams);
-        }
-
-        public IActionResult Create()
-        {
-            return View(new CreateExamDto());
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateExamDto dto)
         {
-            if (!ModelState.IsValid)
-                return View(dto);
-
-            await _examService.CreateExamAsync(dto);
-            return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Edit(int id)
-        {
-            var exam = await _examService.GetExamByIdAsync(id);
-            if (exam == null) return NotFound();
-
-            return View(exam);
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _mediator.Send(new CreateExamCommand(dto));
+            return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> Edit(int id, CreateExamDto dto)
         {
-            if (!ModelState.IsValid)
-                return View(dto);
-
-            await _examService.EditExamAsync(id, dto);
-            return RedirectToAction(nameof(Index));
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+            await _mediator.Send(new UpdateExamCommand(id, dto));
+            return Ok();
         }
 
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
-            await _examService.DeleteExamAsync(id);
-            return RedirectToAction(nameof(Index));
+            await _mediator.Send(new DeleteExamCommand(id));
+            return Ok();
         }
     }
 }

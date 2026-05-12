@@ -1,0 +1,190 @@
+﻿@using OnlineExamSystem.Application.DTOs.Analytics
+@{
+    ViewData["Title"] = $"Exam Report - {ViewBag.Statistics?.ExamTitle}";
+    ExamStatisticsDto? stats = ViewBag.Statistics;
+    List<QuestionPerformanceDto>? questions = ViewBag.Questions;
+    List<StudentPerformanceDto>? students = ViewBag.Students;
+}
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1>Exam Report: @stats?.ExamTitle</h1>
+            <a asp-controller="Exam" asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Exams
+            </a>
+        </div>
+    </div>
+
+    @if (stats != null && stats.TotalSubmissions == 0)
+    {
+        <div class="alert alert-warning">No student has taken this exam yet.</div>
+    }
+    else
+    {
+        <!-- Statistics Cards -->
+        <div class="row g-4 mb-5">
+            <div class="col-md-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Submissions</h5>
+                        <h2 class="display-4">@stats?.TotalSubmissions</h2>
+                        <p class="card-text">Students attended</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pass Rate</h5>
+                        <h2 class="display-4">@stats?.PassRate.ToString("F1")%</h2>
+                        <p class="card-text">of students passed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-info">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Average Score</h5>
+                        <h2 class="display-4">@stats?.AverageScore.ToString("F1")%</h2>
+                        <p class="card-text">Overall average</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Score Distribution Chart -->
+        <div class="card mb-5">
+            <div class="card-header">
+                <h4>Score Distribution</h4>
+            </div>
+            <div class="card-body">
+                <canvas id="scoreChart" style="max-height: 300px; width: 100%;"></canvas>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <!-- Hardest Questions -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header bg-danger text-white">
+                        <h4>Most Difficult Questions</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="list-group">
+                            @foreach (var q in questions?.Take(5) ?? new List<QuestionPerformanceDto>())
+                            {
+                                <div class="list-group-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">@q.QuestionText</h6>
+                                            <small>Correct: @q.CorrectCount / @q.TotalAttempts</small>
+                                        </div>
+                                        <span class="badge @(q.CorrectPercentage < 50 ? "bg-danger" : "bg-warning")">
+                                            @q.CorrectPercentage.ToString("F0")%
+                                        </span>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 5px;">
+                                        <div class="progress-bar bg-danger" style="width: @q.CorrectPercentage%"></div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top & Weak Students -->
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <h4>Student Performance</h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <table class="table table-hover mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Student</th>
+                                    <th>Score</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var s in students ?? new List<StudentPerformanceDto>())
+                                {
+                                    <tr class="@(s.Score < 50 ? "table-danger" : "table-success")">
+                                        <td>@s.UserName</td>
+                                        <td>@s.Score.ToString("F1")%</td>
+                                        <td>
+                                            <span class="badge @(s.IsPassed ? "bg-success" : "bg-danger")">
+                                                @(s.IsPassed ? "Passed" : "Failed")
+                                            </span>
+                                        </td>
+                                        <td>@s.SubmissionDate.ToString("MMM dd")</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Parse the score distribution from the server
+        const distribution = @Html.Raw(Json.Serialize(stats?.ScoreDistribution));
+        const labels = distribution.map(d => d.range);
+        const counts = distribution.map(d => d.count);
+
+        const ctx = document.getElementById('scoreChart').getContext('2d');
+        new Chart(ctx, {
+        type: 'bar',
+        data: {
+        labels: labels,
+        datasets: [{
+        label: 'Number of Students',
+        data: counts,
+        backgroundColor: 'rgba(54, 162, 235, 0.7)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+        }]
+        },
+        options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        scales: {
+        y: {
+        beginAtZero: true,
+        title: {
+        display: true,
+        text: 'Number of Students'
+        },
+        ticks: {
+        stepSize: 1
+        }
+        },
+        x: {
+        title: {
+        display: true,
+        text: 'Score Range (%)'
+        }
+        }
+        },
+        plugins: {
+        legend: {
+        position: 'top',
+        },
+        title: {
+        display: true,
+        text: 'Exam Score Distribution'
+        }
+        }
+        }
+        });
+    </script>
+}

@@ -7,6 +7,7 @@
         public int QuestionId { get; set; }
         public int SelectedChoiceId { get; set; }
 
+        // Navigation properties
         public ExamSubmission Submission { get; set; } = null!;
         public Question Question { get; set; } = null!;
         public Choice SelectedChoice { get; set; } = null!;

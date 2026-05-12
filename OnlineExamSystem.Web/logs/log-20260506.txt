@@ -1,0 +1,78 @@
+2026-05-06 15:47:03.821 +03:00 [INF] HTTP GET / responded 302 in 92.9109 ms
+2026-05-06 15:47:04.236 +03:00 [INF] HTTP GET /Account/Login responded 200 in 275.1345 ms
+2026-05-06 15:47:28.201 +03:00 [INF] HTTP GET /Users/Index responded 200 in 335.5252 ms
+2026-05-06 15:47:30.302 +03:00 [INF] HTTP GET /Users/Create responded 200 in 61.3139 ms
+2026-05-06 15:47:59.749 +03:00 [INF] HTTP POST /Users/Create responded 302 in 493.9150 ms
+2026-05-06 15:47:59.809 +03:00 [INF] HTTP GET /Users responded 200 in 42.9330 ms
+2026-05-06 15:48:06.595 +03:00 [INF] HTTP GET /Roles/ManageRoles responded 200 in 104.5389 ms
+2026-05-06 15:48:10.255 +03:00 [INF] HTTP POST /Roles/ManageRoles responded 302 in 189.6089 ms
+2026-05-06 15:48:10.294 +03:00 [INF] HTTP GET /Users responded 200 in 22.2444 ms
+2026-05-06 15:48:13.068 +03:00 [INF] HTTP GET /Roles/ManageRoles responded 200 in 27.7351 ms
+2026-05-06 15:48:15.633 +03:00 [INF] HTTP GET /Account/Login responded 200 in 14.6491 ms
+2026-05-06 15:48:22.437 +03:00 [INF] HTTP POST /Account/Login responded 302 in 210.9090 ms
+2026-05-06 15:48:22.460 +03:00 [INF] HTTP GET / responded 302 in 5.6370 ms
+2026-05-06 15:48:22.595 +03:00 [INF] HTTP GET /UserExam responded 200 in 118.3511 ms
+2026-05-06 15:48:32.304 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-06 15:48:32.343 +03:00 [INF] Request GetAllExamsQuery executed in 21 ms
+2026-05-06 15:48:32.369 +03:00 [INF] HTTP GET /Exam responded 200 in 97.5972 ms
+2026-05-06 15:48:43.114 +03:00 [INF] Request CreateExamCommand executed in 152 ms
+2026-05-06 15:48:43.119 +03:00 [INF] HTTP POST /Exam/Create responded 302 in 194.8099 ms
+2026-05-06 15:48:43.139 +03:00 [INF] Request GetAllExamsQuery executed in 8 ms
+2026-05-06 15:48:43.147 +03:00 [INF] HTTP GET /Exam responded 200 in 18.8287 ms
+2026-05-06 15:48:43.201 +03:00 [INF] Request GetAllExamsQuery executed in 4 ms
+2026-05-06 15:48:43.214 +03:00 [INF] HTTP GET /Exam responded 200 in 20.0699 ms
+2026-05-06 15:49:04.879 +03:00 [INF] HTTP POST /Exam/Edit/8 responded 302 in 9.6726 ms
+2026-05-06 15:49:04.903 +03:00 [INF] Request GetAllExamsQuery executed in 8 ms
+2026-05-06 15:49:04.914 +03:00 [INF] HTTP GET /Exam responded 200 in 20.2478 ms
+2026-05-06 15:49:04.991 +03:00 [INF] Request GetAllExamsQuery executed in 16 ms
+2026-05-06 15:49:05.002 +03:00 [INF] HTTP GET /Exam responded 200 in 29.0510 ms
+2026-05-06 16:23:41 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 350.8572 ms
+2026-05-06 16:23:41 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 414.6109 ms
+2026-05-06 16:23:46 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 16 ms
+2026-05-06 16:23:46 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 83.2607 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] Request "CreateExamCommand" executed in 234 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 294.6787 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 17.6394 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 10 ms
+2026-05-06 16:23:59 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 29.2652 ms
+2026-05-06 16:32:41 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 94.6856 ms
+2026-05-06 16:32:42 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 408.3680 ms
+2026-05-06 16:32:47 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 75 ms
+2026-05-06 16:32:47 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 162.8117 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] Request "CreateExamCommand" executed in 243 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 289.9131 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 14 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 27.4257 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] Request "GetAllExamsQuery" executed in 14 ms
+2026-05-06 16:33:00 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 42.4596 ms
+2026-05-06 16:43:40 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 116.2758 ms
+2026-05-06 16:43:41 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 478.2839 ms
+2026-05-06 16:43:46 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 98 ms
+2026-05-06 16:43:46 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 192.2092 ms
+2026-05-06 16:43:55 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "CreateExamCommand" executed in 273 ms
+2026-05-06 16:43:55 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 340.1423 ms
+2026-05-06 16:43:55 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-06 16:43:55 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 19.3665 ms
+2026-05-06 16:43:55 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 16 ms
+2026-05-06 16:43:55 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 39.5429 ms
+2026-05-06 16:49:53 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 30.1058 ms
+2026-05-06 16:49:53 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 195.3784 ms
+2026-05-06 16:49:54 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 475.2743 ms
+2026-05-06 16:49:54 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 493.6112 ms
+2026-05-06 16:49:56 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 83 ms
+2026-05-06 16:49:56 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 134.5281 ms
+2026-05-06 16:49:56 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 164.3106 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "CreateExamCommand" executed in 285 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 368.4556 ms
+2026-05-06 16:50:12 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 374.6544 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 8 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.2471 ms
+2026-05-06 16:50:12 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 25.9748 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 15 ms
+2026-05-06 16:50:12 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 41.7434 ms
+2026-05-06 16:50:12 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 50.4468 ms
+2026-05-06 16:50:49 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 29.2285 ms
+2026-05-06 16:50:49 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 162.1079 ms
+2026-05-06 16:50:50 [User:79160d09-998e-4969-8ea9-73ab14325ca7] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 460.1516 ms
+2026-05-06 16:50:50 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 479.4962 ms

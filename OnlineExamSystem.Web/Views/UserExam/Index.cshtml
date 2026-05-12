@@ -35,7 +35,7 @@
                                 var hasSubmissions = submissionsGrouped != null && submissionsGrouped.ContainsKey(exam.ExamId);
                                 var submissions = hasSubmissions ? submissionsGrouped![exam.ExamId] : new List<OnlineExamSystem.Domains.Entities.ExamSubmission>();
                                 var latestSubmission = submissions.Any() ? submissions.FirstOrDefault() : null;
-                                
+
                                 <tr>
                                     <td class="ps-4 fw-semibold">@exam.Title</td>
                                     <td>@exam.QuestionsCount</td>

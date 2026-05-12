@@ -10,6 +10,5 @@ namespace OnlineExamSystem.Application.Abstraction
         Task EditExamAsync(int id, CreateExamDto dto);
         Task DeleteExamAsync(int examId);
         Task<TakeExamDto?> GetExamForTakingAsync(int examId);
-
     }
 }

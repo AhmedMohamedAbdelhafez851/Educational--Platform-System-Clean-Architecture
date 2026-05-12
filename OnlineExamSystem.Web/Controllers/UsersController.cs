@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,7 +10,7 @@ using OnlineExamSystem.Web.ViewModels.UserDTO;
 
 namespace OnlineExamSystem.Web.Controllers
 {
-    //   [Authorize(Roles ="Admin")]
+    [Authorize(Roles ="Admin")]
     public class UsersController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;

@@ -1,0 +1,1505 @@
+2026-05-07 10:23:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 33.9686 ms
+2026-05-07 10:23:15 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 178.2302 ms
+2026-05-07 10:23:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 292.8379 ms
+2026-05-07 10:23:15 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 310.1796 ms
+2026-05-07 10:23:36 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 430.2353 ms
+2026-05-07 10:23:36 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 445.3939 ms
+2026-05-07 10:23:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3995 ms
+2026-05-07 10:23:36 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 13.6031 ms
+2026-05-07 10:23:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 357.9818 ms
+2026-05-07 10:23:37 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 368.8995 ms
+2026-05-07 10:23:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 22 ms
+2026-05-07 10:23:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 64.7625 ms
+2026-05-07 10:23:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 82.5522 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 238 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 268.4969 ms
+2026-05-07 10:24:02 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 272.4782 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 11 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.1387 ms
+2026-05-07 10:24:02 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 32.7378 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 10:24:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.6434 ms
+2026-05-07 10:24:02 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 32.1337 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 92 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/13" responded 302 in 110.5776 ms
+2026-05-07 10:24:11 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/13" responded 302 in 116.0905 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 8 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 16.8990 ms
+2026-05-07 10:24:11 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 21.8274 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 20 ms
+2026-05-07 10:24:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 34.7728 ms
+2026-05-07 10:24:11 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 44.4107 ms
+2026-05-07 10:24:22 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "DeleteExamCommand" executed in 111 ms
+2026-05-07 10:24:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/13" responded 302 in 122.0921 ms
+2026-05-07 10:24:22 [User:] [IP:] [Information] HTTP "POST" "/Exam/Delete/13" responded 302 in 127.1497 ms
+2026-05-07 10:24:22 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 10:24:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 15.2437 ms
+2026-05-07 10:24:22 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 20.1041 ms
+2026-05-07 10:24:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 20 ms
+2026-05-07 10:24:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 33.3255 ms
+2026-05-07 10:24:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 41.2921 ms
+2026-05-07 10:24:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 25 ms
+2026-05-07 10:24:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 30.7778 ms
+2026-05-07 10:24:40 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 34.1203 ms
+2026-05-07 10:24:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 9 ms
+2026-05-07 10:24:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 15.6220 ms
+2026-05-07 10:24:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 21.6848 ms
+2026-05-07 10:24:41 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-07 10:24:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 33.7736 ms
+2026-05-07 10:24:41 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 44.6684 ms
+2026-05-07 10:24:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 131.2773 ms
+2026-05-07 10:24:47 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 152.8317 ms
+2026-05-07 10:24:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 61.6740 ms
+2026-05-07 10:24:48 [User:] [IP:] [Information] HTTP "GET" "/Question/Add" responded 200 in 70.9019 ms
+2026-05-07 10:24:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 33.1740 ms
+2026-05-07 10:24:57 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 51.0087 ms
+2026-05-07 15:06:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 55.2856 ms
+2026-05-07 15:06:09 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 233.0165 ms
+2026-05-07 15:06:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 268.2676 ms
+2026-05-07 15:06:09 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 278.3054 ms
+2026-05-07 15:06:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 144.8450 ms
+2026-05-07 15:06:53 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 200 in 162.2903 ms
+2026-05-07 15:07:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 459.5373 ms
+2026-05-07 15:07:04 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 469.6964 ms
+2026-05-07 15:07:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 17.1553 ms
+2026-05-07 15:07:09 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 25.1916 ms
+2026-05-07 15:07:18 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 287.6232 ms
+2026-05-07 15:07:18 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 293.1738 ms
+2026-05-07 15:07:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2768 ms
+2026-05-07 15:07:18 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 9.3668 ms
+2026-05-07 15:07:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 139.6794 ms
+2026-05-07 15:07:18 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 163.5749 ms
+2026-05-07 15:07:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 26.3424 ms
+2026-05-07 15:07:23 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 42.4078 ms
+2026-05-07 15:07:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 30.0916 ms
+2026-05-07 15:07:26 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 39.2507 ms
+2026-05-07 15:07:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/1" responded 200 in 153.1137 ms
+2026-05-07 15:07:27 [User:] [IP:] [Information] HTTP "GET" "/UserExam/TakeExam/1" responded 200 in 160.0558 ms
+2026-05-07 15:07:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 15:07:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 28 ms
+2026-05-07 15:07:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 63.2317 ms
+2026-05-07 15:07:35 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 70.7806 ms
+2026-05-07 15:07:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:07:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:07:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.4610 ms
+2026-05-07 15:07:39 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.2002 ms
+2026-05-07 15:07:47 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:07:47 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:07:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 25.1548 ms
+2026-05-07 15:07:47 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.8682 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 238 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 271.8508 ms
+2026-05-07 15:07:56 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 276.2300 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 10.7429 ms
+2026-05-07 15:07:56 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 15.3236 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:07:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 35.9129 ms
+2026-05-07 15:07:56 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 44.3512 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 30 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 39.9225 ms
+2026-05-07 15:08:20 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 59.0980 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 23.2947 ms
+2026-05-07 15:08:20 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 28.0075 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:08:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 37.3297 ms
+2026-05-07 15:08:20 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 41.5470 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 81 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 93.8033 ms
+2026-05-07 15:08:43 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 97.7010 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 16.3353 ms
+2026-05-07 15:08:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 22.8830 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:08:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 23.4233 ms
+2026-05-07 15:08:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 33.7877 ms
+2026-05-07 15:12:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:12:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 15:12:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.7746 ms
+2026-05-07 15:12:24 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 42.0230 ms
+2026-05-07 15:12:27 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:12:27 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 15:12:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.5632 ms
+2026-05-07 15:12:27 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 29.6130 ms
+2026-05-07 15:12:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 28.7293 ms
+2026-05-07 15:12:36 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 34.2599 ms
+2026-05-07 15:12:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5306 ms
+2026-05-07 15:12:36 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 6.1743 ms
+2026-05-07 15:12:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.2370 ms
+2026-05-07 15:12:36 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 46.0375 ms
+2026-05-07 15:12:41 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:12:41 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:12:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.6473 ms
+2026-05-07 15:12:41 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.6812 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] Request "UpdateExamCommand" executed in 34 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 40.6997 ms
+2026-05-07 15:13:09 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 43.6141 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 26.1569 ms
+2026-05-07 15:13:09 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 36.1176 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:13:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 27.3527 ms
+2026-05-07 15:13:09 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 36.5537 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] Request "UpdateExamCommand" executed in 16 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 20.8178 ms
+2026-05-07 15:13:14 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 23.9848 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 12.5600 ms
+2026-05-07 15:13:14 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 23.7588 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:13:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 29.1708 ms
+2026-05-07 15:13:14 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 37.5979 ms
+2026-05-07 15:14:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Register" responded 200 in 33.6160 ms
+2026-05-07 15:14:37 [User:] [IP:] [Information] HTTP "GET" "/Account/Register" responded 200 in 51.9678 ms
+2026-05-07 15:15:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 68.9296 ms
+2026-05-07 15:15:04 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 77.3612 ms
+2026-05-07 15:15:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 38.9049 ms
+2026-05-07 15:15:07 [User:] [IP:] [Information] HTTP "GET" "/Users/Create" responded 200 in 47.8908 ms
+2026-05-07 15:15:56 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 302 in 219.8833 ms
+2026-05-07 15:15:56 [User:] [IP:] [Information] HTTP "POST" "/Users/Create" responded 302 in 226.5712 ms
+2026-05-07 15:15:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 33.9939 ms
+2026-05-07 15:15:56 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 49.7191 ms
+2026-05-07 15:16:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.9201 ms
+2026-05-07 15:16:10 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 15.5607 ms
+2026-05-07 15:16:13 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 141.9137 ms
+2026-05-07 15:16:13 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 146.8980 ms
+2026-05-07 15:16:13 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.0788 ms
+2026-05-07 15:16:13 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 5.4424 ms
+2026-05-07 15:16:13 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 21.2009 ms
+2026-05-07 15:16:13 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 29.4728 ms
+2026-05-07 15:16:18 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 18.0966 ms
+2026-05-07 15:16:18 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 28.0151 ms
+2026-05-07 15:16:20 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 18.3498 ms
+2026-05-07 15:16:20 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 26.5949 ms
+2026-05-07 15:16:23 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.4351 ms
+2026-05-07 15:16:23 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.2358 ms
+2026-05-07 15:16:29 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 32.5433 ms
+2026-05-07 15:16:29 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.9044 ms
+2026-05-07 15:16:34 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 60.4953 ms
+2026-05-07 15:16:34 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 67.8040 ms
+2026-05-07 15:16:37 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 150.6985 ms
+2026-05-07 15:16:37 [User:] [IP:] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 159.9807 ms
+2026-05-07 15:16:37 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 49.2340 ms
+2026-05-07 15:16:37 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 56.3055 ms
+2026-05-07 15:16:42 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 24.5481 ms
+2026-05-07 15:16:42 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 34.9741 ms
+2026-05-07 15:16:45 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 24.7358 ms
+2026-05-07 15:16:45 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.9281 ms
+2026-05-07 15:16:46 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.7005 ms
+2026-05-07 15:16:46 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.8818 ms
+2026-05-07 15:16:54 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 127.1118 ms
+2026-05-07 15:16:54 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 134.9591 ms
+2026-05-07 15:16:54 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1306 ms
+2026-05-07 15:16:54 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 5.4209 ms
+2026-05-07 15:16:54 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 13.7874 ms
+2026-05-07 15:16:54 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 18.1744 ms
+2026-05-07 15:17:02 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.2427 ms
+2026-05-07 15:17:02 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 20.2383 ms
+2026-05-07 15:17:06 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 124.4418 ms
+2026-05-07 15:17:06 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 134.3138 ms
+2026-05-07 15:17:07 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1166 ms
+2026-05-07 15:17:07 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 4.0196 ms
+2026-05-07 15:17:07 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 11.3380 ms
+2026-05-07 15:17:07 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 16.1295 ms
+2026-05-07 15:17:09 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.1294 ms
+2026-05-07 15:17:09 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 15.0731 ms
+2026-05-07 15:17:15 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 54.3293 ms
+2026-05-07 15:17:15 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 61.8396 ms
+2026-05-07 15:17:19 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 16.5378 ms
+2026-05-07 15:17:19 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 23.4626 ms
+2026-05-07 15:17:24 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 100.5597 ms
+2026-05-07 15:17:24 [User:] [IP:] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 106.7363 ms
+2026-05-07 15:17:24 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 24.7906 ms
+2026-05-07 15:17:24 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 41.3454 ms
+2026-05-07 15:17:27 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 13.5519 ms
+2026-05-07 15:17:27 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 24.2028 ms
+2026-05-07 15:17:28 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 29.3316 ms
+2026-05-07 15:17:28 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 37.3954 ms
+2026-05-07 15:17:31 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.9483 ms
+2026-05-07 15:17:31 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 42.2205 ms
+2026-05-07 15:17:35 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.3608 ms
+2026-05-07 15:17:35 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 10.0967 ms
+2026-05-07 15:17:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1145 ms
+2026-05-07 15:17:35 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 4.9719 ms
+2026-05-07 15:17:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.4909 ms
+2026-05-07 15:17:35 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 14.1364 ms
+2026-05-07 15:17:39 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 131.1561 ms
+2026-05-07 15:17:39 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 139.3076 ms
+2026-05-07 15:17:39 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1534 ms
+2026-05-07 15:17:39 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 7.6389 ms
+2026-05-07 15:17:39 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 23.4610 ms
+2026-05-07 15:17:39 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 30.8339 ms
+2026-05-07 15:17:42 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:17:42 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:17:42 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 19.9534 ms
+2026-05-07 15:17:42 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 27.0265 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 16 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 22.8919 ms
+2026-05-07 15:18:02 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 26.8384 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 10.8555 ms
+2026-05-07 15:18:02 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 15.5253 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:18:02 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 26.1840 ms
+2026-05-07 15:18:02 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 32.9893 ms
+2026-05-07 15:20:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 35.6563 ms
+2026-05-07 15:20:22 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 182.8756 ms
+2026-05-07 15:20:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 262.9071 ms
+2026-05-07 15:20:22 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 273.4255 ms
+2026-05-07 15:20:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 359.2579 ms
+2026-05-07 15:20:29 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 373.4550 ms
+2026-05-07 15:20:35 [User:Anonymous] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 15:20:35 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 175 ms
+2026-05-07 15:20:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 232.4719 ms
+2026-05-07 15:20:35 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 240.8873 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] Request "UpdateExamCommand" executed in 292 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 345.2914 ms
+2026-05-07 15:20:43 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/4" responded 302 in 350.0713 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 16.3637 ms
+2026-05-07 15:20:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 25.8964 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:20:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 35.8814 ms
+2026-05-07 15:20:43 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 41.5844 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] Request "CreateExamCommand" executed in 42 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 66.0045 ms
+2026-05-07 15:21:09 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 70.1009 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 26.5917 ms
+2026-05-07 15:21:09 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 40.7108 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:21:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 32.5426 ms
+2026-05-07 15:21:09 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 38.2596 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] Request "CreateExamCommand" executed in 20 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 38.8855 ms
+2026-05-07 15:21:43 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 43.8904 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 22.3999 ms
+2026-05-07 15:21:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 27.4739 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:21:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 29.7246 ms
+2026-05-07 15:21:43 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 37.6950 ms
+2026-05-07 15:24:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 24.9807 ms
+2026-05-07 15:24:22 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 162.1337 ms
+2026-05-07 15:24:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 198.8753 ms
+2026-05-07 15:24:22 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 214.4860 ms
+2026-05-07 15:24:32 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 302 in 20.2455 ms
+2026-05-07 15:24:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 65.0811 ms
+2026-05-07 15:24:32 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 74.1971 ms
+2026-05-07 15:24:48 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 555.4817 ms
+2026-05-07 15:24:48 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 560.5548 ms
+2026-05-07 15:24:48 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 15:24:48 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 225 ms
+2026-05-07 15:24:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 275.7770 ms
+2026-05-07 15:24:48 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 292.7882 ms
+2026-05-07 15:25:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.8441 ms
+2026-05-07 15:25:01 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 22.0102 ms
+2026-05-07 15:25:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.7667 ms
+2026-05-07 15:25:03 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 20.0302 ms
+2026-05-07 15:25:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 190.4867 ms
+2026-05-07 15:25:10 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 202.4368 ms
+2026-05-07 15:25:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 14.6064 ms
+2026-05-07 15:25:28 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 23.4528 ms
+2026-05-07 15:25:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4647 ms
+2026-05-07 15:25:28 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 6.4227 ms
+2026-05-07 15:25:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.0786 ms
+2026-05-07 15:25:28 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.9756 ms
+2026-05-07 15:26:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 185.3826 ms
+2026-05-07 15:26:19 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 191.2983 ms
+2026-05-07 15:26:19 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1300 ms
+2026-05-07 15:26:19 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 7.5188 ms
+2026-05-07 15:26:19 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 76.3444 ms
+2026-05-07 15:26:19 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 95.1854 ms
+2026-05-07 15:26:47 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:26:47 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-07 15:26:47 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 64.9229 ms
+2026-05-07 15:26:47 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 72.8975 ms
+2026-05-07 15:27:16 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 274 ms
+2026-05-07 15:27:16 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 307.3298 ms
+2026-05-07 15:27:16 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 315.1875 ms
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 28.1234 ms
+2026-05-07 15:27:17 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 33.4087 ms
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:27:17 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 66.5154 ms
+2026-05-07 15:27:17 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 76.4204 ms
+2026-05-07 15:27:25 [User:Fhd@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:27:25 [User:Fhd@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:27:25 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 20.7975 ms
+2026-05-07 15:27:25 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.5561 ms
+2026-05-07 15:27:44 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 47.6808 ms
+2026-05-07 15:27:44 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 55.9936 ms
+2026-05-07 15:27:57 [User:Fhd@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.6053 ms
+2026-05-07 15:27:57 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 11.7184 ms
+2026-05-07 15:27:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1226 ms
+2026-05-07 15:27:57 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 10.0416 ms
+2026-05-07 15:27:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.0165 ms
+2026-05-07 15:27:57 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 14.4433 ms
+2026-05-07 15:28:01 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 130.3011 ms
+2026-05-07 15:28:01 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 139.2349 ms
+2026-05-07 15:28:01 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1238 ms
+2026-05-07 15:28:01 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 5.6760 ms
+2026-05-07 15:28:01 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.0837 ms
+2026-05-07 15:28:01 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 36.2670 ms
+2026-05-07 15:28:28 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 302 in 3.5979 ms
+2026-05-07 15:28:28 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 14.5173 ms
+2026-05-07 15:28:28 [User:] [IP:] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 33.8147 ms
+2026-05-07 15:28:31 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.9835 ms
+2026-05-07 15:28:31 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 16.7351 ms
+2026-05-07 15:28:36 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 163.1991 ms
+2026-05-07 15:28:36 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 170.9068 ms
+2026-05-07 15:28:36 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 302 in 0.7200 ms
+2026-05-07 15:28:37 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 3.2722 ms
+2026-05-07 15:28:37 [User:] [IP:] [Information] HTTP "GET" "/Account/AccessDenied" responded 200 in 9.4365 ms
+2026-05-07 15:28:39 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.6803 ms
+2026-05-07 15:28:39 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 19.9398 ms
+2026-05-07 15:28:54 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 135.3403 ms
+2026-05-07 15:28:54 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 142.0695 ms
+2026-05-07 15:28:54 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:28:54 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 15:28:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 15.5728 ms
+2026-05-07 15:28:54 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.1740 ms
+2026-05-07 15:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 21 ms
+2026-05-07 15:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 36.8113 ms
+2026-05-07 15:29:18 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 42.1104 ms
+2026-05-07 15:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 15:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 29.5171 ms
+2026-05-07 15:29:18 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 33.6477 ms
+2026-05-07 15:29:19 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:29:19 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:29:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 32.9377 ms
+2026-05-07 15:29:19 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 43.1263 ms
+2026-05-07 15:29:28 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:29:28 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 15:29:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.3218 ms
+2026-05-07 15:29:28 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 200 in 38.5193 ms
+2026-05-07 15:29:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 60.4029 ms
+2026-05-07 15:29:38 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 68.3992 ms
+2026-05-07 15:29:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:29:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 15:29:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.9679 ms
+2026-05-07 15:29:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 28.9139 ms
+2026-05-07 15:29:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 54.6476 ms
+2026-05-07 15:29:44 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 62.6797 ms
+2026-05-07 15:29:50 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:29:50 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 15:29:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 36.6653 ms
+2026-05-07 15:29:50 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 44.2817 ms
+2026-05-07 15:29:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 50.0970 ms
+2026-05-07 15:29:51 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 58.1039 ms
+2026-05-07 15:29:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 97.1598 ms
+2026-05-07 15:29:57 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 105.0221 ms
+2026-05-07 15:29:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 47.2869 ms
+2026-05-07 15:29:59 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 54.4568 ms
+2026-05-07 15:30:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 43.5285 ms
+2026-05-07 15:30:02 [User:] [IP:] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 53.0301 ms
+2026-05-07 15:30:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 57.9568 ms
+2026-05-07 15:30:04 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 65.9686 ms
+2026-05-07 15:30:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.4360 ms
+2026-05-07 15:30:25 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 13.1120 ms
+2026-05-07 15:30:25 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1152 ms
+2026-05-07 15:30:25 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 7.6798 ms
+2026-05-07 15:30:25 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.6637 ms
+2026-05-07 15:30:25 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 17.7933 ms
+2026-05-07 15:30:33 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 28.7707 ms
+2026-05-07 15:30:33 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 200 in 34.2507 ms
+2026-05-07 15:30:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 15.4868 ms
+2026-05-07 15:30:38 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 200 in 23.4031 ms
+2026-05-07 15:30:45 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 302 in 2.8170 ms
+2026-05-07 15:30:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.6144 ms
+2026-05-07 15:30:45 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 16.1881 ms
+2026-05-07 15:30:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 149.8383 ms
+2026-05-07 15:30:53 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 154.0687 ms
+2026-05-07 15:30:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.3534 ms
+2026-05-07 15:30:53 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 40.9640 ms
+2026-05-07 15:31:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.2133 ms
+2026-05-07 15:31:01 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 16.2952 ms
+2026-05-07 15:31:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.3587 ms
+2026-05-07 15:31:07 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 8.6772 ms
+2026-05-07 15:31:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1034 ms
+2026-05-07 15:31:07 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 7.5959 ms
+2026-05-07 15:31:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.1124 ms
+2026-05-07 15:31:07 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.6876 ms
+2026-05-07 15:31:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 120.9580 ms
+2026-05-07 15:31:10 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 127.0909 ms
+2026-05-07 15:31:10 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1238 ms
+2026-05-07 15:31:10 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 6.7675 ms
+2026-05-07 15:31:10 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 29.0781 ms
+2026-05-07 15:31:10 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 37.1406 ms
+2026-05-07 15:31:19 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/20" responded 200 in 118.2510 ms
+2026-05-07 15:31:19 [User:] [IP:] [Information] HTTP "GET" "/UserExam/TakeExam/20" responded 200 in 128.5817 ms
+2026-05-07 15:31:36 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.1467 ms
+2026-05-07 15:31:36 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 19.8412 ms
+2026-05-07 15:31:40 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.2853 ms
+2026-05-07 15:31:40 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 12.1163 ms
+2026-05-07 15:31:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2965 ms
+2026-05-07 15:31:40 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 10.0662 ms
+2026-05-07 15:31:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.7280 ms
+2026-05-07 15:31:40 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 11.9655 ms
+2026-05-07 15:31:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 188.7642 ms
+2026-05-07 15:31:49 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 200 in 196.7798 ms
+2026-05-07 15:31:57 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 153.5298 ms
+2026-05-07 15:31:57 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 162.1601 ms
+2026-05-07 15:31:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.0760 ms
+2026-05-07 15:31:57 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 4.7232 ms
+2026-05-07 15:31:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 21.8278 ms
+2026-05-07 15:31:57 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 29.1991 ms
+2026-05-07 15:32:01 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 15:32:01 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 15:32:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 22.2017 ms
+2026-05-07 15:32:01 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 30.8270 ms
+2026-05-07 15:32:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 91.0721 ms
+2026-05-07 15:32:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 43.7158 ms
+2026-05-07 15:32:14 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 108.1711 ms
+2026-05-07 15:32:14 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 68.1804 ms
+2026-05-07 15:32:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0996 ms
+2026-05-07 15:32:41 [User:] [IP:] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 7.8428 ms
+2026-05-07 16:06:10 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:06:10 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 17 ms
+2026-05-07 16:06:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 49.3914 ms
+2026-05-07 16:06:10 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 220.3364 ms
+2026-05-07 16:09:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 33.4026 ms
+2026-05-07 16:09:55 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 177.6664 ms
+2026-05-07 16:09:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 253.9754 ms
+2026-05-07 16:09:55 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 264.9448 ms
+2026-05-07 16:10:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 200 in 133.8625 ms
+2026-05-07 16:10:10 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 200 in 156.3653 ms
+2026-05-07 16:10:21 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 391.0482 ms
+2026-05-07 16:10:21 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 397.2842 ms
+2026-05-07 16:10:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2765 ms
+2026-05-07 16:10:21 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 12.9385 ms
+2026-05-07 16:10:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 242.9909 ms
+2026-05-07 16:10:22 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 264.4328 ms
+2026-05-07 16:10:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 154.7176 ms
+2026-05-07 16:10:34 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 169.2880 ms
+2026-05-07 16:10:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 116.2097 ms
+2026-05-07 16:10:41 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 123.3318 ms
+2026-05-07 16:10:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 405.2793 ms
+2026-05-07 16:10:43 [User:] [IP:] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 414.0305 ms
+2026-05-07 16:10:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 29.2103 ms
+2026-05-07 16:10:43 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 37.9208 ms
+2026-05-07 16:10:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 45.3839 ms
+2026-05-07 16:10:48 [User:] [IP:] [Information] HTTP "GET" "/Users/Create" responded 200 in 57.6571 ms
+2026-05-07 16:10:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 33.0896 ms
+2026-05-07 16:10:51 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 43.8522 ms
+2026-05-07 16:10:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 28.1187 ms
+2026-05-07 16:10:56 [User:] [IP:] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 37.1925 ms
+2026-05-07 16:10:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 44.4849 ms
+2026-05-07 16:10:57 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 55.3722 ms
+2026-05-07 16:10:57 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:10:57 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 41 ms
+2026-05-07 16:10:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 74.4862 ms
+2026-05-07 16:10:57 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 81.4458 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 154 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/2" responded 302 in 189.5382 ms
+2026-05-07 16:11:37 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/2" responded 302 in 193.5301 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 38.0261 ms
+2026-05-07 16:11:37 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 41.6505 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 16:11:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.0846 ms
+2026-05-07 16:11:37 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 31.3001 ms
+2026-05-07 16:11:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 124.2624 ms
+2026-05-07 16:11:43 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 143.3358 ms
+2026-05-07 16:11:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 267.8312 ms
+2026-05-07 16:11:50 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 276.4117 ms
+2026-05-07 16:11:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 13.8692 ms
+2026-05-07 16:11:52 [User:] [IP:] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 22.3312 ms
+2026-05-07 16:11:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 38.6088 ms
+2026-05-07 16:11:53 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 48.8644 ms
+2026-05-07 16:11:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 22.6843 ms
+2026-05-07 16:11:54 [User:] [IP:] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 32.8599 ms
+2026-05-07 16:11:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 36.6282 ms
+2026-05-07 16:11:55 [User:] [IP:] [Information] HTTP "GET" "/Users" responded 200 in 44.3243 ms
+2026-05-07 16:12:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.5218 ms
+2026-05-07 16:12:01 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 16.5464 ms
+2026-05-07 16:12:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:12:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-07 16:12:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 22.1098 ms
+2026-05-07 16:12:09 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 28.0848 ms
+2026-05-07 16:12:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/users/TakeExam" responded 404 in 0.1717 ms
+2026-05-07 16:12:28 [User:] [IP:] [Information] HTTP "GET" "/users/TakeExam" responded 404 in 12.8750 ms
+2026-05-07 16:12:34 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:12:34 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:12:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.7156 ms
+2026-05-07 16:12:34 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 29.5081 ms
+2026-05-07 16:12:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Profile" responded 404 in 0.0116 ms
+2026-05-07 16:12:38 [User:] [IP:] [Information] HTTP "GET" "/Account/Profile" responded 404 in 7.3876 ms
+2026-05-07 16:12:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 9.1419 ms
+2026-05-07 16:12:43 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 18.4702 ms
+2026-05-07 16:12:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1232 ms
+2026-05-07 16:12:43 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 4.0283 ms
+2026-05-07 16:12:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.1777 ms
+2026-05-07 16:12:43 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 17.6061 ms
+2026-05-07 16:12:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 180.2883 ms
+2026-05-07 16:12:53 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 186.7929 ms
+2026-05-07 16:12:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3045 ms
+2026-05-07 16:12:53 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 7.7552 ms
+2026-05-07 16:12:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 52.6287 ms
+2026-05-07 16:12:53 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 66.2313 ms
+2026-05-07 16:13:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/1" responded 200 in 90.6752 ms
+2026-05-07 16:13:08 [User:] [IP:] [Information] HTTP "GET" "/UserExam/TakeExam/1" responded 200 in 100.1330 ms
+2026-05-07 16:14:41 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:14:41 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 16:14:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 44.7468 ms
+2026-05-07 16:14:41 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 65.8048 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 76 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 93.6544 ms
+2026-05-07 16:18:35 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 105.4191 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 2 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.0944 ms
+2026-05-07 16:18:35 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 28.2651 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:18:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 41.7258 ms
+2026-05-07 16:18:35 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 50.6250 ms
+2026-05-07 16:19:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 54.5663 ms
+2026-05-07 16:19:13 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 60.4857 ms
+2026-05-07 16:19:23 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:19:23 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:19:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 27.4673 ms
+2026-05-07 16:19:23 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 33.8871 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 13 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 20.5301 ms
+2026-05-07 16:19:35 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 24.8455 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 1 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 11.1627 ms
+2026-05-07 16:19:35 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 15.4977 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:19:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 28.8426 ms
+2026-05-07 16:19:35 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 40.4332 ms
+2026-05-07 16:19:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:19:43 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 16:19:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 36.3645 ms
+2026-05-07 16:19:43 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 43.3061 ms
+2026-05-07 16:19:59 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:19:59 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 16:19:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 25.1328 ms
+2026-05-07 16:19:59 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 35.0106 ms
+2026-05-07 16:20:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.4347 ms
+2026-05-07 16:20:02 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 14.8042 ms
+2026-05-07 16:20:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 39.4987 ms
+2026-05-07 16:20:18 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 48.4480 ms
+2026-05-07 16:20:31 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:20:31 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:20:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 25.9621 ms
+2026-05-07 16:20:31 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.9450 ms
+2026-05-07 16:20:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 22.6228 ms
+2026-05-07 16:20:50 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 142.8222 ms
+2026-05-07 16:20:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 198.6169 ms
+2026-05-07 16:20:50 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 209.3661 ms
+2026-05-07 16:21:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 377.0029 ms
+2026-05-07 16:21:03 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 397.0770 ms
+2026-05-07 16:21:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3807 ms
+2026-05-07 16:21:03 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 9.1652 ms
+2026-05-07 16:21:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 241.0628 ms
+2026-05-07 16:21:04 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 255.8358 ms
+2026-05-07 16:21:11 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:21:11 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 42 ms
+2026-05-07 16:21:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 72.5557 ms
+2026-05-07 16:21:11 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 92.7824 ms
+2026-05-07 16:21:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 133.5296 ms
+2026-05-07 16:21:30 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 159.3356 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 255 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/22" responded 302 in 285.0598 ms
+2026-05-07 16:21:40 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/22" responded 302 in 290.1196 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 15.4080 ms
+2026-05-07 16:21:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 20.8262 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 8 ms
+2026-05-07 16:21:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 40.5031 ms
+2026-05-07 16:21:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 52.4518 ms
+2026-05-07 16:21:49 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:21:49 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:21:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 27.7852 ms
+2026-05-07 16:21:49 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.6401 ms
+2026-05-07 16:22:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.6747 ms
+2026-05-07 16:22:04 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 36.0213 ms
+2026-05-07 16:22:15 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:22:15 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-07 16:22:15 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 30.2494 ms
+2026-05-07 16:22:15 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 39.0344 ms
+2026-05-07 16:30:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 41.8352 ms
+2026-05-07 16:30:36 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 204.9502 ms
+2026-05-07 16:30:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 266.5897 ms
+2026-05-07 16:30:36 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 276.4733 ms
+2026-05-07 16:30:44 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 431.1846 ms
+2026-05-07 16:30:45 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 445.9084 ms
+2026-05-07 16:30:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2776 ms
+2026-05-07 16:30:45 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 8.0605 ms
+2026-05-07 16:30:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 332.3998 ms
+2026-05-07 16:30:45 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 345.3128 ms
+2026-05-07 16:30:49 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:30:49 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 36 ms
+2026-05-07 16:30:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 74.8527 ms
+2026-05-07 16:30:49 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 89.7348 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 332 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 369.4609 ms
+2026-05-07 16:31:09 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 375.6477 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 15 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 28.0208 ms
+2026-05-07 16:31:09 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.8345 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 16:31:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.3851 ms
+2026-05-07 16:31:09 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 31.2701 ms
+2026-05-07 16:31:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 174.6452 ms
+2026-05-07 16:31:27 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 183.3556 ms
+2026-05-07 16:37:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 30.8169 ms
+2026-05-07 16:37:07 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 154.1469 ms
+2026-05-07 16:37:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 205.6050 ms
+2026-05-07 16:37:07 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 217.8365 ms
+2026-05-07 16:37:24 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 418.5358 ms
+2026-05-07 16:37:24 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 433.2953 ms
+2026-05-07 16:37:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4861 ms
+2026-05-07 16:37:24 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 16.0585 ms
+2026-05-07 16:37:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 351.4366 ms
+2026-05-07 16:37:24 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 362.2624 ms
+2026-05-07 16:37:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:37:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 31 ms
+2026-05-07 16:37:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 65.8205 ms
+2026-05-07 16:37:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 87.4683 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 287 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 326.9307 ms
+2026-05-07 16:37:36 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 333.5167 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 14 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 26.9366 ms
+2026-05-07 16:37:36 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 31.5711 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 5 ms
+2026-05-07 16:37:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.9402 ms
+2026-05-07 16:37:36 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.2926 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 73 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/24" responded 302 in 91.9322 ms
+2026-05-07 16:38:06 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/24" responded 302 in 99.8716 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 15 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 35.3916 ms
+2026-05-07 16:38:06 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 40.8421 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 16:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.1215 ms
+2026-05-07 16:38:06 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 33.0770 ms
+2026-05-07 16:38:15 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "DeleteExamCommand" executed in 81 ms
+2026-05-07 16:38:15 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/24" responded 302 in 95.2497 ms
+2026-05-07 16:38:15 [User:] [IP:] [Information] HTTP "POST" "/Exam/Delete/24" responded 302 in 103.9785 ms
+2026-05-07 16:38:15 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:38:15 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 10 ms
+2026-05-07 16:38:15 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 17.9866 ms
+2026-05-07 16:38:15 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 21.9064 ms
+2026-05-07 16:38:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:38:24 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 16:38:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 40.5341 ms
+2026-05-07 16:38:24 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 50.1076 ms
+2026-05-07 16:38:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 144.8095 ms
+2026-05-07 16:38:59 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 161.2964 ms
+2026-05-07 16:40:14 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:40:14 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 16:40:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 45.5515 ms
+2026-05-07 16:40:14 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 53.4789 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 15 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 26.2950 ms
+2026-05-07 16:40:26 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 30.7652 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 13 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 21.6498 ms
+2026-05-07 16:40:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 25.9743 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 7 ms
+2026-05-07 16:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 34.8816 ms
+2026-05-07 16:40:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 45.5937 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 24 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/25" responded 302 in 36.3594 ms
+2026-05-07 16:40:39 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/25" responded 302 in 41.9419 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 14 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 25.0622 ms
+2026-05-07 16:40:39 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 30.9153 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 3 ms
+2026-05-07 16:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.2897 ms
+2026-05-07 16:40:39 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 34.9569 ms
+2026-05-07 16:48:00 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:48:00 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 143 ms
+2026-05-07 16:48:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 185.6898 ms
+2026-05-07 16:48:00 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 194.6816 ms
+2026-05-07 16:48:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:48:06 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 16:48:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 28.9506 ms
+2026-05-07 16:48:06 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 36.9902 ms
+2026-05-07 16:48:17 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "CreateExamCommand" executed in 17 ms
+2026-05-07 16:48:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 28.4766 ms
+2026-05-07 16:48:17 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 33.6390 ms
+2026-05-07 16:48:17 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:48:17 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 15 ms
+2026-05-07 16:48:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.3643 ms
+2026-05-07 16:48:17 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 32.2511 ms
+2026-05-07 16:48:18 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:48:18 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 6 ms
+2026-05-07 16:48:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 31.2287 ms
+2026-05-07 16:48:18 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 39.5245 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "UpdateExamCommand" executed in 18 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/12" responded 302 in 27.4028 ms
+2026-05-07 16:48:40 [User:] [IP:] [Information] HTTP "POST" "/Exam/Edit/12" responded 302 in 32.1395 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 10 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 27.0202 ms
+2026-05-07 16:48:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 32.0792 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache hit for "AllExams"
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 4 ms
+2026-05-07 16:48:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 26.3381 ms
+2026-05-07 16:48:40 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 38.5101 ms
+2026-05-07 16:48:51 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "DeleteExamCommand" executed in 31 ms
+2026-05-07 16:48:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/12" responded 302 in 41.8396 ms
+2026-05-07 16:48:51 [User:] [IP:] [Information] HTTP "POST" "/Exam/Delete/12" responded 302 in 46.4981 ms
+2026-05-07 16:48:51 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:48:51 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 9 ms
+2026-05-07 16:48:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 20.0870 ms
+2026-05-07 16:48:51 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 29.0425 ms
+2026-05-07 16:49:07 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "DeleteExamCommand" executed in 28 ms
+2026-05-07 16:49:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/4" responded 302 in 34.0148 ms
+2026-05-07 16:49:07 [User:] [IP:] [Information] HTTP "POST" "/Exam/Delete/4" responded 302 in 37.6743 ms
+2026-05-07 16:49:07 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 16:49:07 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 9 ms
+2026-05-07 16:49:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 29.2944 ms
+2026-05-07 16:49:07 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 37.4437 ms
+2026-05-07 16:49:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.7818 ms
+2026-05-07 16:49:27 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 22.8971 ms
+2026-05-07 17:50:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 28.8491 ms
+2026-05-07 17:50:21 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 159.0581 ms
+2026-05-07 17:50:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 226.2290 ms
+2026-05-07 17:50:21 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 237.4172 ms
+2026-05-07 17:50:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 614.5106 ms
+2026-05-07 17:50:37 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 627.5402 ms
+2026-05-07 17:50:37 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2608 ms
+2026-05-07 17:50:37 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 11.2366 ms
+2026-05-07 17:50:38 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 305.1027 ms
+2026-05-07 17:50:38 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 322.0129 ms
+2026-05-07 17:50:59 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 17:50:59 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 29 ms
+2026-05-07 17:50:59 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 90.6043 ms
+2026-05-07 17:50:59 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 107.2572 ms
+2026-05-07 18:17:42 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 48.8097 ms
+2026-05-07 18:17:42 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 230.6388 ms
+2026-05-07 18:17:42 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 606.1498 ms
+2026-05-07 18:17:42 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 626.5338 ms
+2026-05-07 18:17:48 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Failed executing DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[ExamId], [e].[Title], (
+    SELECT COUNT(*)
+    FROM [Questions] AS [q]
+    WHERE [e].[ExamId] = [q].[ExamId]) AS [QuestionsCount], [e].[DurationInMinutes], [e].[TotalDegree]
+FROM [Exams] AS [e]"
+2026-05-07 18:17:48 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:49 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 776 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:49 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:49 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 1253.0504 ms
+2026-05-07 18:17:49 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 1281.6325 ms
+2026-05-07 18:17:49 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.1023 ms
+2026-05-07 18:17:49 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 8.7072 ms
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Failed executing DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[ExamId], [e].[Title], (
+    SELECT COUNT(*)
+    FROM [Questions] AS [q]
+    WHERE [e].[ExamId] = [q].[ExamId]) AS [QuestionsCount], [e].[DurationInMinutes], [e].[TotalDegree]
+FROM [Exams] AS [e]"
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 393 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:b28f4ff1-9a4a-4b98-a161-2e4ecfc8bacd
+Error Number:207,State:1,Class:16
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 770.7772 ms
+2026-05-07 18:17:55 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 777.0887 ms
+2026-05-07 18:17:55 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0103 ms
+2026-05-07 18:17:55 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 4.4721 ms
+2026-05-07 18:18:28 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 28.6389 ms
+2026-05-07 18:18:28 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 168.7545 ms
+2026-05-07 18:18:28 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 405.4313 ms
+2026-05-07 18:18:28 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 423.8020 ms
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Failed executing DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[ExamId], [e].[Title], (
+    SELECT COUNT(*)
+    FROM [Questions] AS [q]
+    WHERE [e].[ExamId] = [q].[ExamId]) AS [QuestionsCount], [e].[DurationInMinutes], [e].[TotalDegree]
+FROM [Exams] AS [e]"
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 557 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 1021.5523 ms
+2026-05-07 18:18:34 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 1053.6279 ms
+2026-05-07 18:18:34 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.2087 ms
+2026-05-07 18:18:34 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 7.8130 ms
+2026-05-07 18:18:45 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 194.2999 ms
+2026-05-07 18:18:45 [User:] [IP:] [Information] HTTP "GET" "/Users/Index" responded 200 in 206.2570 ms
+2026-05-07 18:18:50 [User:ahmedmhafez851@gmail.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 14.4349 ms
+2026-05-07 18:18:50 [User:] [IP:] [Information] HTTP "GET" "/Account/Logout" responded 302 in 24.8969 ms
+2026-05-07 18:18:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.6522 ms
+2026-05-07 18:18:50 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 5.9145 ms
+2026-05-07 18:18:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 72.9312 ms
+2026-05-07 18:18:50 [User:] [IP:] [Information] HTTP "GET" "/Account/Login" responded 200 in 81.1303 ms
+2026-05-07 18:19:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 306.9439 ms
+2026-05-07 18:19:02 [User:] [IP:] [Information] HTTP "POST" "/Account/Login" responded 302 in 314.0891 ms
+2026-05-07 18:19:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2300 ms
+2026-05-07 18:19:02 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 6.4234 ms
+2026-05-07 18:19:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.6937 ms
+2026-05-07 18:19:02 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 39.3839 ms
+2026-05-07 18:19:04 [User:Kareem@gmail.com123] [IP:::1] [Error] Failed executing DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[ExamId], [e].[Title], (
+    SELECT COUNT(*)
+    FROM [Questions] AS [q]
+    WHERE [e].[ExamId] = [q].[ExamId]) AS [QuestionsCount], [e].[DurationInMinutes], [e].[TotalDegree]
+FROM [Exams] AS [e]"
+2026-05-07 18:19:04 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:19:04 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 454 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:19:05 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:19:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 302 in 870.8523 ms
+2026-05-07 18:19:05 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 302 in 875.4461 ms
+2026-05-07 18:19:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0203 ms
+2026-05-07 18:19:05 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 6.8880 ms
+2026-05-07 18:20:02 [User:Kareem@gmail.com123] [IP:::1] [Error] Failed executing DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[ExamId], [e].[Title], (
+    SELECT COUNT(*)
+    FROM [Questions] AS [q]
+    WHERE [e].[ExamId] = [q].[ExamId]) AS [QuestionsCount], [e].[DurationInMinutes], [e].[TotalDegree]
+FROM [Exams] AS [e]"
+2026-05-07 18:20:02 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:20:02 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "GetAllExamsQuery" failed after 381 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:20:03 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'DurationInMinutes'.
+Invalid column name 'TotalDegree'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams.GetAllExamsQueryHandler.Handle(GetAllExamsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Exams\Queries\GetAllExams\GetAllExamsQueryHandler.cs:line 27
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.CachingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\CachingBehavior.cs:line 49
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+ClientConnectionId:eca62463-7f91-4cb6-9030-45831561b027
+Error Number:207,State:1,Class:16
+2026-05-07 18:20:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 302 in 769.9295 ms
+2026-05-07 18:20:03 [User:] [IP:] [Information] HTTP "GET" "/Exam/Index" responded 302 in 777.6020 ms
+2026-05-07 18:20:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0321 ms
+2026-05-07 18:20:03 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 8.6250 ms
+2026-05-07 18:31:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 52.2057 ms
+2026-05-07 18:31:21 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 247.5410 ms
+2026-05-07 18:31:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 596.7370 ms
+2026-05-07 18:31:22 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 616.7301 ms
+2026-05-07 18:31:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 18:31:26 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 145 ms
+2026-05-07 18:31:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 207.4954 ms
+2026-05-07 18:31:26 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 243.2492 ms
+2026-05-07 18:31:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 170.3828 ms
+2026-05-07 18:31:43 [User:] [IP:] [Information] HTTP "GET" "/Question" responded 200 in 181.3889 ms
+2026-05-07 18:38:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 68.4602 ms
+2026-05-07 18:38:35 [User:] [IP:] [Information] HTTP "GET" "/" responded 302 in 298.7513 ms
+2026-05-07 18:38:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 543.6526 ms
+2026-05-07 18:38:36 [User:] [IP:] [Information] HTTP "GET" "/UserExam" responded 200 in 574.1327 ms
+2026-05-07 18:38:42 [User:Kareem@gmail.com123] [IP:::1] [Information] Cache set for "AllExams"
+2026-05-07 18:38:42 [User:Kareem@gmail.com123] [IP:::1] [Information] Request "GetAllExamsQuery" executed in 95 ms
+2026-05-07 18:38:42 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 162.4316 ms
+2026-05-07 18:38:42 [User:] [IP:] [Information] HTTP "GET" "/Exam" responded 200 in 191.7308 ms
+2026-05-07 18:39:22 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "CreateExamCommand" failed after 283 ms
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-07 18:39:22 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Create(CreateExamDto dto) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-07 18:39:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 591.8939 ms
+2026-05-07 18:39:22 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 605.3958 ms
+2026-05-07 18:39:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0695 ms
+2026-05-07 18:39:22 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 6.5071 ms
+2026-05-07 18:39:38 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "CreateExamCommand" failed after 89 ms
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-07 18:39:38 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Create(CreateExamDto dto) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-07 18:39:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 295.6023 ms
+2026-05-07 18:39:38 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 302.3112 ms
+2026-05-07 18:39:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0177 ms
+2026-05-07 18:39:38 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 8.1515 ms
+2026-05-07 18:40:00 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "CreateExamCommand" failed after 115 ms
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-07 18:40:00 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Create(CreateExamDto dto) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-07 18:40:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 328.9110 ms
+2026-05-07 18:40:00 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 354.2194 ms
+2026-05-07 18:40:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0106 ms
+2026-05-07 18:40:00 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 4.7268 ms
+2026-05-07 18:40:36 [User:Kareem@gmail.com123] [IP:::1] [Error] Request "CreateExamCommand" failed after 116 ms
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+2026-05-07 18:40:36 [User:Kareem@gmail.com123] [IP:::1] [Error] Unhandled exception
+FluentValidation.ValidationException: Validation failed: 
+ -- Dto.DurationInMinutes: Duration must be greater than 0. Severity: Error
+ -- Dto.TotalDegree: Total Degree must be greater than 0. Severity: Error
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 36
+   at OnlineExamSystem.Application.Behaviors.LoggingBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\LoggingBehavior.cs:line 28
+   at OnlineExamSystem.Web.Controllers.ExamController.Create(CreateExamDto dto) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\ExamController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-07 18:40:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 302 in 294.6966 ms
+2026-05-07 18:40:36 [User:] [IP:] [Information] HTTP "POST" "/Exam/Create" responded 302 in 307.2315 ms
+2026-05-07 18:40:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0082 ms
+2026-05-07 18:40:36 [User:] [IP:] [Information] HTTP "GET" "/Home/Error" responded 404 in 5.6815 ms

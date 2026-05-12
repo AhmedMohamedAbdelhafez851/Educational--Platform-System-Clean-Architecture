@@ -168,7 +168,7 @@ namespace OnlineExamSystem.Web.Controllers
 
         // POST: EditRole
         [HttpPost]
-        public async Task<IActionResult> EditRole(RoleDto model)
+        public async Task<IActionResult> EdietRole(RoleDto model)
         {
             if (ModelState.IsValid)
             {

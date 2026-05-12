@@ -1,0 +1,54 @@
+2026-05-04 16:11:33.722 +03:00 [WRN] You do not have a valid license key for the Lucky  Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 16:11:33.804 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:11:33.997 +03:00 [INF] Handled GetAllExamsQuery in 189 ms
+2026-05-04 16:11:40.594 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:11:40.694 +03:00 [INF] Handled GetAllExamsQuery in 95 ms
+2026-05-04 16:11:44.487 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:11:44.516 +03:00 [INF] Handled GetAllExamsQuery in 25 ms
+2026-05-04 16:11:46.134 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:11:46.156 +03:00 [INF] Handled GetAllExamsQuery in 18 ms
+2026-05-04 16:12:30.607 +03:00 [INF] Handling CreateExamCommand with data: {"Dto":{"Title":"Security_Exam"}}
+2026-05-04 16:12:30.880 +03:00 [INF] Handled CreateExamCommand in 266 ms
+2026-05-04 16:12:30.890 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:12:30.902 +03:00 [INF] Handled GetAllExamsQuery in 9 ms
+2026-05-04 16:12:30.952 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:12:30.975 +03:00 [INF] Handled GetAllExamsQuery in 19 ms
+2026-05-04 16:12:34.357 +03:00 [INF] Handling GetAllExamsQuery with data: {}
+2026-05-04 16:12:34.372 +03:00 [INF] Handled GetAllExamsQuery in 9 ms
+2026-05-04 16:17:41.062 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 16:17:41.303 +03:00 [INF] Request GetAllExamsQuery executed in 174 ms
+2026-05-04 16:18:15.269 +03:00 [INF] Request CreateExamCommand executed in 249 ms
+2026-05-04 16:18:15.292 +03:00 [INF] Request GetAllExamsQuery executed in 7 ms
+2026-05-04 16:18:15.368 +03:00 [INF] Request GetAllExamsQuery executed in 16 ms
+2026-05-04 16:19:58.705 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 16:19:58.948 +03:00 [INF] Request GetAllExamsQuery executed in 163 ms
+2026-05-04 16:20:08.446 +03:00 [INF] Request GetAllExamsQuery executed in 8 ms
+2026-05-04 16:20:08.499 +03:00 [INF] Request GetAllExamsQuery executed in 6 ms
+2026-05-04 16:20:19.017 +03:00 [INF] Request GetAllExamsQuery executed in 12 ms
+2026-05-04 16:20:19.078 +03:00 [INF] Request GetAllExamsQuery executed in 15 ms
+2026-05-04 17:55:31.200 +03:00 [INF] HTTP GET / responded 302 in 89.3637 ms
+2026-05-04 17:55:31.587 +03:00 [INF] HTTP GET /Account/Login responded 200 in 284.1677 ms
+2026-05-04 17:55:38.689 +03:00 [INF] HTTP GET /Users/Index responded 200 in 341.0804 ms
+2026-05-04 17:55:45.752 +03:00 [INF] HTTP GET /Users/Create responded 200 in 46.2444 ms
+2026-05-04 17:56:25.955 +03:00 [INF] HTTP POST /Users/Create responded 302 in 522.1802 ms
+2026-05-04 17:56:26.020 +03:00 [INF] HTTP GET /Users responded 200 in 48.0272 ms
+2026-05-04 17:56:33.567 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 17:56:33.719 +03:00 [INF] Request GetAllExamsQuery executed in 140 ms
+2026-05-04 17:56:33.745 +03:00 [INF] HTTP GET /Exam/Index responded 200 in 232.9884 ms
+2026-05-04 17:56:51.461 +03:00 [INF] Request CreateExamCommand executed in 151 ms
+2026-05-04 17:56:51.466 +03:00 [INF] HTTP POST /Exam/Create responded 302 in 185.8578 ms
+2026-05-04 17:56:51.487 +03:00 [INF] Request GetAllExamsQuery executed in 9 ms
+2026-05-04 17:56:51.496 +03:00 [INF] HTTP GET /Exam responded 200 in 19.8846 ms
+2026-05-04 17:56:51.572 +03:00 [INF] Request GetAllExamsQuery executed in 19 ms
+2026-05-04 17:56:51.588 +03:00 [INF] HTTP GET /Exam/Index responded 200 in 36.2740 ms
+2026-05-04 18:53:26.031 +03:00 [INF] HTTP GET / responded 302 in 116.8540 ms
+2026-05-04 18:53:26.448 +03:00 [INF] HTTP GET /Account/Login responded 200 in 314.1588 ms
+2026-05-04 18:53:34.096 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 18:53:34.335 +03:00 [INF] Request GetAllExamsQuery executed in 218 ms
+2026-05-04 18:53:34.371 +03:00 [INF] HTTP GET /Exam/Index responded 200 in 329.4338 ms
+2026-05-04 18:53:46.910 +03:00 [INF] Request CreateExamCommand executed in 295 ms
+2026-05-04 18:53:46.914 +03:00 [INF] HTTP POST /Exam/Create responded 302 in 358.2737 ms
+2026-05-04 18:53:46.938 +03:00 [INF] Request GetAllExamsQuery executed in 12 ms
+2026-05-04 18:53:46.947 +03:00 [INF] HTTP GET /Exam responded 200 in 23.3498 ms
+2026-05-04 18:53:47.015 +03:00 [INF] Request GetAllExamsQuery executed in 11 ms
+2026-05-04 18:53:47.028 +03:00 [INF] HTTP GET /Exam/Index responded 200 in 31.7431 ms
