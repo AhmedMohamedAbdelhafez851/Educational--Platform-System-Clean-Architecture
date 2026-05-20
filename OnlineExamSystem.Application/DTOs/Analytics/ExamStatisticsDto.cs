@@ -13,10 +13,10 @@
         public List<ScoreDistributionDto> ScoreDistribution { get; set; } = new();
     }
 
-    public class ScoreDistributionDto
-    {
-        public string Range { get; set; } = ""; // e.g., "0-20%"
-        public int Count { get; set; }
-        public double Percentage { get; set; }
-    }
+    //public class ScoreDistributionDto
+    //{
+    //    public string Range { get; set; } = ""; // e.g., "0-20%"
+    //    public int Count { get; set; }
+    //    public double Percentage { get; set; }
+    //}
 }

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="TopPerformersTitle" xml:space="preserve">
+    <value>الطلاب المتفوقين</value>
+  </data>
+	<data name="StudentName" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+	<data name="Score" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
+	<data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+	<data name="SubmissionDate" xml:space="preserve">
+    <value>تاريخ التسليم</value>
+  </data>
+	<data name="Passed" xml:space="preserve">
+    <value>ناجح</value>
+  </data>
+	<data name="NoSubmissions" xml:space="preserve">
+    <value>لا توجد محاولات</value>
+  </data>
+</root>

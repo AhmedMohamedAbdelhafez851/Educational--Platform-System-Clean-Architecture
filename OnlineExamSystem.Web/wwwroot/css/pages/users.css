@@ -1,0 +1,180 @@
+﻿/* Users Management Page Styles */
+.users-container {
+    padding: 2rem;
+}
+
+/* Card Styles */
+.users-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+    .users-card:hover {
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+
+/* Header Gradient */
+.card-header-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 1.25rem 1.5rem;
+}
+
+    .card-header-gradient h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+
+/* Table Styles */
+.users-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+    .users-table thead th {
+        background: #f8fafc;
+        padding: 1rem 1.25rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #64748b;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .users-table tbody tr {
+        transition: all 0.2s ease;
+    }
+
+        .users-table tbody tr:hover {
+            background-color: #f8fafc;
+        }
+
+    .users-table tbody td {
+        padding: 1rem 1.25rem;
+        font-size: 0.875rem;
+        color: #334155;
+        border-bottom: 1px solid #e2e8f0;
+        vertical-align: middle;
+    }
+
+/* Role Badges */
+.role-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    color: #4338ca;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Action Buttons */
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    border: none;
+    background: transparent;
+}
+
+    .action-btn i {
+        font-size: 1rem;
+    }
+
+.action-btn-primary {
+    color: #3b82f6;
+}
+
+    .action-btn-primary:hover {
+        background: #eff6ff;
+        color: #2563eb;
+    }
+
+.action-btn-danger {
+    color: #ef4444;
+}
+
+    .action-btn-danger:hover {
+        background: #fef2f2;
+        color: #dc2626;
+    }
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 3rem;
+}
+
+.empty-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+    .empty-icon i {
+        font-size: 2.5rem;
+        color: #4338ca;
+    }
+
+/* RTL Support */
+body[dir="rtl"] .users-table th,
+body[dir="rtl"] .users-table td {
+    text-align: right;
+}
+
+body[dir="rtl"] .me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .users-container {
+        padding: 1rem;
+    }
+
+    .users-table thead {
+        display: none;
+    }
+
+    .users-table tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+    }
+
+    .users-table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+        .users-table tbody td:last-child {
+            border-bottom: none;
+        }
+
+        .users-table tbody td::before {
+            content: attr(data-label);
+            font-weight: 600;
+            font-size: 0.75rem;
+            color: #64748b;
+        }
+}

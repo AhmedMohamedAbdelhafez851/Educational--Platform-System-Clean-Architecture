@@ -1,0 +1,229 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Cairo', sans-serif;
+    background: #f5f7fa;
+}
+
+.result-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.result-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.result-header {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+    .result-header.failed {
+        background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    }
+
+.result-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.result-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.result-subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.score-section {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.score-circle {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .score-circle svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+    }
+
+    .score-circle circle {
+        fill: none;
+        stroke-width: 12;
+        stroke-linecap: round;
+    }
+
+    .score-circle .bg-circle {
+        stroke: #e5e7eb;
+    }
+
+    .score-circle .progress-circle {
+        stroke: #3b82f6;
+        stroke-dasharray: 502;
+        transition: stroke-dashoffset 1s ease;
+    }
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.score-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1f36;
+}
+
+.score-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background: #f9fafb;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1f36;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.answers-section {
+    padding: 2rem;
+}
+
+.answer-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+}
+
+    .answer-card.correct {
+        border-left: 4px solid #10b981;
+        background: #f0fdf4;
+    }
+
+    .answer-card.incorrect {
+        border-left: 4px solid #ef4444;
+        background: #fef2f2;
+    }
+
+.answer-status {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+    .answer-status.correct {
+        background: #10b981;
+        color: white;
+    }
+
+    .answer-status.incorrect {
+        background: #ef4444;
+        color: white;
+    }
+
+.choice-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.choice-correct {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.choice-wrong {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.btn-dashboard {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+    .btn-dashboard:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px -5px rgba(59, 130, 246, 0.4);
+        color: white;
+    }
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .btn-dashboard, .btn-print {
+        display: none;
+    }
+}
+
+body[dir="rtl"] .answer-card.correct {
+    border-left: none;
+    border-right: 4px solid #10b981;
+}
+
+body[dir="rtl"] .answer-card.incorrect {
+    border-left: none;
+    border-right: 4px solid #ef4444;
+}

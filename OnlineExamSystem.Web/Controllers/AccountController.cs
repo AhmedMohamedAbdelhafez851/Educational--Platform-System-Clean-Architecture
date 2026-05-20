@@ -1,24 +1,44 @@
-﻿// OnlineExamSystem.Web/Controllers/AccountController.cs
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using OnlineExamSystem.Domains.Entities;
 using OnlineExamSystem.Web.ViewModels.UserDTO;
+
 namespace OnlineExamSystem.Web.Controllers
 {
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IStringLocalizer<AccountController> _localizer;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            IStringLocalizer<AccountController> localizer)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _localizer = localizer;
         }
 
         [HttpGet]
         public IActionResult Login(string returnUrl = null!)
         {
+            // ✅ FIX: If user is already authenticated, redirect to dashboard
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                if (User.IsInRole("Admin") || User.IsInRole("Teacher"))
+                {
+                    return RedirectToAction("Index", "Exam");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "UserExam");
+                }
+            }
+
             ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
@@ -28,42 +48,59 @@ namespace OnlineExamSystem.Web.Controllers
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null!)
         {
             ViewData["ReturnUrl"] = returnUrl;
+
             if (ModelState.IsValid)
             {
-                // Check if the user exists with the provided email
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user == null)
                 {
-                    ModelState.AddModelError(string.Empty, "Email not found.");
+                    ModelState.AddModelError(string.Empty, _localizer["EmailNotFound"]);
                     return View(model);
                 }
 
-                // Attempt to sign in with the password
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: true);
 
                 if (result.Succeeded)
                 {
-                    if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                    // Redirect to dashboard based on role
+                    if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Teacher"))
                     {
-                        return Redirect(returnUrl);
+                        return RedirectToAction("Index", "Exam");
                     }
-                    return RedirectToAction("Index", "Home");
+                    else
+                    {
+                        return RedirectToAction("Index", "UserExam");
+                    }
                 }
                 else if (result.IsLockedOut)
                 {
-                    ModelState.AddModelError(string.Empty, "Your account is locked out. Please try again later.");
+                    ModelState.AddModelError(string.Empty, _localizer["AccountLocked"]);
                     return View(model);
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Password is incorrect.");
+                    ModelState.AddModelError(string.Empty, _localizer["InvalidCredentials"]);
                 }
             }
             return View(model);
         }
+
         [HttpGet]
         public IActionResult Register()
         {
+            // ✅ FIX: If user is already authenticated, redirect to dashboard
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                if (User.IsInRole("Admin") || User.IsInRole("Teacher"))
+                {
+                    return RedirectToAction("Index", "Exam");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "UserExam");
+                }
+            }
+
             return View();
         }
 
@@ -95,7 +132,16 @@ namespace OnlineExamSystem.Web.Controllers
                     }
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
-                    return RedirectToAction("Index", "Home");
+
+                    // Redirect to dashboard based on role
+                    if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Teacher"))
+                    {
+                        return RedirectToAction("Index", "Exam");
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "UserExam");
+                    }
                 }
 
                 foreach (var error in result.Errors)
@@ -107,27 +153,75 @@ namespace OnlineExamSystem.Web.Controllers
             return View(model);
         }
 
-        // Add a GET action for Logout
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction("Login", "Account");
         }
 
-        // Keep the POST version for form submissions
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> LogoutPost()
         {
             await _signInManager.SignOutAsync();
-            return RedirectToAction(nameof(HomeController.Index), "Home");
+            return RedirectToAction("Login", "Account");
         }
-         [HttpGet]
- public IActionResult AccessDenied(string returnUrl = null!)
- {
-     ViewData["ReturnUrl"] = returnUrl;
-     return View();
- }
+
+        [HttpGet]
+        public IActionResult AccessDenied(string returnUrl = null!)
+        {
+            ViewData["ReturnUrl"] = returnUrl;
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SetLanguage(string culture, string returnUrl)
+        {
+            try
+            {
+                Response.Cookies.Append(
+                    CookieRequestCultureProvider.DefaultCookieName,
+                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                    new CookieOptions
+                    {
+                        Expires = DateTimeOffset.UtcNow.AddYears(1),
+                        IsEssential = true,
+                        HttpOnly = true
+                    }
+                );
+
+                if (string.IsNullOrEmpty(returnUrl))
+                {
+                    if (User.Identity?.IsAuthenticated == true)
+                    {
+                        var user = _userManager.GetUserAsync(User).Result;
+                        if (user != null)
+                        {
+                            if (_userManager.IsInRoleAsync(user, "Admin").Result || _userManager.IsInRoleAsync(user, "Teacher").Result)
+                            {
+                                return RedirectToAction("Index", "Exam");
+                            }
+                            else
+                            {
+                                return RedirectToAction("Index", "UserExam");
+                            }
+                        }
+                    }
+                    return RedirectToAction("Login", "Account");
+                }
+
+                if (Url.IsLocalUrl(returnUrl))
+                {
+                    return Redirect(returnUrl);
+                }
+
+                return RedirectToAction("Login", "Account");
+            }
+            catch
+            {
+                return RedirectToAction("Login", "Account");
+            }
+        }
     }
 }

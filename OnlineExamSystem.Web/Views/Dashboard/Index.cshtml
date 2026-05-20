@@ -1,0 +1,580 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Dashboard.GeneralDashboardDto
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+}
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        background: #f5f7fa;
+    }
+
+    .dashboard-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+
+        .dashboard-header h1 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: #1a1f36;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.25rem;
+        }
+
+        .dashboard-header p {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+    .kpi-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .kpi-card {
+        background: white;
+        border-radius: 1rem;
+        padding: 1.25rem;
+        border: 1px solid #e5e7eb;
+        transition: all 0.2s ease;
+    }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.12);
+        }
+
+    .kpi-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .kpi-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #6b7280;
+    }
+
+    .kpi-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+    }
+
+    .kpi-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1f36;
+        margin-bottom: 0.5rem;
+    }
+
+    .kpi-insight {
+        font-size: 0.75rem;
+        color: #6b7280;
+    }
+
+    .two-columns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        background: white;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        overflow: hidden;
+    }
+
+    .card-header {
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid #e5e7eb;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1a1f36;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .card-body {
+        padding: 1.25rem;
+    }
+
+    .exam-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+        .exam-item:last-child {
+            border-bottom: none;
+        }
+
+    .exam-info h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #1a1f36;
+        margin-bottom: 0.25rem;
+    }
+
+    .exam-meta {
+        font-size: 0.75rem;
+        color: #6b7280;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .exam-stats {
+        text-align: right;
+    }
+
+    .exam-score {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #10b981;
+    }
+
+    .btn-sm {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    .btn-outline {
+        border: 1px solid #e5e7eb;
+        color: #374151;
+        background: white;
+    }
+
+        .btn-outline:hover {
+            background: #f9fafb;
+        }
+
+    .attention-student {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+        .attention-student:last-child {
+            border-bottom: none;
+        }
+
+    .student-info {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .student-avatar {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: #fef2f2;
+        border-radius: 0.75rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ef4444;
+    }
+
+    .student-details h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #1a1f36;
+    }
+
+    .student-issue {
+        font-size: 0.75rem;
+        color: #ef4444;
+    }
+
+    .student-score {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #ef4444;
+    }
+
+    .activity-item {
+        display: flex;
+        gap: 0.75rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+    .activity-icon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .activity-content {
+        flex: 1;
+    }
+
+    .activity-message {
+        font-size: 0.875rem;
+        color: #1a1f36;
+        margin-bottom: 0.25rem;
+    }
+
+    .activity-time {
+        font-size: 0.75rem;
+        color: #6b7280;
+    }
+
+    .insight-item {
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        margin-bottom: 0.75rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .insight-success {
+        background: #f0fdf4;
+        border-left: 3px solid #10b981;
+    }
+
+    .insight-warning {
+        background: #fffbeb;
+        border-left: 3px solid #f59e0b;
+    }
+
+    .insight-info {
+        background: #eff6ff;
+        border-left: 3px solid #3b82f6;
+    }
+
+    body[dir="rtl"] .insight-success,
+    body[dir="rtl"] .insight-warning,
+    body[dir="rtl"] .insight-info {
+        border-left: none;
+        border-right: 3px solid;
+    }
+
+    body[dir="rtl"] .exam-stats {
+        text-align: left;
+    }
+
+    body[dir="rtl"] .student-info {
+        flex-direction: row-reverse;
+    }
+
+    @@media (max-width: 1024px) {
+        .two-columns {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .dashboard-container {
+            padding: 1rem;
+        }
+
+        .kpi-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .exam-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .exam-stats {
+            text-align: left;
+        }
+
+        body[dir="rtl"] .exam-stats {
+            text-align: right;
+        }
+    }
+</style>
+
+<div class="dashboard-container">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <h1>@Localizer["WelcomeMessage"]</h1>
+        <p>@Localizer["Subtitle"]</p>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="kpi-grid">
+        <div class="kpi-card">
+            <div class="kpi-header">
+                <span class="kpi-label">@Localizer["TotalStudents"]</span>
+                <div class="kpi-icon" style="background: #eff6ff; color: #3b82f6;">
+                    <i class="bi bi-people"></i>
+                </div>
+            </div>
+            <div class="kpi-value">@Model.TotalStudents</div>
+            <div class="kpi-insight">@Localizer["ActiveStudents"]</div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-header">
+                <span class="kpi-label">@Localizer["TotalExams"]</span>
+                <div class="kpi-icon" style="background: #f0fdf4; color: #10b981;">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                </div>
+            </div>
+            <div class="kpi-value">@Model.TotalExams</div>
+            <div class="kpi-insight">@Model.ExamsThisWeek @Localizer["CreatedThisWeek"]</div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-header">
+                <span class="kpi-label">@Localizer["AverageScore"]</span>
+                <div class="kpi-icon" style="background: #fef3c7; color: #f59e0b;">
+                    <i class="bi bi-trophy"></i>
+                </div>
+            </div>
+            <div class="kpi-value">@Model.AverageStudentScore.ToString("F1")%</div>
+            <div class="kpi-insight">@Localizer["OverallPerformance"]</div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-header">
+                <span class="kpi-label">@Localizer["NeedsAttention"]</span>
+                <div class="kpi-icon" style="background: #fef2f2; color: #ef4444;">
+                    <i class="bi bi-exclamation-triangle"></i>
+                </div>
+            </div>
+            <div class="kpi-value">@Model.StudentsNeedingAttention</div>
+            <div class="kpi-insight">@Localizer["StudentsNeedingFollowUp"]</div>
+        </div>
+
+        <div class="kpi-card">
+            <div class="kpi-header">
+                <span class="kpi-label">@Localizer["AttendanceRate"]</span>
+                <div class="kpi-icon" style="background: #e0e7ff; color: #4338ca;">
+                    <i class="bi bi-calendar-check"></i>
+                </div>
+            </div>
+            <div class="kpi-value">@Model.AttendanceRate.ToString("F1")%</div>
+            <div class="kpi-insight">@Localizer["AverageExamAttendance"]</div>
+        </div>
+    </div>
+
+    <!-- Two Column Layout -->
+    <div class="two-columns">
+        <!-- Recent Exams -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="bi bi-clock-history"></i>
+                    @Localizer["RecentExams"]
+                </h3>
+                <a asp-controller="Exam" asp-action="Index" class="btn-sm btn-outline">
+                    @Localizer["ViewAll"] <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="card-body">
+                @foreach (var exam in Model.RecentExams)
+                {
+                    <div class="exam-item">
+                        <div class="exam-info">
+                            <h4>@exam.Title</h4>
+                            <div class="exam-meta">
+                                <span><i class="bi bi-calendar"></i> @exam.Date.ToString("MMM dd, yyyy")</span>
+                                <span><i class="bi bi-people"></i> @exam.AttendancePercentage.ToString("F0")% @Localizer["Attended"]</span>
+                            </div>
+                        </div>
+                        <div class="exam-stats">
+                            <div class="exam-score">@exam.AverageScore.ToString("F1")%</div>
+                            <div class="exam-attendance">@Localizer["AverageScoreLabel"]</div>
+                        </div>
+                    </div>
+                }
+                @if (!Model.RecentExams.Any())
+                {
+                    <div class="text-center text-muted py-4">@Localizer["NoExamsYet"]</div>
+                }
+            </div>
+        </div>
+
+        <!-- Students Needing Attention -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="bi bi-exclamation-triangle-fill" style="color: #ef4444;"></i>
+                    @Localizer["StudentsNeedingAttention"]
+                </h3>
+                <a asp-controller="Users" asp-action="Index" class="btn-sm btn-outline">
+                    @Localizer["ViewAll"] <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+            <div class="card-body">
+                @foreach (var student in Model.StudentsNeedingAttentionList)
+                {
+                    <div class="attention-student">
+                        <div class="student-info">
+                            <div class="student-avatar">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <div class="student-details">
+                                <h4>@student.StudentName</h4>
+                                <div class="student-issue">@student.Issue</div>
+                            </div>
+                        </div>
+                        <div class="student-score">@student.LatestScore.ToString("F1")%</div>
+                    </div>
+                }
+                @if (!Model.StudentsNeedingAttentionList.Any())
+                {
+                    <div class="text-center text-success py-4">
+                        <i class="bi bi-check-circle-fill" style="font-size: 2rem;"></i>
+                        <p class="mt-2">@Localizer["AllStudentsWell"]</p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="two-columns">
+        <!-- Recent Activity -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="bi bi-activity"></i>
+                    @Localizer["RecentActivity"]
+                </h3>
+            </div>
+            <div class="card-body">
+                @foreach (var activity in Model.RecentActivities.Take(5))
+                {
+                    <div class="activity-item">
+                        <div class="activity-icon" style="background: @(activity.Color == "success" ? "#f0fdf4" : activity.Color == "danger" ? "#fef2f2" : "#eff6ff");">
+                            <i class="bi bi-@activity.Icon" style="color: @(activity.Color == "success" ? "#10b981" : activity.Color == "danger" ? "#ef4444" : "#3b82f6");"></i>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-message">@activity.Message</div>
+                            <div class="activity-time">@activity.Timestamp.ToString("MMM dd, hh:mm tt")</div>
+                        </div>
+                    </div>
+                }
+                @if (!Model.RecentActivities.Any())
+                {
+                    <div class="text-center text-muted py-4">@Localizer["NoRecentActivity"]</div>
+                }
+            </div>
+        </div>
+
+        <!-- Upcoming Exams -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="bi bi-calendar-event"></i>
+                    @Localizer["UpcomingExams"]
+                </h3>
+            </div>
+            <div class="card-body">
+                @foreach (var exam in Model.UpcomingExams.Take(3))
+                {
+                    <div class="exam-item">
+                        <div class="exam-info">
+                            <h4>@exam.Title</h4>
+                            <div class="exam-meta">
+                                <span><i class="bi bi-calendar"></i> @exam.DateTime.ToString("MMM dd, yyyy")</span>
+                                <span><i class="bi bi-people"></i> @exam.StudentCount @Localizer["Students"]</span>
+                            </div>
+                        </div>
+                        <div>
+                            <a asp-controller="Exam" asp-action="Edit" asp-route-id="@exam.ExamId" class="btn-sm btn-outline">
+                                @Localizer["Prepare"] <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                }
+                @if (!Model.UpcomingExams.Any())
+                {
+                    <div class="text-center text-muted py-4">@Localizer["NoUpcomingExams"]</div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Insights -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="bi bi-lightbulb"></i>
+                @Localizer["SmartInsights"]
+            </h3>
+        </div>
+        <div class="card-body">
+            @foreach (var insight in Model.SmartInsights)
+            {
+                <div class="insight-item insight-@insight.Type">
+                    <span>@insight.Message</span>
+                    @if (!string.IsNullOrEmpty(insight.ActionUrl))
+                    {
+                        <a href="@insight.ActionUrl" class="btn-sm btn-outline">@Localizer["ViewDetails"] →</a>
+                    }
+                </div>
+            }
+            @if (!Model.SmartInsights.Any())
+            {
+                <div class="text-center text-muted py-4">@Localizer["NoInsights"]</div>
+            }
+        </div>
+    </div>
+</div>

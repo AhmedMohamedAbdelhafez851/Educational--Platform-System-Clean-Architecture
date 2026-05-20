@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="TotalStudents" xml:space="preserve">
+    <value>إجمالي الطلاب</value>
+  </data>
+	<data name="Attended" xml:space="preserve">
+    <value>حضر</value>
+  </data>
+	<data name="Absent" xml:space="preserve">
+    <value>غائب</value>
+  </data>
+	<data name="AverageScore" xml:space="preserve">
+    <value>متوسط الدرجات</value>
+  </data>
+	<data name="Highest" xml:space="preserve">
+    <value>أعلى</value>
+  </data>
+	<data name="Lowest" xml:space="preserve">
+    <value>أدنى</value>
+  </data>
+	<data name="PassRate" xml:space="preserve">
+    <value>نسبة النجاح</value>
+  </data>
+	<data name="Failed" xml:space="preserve">
+    <value>راسب</value>
+  </data>
+	<data name="AttendanceRate" xml:space="preserve">
+    <value>نسبة الحضور</value>
+  </data>
+	<data name="Participated" xml:space="preserve">
+    <value>شارك</value>
+  </data>
+</root>

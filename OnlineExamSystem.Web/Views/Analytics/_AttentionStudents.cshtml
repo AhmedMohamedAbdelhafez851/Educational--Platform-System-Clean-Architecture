@@ -1,0 +1,53 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Analytics.ExamAnalyticsDto
+
+<div class="attention-section" id="attention">
+    <div class="section-header">
+        <h2 class="section-title">
+            <i class="bi bi-exclamation-triangle-fill" style="color: #ef4444; margin-right: 0.5rem;"></i>
+            @Localizer["StudentsNeedingAttention"]
+        </h2>
+    </div>
+    <div class="attention-grid">
+        @if (Model.StrugglingStudents.Any())
+        {
+            @foreach (var student in Model.StrugglingStudents)
+            {
+                <div class="attention-card">
+                    <div class="attention-avatar">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <div class="attention-info">
+                        <div class="attention-name">@student.StudentName</div>
+                        <div class="attention-issue">
+                            @if (student.Score < 40)
+                            {
+                                <span>@Localizer["CriticalLowScore"] (@student.Score.ToString("F1")%)</span>
+                            }
+                            else if (student.Score < 50)
+                            {
+                                <span>@Localizer["BelowPassing"] (@student.Score.ToString("F1")%)</span>
+                            }
+                            else
+                            {
+                                <span>@Localizer["NeedsImprovement"]</span>
+                            }
+                        </div>
+                        <div class="attention-status">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                            <span>@Localizer["ActionRequired"]</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="empty-state">
+                <i class="bi bi-check-circle-fill" style="font-size: 2rem;"></i>
+                <p style="margin-top: 0.5rem;">@Localizer["AllStudentsWell"]</p>
+            </div>
+        }
+    </div>
+</div>

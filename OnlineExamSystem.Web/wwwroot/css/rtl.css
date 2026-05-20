@@ -1,0 +1,33 @@
+﻿/* RTL Support for Arabic Language */
+body[dir="rtl"] {
+    text-align: right;
+}
+
+    body[dir="rtl"] .ms-auto {
+        margin-left: auto !important;
+        margin-right: 0 !important;
+    }
+
+    body[dir="rtl"] .me-1 {
+        margin-left: 0.25rem !important;
+        margin-right: 0 !important;
+    }
+
+    body[dir="rtl"] .me-2 {
+        margin-left: 0.5rem !important;
+        margin-right: 0 !important;
+    }
+
+    body[dir="rtl"] .dropdown-menu {
+        text-align: right;
+    }
+
+    body[dir="rtl"] .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        border-radius: 0 0.375rem 0.375rem 0;
+    }
+
+    body[dir="rtl"] .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        margin-left: 0;
+        margin-right: -1px;
+        border-radius: 0.375rem 0 0 0.375rem;
+    }

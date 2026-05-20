@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="PageTitle" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+	<data name="UserManagement" xml:space="preserve">
+    <value>إدارة المستخدمين</value>
+  </data>
+	<data name="CreateNewUser" xml:space="preserve">
+    <value>إنشاء مستخدم جديد</value>
+  </data>
+	<data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="Roles" xml:space="preserve">
+    <value>الصلاحيات</value>
+  </data>
+	<data name="Actions" xml:space="preserve">
+    <value>الإجراءات</value>
+  </data>
+	<data name="NoUsersFound" xml:space="preserve">
+    <value>لا يوجد مستخدمين</value>
+  </data>
+	<data name="NoUsersMessage" xml:space="preserve">
+    <value>لا يوجد مستخدمين في النظام حالياً. انقر على زر "إنشاء مستخدم جديد" لإضافة مستخدم أول.</value>
+  </data>
+	<data name="NoRolesAssigned" xml:space="preserve">
+    <value>لا توجد صلاحيات مخصصة</value>
+  </data>
+	<data name="ManageRoles" xml:space="preserve">
+    <value>إدارة الصلاحيات</value>
+  </data>
+	<data name="EditUser" xml:space="preserve">
+    <value>تعديل المستخدم</value>
+  </data>
+	<data name="DeleteUser" xml:space="preserve">
+    <value>حذف المستخدم</value>
+  </data>
+	<data name="ConfirmDeletion" xml:space="preserve">
+    <value>تأكيد الحذف</value>
+  </data>
+	<data name="DeleteUserTitle" xml:space="preserve">
+    <value>حذف المستخدم</value>
+  </data>
+	<data name="DeleteConfirmation" xml:space="preserve">
+    <value>هل أنت متأكد من حذف المستخدم</value>
+  </data>
+	<data name="DeleteWarning" xml:space="preserve">
+    <value>هذا الإجراء لا يمكن التراجع عنه. جميع البيانات المرتبطة ستفقد.</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+	<data name="Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+	<data name="DeleteFailed" xml:space="preserve">
+    <value>فشل حذف المستخدم</value>
+  </data>
+	<data name="Close" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+	<data name="Success" xml:space="preserve">
+    <value>نجاح</value>
+  </data>
+	<data name="UserDeleted" xml:space="preserve">
+    <value>تم حذف المستخدم بنجاح</value>
+  </data>
+</root>

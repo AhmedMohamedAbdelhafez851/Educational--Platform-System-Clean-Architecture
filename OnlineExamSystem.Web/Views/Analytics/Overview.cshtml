@@ -1,0 +1,223 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model IEnumerable<OnlineExamSystem.Application.DTOs.Exam.ExamListDto>
+
+@{
+    ViewData["Title"] = Localizer["PageTitle"];
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+}
+
+<style>
+    .analytics-container {
+        padding: 2rem;
+    }
+
+    .page-header {
+        margin-bottom: 2rem;
+    }
+
+        .page-header h1 {
+            font-size: 1.875rem;
+            font-weight: 600;
+            color: #1a1f36;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+    .exams-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .exam-card {
+        background: white;
+        border-radius: 1rem;
+        border: 1px solid #e5e7eb;
+        overflow: hidden;
+        transition: all 0.2s ease;
+    }
+
+        .exam-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.15);
+        }
+
+    .exam-card-header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 1rem 1.25rem;
+        color: white;
+    }
+
+        .exam-card-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+    .exam-card-body {
+        padding: 1.25rem;
+    }
+
+    .exam-stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    .stat-item {
+        text-align: center;
+        flex: 1;
+    }
+
+    .stat-value {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #1a1f36;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        color: #6b7280;
+        margin-top: 0.25rem;
+    }
+
+    .exam-actions {
+        display: flex;
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .btn-analytics {
+        flex: 1;
+        padding: 0.5rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+
+    .btn-primary-analytics {
+        background: #3b82f6;
+        color: white;
+        border: none;
+    }
+
+        .btn-primary-analytics:hover {
+            background: #2563eb;
+        }
+
+    .btn-outline-analytics {
+        border: 1px solid #e5e7eb;
+        color: #374151;
+        background: white;
+    }
+
+        .btn-outline-analytics:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+        }
+
+    .empty-state {
+        text-align: center;
+        padding: 3rem;
+        color: #6b7280;
+    }
+
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            color: #d1d5db;
+        }
+
+    @@media (max-width: 768px) {
+        .analytics-container {
+            padding: 1rem;
+        }
+
+        .exams-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .exam-stats {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .exam-actions {
+            flex-direction: column;
+        }
+    }
+</style>
+
+<div class="analytics-container">
+    <div class="page-header">
+        <h1>
+            <i class="bi bi-graph-up me-2" style="color: #3b82f6;"></i>
+            @Localizer["PageTitle"]
+        </h1>
+        <p>@Localizer["Subtitle"]</p>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="exams-grid">
+            @foreach (var exam in Model)
+            {
+                <div class="exam-card">
+                    <div class="exam-card-header">
+                        <h3>@exam.Title</h3>
+                    </div>
+                    <div class="exam-card-body">
+                        <div class="exam-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">@exam.QuestionsCount</div>
+                                <div class="stat-label">@Localizer["Questions"]</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">@exam.DurationInMinutes</div>
+                                <div class="stat-label">@Localizer["Minutes"]</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">@exam.TotalDegree</div>
+                                <div class="stat-label">@Localizer["Degree"]</div>
+                            </div>
+                        </div>
+                        <div class="exam-actions">
+                            <a asp-action="ExamReport" asp-route-examId="@exam.ExamId"
+                               class="btn-analytics btn-primary-analytics">
+                                <i class="bi bi-bar-chart me-1"></i> @Localizer["ViewAnalytics"]
+                            </a>
+                            <a asp-controller="Exam" asp-action="Invitations" asp-route-examId="@exam.ExamId"
+                               class="btn-analytics btn-outline-analytics">
+                                <i class="bi bi-link-45deg me-1"></i> @Localizer["Invitations"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="empty-state">
+            <i class="bi bi-folder2-open"></i>
+            <h3>@Localizer["NoExamsFound"]</h3>
+            <p>@Localizer["NoExamsMessage"]</p>
+            <a asp-controller="Exam" asp-action="Index" class="btn btn-primary mt-3">
+                <i class="bi bi-plus-circle me-1"></i> @Localizer["CreateFirstExam"]
+            </a>
+        </div>
+    }
+</div>

@@ -1,38 +1,42 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
-using System.Net;
+﻿using System.Net;
 
-public class ExceptionMiddleware
+namespace OnlineExamSystem.Web.Middleware
 {
-    private readonly RequestDelegate _next;
-    private readonly ILogger<ExceptionMiddleware> _logger;
-
-    public ExceptionMiddleware(RequestDelegate next,
-                               ILogger<ExceptionMiddleware> logger)
+    public class ExceptionMiddleware
     {
-        _next = next;
-        _logger = logger;
-    }
+        private readonly RequestDelegate _next;
+        private readonly ILogger<ExceptionMiddleware> _logger;
+        private readonly IWebHostEnvironment _env;
 
-    public async Task Invoke(HttpContext context)
-    {
-        try
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger, IWebHostEnvironment env)
         {
-            await _next(context);
+            _next = next;
+            _logger = logger;
+            _env = env;
         }
-        catch (Exception ex)
+
+        public async Task Invoke(HttpContext context)
         {
-            _logger.LogError(ex, "Unhandled exception");
-
-            context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-
-            if (context.Request.Headers["Accept"].ToString().Contains("application/json"))
+            try
             {
-                await context.Response.WriteAsync("API Error occurred");
+                await _next(context);
             }
-            else
+            catch (Exception ex)
             {
-                context.Response.Redirect("/Home/Error");
+                _logger.LogError(ex, "Unhandled exception occurred");
+
+                // In development, show the actual error
+                if (_env.IsDevelopment())
+                {
+                    context.Response.StatusCode = 500;
+                    context.Response.ContentType = "text/plain";
+                    await context.Response.WriteAsync(ex.ToString());
+                }
+                else
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    await context.Response.WriteAsync("Something went wrong. Please try again.");
+                }
             }
         }
     }

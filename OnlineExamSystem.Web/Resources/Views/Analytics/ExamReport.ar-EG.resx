@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- Page Title -->
+	<data name="PageTitle" xml:space="preserve">
+    <value>تحليل الامتحان - {0}</value>
+  </data>
+
+	<!-- Header -->
+	<data name="ExamAnalytics" xml:space="preserve">
+    <value>تحليل الامتحان</value>
+  </data>
+	<data name="Subtitle" xml:space="preserve">
+    <value>تحليل الأداء ومتابعة تقدم الطلاب</value>
+  </data>
+
+	<!-- KPI Cards -->
+	<data name="TotalStudents" xml:space="preserve">
+    <value>إجمالي الطلاب</value>
+  </data>
+	<data name="Attended" xml:space="preserve">
+    <value>حضر</value>
+  </data>
+	<data name="Absent" xml:space="preserve">
+    <value>غائب</value>
+  </data>
+	<data name="AverageScore" xml:space="preserve">
+    <value>متوسط الدرجات</value>
+  </data>
+	<data name="Highest" xml:space="preserve">
+    <value>أعلى</value>
+  </data>
+	<data name="Lowest" xml:space="preserve">
+    <value>أدنى</value>
+  </data>
+	<data name="PassRate" xml:space="preserve">
+    <value>نسبة النجاح</value>
+  </data>
+	<data name="Failed" xml:space="preserve">
+    <value>راسب</value>
+  </data>
+	<data name="AttendanceRate" xml:space="preserve">
+    <value>نسبة الحضور</value>
+  </data>
+	<data name="Participated" xml:space="preserve">
+    <value>شارك</value>
+  </data>
+
+	<!-- Smart Insights -->
+	<data name="AtRiskStudents" xml:space="preserve">
+    <value>الطلاب المعرضين للخطر</value>
+  </data>
+	<data name="NeedImmediateAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى اهتمام فوري</value>
+  </data>
+	<data name="DifficultQuestions" xml:space="preserve">
+    <value>الأسئلة الصعبة</value>
+  </data>
+	<data name="TopPerformers" xml:space="preserve">
+    <value>الطلاب المتميزين</value>
+  </data>
+	<data name="ScoredAboveAverage" xml:space="preserve">
+    <value>طالب حصل على أعلى من المتوسط</value>
+  </data>
+	<data name="ViewDetails" xml:space="preserve">
+    <value>عرض التفاصيل</value>
+  </data>
+	<data name="ReviewQuestions" xml:space="preserve">
+    <value>مراجعة الأسئلة</value>
+  </data>
+	<data name="ViewRecognition" xml:space="preserve">
+    <value>عرض التكريم</value>
+  </data>
+	<data name="NoData" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+
+	<!-- Charts -->
+	<data name="ScoreDistribution" xml:space="preserve">
+    <value>توزيع الدرجات</value>
+  </data>
+	<data name="MostDifficultQuestions" xml:space="preserve">
+    <value>أصعب الأسئلة</value>
+  </data>
+	<data name="Students" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+	<data name="ScoreRange" xml:space="preserve">
+    <value>نطاق الدرجات (%)</value>
+  </data>
+	<data name="Correct" xml:space="preserve">
+    <value>صحيح</value>
+  </data>
+	<data name="Hard" xml:space="preserve">
+    <value>صعب</value>
+  </data>
+	<data name="Medium" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+	<data name="Easy" xml:space="preserve">
+    <value>سهل</value>
+  </data>
+
+	<!-- Students Needing Attention -->
+	<data name="StudentsNeedingAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى متابعة</value>
+  </data>
+	<data name="ActionRequired" xml:space="preserve">
+    <value>مطلوب إجراء</value>
+  </data>
+	<data name="CriticalLowScore" xml:space="preserve">
+    <value>درجة منخفضة جداً</value>
+  </data>
+	<data name="BelowPassing" xml:space="preserve">
+    <value>أقل من درجة النجاح</value>
+  </data>
+	<data name="NeedsImprovement" xml:space="preserve">
+    <value>بحاجة إلى تحسين</value>
+  </data>
+	<data name="AllStudentsWell" xml:space="preserve">
+    <value>جميع الطلاب أداؤهم جيد</value>
+  </data>
+
+	<!-- Tables -->
+	<data name="TopPerformersTitle" xml:space="preserve">
+    <value>الطلاب المتفوقين</value>
+  </data>
+	<data name="StudentName" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+	<data name="Score" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
+	<data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+	<data name="SubmissionDate" xml:space="preserve">
+    <value>تاريخ التسليم</value>
+  </data>
+	<data name="Passed" xml:space="preserve">
+    <value>ناجح</value>
+  </data>
+	<data name="StudentEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="StudentID" xml:space="preserve">
+    <value>رقم الطالب</value>
+  </data>
+	<data name="AttendanceAndPerformance" xml:space="preserve">
+    <value>الحضور والأداء</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+	<data name="NotTaken" xml:space="preserve">
+    <value>لم يؤدِ</value>
+  </data>
+	<data name="NoSubmissions" xml:space="preserve">
+    <value>لا توجد محاولات</value>
+  </data>
+</root>

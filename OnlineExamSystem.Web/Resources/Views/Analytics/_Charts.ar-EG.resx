@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="ScoreDistribution" xml:space="preserve">
+    <value>توزيع الدرجات</value>
+  </data>
+	<data name="MostDifficultQuestions" xml:space="preserve">
+    <value>أصعب الأسئلة</value>
+  </data>
+	<data name="Students" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+	<data name="ScoreRange" xml:space="preserve">
+    <value>نطاق الدرجات (%)</value>
+  </data>
+	<data name="Correct" xml:space="preserve">
+    <value>صحيح</value>
+  </data>
+	<data name="Hard" xml:space="preserve">
+    <value>صعب</value>
+  </data>
+	<data name="Medium" xml:space="preserve">
+    <value>متوسط</value>
+  </data>
+	<data name="Easy" xml:space="preserve">
+    <value>سهل</value>
+  </data>
+</root>

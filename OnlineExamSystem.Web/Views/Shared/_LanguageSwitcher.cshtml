@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+
+@{
+    var currentPath = Context.Request.Path.ToString();
+    var currentQuery = Context.Request.QueryString.ToString();
+    var returnUrl = string.IsNullOrEmpty(currentPath) || currentPath == "/"
+        ? (User.Identity?.IsAuthenticated == true
+            ? (User.IsInRole("Admin") ? "/Exam" : "/UserExam")
+            : "/Account/Login")
+        : currentPath + currentQuery;
+}
+
+<li class="nav-item language-switcher">
+    <form asp-controller="Account" asp-action="SetLanguage" method="post" class="form-inline">
+        <input type="hidden" name="returnUrl" value="@returnUrl" />
+        <select name="culture" class="form-select form-select-sm" onchange="this.form.submit()" style="background-color: rgba(255,255,255,0.2); color: white; border: none;">
+            <option value="en-US" selected="@(CultureInfo.CurrentUICulture.Name == "en-US")">English</option>
+            <option value="ar-EG" selected="@(CultureInfo.CurrentUICulture.Name == "ar-EG")">العربية</option>
+        </select>
+    </form>
+</li>

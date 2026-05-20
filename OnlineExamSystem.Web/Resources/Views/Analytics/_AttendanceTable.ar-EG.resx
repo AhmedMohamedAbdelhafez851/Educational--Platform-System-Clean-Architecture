@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="AttendanceAndPerformance" xml:space="preserve">
+    <value>الحضور والأداء</value>
+  </data>
+	<data name="StudentName" xml:space="preserve">
+    <value>اسم الطالب</value>
+  </data>
+	<data name="StudentEmail" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="StudentID" xml:space="preserve">
+    <value>رقم الطالب</value>
+  </data>
+	<data name="Attended" xml:space="preserve">
+    <value>حضر</value>
+  </data>
+	<data name="SubmissionDate" xml:space="preserve">
+    <value>تاريخ التسليم</value>
+  </data>
+	<data name="Score" xml:space="preserve">
+    <value>الدرجة</value>
+  </data>
+	<data name="Status" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+	<data name="Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+	<data name="No" xml:space="preserve">
+    <value>لا</value>
+  </data>
+	<data name="Passed" xml:space="preserve">
+    <value>ناجح</value>
+  </data>
+	<data name="Failed" xml:space="preserve">
+    <value>راسب</value>
+  </data>
+	<data name="NotTaken" xml:space="preserve">
+    <value>لم يؤدِ</value>
+  </data>
+	<data name="Students" xml:space="preserve">
+    <value>طالب</value>
+  </data>
+</root>

@@ -1,0 +1,1213 @@
+2026-05-19 09:46:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 50.6442 ms
+2026-05-19 09:46:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 32.4920 ms
+2026-05-19 09:46:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.6187 ms
+2026-05-19 09:46:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 49.1353 ms
+2026-05-19 09:47:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 57.8911 ms
+2026-05-19 09:48:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 63.8960 ms
+2026-05-19 09:49:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 23.4166 ms
+2026-05-19 09:49:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.9150 ms
+2026-05-19 09:49:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 19.2901 ms
+2026-05-19 09:49:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 22.2322 ms
+2026-05-19 09:50:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 38.6753 ms
+2026-05-19 09:51:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 63.1641 ms
+2026-05-19 09:51:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.4625 ms
+2026-05-19 09:51:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 29.9477 ms
+2026-05-19 09:51:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 91.5478 ms
+2026-05-19 09:51:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 35.8136 ms
+2026-05-19 09:55:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 64.6041 ms
+2026-05-19 09:55:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 20.2612 ms
+2026-05-19 09:55:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 23.4869 ms
+2026-05-19 09:55:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 40.3926 ms
+2026-05-19 09:55:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 35.0236 ms
+2026-05-19 09:55:27 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 18.6176 ms
+2026-05-19 09:55:50 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 84.6984 ms
+2026-05-19 09:55:50 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/TakeExam/2" responded 200 in 53.6216 ms
+2026-05-19 09:55:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 33.1064 ms
+2026-05-19 09:56:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 23.4224 ms
+2026-05-19 09:56:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 502.5295 ms
+2026-05-19 09:56:45 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 258.3445 ms
+2026-05-19 09:56:46 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/ViewResult/4" responded 200 in 74.6908 ms
+2026-05-19 10:04:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/5" responded 200 in 100.3513 ms
+2026-05-19 10:11:14 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 188.3105 ms
+2026-05-19 10:11:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/5" responded 200 in 9896.3056 ms
+2026-05-19 10:20:38 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/4" responded 500 in 12.1813 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 10:20:38 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/5" responded 500 in 12.2116 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 10:20:39 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-19 10:20:39 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-19 10:21:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 23069.6551 ms
+2026-05-19 10:21:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 2754.8506 ms
+2026-05-19 10:22:10 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/4" responded 500 in 2.9307 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 10:22:10 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'OnlineExamSystem.Web.Controllers.UserExamController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-19 10:22:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 636.7150 ms
+2026-05-19 10:24:42 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 1507.1834 ms
+2026-05-19 10:24:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 455.0697 ms
+2026-05-19 10:24:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 358.2741 ms
+2026-05-19 10:24:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 208.8695 ms
+2026-05-19 10:25:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 27.6913 ms
+2026-05-19 10:25:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 175.5034 ms
+2026-05-19 10:25:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/4" responded 200 in 943.9105 ms
+2026-05-19 10:25:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 40.6578 ms
+2026-05-19 10:25:55 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 413.5710 ms
+2026-05-19 10:25:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/5" responded 200 in 96.0058 ms
+2026-05-19 10:26:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 43.3888 ms
+2026-05-19 10:26:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 262.4415 ms
+2026-05-19 10:27:22 [User:Anonymous] [IP:::1] [Error] An exception occurred in the database while saving changes for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_ExamSubmissions_AspNetUsers_UserId\". The conflict occurred in database \"OnlineExamDb_1\", table \"dbo.AspNetUsers\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7a50aab8-9dd3-4eec-9005-85a1127c32c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ExamSubmissions_AspNetUsers_UserId". The conflict occurred in database "OnlineExamDb_1", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7a50aab8-9dd3-4eec-9005-85a1127c32c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-19 10:27:23 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 694.7272 ms
+2026-05-19 10:29:08 [User:Anonymous] [IP:::1] [Error] An exception occurred in the database while saving changes for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_ExamSubmissions_AspNetUsers_UserId\". The conflict occurred in database \"OnlineExamDb_1\", table \"dbo.AspNetUsers\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7a50aab8-9dd3-4eec-9005-85a1127c32c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ExamSubmissions_AspNetUsers_UserId". The conflict occurred in database "OnlineExamDb_1", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:7a50aab8-9dd3-4eec-9005-85a1127c32c6
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-19 10:29:08 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 333.7309 ms
+2026-05-19 14:27:02 [User:] [IP:] [Error] Failed executing DbCommand ("65,098"ms) [Parameters=[""], CommandType='Text', CommandTimeout='60']"
+""DECLARE @var0 sysname;
+SELECT @var0 = [d].[name]
+FROM [sys].[default_constraints] [d]
+INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+WHERE ([d].[parent_object_id] = OBJECT_ID(N'[ExamSubmissions]') AND [c].[name] = N'Score');
+IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [ExamSubmissions] DROP CONSTRAINT [' + @var0 + '];');
+ALTER TABLE [ExamSubmissions] ALTER COLUMN [Score] float(18) NOT NULL;"
+2026-05-19 14:27:17 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 1001.7007 ms
+2026-05-19 14:28:05 [User:Anonymous] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:28:06 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/3" responded 500 in 831.8151 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 228
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:28:06 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 228
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:50:51 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 734.0437 ms
+2026-05-19 14:50:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 241.5501 ms
+2026-05-19 14:51:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 346.5917 ms
+2026-05-19 14:51:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 49.6543 ms
+2026-05-19 14:52:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 243.2645 ms
+2026-05-19 14:52:08 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 91.9670 ms
+2026-05-19 14:52:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 194.3257 ms
+2026-05-19 14:52:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 81.6304 ms
+2026-05-19 14:52:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 31.1081 ms
+2026-05-19 14:52:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 41.0880 ms
+2026-05-19 14:52:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 25.8103 ms
+2026-05-19 14:52:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 32.4164 ms
+2026-05-19 14:52:57 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.7332 ms
+2026-05-19 14:53:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 131.2792 ms
+2026-05-19 14:53:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 109.4648 ms
+2026-05-19 14:53:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 94.1822 ms
+2026-05-19 14:53:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 362.0394 ms
+2026-05-19 14:54:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 306.4023 ms
+2026-05-19 14:54:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/13" responded 200 in 149.2965 ms
+2026-05-19 14:54:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 662.7004 ms
+2026-05-19 14:54:37 [User:Anonymous] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:54:38 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/8" responded 500 in 275.7798 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 228
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:54:38 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 228
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:54:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 1788.2996 ms
+2026-05-19 14:55:02 [User:superadmin@examify.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:55:03 [User:superadmin@examify.com] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 702.0313 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 26
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:55:03 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 26
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:55:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 23.8146 ms
+2026-05-19 14:55:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 274.7476 ms
+2026-05-19 14:55:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 36.4350 ms
+2026-05-19 14:55:41 [User:superadmin@examify.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:55:41 [User:superadmin@examify.com] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 2882.2864 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 26
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:55:42 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 26
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:55:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 19.8004 ms
+2026-05-19 14:55:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 107.8599 ms
+2026-05-19 14:56:25 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 37.1460 ms
+2026-05-19 14:56:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 23.8226 ms
+2026-05-19 14:56:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/8" responded 200 in 127.1892 ms
+2026-05-19 14:56:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 94.0536 ms
+2026-05-19 14:56:40 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 27.3339 ms
+2026-05-19 14:56:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 35.9908 ms
+2026-05-19 14:56:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 20.4691 ms
+2026-05-19 14:56:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 25.7077 ms
+2026-05-19 14:57:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.4178 ms
+2026-05-19 14:57:30 [User:superadmin@examify.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:57:30 [User:superadmin@examify.com] [IP:::1] [Error] HTTP "GET" "/Dashboard/Index" responded 500 in 470.9356 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDashboard.GetGeneralDashboardQueryHandler.Handle(GetGeneralDashboardQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Dashboard\Queries\GetGeneralDashboard\GetGeneralDashboardQueryHandler.cs:line 21
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.DashboardController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\DashboardController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:57:31 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDashboard.GetGeneralDashboardQueryHandler.Handle(GetGeneralDashboardQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Dashboard\Queries\GetGeneralDashboard\GetGeneralDashboardQueryHandler.cs:line 21
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.DashboardController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\DashboardController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:57:31 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0117 ms
+2026-05-19 14:57:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 23.6530 ms
+2026-05-19 14:57:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0468 ms
+2026-05-19 14:57:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 51.1884 ms
+2026-05-19 14:57:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0166 ms
+2026-05-19 14:57:37 [User:superadmin@examify.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-19 14:57:37 [User:superadmin@examify.com] [IP:::1] [Error] HTTP "GET" "/Dashboard/Index" responded 500 in 398.7079 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDashboard.GetGeneralDashboardQueryHandler.Handle(GetGeneralDashboardQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Dashboard\Queries\GetGeneralDashboard\GetGeneralDashboardQueryHandler.cs:line 21
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.DashboardController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\DashboardController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 14:57:37 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.<PopulateSplitIncludeCollectionAsync>g__InitializeReaderAsync|26_0[TIncludingEntity,TIncludedEntity](RelationalQueryContext queryContext, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.PopulateSplitIncludeCollectionAsync[TIncludingEntity,TIncludedEntity](Int32 collectionId, RelationalQueryContext queryContext, IExecutionStrategy executionStrategy, RelationalCommandCache relationalCommandCache, IReadOnlyList`1 readerColumns, Boolean detailedErrorsEnabled, SplitQueryResultCoordinator resultCoordinator, Func`3 childIdentifier, IReadOnlyList`1 identifierValueComparers, Func`5 innerShaper, Func`4 relatedDataLoaders, INavigationBase inverseNavigation, Action`2 fixup, Boolean trackingQuery)
+   at Microsoft.EntityFrameworkCore.Query.RelationalShapedQueryCompilingExpressionVisitor.ShaperProcessingExpressionVisitor.TaskAwaiter(Func`1[] taskFactories)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDashboard.GetGeneralDashboardQueryHandler.Handle(GetGeneralDashboardQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Dashboard\Queries\GetGeneralDashboard\GetGeneralDashboardQueryHandler.cs:line 21
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.DashboardController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\DashboardController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 14:57:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0153 ms
+2026-05-19 14:57:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 46.0610 ms
+2026-05-19 14:57:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0153 ms
+2026-05-19 14:57:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 7.0922 ms
+2026-05-19 14:57:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.0049 ms
+2026-05-19 14:57:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 4.4160 ms
+2026-05-19 15:05:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.5965 ms
+2026-05-19 15:05:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 61.2919 ms
+2026-05-19 15:05:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4892 ms
+2026-05-19 15:05:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 38.5325 ms
+2026-05-19 15:05:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 19.2401 ms
+2026-05-19 15:05:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.8958 ms
+2026-05-19 15:15:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 482.7657 ms
+2026-05-19 15:16:36 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 894.1227 ms
+2026-05-19 15:16:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 449.9685 ms
+2026-05-19 15:16:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 587.4734 ms
+2026-05-19 15:17:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 41.8417 ms
+2026-05-19 15:21:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 282.4445 ms
+2026-05-19 15:21:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 39.3179 ms
+2026-05-19 15:21:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 151.9112 ms
+2026-05-19 15:21:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 417.4418 ms
+2026-05-19 15:22:20 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 440.0420 ms
+2026-05-19 15:22:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 120.9976 ms
+2026-05-19 15:22:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 26.4706 ms
+2026-05-19 15:22:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 40.3055 ms
+2026-05-19 15:23:06 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 374.1798 ms
+2026-05-19 15:23:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 141.7232 ms
+2026-05-19 15:23:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/8" responded 200 in 65.1605 ms
+2026-05-19 15:23:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/3" responded 200 in 53.4711 ms
+2026-05-19 15:23:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/5" responded 200 in 57.1105 ms
+2026-05-19 15:24:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 29.9026 ms
+2026-05-19 15:25:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.3750 ms
+2026-05-19 15:25:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/5" responded 200 in 658.4164 ms
+2026-05-19 15:25:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.7403 ms
+2026-05-19 15:25:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/5" responded 200 in 43.4120 ms
+2026-05-19 15:25:48 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 50.4718 ms
+2026-05-19 15:26:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 44.3827 ms
+2026-05-19 15:26:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 37.5042 ms
+2026-05-19 15:26:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 55.1305 ms
+2026-05-19 15:26:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 8.2332 ms
+2026-05-19 15:26:39 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 47.0388 ms
+2026-05-19 15:26:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/13" responded 200 in 30.5357 ms
+2026-05-19 15:27:43 [User:Anonymous] [IP:::1] [Error] HTTP "POST" "/UserExam/SubmitExam" responded 500 in 16.5344 ms
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 15:27:44 [User:] [IP:] [Error] Unhandled exception occurred
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 15:27:52 [User:Anonymous] [IP:::1] [Error] HTTP "POST" "/UserExam/SubmitExam" responded 500 in 5.7892 ms
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-19 15:27:52 [User:] [IP:] [Error] Unhandled exception occurred
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-19 15:28:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 61.1910 ms
+2026-05-19 15:28:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 76.1310 ms
+2026-05-19 15:53:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 118.4492 ms
+2026-05-19 15:53:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 41.8815 ms
+2026-05-19 15:53:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.5515 ms
+2026-05-19 15:54:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 53.8408 ms
+2026-05-19 15:57:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 56.9420 ms
+2026-05-19 15:57:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.4609 ms
+2026-05-19 15:57:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 33.6409 ms
+2026-05-19 15:57:27 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 79.3518 ms
+2026-05-19 15:57:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 81.3054 ms
+2026-05-19 15:57:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 29.0738 ms
+2026-05-19 15:57:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 28.6274 ms
+2026-05-19 15:58:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 43.0073 ms
+2026-05-19 15:58:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 32.1499 ms
+2026-05-19 15:58:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 34.3252 ms
+2026-05-19 15:58:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 43.3821 ms
+2026-05-19 15:58:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 37.4757 ms
+2026-05-19 15:58:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 41.4230 ms
+2026-05-19 15:58:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 105.2505 ms
+2026-05-19 15:58:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 42.2230 ms
+2026-05-19 15:58:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 23.5098 ms
+2026-05-19 16:00:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 74.7762 ms
+2026-05-19 16:00:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 50.7559 ms
+2026-05-19 16:00:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 14.9195 ms
+2026-05-19 16:00:48 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 49.6226 ms
+2026-05-19 16:00:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 33.8764 ms
+2026-05-19 16:01:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 83.9953 ms
+2026-05-19 16:01:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/10" responded 200 in 47.5770 ms
+2026-05-19 16:01:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.2755 ms
+2026-05-19 16:01:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/10" responded 200 in 94.3593 ms
+2026-05-19 16:02:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 49.6254 ms
+2026-05-19 16:02:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 16.3932 ms
+2026-05-19 16:02:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 35.7820 ms
+2026-05-19 16:02:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 32.5195 ms
+2026-05-19 16:02:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 16.3568 ms
+2026-05-19 16:02:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.3160 ms
+2026-05-19 16:02:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 83.2953 ms
+2026-05-19 16:02:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 55.7572 ms
+2026-05-19 16:02:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 38.1871 ms
+2026-05-19 16:03:30 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 61.1318 ms
+2026-05-19 16:03:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 62.3469 ms
+2026-05-19 16:04:06 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 87.6827 ms
+2026-05-19 16:04:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/11" responded 200 in 61.1698 ms
+2026-05-19 16:04:21 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 7.5663 ms
+2026-05-19 16:04:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/11" responded 200 in 54.2707 ms
+2026-05-19 16:08:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 55.9005 ms
+2026-05-19 16:08:44 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 104.5037 ms
+2026-05-19 16:08:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/12" responded 200 in 54.9627 ms
+2026-05-19 16:09:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 39.2020 ms
+2026-05-19 16:09:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 18.4942 ms
+2026-05-19 16:28:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 483.3841 ms
+2026-05-19 16:28:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 751.4773 ms
+2026-05-19 16:28:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 425.2224 ms
+2026-05-19 16:29:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/11" responded 200 in 486.5599 ms
+2026-05-19 16:29:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/11" responded 200 in 79.9666 ms
+2026-05-19 16:29:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 173.4036 ms
+2026-05-19 16:29:17 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 69.6119 ms
+2026-05-19 16:29:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 177.4847 ms
+2026-05-19 16:29:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 90.0789 ms
+2026-05-19 16:30:14 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 409.9277 ms
+2026-05-19 16:30:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 30.1027 ms
+2026-05-19 16:30:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 334.6985 ms
+2026-05-19 16:30:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/13" responded 200 in 152.8265 ms
+2026-05-19 16:30:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 26.2428 ms
+2026-05-19 16:30:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/5" responded 404 in 30.7916 ms
+2026-05-19 16:31:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 47.4308 ms
+2026-05-19 16:31:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 38.0251 ms
+2026-05-19 16:31:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 67.6611 ms
+2026-05-19 16:31:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 159.2626 ms
+2026-05-19 16:31:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 406.2876 ms
+2026-05-19 16:32:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Register" responded 200 in 83.7444 ms
+2026-05-19 16:33:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 27.8956 ms
+2026-05-19 16:34:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 202.1418 ms
+2026-05-19 16:34:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 270.7397 ms
+2026-05-19 16:34:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 216.9337 ms
+2026-05-19 16:34:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/12" responded 200 in 220.9778 ms
+2026-05-19 16:34:34 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 10.4302 ms
+2026-05-19 16:34:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 506.5546 ms
+2026-05-19 16:34:40 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 2.5734 ms
+2026-05-19 16:34:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.5813 ms

@@ -1,0 +1,19 @@
+﻿/* RTL Specific Styles for Login Page */
+body[dir="rtl"] .input-icon {
+    right: 1rem;
+    left: auto;
+}
+
+body[dir="rtl"] .form-control-custom {
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+}
+
+body[dir="rtl"] .validation-summary ul {
+    padding-right: 1.25rem;
+    padding-left: 0;
+}
+
+body[dir="rtl"] .me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}

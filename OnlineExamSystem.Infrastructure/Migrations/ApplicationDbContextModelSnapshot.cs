@@ -344,6 +344,50 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.ToTable("Exams");
                 });
 
+            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamInvitationAttempt", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvitationId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsCompleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("StartedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("StudentEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StudentId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StudentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("SubmissionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InvitationId");
+
+                    b.HasIndex("SubmissionId")
+                        .IsUnique()
+                        .HasFilter("[SubmissionId] IS NOT NULL");
+
+                    b.ToTable("ExamInvitationAttempts");
+                });
+
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamSubmission", b =>
                 {
                     b.Property<int>("SubmissionId")
@@ -362,7 +406,17 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<double>("Score")
-                        .HasColumnType("float");
+                        .HasPrecision(18, 2)
+                        .HasColumnType("float(18)");
+
+                    b.Property<string>("StudentEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StudentId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StudentName")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("SubmissionDate")
                         .HasColumnType("datetime2");
@@ -371,7 +425,6 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UserId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("SubmissionId");
@@ -381,6 +434,53 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.HasIndex("UserId", "ExamId");
 
                     b.ToTable("ExamSubmissions");
+                });
+
+            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities.ExamInvitation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CreatedByUserId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ExamId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("ExpiresAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("InvitationCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("MaxAttempts")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Token")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ExamId");
+
+                    b.HasIndex("InvitationCode")
+                        .IsUnique();
+
+                    b.HasIndex("Token")
+                        .IsUnique();
+
+                    b.ToTable("ExamInvitations");
                 });
 
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.Question", b =>
@@ -502,6 +602,24 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.Navigation("Question");
                 });
 
+            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamInvitationAttempt", b =>
+                {
+                    b.HasOne("OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities.ExamInvitation", "Invitation")
+                        .WithMany("Attempts")
+                        .HasForeignKey("InvitationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("OnlineExamSystem.Domains.Entities.ExamSubmission", "Submission")
+                        .WithOne()
+                        .HasForeignKey("OnlineExamSystem.Domains.Entities.ExamInvitationAttempt", "SubmissionId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Invitation");
+
+                    b.Navigation("Submission");
+                });
+
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamSubmission", b =>
                 {
                     b.HasOne("OnlineExamSystem.Domains.Entities.Exam", "Exam")
@@ -513,12 +631,22 @@ namespace OnlineExamSystem.Infrastructure.Migrations
                     b.HasOne("OnlineExamSystem.Domains.Entities.ApplicationUser", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Exam");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities.ExamInvitation", b =>
+                {
+                    b.HasOne("OnlineExamSystem.Domains.Entities.Exam", "Exam")
+                        .WithMany()
+                        .HasForeignKey("ExamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Exam");
                 });
 
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.Question", b =>
@@ -576,6 +704,11 @@ namespace OnlineExamSystem.Infrastructure.Migrations
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.ExamSubmission", b =>
                 {
                     b.Navigation("Answers");
+                });
+
+            modelBuilder.Entity("OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities.ExamInvitation", b =>
+                {
+                    b.Navigation("Attempts");
                 });
 
             modelBuilder.Entity("OnlineExamSystem.Domains.Entities.Question", b =>

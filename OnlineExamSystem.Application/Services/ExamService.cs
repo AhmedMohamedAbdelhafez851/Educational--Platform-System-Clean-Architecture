@@ -105,6 +105,8 @@ namespace OnlineExamSystem.Application.Services
                 {
                     ExamId = e.ExamId,
                     Title = e.Title,
+                    DurationInMinutes = e.DurationInMinutes, // Include duration
+                    TotalDegree = e.TotalDegree, // Include total degree
                     Questions = e.Questions.Select(q => new QuestionTakeDto
                     {
                         QuestionId = q.QuestionId,

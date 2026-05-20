@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="StudentsNeedingAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى متابعة</value>
+  </data>
+	<data name="ActionRequired" xml:space="preserve">
+    <value>مطلوب إجراء</value>
+  </data>
+	<data name="CriticalLowScore" xml:space="preserve">
+    <value>درجة منخفضة جداً</value>
+  </data>
+	<data name="BelowPassing" xml:space="preserve">
+    <value>أقل من درجة النجاح</value>
+  </data>
+	<data name="NeedsImprovement" xml:space="preserve">
+    <value>بحاجة إلى تحسين</value>
+  </data>
+	<data name="AllStudentsWell" xml:space="preserve">
+    <value>جميع الطلاب أداؤهم جيد</value>
+  </data>
+</root>

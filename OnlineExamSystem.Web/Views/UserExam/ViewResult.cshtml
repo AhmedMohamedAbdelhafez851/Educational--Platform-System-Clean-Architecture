@@ -1,276 +1,147 @@
-﻿@model OnlineExamSystem.Domains.Entities.ExamSubmission
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Domains.Entities.ExamSubmission
+
 @{
-    ViewData["Title"] = "Exam Result - " + Model.Exam.Title;
+    ViewData["Title"] = $"{Localizer["ExamResult"]} - {Model.Exam.Title}";
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+    var scorePercentage = Model.Score;
+    var isPassed = Model.IsPassed;
 }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<!DOCTYPE html>
+<html lang="@CultureInfo.CurrentUICulture.Name" dir="@(isRtl ? "rtl" : "ltr")">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Examify</title>
 
-<div class="container mt-4 mb-5">
-    <!-- Success Alert -->
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        <i class="bi bi-check-circle-fill me-2"></i>
-        <strong>Exam Submitted Successfully!</strong> Your answers have been recorded. Here are your results.
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
-
-    <div class="card shadow-lg border-0">
-        <div class="card-header @(Model.IsPassed ? "bg-gradient-success" : "bg-gradient-danger") text-white py-4">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h2 class="h3 mb-0">
-                        <i class="bi bi-trophy-fill me-2"></i>
-                        @Model.Exam.Title
-                    </h2>
-                    <p class="mb-0 mt-2 opacity-75">
-                        <i class="bi bi-calendar3 me-1"></i>
-                        Completed on @Model.SubmissionDate.ToString("MMMM dd, yyyy 'at' hh:mm tt")
-                    </p>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/pages/view-result.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="result-container">
+        <div class="result-card">
+            <div class="result-header @(!isPassed ? "failed" : "")">
+                <div class="result-icon">
+                    <i class="bi @(isPassed ? "bi-trophy-fill" : "bi-emoji-frown")"></i>
                 </div>
-                <div class="text-end">
-                    <div class="badge bg-white text-@(Model.IsPassed ? "success" : "danger") px-4 py-2 fs-5">
-                        <i class="bi @(Model.IsPassed ? "bi-check-circle-fill" : "bi-x-circle-fill") me-2"></i>
-                        @(Model.IsPassed ? "PASSED" : "FAILED")
+                <h1 class="result-title">@(isPassed ? "Congratulations!" : "Keep Learning!")</h1>
+                <p class="result-subtitle">@Model.Exam.Title</p>
+                <p class="result-subtitle">@Model.SubmissionDate.ToString("MMMM dd, yyyy 'at' hh:mm tt")</p>
+            </div>
+
+            <div class="score-section">
+                <div class="score-circle">
+                    <svg viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3b82f6" />
+                                <stop offset="100%" style="stop-color:#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="100" cy="100" r="80" class="bg-circle" />
+                        <circle cx="100" cy="100" r="80" class="progress-circle" stroke="url(#scoreGradient)" />
+                    </svg>
+                    <div class="score-text">
+                        <div class="score-value">@scorePercentage.ToString("F0")%</div>
+                        <div class="score-label">Score</div>
                     </div>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">@Model.CorrectAnswers</div>
+                    <div class="stat-label">Correct Answers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">@(Model.TotalQuestions - Model.CorrectAnswers)</div>
+                    <div class="stat-label">Incorrect Answers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">@Model.TotalQuestions</div>
+                    <div class="stat-label">Total Questions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">@scorePercentage.ToString("F0")%</div>
+                    <div class="stat-label">Percentage</div>
                 </div>
             </div>
         </div>
 
-        <div class="card-body p-4">
-            <div class="row g-4 mb-5">
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 bg-light">
-                        <div class="card-body text-center">
-                            <div class="display-4 fw-bold text-primary">@Model.Score.ToString("F1")%</div>
-                            <div class="text-muted">Final Score</div>
-                            <div class="progress mt-3" style="height: 8px;">
-                                <div class="progress-bar bg-@(Model.IsPassed ? "success" : "danger")"
-                                     style="width: @Model.Score%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="result-card">
+            <div class="answers-section">
+                <h3 class="fw-bold mb-4"><i class="bi bi-list-check me-2"></i> Detailed Answers</h3>
 
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 bg-light">
-                        <div class="card-body text-center">
-                            <div class="display-4 fw-bold text-success">@Model.CorrectAnswers</div>
-                            <div class="text-muted">Correct Answers</div>
-                            <i class="bi bi-check-circle-fill text-success fs-4 mt-2"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 bg-light">
-                        <div class="card-body text-center">
-                            <div class="display-4 fw-bold text-danger">@(Model.TotalQuestions - Model.CorrectAnswers)</div>
-                            <div class="text-muted">Incorrect Answers</div>
-                            <i class="bi bi-x-circle-fill text-danger fs-4 mt-2"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="card h-100 border-0 bg-light">
-                        <div class="card-body text-center">
-                            <div class="display-4 fw-bold text-info">@Model.TotalQuestions</div>
-                            <div class="text-muted">Total Questions</div>
-                            <i class="bi bi-question-circle-fill text-info fs-4 mt-2"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="alert @(Model.IsPassed ? "alert-success" : "alert-warning") mb-4">
-                <div class="d-flex align-items-center">
-                    <i class="bi @(Model.IsPassed ? "bi-emoji-smile" : "bi-emoji-frown") fs-1 me-3"></i>
-                    <div>
-                        @if (Model.IsPassed)
-                        {
-                            <h5 class="alert-heading mb-1">Congratulations! 🎉</h5>
-                            <p class="mb-0">You've successfully passed the exam with a score of @Model.Score.ToString("F1")%</p>
-                        }
-                        else
-                        {
-                            <h5 class="alert-heading mb-1">Keep Learning! 📚</h5>
-                            <p class="mb-0">You scored @Model.Score.ToString("F1")%. Review your answers below and try again.</p>
-                        }
-                    </div>
-                </div>
-            </div>
-
-            <h4 class="mb-4">
-                <i class="bi bi-list-check me-2 text-primary"></i>
-                Detailed Answer Review
-            </h4>
-
-            <div class="accordion" id="answersAccordion">
                 @{
                     int counter = 0;
                 }
                 @foreach (var answer in Model.Answers.OrderBy(a => a.QuestionId))
                 {
                     counter++;
-                    // Fix: Compare using CorrectChoiceId
                     bool isCorrect = answer.SelectedChoiceId == answer.Question.CorrectChoiceId;
                     var correctChoice = answer.Question.Choices.FirstOrDefault(c => c.ChoiceId == answer.Question.CorrectChoiceId);
-                    var selectedChoice = answer.SelectedChoice ?? answer.Question.Choices.FirstOrDefault(c => c.ChoiceId == answer.SelectedChoiceId);
+                    var selectedChoice = answer.SelectedChoice;
 
-                    <div class="accordion-item mb-3 border rounded-3 overflow-hidden">
-                        <div class="accordion-header">
-                            <button class="accordion-button @(isCorrect ? "" : "collapsed") py-3"
-                                    type="button"
-                                    data-bs-toggle="collapse"
-                                    data-bs-target="#collapse@(counter)">
-                                <div class="d-flex align-items-center w-100 me-3">
-                                    <div class="me-3">
-                                        @if (isCorrect)
-                                        {
-                                            <span class="badge bg-success rounded-circle p-2">
-                                                <i class="bi bi-check-lg"></i>
-                                            </span>
-                                        }
-                                        else
-                                        {
-                                            <span class="badge bg-danger rounded-circle p-2">
-                                                <i class="bi bi-x-lg"></i>
-                                            </span>
-                                        }
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <strong>Question @counter:</strong> @answer.Question.Title
-                                    </div>
-                                    <div class="badge @(isCorrect ? "bg-success" : "bg-danger") ms-2">
-                                        @(isCorrect ? "Correct" : "Incorrect")
-                                    </div>
-                                </div>
-                            </button>
-                        </div>
-                        <div id="collapse@(counter)"
-                             class="accordion-collapse collapse @(isCorrect ? "show" : "")">
-                            <div class="accordion-body bg-light">
-                                <div class="row g-3">
+                    <div class="answer-card @(isCorrect ? "correct" : "incorrect")">
+                        <div class="d-flex gap-3">
+                            <div class="answer-status @(isCorrect ? "correct" : "incorrect")">
+                                <i class="bi @(isCorrect ? "bi-check-lg" : "bi-x-lg")"></i>
+                            </div>
+                            <div class="flex-grow-1">
+                                <h6 class="fw-semibold mb-2">Question @counter</h6>
+                                <p class="mb-2">@answer.Question.Title</p>
+
+                                <div class="row mt-3">
                                     <div class="col-md-6">
-                                        <div class="card h-100 @(!isCorrect ? "border-danger" : "")">
-                                            <div class="card-header @(!isCorrect ? "bg-danger text-white" : "bg-white")">
-                                                <h6 class="mb-0">
-                                                    <i class="bi bi-person-fill me-2"></i>
-                                                    Your Answer
-                                                    @if (!isCorrect)
-                                                    {
-                                                        <span class="badge bg-light text-danger ms-2">Incorrect</span>
-                                                    }
-                                                </h6>
-                                            </div>
-                                            <div class="card-body">
-                                                @if (selectedChoice != null)
-                                                {
-                                                    <p class="mb-0 @(!isCorrect ? "text-danger" : "")">@selectedChoice.Text</p>
-                                                }
-                                                else
-                                                {
-                                                    <p class="text-muted mb-0">No answer selected</p>
-                                                }
-                                            </div>
+                                        <div class="choice-badge @(isCorrect ? "choice-correct" : "choice-wrong")">
+                                            <i class="bi @(isCorrect ? "bi-check-circle" : "bi-x-circle") me-1"></i>
+                                            Your answer: @(selectedChoice?.Text ?? "No answer selected")
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="card h-100 border-success">
-                                            <div class="card-header bg-success text-white">
-                                                <h6 class="mb-0">
-                                                    <i class="bi bi-check-circle-fill me-2"></i>
-                                                    Correct Answer
-                                                </h6>
-                                            </div>
-                                            <div class="card-body">
-                                                @if (correctChoice != null)
-                                                {
-                                                    <p class="mb-0">@correctChoice.Text</p>
-                                                    if (!isCorrect)
-                                                    {
-                                                        <small class="text-muted mt-2 d-block">
-                                                            <i class="bi bi-info-circle"></i> You selected a different answer.
-                                                        </small>
-                                                    }
-                                                }
-                                                else
-                                                {
-                                                    <p class="text-muted mb-0">Correct answer not available</p>
-                                                }
+                                    @if (!isCorrect)
+                                    {
+                                        <div class="col-md-6">
+                                            <div class="choice-badge choice-correct">
+                                                <i class="bi bi-check-circle me-1"></i>
+                                                Correct answer: @(correctChoice?.Text ?? "Not available")
                                             </div>
                                         </div>
-                                    </div>
+                                    }
                                 </div>
                             </div>
                         </div>
                     </div>
                 }
-            </div>
 
-            <div class="d-flex justify-content-between align-items-center mt-5 pt-3 border-top">
-                <a asp-action="Index" class="btn btn-outline-secondary btn-lg">
-                    <i class="bi bi-arrow-left me-2"></i>Back to Exams
-                </a>
-                <div>
-                    <button onclick="window.print()" class="btn btn-info btn-lg me-2">
-                        <i class="bi bi-printer me-2"></i>Print Result
+                <div class="d-flex justify-content-between gap-3 mt-4 pt-3">
+                    <button onclick="window.print()" class="btn btn-outline-secondary" style="padding: 0.75rem 2rem; border-radius: 12px;">
+                        <i class="bi bi-printer me-2"></i> Print Result
                     </button>
-                    <button onclick="shareResult()" class="btn btn-primary btn-lg">
-                        <i class="bi bi-share me-2"></i>Share Result
-                    </button>
+                    <a asp-controller="UserExam" asp-action="Index" class="btn btn-dashboard">
+                        <i class="bi bi-journal-bookmark-fill me-2"></i> Back to Exams
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-@section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        function shareResult() {
-        if (navigator.share) {
-        navigator.share({
-        title: 'Exam Result - @Model.Exam.Title',
-        text: 'I scored @Model.Score.ToString("F1")% on the @Model.Exam.Title exam!',
-        url: window.location.href
+        $(document).ready(function () {
+        $('.progress-circle').each(function () {
+        var percent = @scorePercentage;
+        var radius = 80;
+        var circumference = 2 * Math.PI * radius;
+        var dashoffset = circumference - (percent / 100) * circumference;
+        $(this).css('stroke-dashoffset', dashoffset);
         });
-        } else {
-        // Copy to clipboard
-        navigator.clipboard.writeText(window.location.href);
-        alert('Link copied to clipboard! You can now share your result.');
-        }
-        }
+        });
     </script>
-}
-
-<style>
-    .bg-gradient-success {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-    }
-
-    .bg-gradient-danger {
-    background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%);
-    }
-
-    .accordion-button:not(.collapsed) {
-    background-color: #f8f9fa;
-    }
-
-    @@media print {
-    .btn, .accordion-button::after, .alert {
-    display: none !important;
-    }
-
-    .card {
-    border: none !important;
-    }
-
-    .accordion-collapse {
-    display: block !important;
-    }
-
-    .accordion-button {
-    background-color: transparent !important;
-    }
-    }
-</style>
+</body>
+</html>

@@ -1,13 +1,12 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using OnlineExamSystem.Application.Features.Analytics.Queries.GetExamStatistics;
-using OnlineExamSystem.Application.Features.Analytics.Queries.GetQuestionPerformance;
-using OnlineExamSystem.Application.Features.Analytics.Queries.GetStudentsPerformance;
+using OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics;
+using OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams;
 
 namespace OnlineExamSystem.Web.Controllers
 {
-    [Authorize(Roles = "Admin,Teacher")] // Adjust roles as needed
+    [Authorize(Roles = "Admin,Teacher")]
     public class AnalyticsController : Controller
     {
         private readonly IMediator _mediator;
@@ -17,19 +16,24 @@ namespace OnlineExamSystem.Web.Controllers
             _mediator = mediator;
         }
 
+        // Overview page - Shows all exams for selection
+        [HttpGet]
+        public async Task<IActionResult> Overview()
+        {
+            var exams = await _mediator.Send(new GetAllExamsQuery());
+            return View(exams);
+        }
+
+        // Detailed report for specific exam
+        [HttpGet]
         public async Task<IActionResult> ExamReport(int examId)
         {
-            // Fetch all data for this exam
-            var statistics = await _mediator.Send(new GetExamStatisticsQuery(examId));
-            var questions = await _mediator.Send(new GetQuestionPerformanceQuery(examId));
-            var students = await _mediator.Send(new GetStudentsPerformanceQuery(examId));
-
-            ViewBag.ExamId = examId;
-            ViewBag.Statistics = statistics;
-            ViewBag.Questions = questions;
-            ViewBag.Students = students;
-
-            return View();
+            var analytics = await _mediator.Send(new GetExamAnalyticsQuery(examId));
+            if (analytics == null)
+            {
+                return NotFound();
+            }
+            return View(analytics);
         }
     }
 }

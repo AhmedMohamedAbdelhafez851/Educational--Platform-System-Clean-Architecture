@@ -25,8 +25,8 @@ namespace OnlineExamSystem.Application.Features.Analytics.Queries.GetStudentsPer
                 .AsNoTracking()
                 .Select(s => new StudentPerformanceDto
                 {
-                    UserId = s.UserId,
-                    UserName = s.User.UserName ?? s.User.Email ?? "",
+                    UserId = s.UserId!,
+                    StudentName = s.User!.UserName ?? s.User.Email ?? "",
                     Email = s.User.Email ?? "",
                     Score = s.Score,
                     IsPassed = s.IsPassed,

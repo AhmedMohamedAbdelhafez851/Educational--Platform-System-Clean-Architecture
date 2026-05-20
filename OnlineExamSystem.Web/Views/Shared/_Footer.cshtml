@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+
+<footer>
+    <div class="container text-center">
+        <div class="footer-links mb-3">
+            <a href="#" class="text-decoration-none text-white">
+                <i class="bi bi-info-circle me-1"></i>
+                <span class="d-none d-md-inline">@Localizer["AboutUs"]</span>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+                <i class="bi bi-envelope me-1"></i>
+                <span class="d-none d-md-inline">@Localizer["Contact"]</span>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+                <i class="bi bi-shield-lock me-1"></i>
+                <span class="d-none d-md-inline">@Localizer["PrivacyPolicy"]</span>
+            </a>
+            <a href="#" class="text-decoration-none text-white">
+                <i class="bi bi-file-text me-1"></i>
+                <span class="d-none d-md-inline">@Localizer["TermsOfService"]</span>
+            </a>
+        </div>
+        <div class="social-icons mb-3">
+            <a href="#" class="text-white me-3" aria-label="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="text-white me-3" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="#" class="text-white me-3" aria-label="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="text-white" aria-label="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+        <p class="mb-0 text-white">
+            <i class="bi bi-c-circle me-1"></i>
+            &copy; @DateTime.Now.Year - @Localizer["AppTitle"]. @Localizer["AllRightsReserved"]
+        </p>
+        <small class="text-white-50 mt-2 d-block">@Localizer["Version"] 2.0</small>
+    </div>
+</footer>

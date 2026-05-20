@@ -1,6 +1,11 @@
-﻿@model OnlineExamSystem.Application.DTOs.Question.CreateQuestionDto
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Question.CreateQuestionDto
+
 @{
-    ViewData["Title"] = "Add Question";
+    ViewData["Title"] = Localizer["PageTitle"];
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
 }
 
 <div class="container py-4">
@@ -8,44 +13,49 @@
         <div class="card-header bg-primary bg-gradient text-white py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <h3 class="mb-0 fw-semibold"><i class="bi bi-question-circle me-2"></i>Add New Question</h3>
-                    <p class="mb-0 opacity-75 small">Exam: @Model.Title</p>
+                    <h3 class="mb-0 fw-semibold"><i class="bi bi-question-circle me-2"></i>@Localizer["AddNewQuestion"]</h3>
+                    <p class="mb-0 opacity-75 small">@Localizer["ExamLabel"]: @ViewBag.ExamTitle</p>
                 </div>
                 <a asp-controller="Question" asp-action="Index" asp-route-examId="@Model.ExamId"
                    class="btn btn-outline-light btn-sm px-3">
-                    <i class="bi bi-arrow-left me-2"></i>Back to Questions
+                    <i class="bi bi-arrow-left me-2"></i>@Localizer["BackToQuestions"]
                 </a>
             </div>
         </div>
 
         <div class="card-body p-4">
-            <form asp-action="Add" method="post" class="needs-validation">
+            <form id="questionForm" asp-action="Add" method="post">
+                @Html.AntiForgeryToken()
                 <input type="hidden" asp-for="ExamId" />
-                <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>Please correct the errors below
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger alert-dismissible fade show" role="alert" style="display: none;">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i><span id="validationSummaryText"></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                 </div>
 
-                <!-- Question Text Section -->
+                <!-- Question Text -->
                 <div class="mb-4">
                     <label asp-for="Title" class="form-label fw-semibold">
-                        <i class="bi bi-pencil-square me-1"></i>Question Text
+                        <i class="bi bi-pencil-square me-1"></i>@Localizer["QuestionText"]
                     </label>
-                    <textarea asp-for="Title" class="form-control form-control-lg"
-                              rows="3" placeholder="Enter your question text here..." required></textarea>
+                    <textarea asp-for="Title" class="form-control form-control-lg" rows="3"
+                              placeholder="@Localizer["QuestionPlaceholder"]"
+                              data-val="true" data-val-required="@Localizer["QuestionTextRequired"]"
+                              data-val-minlength="@Localizer["QuestionMinLength"]"
+                              data-val-minlength-min="5"></textarea>
                     <span asp-validation-for="Title" class="text-danger small"></span>
                     <div class="form-text text-muted small">
-                        <i class="bi bi-info-circle me-1"></i>Write a clear, concise question. This is what students will see.
+                        <i class="bi bi-info-circle me-1"></i>@Localizer["QuestionHelp"]
                     </div>
                 </div>
 
-                <!-- Answer Choices Section -->
+                <!-- Answer Choices -->
                 <div class="card mb-4 border-0 shadow-sm">
                     <div class="card-header bg-light py-3">
                         <h5 class="mb-0 fw-semibold">
-                            <i class="bi bi-list-check me-2"></i>Answer Choices
+                            <i class="bi bi-list-check me-2"></i>@Localizer["AnswerChoices"]
                         </h5>
-                        <p class="text-muted mb-0 small">Provide 4 options and select one correct answer</p>
+                        <p class="text-muted mb-0 small">@Localizer["ChoicesHelp"]</p>
                     </div>
                     <div class="card-body p-4">
                         <div class="choices-container">
@@ -55,10 +65,12 @@
                                     <div class="row g-3 align-items-center">
                                         <div class="col-auto">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="CorrectChoiceIndex" value="@i"
-                                                       id="choice@(i)" @(Model.CorrectChoiceIndex == i ? "checked" : "") required>
+                                                <input class="form-check-input correct-choice-radio" type="radio"
+                                                       name="CorrectChoiceIndex" value="@i" id="choice@(i)"
+                                                @(Model.CorrectChoiceIndex == i ? "checked" : "")
+                                                       data-val="true" data-val-required="@Localizer["CorrectChoiceRequired"]">
                                                 <label class="form-check-label fw-semibold" for="choice@(i)">
-                                                    Option @(i + 1)
+                                                    @Localizer["Option"] @(i + 1)
                                                 </label>
                                             </div>
                                         </div>
@@ -67,8 +79,9 @@
                                                 <span class="input-group-text bg-white text-muted">
                                                     <i class="bi bi-@(Model.CorrectChoiceIndex == i ? "check-circle-fill text-success" : "circle")"></i>
                                                 </span>
-                                                <input asp-for="Choices[i].Text" class="form-control"
-                                                       placeholder="Enter answer option text" required />
+                                                <input asp-for="Choices[i].Text" class="form-control choice-text"
+                                                       placeholder="@Localizer["OptionPlaceholder"]"
+                                                       data-val="true" data-val-required="@Localizer["ChoiceRequired"]" />
                                             </div>
                                             <span asp-validation-for="Choices[i].Text" class="text-danger small"></span>
                                         </div>
@@ -79,18 +92,18 @@
                     </div>
                 </div>
 
-                <!-- Action Buttons Section -->
+                <!-- Actions -->
                 <div class="d-flex justify-content-between align-items-center pt-2">
                     <div class="form-text text-muted">
-                        <i class="bi bi-asterisk text-danger small me-1"></i>All fields are required
+                        <i class="bi bi-asterisk text-danger small me-1"></i>@Localizer["AllFieldsRequired"]
                     </div>
                     <div class="d-flex gap-2">
                         <a asp-controller="Question" asp-action="Index" asp-route-examId="@Model.ExamId"
                            class="btn btn-outline-secondary px-4">
-                            <i class="bi bi-x-lg me-2"></i>Cancel
+                            <i class="bi bi-x-lg me-2"></i>@Localizer["Cancel"]
                         </a>
-                        <button type="submit" class="btn btn-primary px-4">
-                            <i class="bi bi-plus-circle me-2"></i>Create Question
+                        <button type="submit" class="btn btn-primary px-4" id="submitBtn">
+                            <i class="bi bi-plus-circle me-2"></i>@Localizer["CreateQuestion"]
                         </button>
                     </div>
                 </div>
@@ -102,24 +115,107 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
-        $(document).ready(function() {
-            // Highlight selected answer choice
-            $('input[name="CorrectChoiceIndex"]').change(function() {
+        $(document).ready(function () {
+            var isRtl = @(isRtl ? "true" : "false");
+
+            // Custom validation for correct choice selection
+            $.validator.addMethod("correctChoiceSelected", function (value, element) {
+                return $('input[name="CorrectChoiceIndex"]:checked').length > 0;
+            }, "@Localizer["CorrectChoiceRequired"]");
+
+            // Add custom validation to form
+            $("#questionForm").validate({
+                rules: {
+                    "Title": {
+                        required: true,
+                        minlength: 5
+                    },
+                    "CorrectChoiceIndex": {
+                        correctChoiceSelected: true
+                    }
+                },
+                messages: {
+                    "Title": {
+                        required: "@Localizer["QuestionTextRequired"]",
+                        minlength: "@Localizer["QuestionMinLength"]"
+                    }
+                },
+                errorClass: "is-invalid",
+                validClass: "is-valid",
+                errorElement: "span",
+                errorPlacement: function (error, element) {
+                    if (element.hasClass("choice-text")) {
+                        error.insertAfter(element.closest('.input-group'));
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element) {
+                    $(element).addClass("is-invalid").removeClass("is-valid");
+                },
+                unhighlight: function (element) {
+                    $(element).removeClass("is-invalid").addClass("is-valid");
+                },
+                submitHandler: function (form) {
+                    var $btn = $("#submitBtn");
+                    $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["CreateQuestion"]...');
+                    form.submit();
+                }
+            });
+
+            // Real-time validation for choice texts
+            $(".choice-text").on("input blur", function () {
+                var $this = $(this);
+                if ($this.val().trim() === "") {
+                    $this.addClass("is-invalid");
+                    $this.closest('.choice-container').find('.text-danger').show();
+                } else {
+                    $this.removeClass("is-invalid").addClass("is-valid");
+                    $this.closest('.choice-container').find('.text-danger').hide();
+                }
+            });
+
+            // Highlight selected answer
+            $('input[name="CorrectChoiceIndex"]').change(function () {
                 $('.choice-container').removeClass('border-success bg-success bg-opacity-10');
                 $(this).closest('.choice-container').addClass('border-success bg-success bg-opacity-10');
 
-                // Update the icons
                 $('.input-group-text i').removeClass('check-circle-fill text-success').addClass('circle');
                 $(this).closest('.choice-container').find('.input-group-text i')
                     .removeClass('circle')
                     .addClass('check-circle-fill text-success');
             });
 
-            // Initialize tooltips
-            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-            tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl);
+            // Prevent multiple submissions
+            $("#questionForm").on("submit", function () {
+                if ($("#submitBtn").prop("disabled")) {
+                    return false;
+                }
+                return true;
             });
         });
     </script>
+
+    <style>
+        .choice-container {
+            transition: all 0.2s ease;
+        }
+
+            .choice-container:hover {
+                transform: translateX(4px);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            }
+
+        body[dir="rtl"] .choice-container:hover {
+            transform: translateX(-4px);
+        }
+
+        .is-invalid {
+            border-color: #dc2626 !important;
+        }
+
+        .is-valid {
+            border-color: #10b981 !important;
+        }
+    </style>
 }

@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- Page Header -->
+	<data name="PageTitle" xml:space="preserve">
+    <value>لوحة التحكم</value>
+  </data>
+	<data name="WelcomeMessage" xml:space="preserve">
+    <value>مرحباً بعودتك!</value>
+  </data>
+	<data name="Subtitle" xml:space="preserve">
+    <value>إليك ملخص ما يحدث في امتحاناتك اليوم</value>
+  </data>
+
+	<!-- KPI Cards -->
+	<data name="TotalStudents" xml:space="preserve">
+    <value>إجمالي الطلاب</value>
+  </data>
+	<data name="ActiveStudents" xml:space="preserve">
+    <value>طلاب نشطاء في النظام</value>
+  </data>
+	<data name="TotalExams" xml:space="preserve">
+    <value>إجمالي الامتحانات</value>
+  </data>
+	<data name="CreatedThisWeek" xml:space="preserve">
+    <value>تم إنشاؤها هذا الأسبوع</value>
+  </data>
+	<data name="AverageScore" xml:space="preserve">
+    <value>متوسط الدرجات</value>
+  </data>
+	<data name="OverallPerformance" xml:space="preserve">
+    <value>أداء الطلاب العام</value>
+  </data>
+	<data name="NeedsAttention" xml:space="preserve">
+    <value>بحاجة إلى متابعة</value>
+  </data>
+	<data name="StudentsNeedingFollowUp" xml:space="preserve">
+    <value>طلاب بحاجة إلى متابعة</value>
+  </data>
+	<data name="AttendanceRate" xml:space="preserve">
+    <value>نسبة الحضور</value>
+  </data>
+	<data name="AverageExamAttendance" xml:space="preserve">
+    <value>متوسط حضور الامتحانات</value>
+  </data>
+
+	<!-- Recent Exams Section -->
+	<data name="RecentExams" xml:space="preserve">
+    <value>الامتحانات الأخيرة</value>
+  </data>
+	<data name="ViewAll" xml:space="preserve">
+    <value>عرض الكل</value>
+  </data>
+	<data name="Attended" xml:space="preserve">
+    <value>حضر</value>
+  </data>
+	<data name="AverageScoreLabel" xml:space="preserve">
+    <value>متوسط الدرجات</value>
+  </data>
+	<data name="NoExamsYet" xml:space="preserve">
+    <value>لا توجد امتحانات بعد</value>
+  </data>
+
+	<!-- Students Needing Attention Section -->
+	<data name="StudentsNeedingAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى متابعة</value>
+  </data>
+	<data name="FailedExams" xml:space="preserve">
+    <value>رسب في الامتحانات</value>
+  </data>
+	<data name="AllStudentsWell" xml:space="preserve">
+    <value>جميع الطلاب أداؤهم جيد!</value>
+  </data>
+
+	<!-- Recent Activity Section -->
+	<data name="RecentActivity" xml:space="preserve">
+    <value>النشاط الأخير</value>
+  </data>
+	<data name="NoRecentActivity" xml:space="preserve">
+    <value>لا يوجد نشاط حديث</value>
+  </data>
+
+	<!-- Upcoming Exams Section -->
+	<data name="UpcomingExams" xml:space="preserve">
+    <value>الامتحانات القادمة</value>
+  </data>
+	<data name="Students" xml:space="preserve">
+    <value>طلاب</value>
+  </data>
+	<data name="Prepare" xml:space="preserve">
+    <value>تجهيز</value>
+  </data>
+	<data name="NoUpcomingExams" xml:space="preserve">
+    <value>لا توجد امتحانات قادمة</value>
+  </data>
+
+	<!-- Smart Insights Section -->
+	<data name="SmartInsights" xml:space="preserve">
+    <value>رؤى ذكية</value>
+  </data>
+	<data name="ViewDetails" xml:space="preserve">
+    <value>عرض التفاصيل</value>
+  </data>
+	<data name="ExcellentPerformance" xml:space="preserve">
+    <value>أداء ممتاز! متوسط الدرجات</value>
+  </data>
+	<data name="GoodPerformance" xml:space="preserve">
+    <value>أداء جيد. متوسط الدرجات</value>
+  </data>
+	<data name="NeedsImprovement" xml:space="preserve">
+    <value>أداء الطلاب بحاجة إلى تحسين. متوسط الدرجات</value>
+  </data>
+	<data name="ViewStrugglingStudents" xml:space="preserve">
+    <value>عرض الطلاب المتعثرين</value>
+  </data>
+	<data name="StudentsNeedAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى اهتمام فوري</value>
+  </data>
+	<data name="ReviewStudents" xml:space="preserve">
+    <value>مراجعة الطلاب</value>
+  </data>
+	<data name="LowAttendance" xml:space="preserve">
+    <value>نسبة الحضور منخفضة</value>
+  </data>
+	<data name="ViewAttendance" xml:space="preserve">
+    <value>عرض الحضور</value>
+  </data>
+	<data name="RecentExamCreated" xml:space="preserve">
+    <value>تم إنشاء امتحان حديث</value>
+  </data>
+	<data name="ViewAnalytics" xml:space="preserve">
+    <value>عرض التحليلات</value>
+  </data>
+	<data name="NoInsights" xml:space="preserve">
+    <value>لا توجد رؤى متاحة</value>
+  </data>
+</root>

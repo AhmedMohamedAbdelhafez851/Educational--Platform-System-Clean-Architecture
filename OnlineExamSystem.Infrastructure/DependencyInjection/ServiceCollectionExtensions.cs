@@ -12,13 +12,24 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddInfrastructure(
+     this IServiceCollection services,
+     IConfiguration configuration)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"),
-                    sqlOptions => sqlOptions.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery)));
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection"),
+                    sqlOptions =>
+                    {
+                        sqlOptions.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
+                        sqlOptions.EnableRetryOnFailure(
+                            maxRetryCount: 5,
+                            maxRetryDelay: TimeSpan.FromSeconds(30),
+                            errorNumbersToAdd: null);
+                        sqlOptions.CommandTimeout(60);
+                    }));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            services.AddIdentity<Domains.Entities.ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequiredLength = 6;
@@ -34,6 +45,9 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
             {
                 options.LoginPath = "/Account/Login";
                 options.AccessDeniedPath = "/Account/AccessDenied";
+                options.Cookie.HttpOnly = true;
+                options.ExpireTimeSpan = TimeSpan.FromDays(7);
+                options.SlidingExpiration = true;
             });
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();

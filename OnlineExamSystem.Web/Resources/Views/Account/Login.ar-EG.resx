@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- Page Title -->
+	<data name="PageTitle" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+
+	<!-- Header Messages -->
+	<data name="WelcomeBack" xml:space="preserve">
+    <value>مرحباً بعودتك</value>
+  </data>
+	<data name="SignInMessage" xml:space="preserve">
+    <value>قم بتسجيل الدخول للوصول إلى منصة الاختبارات</value>
+  </data>
+
+	<!-- Form Labels -->
+	<data name="EmailLabel" xml:space="preserve">
+    <value>البريد الإلكتروني</value>
+  </data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+    <value>أدخل بريدك الإلكتروني</value>
+  </data>
+	<data name="PasswordLabel" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+    <value>أدخل كلمة المرور</value>
+  </data>
+	<data name="RememberMe" xml:space="preserve">
+    <value>تذكرني</value>
+  </data>
+	<data name="LoginButton" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+
+	<!-- Registration Links -->
+	<data name="NoAccount" xml:space="preserve">
+    <value>ليس لديك حساب؟</value>
+  </data>
+	<data name="CreateAccount" xml:space="preserve">
+    <value>إنشاء حساب جديد</value>
+  </data>
+
+	<!-- Validation Messages -->
+	<data name="EmailRequired" xml:space="preserve">
+    <value>البريد الإلكتروني مطلوب</value>
+  </data>
+	<data name="InvalidEmail" xml:space="preserve">
+    <value>البريد الإلكتروني غير صالح</value>
+  </data>
+	<data name="EmailTooLong" xml:space="preserve">
+    <value>البريد الإلكتروني طويل جداً</value>
+  </data>
+	<data name="PasswordRequired" xml:space="preserve">
+    <value>كلمة المرور مطلوبة</value>
+  </data>
+	<data name="PasswordMinLength" xml:space="preserve">
+    <value>كلمة المرور يجب أن تكون 6 أحرف على الأقل</value>
+  </data>
+	<data name="PasswordTooLong" xml:space="preserve">
+    <value>كلمة المرور طويلة جداً</value>
+  </data>
+	<data name="PleaseFixErrors" xml:space="preserve">
+    <value>يرجى إصلاح</value>
+  </data>
+	<data name="ErrorsFound" xml:space="preserve">
+    <value>أخطاء قبل المتابعة</value>
+  </data>
+	<data name="Processing" xml:space="preserve">
+    <value>جاري المعالجة...</value>
+  </data>
+
+	<!-- Server Error Messages -->
+	<data name="EmailNotFound" xml:space="preserve">
+    <value>البريد الإلكتروني غير موجود</value>
+  </data>
+	<data name="InvalidCredentials" xml:space="preserve">
+    <value>البريد الإلكتروني أو كلمة المرور غير صحيحة</value>
+  </data>
+	<data name="AccountLocked" xml:space="preserve">
+    <value>حسابك مقفل. يرجى المحاولة مرة أخرى لاحقاً</value>
+  </data>
+</root>

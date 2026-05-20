@@ -4,6 +4,8 @@
     {
         public int ExamId { get; set; }
         public string Title { get; set; } = "";
+        public int DurationInMinutes { get; set; } // Add this property
+        public int TotalDegree { get; set; } // Add this property
         public List<QuestionTakeDto> Questions { get; set; } = new();
     }
 

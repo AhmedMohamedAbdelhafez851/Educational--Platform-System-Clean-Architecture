@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using OnlineExamSystem.Domains.Entities;
+using OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities;
 
 namespace OnlineExamSystem.Infrastructure.Persistence
 {
@@ -13,6 +14,8 @@ namespace OnlineExamSystem.Infrastructure.Persistence
         public DbSet<ExamSubmission> ExamSubmissions { get; set; }
         public DbSet<UserAnswer> UserAnswers { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
+        public DbSet<ExamInvitation> ExamInvitations { get; set; }
+        public DbSet<ExamInvitationAttempt> ExamInvitationAttempts { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -41,20 +44,27 @@ namespace OnlineExamSystem.Infrastructure.Persistence
                 .IsRequired(false)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            modelBuilder.Entity<ExamSubmission>()
-                .HasKey(es => es.SubmissionId);
+            modelBuilder.Entity<ExamSubmission>(entity =>
+            {
+                entity.HasKey(es => es.SubmissionId);
 
-            modelBuilder.Entity<ExamSubmission>()
-                .HasOne(es => es.User)
-                .WithMany()
-                .HasForeignKey(es => es.UserId)
-                .OnDelete(DeleteBehavior.Restrict);
+                entity.Property(es => es.UserId).IsRequired(false);
+                entity.Property(es => es.StudentName).IsRequired(false);
+                entity.Property(es => es.StudentEmail).IsRequired(false);
+                entity.Property(es => es.StudentId).IsRequired(false);
+                entity.Property(es => es.Score).HasPrecision(18, 2);
 
-            modelBuilder.Entity<ExamSubmission>()
-                .HasOne(es => es.Exam)
-                .WithMany(e => e.Submissions)
-                .HasForeignKey(es => es.ExamId)
-                .OnDelete(DeleteBehavior.Restrict);
+                entity.HasOne(es => es.User)
+                    .WithMany()
+                    .HasForeignKey(es => es.UserId)
+                    .OnDelete(DeleteBehavior.Restrict)
+                    .IsRequired(false);
+
+                entity.HasOne(es => es.Exam)
+                    .WithMany(e => e.Submissions)
+                    .HasForeignKey(es => es.ExamId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
 
             modelBuilder.Entity<UserAnswer>()
                 .HasOne(ua => ua.Submission)
@@ -76,6 +86,20 @@ namespace OnlineExamSystem.Infrastructure.Persistence
 
             modelBuilder.Entity<ExamSubmission>()
                 .HasIndex(es => new { es.UserId, es.ExamId });
+
+            modelBuilder.Entity<ExamInvitation>()
+                .HasIndex(e => e.Token)
+                .IsUnique();
+
+            modelBuilder.Entity<ExamInvitation>()
+                .HasIndex(e => e.InvitationCode)
+                .IsUnique();
+
+            modelBuilder.Entity<ExamInvitationAttempt>()
+                .HasOne(e => e.Submission)
+                .WithOne()
+                .HasForeignKey<ExamInvitationAttempt>(e => e.SubmissionId)
+                .OnDelete(DeleteBehavior.SetNull);
 
             // Seed Roles
             var adminRoleId = "8a3b5d7c-fb0b-42c9-a5c2-bd055b43a6c4";

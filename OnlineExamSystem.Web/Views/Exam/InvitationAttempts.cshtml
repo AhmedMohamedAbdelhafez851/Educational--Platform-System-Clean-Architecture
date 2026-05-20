@@ -1,0 +1,43 @@
+﻿@model List<OnlineExamSystem.Application.DTOs.Exam.ExamInvitationAttemptDto>
+@{
+    ViewData["Title"] = "Invitation Attempts";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header bg-info text-white">
+            <h3>Student Attempts</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Started At</th>
+                        <th>Completed At</th>
+                        <th>Status</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var attempt in Model)
+                    {
+                        <tr>
+                            <td>@attempt.StudentName</td>
+                            <td>@attempt.StudentEmail</td>
+                            <td>@attempt.StartedAt.ToString("MMM dd, HH:mm")</td>
+                            <td>@(attempt.CompletedAt?.ToString("MMM dd, HH:mm") ?? "-")</td>
+                            <td>
+                                <span class="badge @(attempt.IsCompleted ? "bg-success" : "bg-warning")">
+                                    @(attempt.IsCompleted ? "Completed" : "In Progress")
+                                </span>
+                            </td>
+                            <td>@(attempt.Score.HasValue ? $"{attempt.Score:F1}%" : "-")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿/* Active Navigation Link Styles */
+.nav-link.active {
+    position: relative;
+}
+
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 2px;
+        background: white;
+        border-radius: 2px;
+    }
+
+body[dir="rtl"] .nav-link.active::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* User Dropdown Animation */
+.dropdown-menu {
+    animation: dropdownFade 0.2s ease;
+}
+
+@@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RTL Dropdown Adjustments */
+body[dir="rtl"] .dropdown-menu {
+    text-align: right;
+}
+
+body[dir="rtl"] .dropdown-item i {
+    margin-left: 0.5rem;
+    margin-right: 0;
+}
+
+body[dir="rtl"] .user-info {
+    text-align: right;
+}

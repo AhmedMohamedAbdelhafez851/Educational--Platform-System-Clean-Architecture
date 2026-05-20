@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="PageTitle" xml:space="preserve">
+    <value>تعديل السؤال</value>
+  </data>
+	<data name="EditQuestion" xml:space="preserve">
+    <value>تعديل السؤال</value>
+  </data>
+	<data name="BackToQuestions" xml:space="preserve">
+    <value>رجوع إلى الأسئلة</value>
+  </data>
+	<data name="QuestionText" xml:space="preserve">
+    <value>نص السؤال</value>
+  </data>
+	<data name="AnswerChoices" xml:space="preserve">
+    <value>خيارات الإجابة</value>
+  </data>
+	<data name="OptionIsCorrect" xml:space="preserve">
+    <value>الخيار صحيح</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="SaveChanges" xml:space="preserve">
+    <value>حفظ التغييرات</value>
+  </data>
+</root>

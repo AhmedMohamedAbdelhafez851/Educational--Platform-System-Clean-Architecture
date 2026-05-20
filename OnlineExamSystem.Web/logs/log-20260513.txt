@@ -1,0 +1,913 @@
+2026-05-13 09:56:31 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 40.0174 ms
+2026-05-13 09:56:31 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 244.6709 ms
+2026-05-13 09:57:00 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 479.9137 ms
+2026-05-13 09:57:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2919 ms
+2026-05-13 09:57:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 441.5473 ms
+2026-05-13 09:57:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 98.4462 ms
+2026-05-13 09:57:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 425.6822 ms
+2026-05-13 09:57:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 68.3173 ms
+2026-05-13 09:57:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 185.4388 ms
+2026-05-13 09:57:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 150.4172 ms
+2026-05-13 09:57:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 46.5976 ms
+2026-05-13 09:57:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Join" responded 404 in 0.1664 ms
+2026-05-13 10:14:23 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 53.5693 ms
+2026-05-13 10:14:23 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 332.8480 ms
+2026-05-13 10:14:30 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 597.6993 ms
+2026-05-13 10:14:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.8857 ms
+2026-05-13 10:14:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 482.3691 ms
+2026-05-13 10:14:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 97.4827 ms
+2026-05-13 10:14:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 198.6265 ms
+2026-05-13 10:14:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 586.5897 ms
+2026-05-13 10:14:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 72.6730 ms
+2026-05-13 10:14:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Join" responded 404 in 0.3662 ms
+2026-05-13 10:14:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/4" responded 404 in 0.0211 ms
+2026-05-13 10:14:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 80.9918 ms
+2026-05-13 10:14:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 40.9855 ms
+2026-05-13 10:16:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Join" responded 404 in 0.0226 ms
+2026-05-13 10:19:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 46.6934 ms
+2026-05-13 10:19:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 15.5299 ms
+2026-05-13 10:19:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 175.8780 ms
+2026-05-13 10:20:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 16.9553 ms
+2026-05-13 10:20:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.1514 ms
+2026-05-13 10:20:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.8543 ms
+2026-05-13 10:20:04 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 216.6743 ms
+2026-05-13 10:20:04 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4544 ms
+2026-05-13 10:20:04 [User:Zyad@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 49.4888 ms
+2026-05-13 10:25:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 52.1062 ms
+2026-05-13 10:25:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 317.2356 ms
+2026-05-13 10:25:55 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 578.8299 ms
+2026-05-13 10:25:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5303 ms
+2026-05-13 10:25:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 491.4461 ms
+2026-05-13 10:25:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 106.8405 ms
+2026-05-13 10:26:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 499.4441 ms
+2026-05-13 10:26:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 61.4141 ms
+2026-05-13 10:26:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 212.3106 ms
+2026-05-13 10:26:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 188.8178 ms
+2026-05-13 10:26:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 76.5628 ms
+2026-05-13 10:26:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/5" responded 404 in 0.1943 ms
+2026-05-13 10:26:39 [User:Kareem@gmail.com123] [IP:::1] [Error] The view '"Join"' was not found. Searched locations: ["/Views/UserExam/Join.cshtml", "/Views/Shared/Join.cshtml"]
+2026-05-13 10:26:39 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam/Join" responded 500 in 43.9735 ms
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 10:26:39 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-13 10:26:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0123 ms
+2026-05-13 10:26:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/5" responded 404 in 0.0239 ms
+2026-05-13 10:27:03 [User:Kareem@gmail.com123] [IP:::1] [Error] The view '"Join"' was not found. Searched locations: ["/Views/UserExam/Join.cshtml", "/Views/Shared/Join.cshtml"]
+2026-05-13 10:27:03 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam/Join" responded 500 in 23.4257 ms
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 10:27:03 [User:] [IP:] [Error] Unhandled exception
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 21
+2026-05-13 10:27:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Home/Error" responded 404 in 0.0105 ms
+2026-05-13 11:39:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 40.7418 ms
+2026-05-13 11:39:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 254.3037 ms
+2026-05-13 11:39:47 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 392.6954 ms
+2026-05-13 11:39:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2593 ms
+2026-05-13 11:39:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 390.3389 ms
+2026-05-13 11:39:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 98.4002 ms
+2026-05-13 11:39:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 264.0331 ms
+2026-05-13 11:40:01 [User:Kareem@gmail.com123] [IP:::1] [Error] The view '"Join"' was not found. Searched locations: ["/Views/UserExam/Join.cshtml", "/Views/Shared/Join.cshtml"]
+2026-05-13 11:40:02 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam/Join" responded 500 in 30.6991 ms
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:40:02 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 11:42:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 38.7769 ms
+2026-05-13 11:42:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 207.6284 ms
+2026-05-13 11:42:58 [User:Anonymous] [IP:::1] [Error] The view '"Join"' was not found. Searched locations: ["/Views/UserExam/Join.cshtml", "/Views/Shared/Join.cshtml"]
+2026-05-13 11:42:58 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/Join" responded 500 in 51.7342 ms
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 11:42:58 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The view 'Join' was not found. The following locations were searched:
+/Views/UserExam/Join.cshtml
+/Views/Shared/Join.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 11:49:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 28.7779 ms
+2026-05-13 11:49:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 247.9185 ms
+2026-05-13 11:49:13 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 383.8433 ms
+2026-05-13 11:49:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2950 ms
+2026-05-13 11:49:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 398.1279 ms
+2026-05-13 11:49:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 90.8431 ms
+2026-05-13 11:49:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 189.1313 ms
+2026-05-13 11:49:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 40.3962 ms
+2026-05-13 11:49:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 71.2081 ms
+2026-05-13 11:50:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 274.1221 ms
+2026-05-13 11:50:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 16.5366 ms
+2026-05-13 11:50:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 42.5167 ms
+2026-05-13 11:51:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 98.3796 ms
+2026-05-13 11:51:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 32.7234 ms
+2026-05-13 11:51:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 6.3798 ms
+2026-05-13 11:51:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 112.0845 ms
+2026-05-13 11:51:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 147.8082 ms
+2026-05-13 11:51:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 264.5294 ms
+2026-05-13 11:51:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/4" responded 200 in 116.0978 ms
+2026-05-13 11:52:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 6.4922 ms
+2026-05-13 11:52:26 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 66.9124 ms
+2026-05-13 11:52:26 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.4212 ms
+2026-05-13 11:53:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 65.5155 ms
+2026-05-13 11:53:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 85.1462 ms
+2026-05-13 11:53:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 42.9612 ms
+2026-05-13 11:53:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 19.6549 ms
+2026-05-13 11:54:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 181.9166 ms
+2026-05-13 12:00:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 163.6237 ms
+2026-05-13 12:00:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 6.1953 ms
+2026-05-13 12:00:15 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 51.5708 ms
+2026-05-13 12:00:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 35.0575 ms
+2026-05-13 12:00:28 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 50.9685 ms
+2026-05-13 12:00:34 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 39.9274 ms
+2026-05-13 12:00:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.1837 ms
+2026-05-13 12:01:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 52.1419 ms
+2026-05-13 12:01:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 168.7542 ms
+2026-05-13 12:01:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 172.5586 ms
+2026-05-13 12:01:26 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.2315 ms
+2026-05-13 12:01:27 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.5132 ms
+2026-05-13 12:01:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 32.7723 ms
+2026-05-13 12:01:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 249.8512 ms
+2026-05-13 12:02:06 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 439.0939 ms
+2026-05-13 12:02:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5668 ms
+2026-05-13 12:02:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 375.2829 ms
+2026-05-13 12:02:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 100.9148 ms
+2026-05-13 12:02:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 258.2612 ms
+2026-05-13 12:02:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 46.8898 ms
+2026-05-13 12:03:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 403.1134 ms
+2026-05-13 12:03:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 88.5487 ms
+2026-05-13 12:09:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 11.1048 ms
+2026-05-13 12:11:32 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 292.4735 ms
+2026-05-13 12:22:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 48.1284 ms
+2026-05-13 12:22:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 254.0457 ms
+2026-05-13 12:22:51 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 451.0697 ms
+2026-05-13 12:22:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.2935 ms
+2026-05-13 12:22:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 393.3648 ms
+2026-05-13 12:22:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 81.2336 ms
+2026-05-13 12:22:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 240.0528 ms
+2026-05-13 12:23:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 372.6647 ms
+2026-05-13 12:23:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 34.2700 ms
+2026-05-13 12:23:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 53.7232 ms
+2026-05-13 12:23:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 37.2447 ms
+2026-05-13 12:23:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 16.7207 ms
+2026-05-13 12:23:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 36.5133 ms
+2026-05-13 12:23:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 14.2006 ms
+2026-05-13 12:23:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 21.6704 ms
+2026-05-13 12:23:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/4" responded 404 in 27.8783 ms
+2026-05-13 12:23:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 48.1381 ms
+2026-05-13 12:23:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 116.4260 ms
+2026-05-13 12:23:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 122.3028 ms
+2026-05-13 12:24:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 8.8761 ms
+2026-05-13 12:24:17 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.0815 ms
+2026-05-13 12:24:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 8.3353 ms
+2026-05-13 12:24:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 72.8097 ms
+2026-05-13 12:24:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 39.8162 ms
+2026-05-13 12:34:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 44.9834 ms
+2026-05-13 12:34:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 325.2962 ms
+2026-05-13 12:34:26 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 76.8634 ms
+2026-05-13 12:34:30 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 650.9687 ms
+2026-05-13 12:34:44 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 416.4178 ms
+2026-05-13 12:34:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3427 ms
+2026-05-13 12:34:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 221.8302 ms
+2026-05-13 12:34:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 96.5756 ms
+2026-05-13 12:34:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 244.4957 ms
+2026-05-13 12:35:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 131.5766 ms
+2026-05-13 12:35:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 28.7034 ms
+2026-05-13 12:35:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 37.5447 ms
+2026-05-13 12:35:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 31.4523 ms
+2026-05-13 12:35:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 17.2412 ms
+2026-05-13 12:35:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 26.0539 ms
+2026-05-13 12:35:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 30.9394 ms
+2026-05-13 12:35:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 32.5002 ms
+2026-05-13 12:35:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 7.8355 ms
+2026-05-13 12:35:18 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 200 in 32.3822 ms
+2026-05-13 12:35:27 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 8.2391 ms
+2026-05-13 12:35:31 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 63.9932 ms
+2026-05-13 12:35:31 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 139.3262 ms
+2026-05-13 12:35:44 [User:Anonymous] [IP:::1] [Error] An exception occurred in the database while saving changes for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint \"FK_ExamSubmissions_AspNetUsers_UserId\". The conflict occurred in database \"OnlineExamDb_A_12\", table \"dbo.AspNetUsers\", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:5db440fb-c4fe-4ceb-857f-91fc5720a56c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)"
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_ExamSubmissions_AspNetUsers_UserId". The conflict occurred in database "OnlineExamDb_A_12", table "dbo.AspNetUsers", column 'Id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:5db440fb-c4fe-4ceb-857f-91fc5720a56c
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-05-13 12:35:44 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 867.5052 ms
+2026-05-13 12:39:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 34.9375 ms
+2026-05-13 12:39:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 287.9039 ms
+2026-05-13 12:54:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 41.4949 ms
+2026-05-13 12:54:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 322.9868 ms
+2026-05-13 12:55:05 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 3325.1055 ms
+2026-05-13 12:55:06 [User:Anonymous] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-13 12:55:06 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/UserExam/ViewResult/6" responded 500 in 529.2831 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 171
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:55:06 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetSubmissionDetailsAsync(Int32 submissionId, String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 38
+   at OnlineExamSystem.Web.Controllers.UserExamController.ViewResult(Int32 id) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 171
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 12:55:12 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 484.4828 ms
+2026-05-13 12:55:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.4626 ms
+2026-05-13 12:55:12 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-13 12:55:12 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 370.8587 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 59
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:55:13 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 59
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 12:57:25 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-13 12:57:25 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 328.4301 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:57:26 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take)
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 12:57:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 43.2571 ms
+2026-05-13 12:57:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 235.9708 ms
+2026-05-13 12:58:08 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 428.0775 ms
+2026-05-13 12:58:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.9606 ms
+2026-05-13 12:58:08 [User:Kareem@gmail.com123] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()"
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2026-05-13 12:58:08 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/UserExam" responded 500 in 682.6872 ms
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 59
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-13 12:58:09 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidCastException: Unable to cast object of type 'System.Double' to type 'System.Single'.
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Single()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetFloat(Int32 i)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadFloat(DbDataReader reader, Int32 ordinal, ReaderColumn column)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.ReadRow()
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.BufferedDataRecord.InitializeAsync(DbDataReader reader, IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.BufferedDataReader.InitializeAsync(IReadOnlyList`1 columns, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at OnlineExamSystem.Infrastructure.Repositories.Repository`1.GetListAsync(Expression`1 predicate, Boolean asNoTracking, Func`2 orderBy, Nullable`1 skip, Nullable`1 take) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Infrastructure\Repositories\Repository.cs:line 59
+   at OnlineExamSystem.Application.Services.ExamSubmissionService.GetUserSubmissionsAsync(String userId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Services\ExamSubmissionService.cs:line 18
+   at OnlineExamSystem.Web.Controllers.UserExamController.Index() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\UserExamController.cs:line 225
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-13 12:58:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 57.7847 ms
+2026-05-13 12:58:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 302.9075 ms
+2026-05-13 12:58:51 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 403.2083 ms
+2026-05-13 12:58:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.6647 ms
+2026-05-13 12:58:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 371.7302 ms
+2026-05-13 12:58:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 76.5709 ms
+2026-05-13 12:59:00 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 351.8675 ms
+2026-05-13 12:59:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 326.1351 ms
+2026-05-13 12:59:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 31.2494 ms
+2026-05-13 12:59:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 249.9282 ms
+2026-05-13 12:59:36 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 172.5421 ms
+2026-05-13 12:59:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 184.3535 ms
+2026-05-13 12:59:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 467.0716 ms
+2026-05-13 13:00:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/7" responded 200 in 385.4238 ms
+2026-05-13 13:00:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 247.4158 ms
+2026-05-13 13:00:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 25.9314 ms
+2026-05-13 13:00:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 23.1360 ms
+2026-05-13 15:26:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 48.9514 ms
+2026-05-13 15:26:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 309.5348 ms
+2026-05-13 15:26:46 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 437.6924 ms
+2026-05-13 15:26:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.3778 ms
+2026-05-13 15:26:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 401.2382 ms
+2026-05-13 15:26:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.0981 ms
+2026-05-13 15:27:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 167.3774 ms
+2026-05-13 15:27:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 49.7634 ms
+2026-05-13 15:27:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 79.7137 ms
+2026-05-13 15:27:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Delete/5" responded 200 in 437.9109 ms
+2026-05-13 15:27:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 40.5448 ms
+2026-05-13 15:28:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 120.4363 ms
+2026-05-13 15:28:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 62.0748 ms
+2026-05-13 15:28:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Edit/33" responded 200 in 44.8217 ms
+2026-05-13 15:28:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 64.6658 ms
+2026-05-13 15:29:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 220.1701 ms
+2026-05-13 15:29:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 63.6004 ms
+2026-05-13 15:29:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 29.2158 ms
+2026-05-13 15:29:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 40.4111 ms
+2026-05-13 15:29:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 44.1612 ms
+2026-05-13 15:29:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 27.9504 ms
+2026-05-13 15:29:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 40.3879 ms
+2026-05-13 15:29:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 49.9962 ms
+2026-05-13 15:29:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 146.2977 ms
+2026-05-13 15:29:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 150.9781 ms
+2026-05-13 15:30:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 399.9768 ms
+2026-05-13 15:30:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/8" responded 200 in 142.7398 ms
+2026-05-13 15:30:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 198.2017 ms
+2026-05-13 15:31:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 47.4387 ms
+2026-05-13 15:31:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 30.8597 ms
+2026-05-13 15:31:08 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/27" responded 200 in 38.4861 ms
+2026-05-13 15:31:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 40.0046 ms
+2026-05-13 15:32:58 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 18.0144 ms
+2026-05-13 15:32:58 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 67.2017 ms
+2026-05-13 15:33:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 54.2514 ms
+2026-05-13 15:33:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 39.8711 ms
+2026-05-13 15:33:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 70.4774 ms
+2026-05-13 15:33:33 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 28.5362 ms
+2026-05-13 15:33:34 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 16.1592 ms
+2026-05-13 15:33:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 35.0269 ms
+2026-05-13 15:33:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.9889 ms
+2026-05-13 15:33:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 11.8827 ms
+2026-05-13 15:34:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 51.3407 ms
+2026-05-13 15:34:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.7074 ms
+2026-05-13 15:34:05 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 14.3449 ms
+2026-05-13 15:34:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 38.6290 ms
+2026-05-13 15:34:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 21.6796 ms
+2026-05-13 15:34:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 17.2451 ms
+2026-05-13 15:34:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 41.2376 ms
+2026-05-13 15:34:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.3591 ms
+2026-05-13 15:34:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 17.8185 ms
+2026-05-13 15:34:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 50.6074 ms
+2026-05-13 15:34:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 32.4689 ms
+2026-05-13 15:34:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 13.8962 ms
+2026-05-13 15:35:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 40.1850 ms
+2026-05-13 15:35:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 22.3203 ms
+2026-05-13 15:35:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 15.2225 ms
+2026-05-13 15:35:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 386.9156 ms
+2026-05-13 15:35:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 23.2692 ms
+2026-05-13 15:35:32 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 31.9131 ms
+2026-05-13 15:35:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 40.0383 ms
+2026-05-13 15:35:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 15.4287 ms
+2026-05-13 15:36:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 493.6439 ms
+2026-05-13 15:36:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 27.4417 ms
+2026-05-13 15:36:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 12.9591 ms
+2026-05-13 15:36:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Add" responded 302 in 39.7603 ms
+2026-05-13 15:36:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 42.9201 ms
+2026-05-13 15:36:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Add" responded 200 in 12.5626 ms
+2026-05-13 15:36:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 227.5606 ms
+2026-05-13 15:36:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 34.4659 ms
+2026-05-13 15:36:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 28.3259 ms
+2026-05-13 15:37:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Edit/1021" responded 200 in 59.1470 ms
+2026-05-13 15:37:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Question/Edit/1021" responded 302 in 241.9893 ms
+2026-05-13 15:37:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 40.0031 ms
+2026-05-13 15:37:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 36.3901 ms
+2026-05-13 15:38:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 18.1910 ms
+2026-05-13 15:38:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 61.6437 ms
+2026-05-13 15:38:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 24.9202 ms
+2026-05-13 15:38:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 8.1045 ms
+2026-05-13 15:39:05 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 42.4379 ms
+2026-05-13 15:39:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/41" responded 200 in 35.0897 ms
+2026-05-13 15:39:34 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 106.4922 ms
+2026-05-13 15:39:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 63.2866 ms
+2026-05-13 15:39:58 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 24.6118 ms
+2026-05-13 15:39:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 30.7116 ms
+2026-05-13 15:40:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 41.0787 ms
+2026-05-13 15:40:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 35.8792 ms
+2026-05-13 15:40:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 40.1114 ms
+2026-05-13 15:40:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 27.9053 ms
+2026-05-13 15:40:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/41" responded 200 in 59.6308 ms
+2026-05-13 15:40:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users" responded 200 in 41.0474 ms
+2026-05-13 15:40:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question" responded 200 in 22.0803 ms
+2026-05-13 15:40:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Edit/1021" responded 200 in 31.3375 ms
+2026-05-13 15:40:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 13.9958 ms
+2026-05-13 15:40:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.0680 ms
+2026-05-13 15:40:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 4.9287 ms
+2026-05-13 16:35:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 36.0725 ms
+2026-05-13 16:35:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 238.0771 ms
+2026-05-13 16:35:23 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Login" responded 302 in 523.4702 ms
+2026-05-13 16:35:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5010 ms
+2026-05-13 16:35:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam" responded 200 in 406.3604 ms
+2026-05-13 16:35:26 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 398.3379 ms
+2026-05-13 16:35:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 666.3636 ms
+2026-05-13 16:36:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/41" responded 200 in 457.8297 ms
+2026-05-13 16:37:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam" responded 200 in 38.2924 ms
+2026-05-13 16:37:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 83.5680 ms
+2026-05-13 16:37:42 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 89.1123 ms
+2026-05-13 16:37:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Exam/CreateInvitation" responded 200 in 406.7403 ms
+2026-05-13 16:37:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 29.3601 ms
+2026-05-13 16:37:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 43.0611 ms
+2026-05-13 16:38:23 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 703.9859 ms
+2026-05-13 16:38:23 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/41" responded 200 in 39.7696 ms
+2026-05-13 16:38:48 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 337.2490 ms
+2026-05-13 16:38:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/10" responded 200 in 122.5434 ms
+2026-05-13 16:39:07 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 99.6691 ms

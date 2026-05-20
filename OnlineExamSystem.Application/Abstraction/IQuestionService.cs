@@ -1,4 +1,5 @@
-﻿using OnlineExamSystem.Application.DTOs.Question;
+﻿using OnlineExamSystem.Application.DTOs.Exam;
+using OnlineExamSystem.Application.DTOs.Question;
 
 namespace OnlineExamSystem.Application.Abstraction
 {
@@ -9,5 +10,7 @@ namespace OnlineExamSystem.Application.Abstraction
         Task AddQuestionAsync(CreateQuestionDto dto);
         Task EditQuestionAsync(CreateQuestionDto dto);
         Task DeleteQuestionAsync(int questionId);
+        // Add this method to IQuestionService interface
+        Task<CreateExamDto?> GetExamByIdAsync(int examId);
     }
 }

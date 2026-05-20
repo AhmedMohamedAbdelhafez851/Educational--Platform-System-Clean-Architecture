@@ -1,0 +1,54 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Analytics.ExamAnalyticsDto
+
+<div class="two-columns">
+    <!-- Score Distribution Chart -->
+    <div class="chart-card">
+        <div class="chart-title">
+            <i class="bi bi-bar-chart-steps" style="color: #3b82f6;"></i>
+            @Localizer["ScoreDistribution"]
+        </div>
+        <canvas id="scoreChart" height="250"></canvas>
+    </div>
+
+    <!-- Most Difficult Questions -->
+    <div class="chart-card">
+        <div class="chart-title">
+            <i class="bi bi-question-diamond" style="color: #ef4444;"></i>
+            @Localizer["MostDifficultQuestions"]
+        </div>
+        <div style="max-height: 250px; overflow-y: auto;">
+            @foreach (var q in Model.DifficultQuestions.Take(5))
+            {
+                <div style="margin-bottom: 1rem;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 0.25rem;">
+                        <span style="font-size: 0.75rem; color: #6b7280; max-width: 70%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" title="@q.QuestionText">@q.QuestionText</span>
+                        <span class="badge-@(q.Difficulty == "Hard" ? "danger" : (q.Difficulty == "Medium" ? "warning" : "success"))" style="font-size: 0.625rem;">
+                            @if (q.Difficulty == "Hard")
+                            {
+                                @Localizer["Hard"]
+                            }
+                            else if (q.Difficulty == "Medium")
+                            {
+
+                                @Localizer["Medium"]
+                            }
+                            else
+                            {
+
+                                @Localizer["Easy"]
+                            }
+                        </span>
+                    </div>
+                    <div style="background: #f3f4f6; height: 6px; border-radius: 3px; overflow: hidden;">
+                        <div style="width: @q.CorrectPercentage%; height: 100%; background: @(q.CorrectPercentage < 40 ? "#ef4444" : (q.CorrectPercentage < 70 ? "#f59e0b" : "#10b981"));"></div>
+                    </div>
+                    <div style="font-size: 0.625rem; color: #9ca3af; margin-top: 0.25rem;">
+                        @q.CorrectCount / @q.TotalAttempts @Localizer["Correct"] (@q.CorrectPercentage.ToString("F1")%)
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

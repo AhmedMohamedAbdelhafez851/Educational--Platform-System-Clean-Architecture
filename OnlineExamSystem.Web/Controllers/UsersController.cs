@@ -10,14 +10,16 @@ using OnlineExamSystem.Web.ViewModels.UserDTO;
 
 namespace OnlineExamSystem.Web.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles = "SuperAdmin")]
+
     public class UsersController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IUnitOfWork _unitOfWork;
 
-        public UsersController(
+        public UsersController( 
      UserManager<ApplicationUser> userManager,
      RoleManager<IdentityRole> roleManager,
      IUnitOfWork unitOfWork) // Add this line
@@ -58,7 +60,7 @@ namespace OnlineExamSystem.Web.Controllers
             var model = new EditUserRolesViewModel
             {
                 UserId = user.Id,
-                FullName = user.FullName,
+                FullName = user.FullName!,
                 Email = user.Email!,
                 UserRoles = userRoles,
                 AllRoles = allRoles

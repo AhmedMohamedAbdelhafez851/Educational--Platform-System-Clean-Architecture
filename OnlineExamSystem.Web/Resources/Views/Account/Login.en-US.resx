@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<!-- Page Title -->
+	<data name="PageTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
+
+	<!-- Header Messages -->
+	<data name="WelcomeBack" xml:space="preserve">
+    <value>Welcome Back</value>
+  </data>
+	<data name="SignInMessage" xml:space="preserve">
+    <value>Sign in to access the exam platform</value>
+  </data>
+
+	<!-- Form Labels -->
+	<data name="EmailLabel" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+    <value>Enter your email</value>
+  </data>
+	<data name="PasswordLabel" xml:space="preserve">
+    <value>Password</value>
+  </data>
+	<data name="PasswordPlaceholder" xml:space="preserve">
+    <value>Enter your password</value>
+  </data>
+	<data name="RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+	<data name="LoginButton" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+
+	<!-- Registration Links -->
+	<data name="NoAccount" xml:space="preserve">
+    <value>Don't have an account?</value>
+  </data>
+	<data name="CreateAccount" xml:space="preserve">
+    <value>Create an account</value>
+  </data>
+
+	<!-- Validation Messages -->
+	<data name="EmailRequired" xml:space="preserve">
+    <value>Email is required</value>
+  </data>
+	<data name="InvalidEmail" xml:space="preserve">
+    <value>Invalid email format</value>
+  </data>
+	<data name="EmailTooLong" xml:space="preserve">
+    <value>Email is too long</value>
+  </data>
+	<data name="PasswordRequired" xml:space="preserve">
+    <value>Password is required</value>
+  </data>
+	<data name="PasswordMinLength" xml:space="preserve">
+    <value>Password must be at least 6 characters</value>
+  </data>
+	<data name="PasswordTooLong" xml:space="preserve">
+    <value>Password is too long</value>
+  </data>
+	<data name="PleaseFixErrors" xml:space="preserve">
+    <value>Please fix</value>
+  </data>
+	<data name="ErrorsFound" xml:space="preserve">
+    <value>errors before continuing</value>
+  </data>
+	<data name="Processing" xml:space="preserve">
+    <value>Processing...</value>
+  </data>
+
+	<!-- Server Error Messages -->
+	<data name="EmailNotFound" xml:space="preserve">
+    <value>Email not found</value>
+  </data>
+	<data name="InvalidCredentials" xml:space="preserve">
+    <value>Invalid email or password</value>
+  </data>
+	<data name="AccountLocked" xml:space="preserve">
+    <value>Your account is locked out. Please try again later</value>
+  </data>
+</root>

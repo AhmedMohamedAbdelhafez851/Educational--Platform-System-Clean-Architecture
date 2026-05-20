@@ -1,0 +1,984 @@
+2026-05-15 10:27:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 272.4149 ms
+2026-05-15 10:27:51 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 50.4151 ms
+2026-05-15 10:27:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 24.8880 ms
+2026-05-15 10:27:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 490.1613 ms
+2026-05-15 10:27:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 291.5183 ms
+2026-05-15 10:28:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.6854 ms
+2026-05-15 10:28:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 67.6439 ms
+2026-05-15 10:28:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.1522 ms
+2026-05-15 10:28:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 46.7562 ms
+2026-05-15 10:28:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.6396 ms
+2026-05-15 10:28:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 37.6269 ms
+2026-05-15 10:29:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 272.8720 ms
+2026-05-15 10:29:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 20.8717 ms
+2026-05-15 10:29:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 336.0500 ms
+2026-05-15 10:29:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 22.6298 ms
+2026-05-15 10:29:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.5613 ms
+2026-05-15 10:29:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 43.5672 ms
+2026-05-15 10:46:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.4832 ms
+2026-05-15 10:46:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 224.1290 ms
+2026-05-15 10:46:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 27.8057 ms
+2026-05-15 10:46:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 18.6532 ms
+2026-05-15 10:56:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 230.8880 ms
+2026-05-15 10:56:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 3.3472 ms
+2026-05-15 10:56:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 36.3875 ms
+2026-05-15 10:56:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 12.7805 ms
+2026-05-15 10:56:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 58.3490 ms
+2026-05-15 10:58:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.3058 ms
+2026-05-15 10:58:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.5095 ms
+2026-05-15 10:59:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 125.5643 ms
+2026-05-15 10:59:40 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 54.6517 ms
+2026-05-15 10:59:43 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 49.5208 ms
+2026-05-15 10:59:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 2.8481 ms
+2026-05-15 10:59:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.8874 ms
+2026-05-15 11:00:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.5752 ms
+2026-05-15 11:00:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.1772 ms
+2026-05-15 11:00:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 61.0458 ms
+2026-05-15 11:00:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.9582 ms
+2026-05-15 11:01:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 72.0717 ms
+2026-05-15 11:01:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Profile" responded 404 in 0.1752 ms
+2026-05-15 11:01:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 62.0711 ms
+2026-05-15 11:01:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 50.0827 ms
+2026-05-15 11:01:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 48.7754 ms
+2026-05-15 11:01:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 44.1936 ms
+2026-05-15 11:01:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 108.5892 ms
+2026-05-15 11:01:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 22.8398 ms
+2026-05-15 11:02:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 23.1164 ms
+2026-05-15 11:02:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 18.9790 ms
+2026-05-15 11:02:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 201.5296 ms
+2026-05-15 11:02:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.2630 ms
+2026-05-15 11:02:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 39.7905 ms
+2026-05-15 11:11:44 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 211.0200 ms
+2026-05-15 11:11:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 34.6589 ms
+2026-05-15 11:12:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 266.3226 ms
+2026-05-15 11:12:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 39.6807 ms
+2026-05-15 11:12:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 32.5595 ms
+2026-05-15 11:12:58 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.9663 ms
+2026-05-15 11:12:58 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.1763 ms
+2026-05-15 11:13:05 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 418.9626 ms
+2026-05-15 11:13:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 299.9642 ms
+2026-05-15 11:13:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 505.0108 ms
+2026-05-15 11:33:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 368.9083 ms
+2026-05-15 11:34:01 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 540.3089 ms
+2026-05-15 11:34:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 286.9060 ms
+2026-05-15 11:34:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 451.4015 ms
+2026-05-15 11:35:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 6.4261 ms
+2026-05-15 11:35:16 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.8090 ms
+2026-05-15 11:41:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 673.1474 ms
+2026-05-15 11:41:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 359.3421 ms
+2026-05-15 11:42:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 598.2489 ms
+2026-05-15 11:42:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 524.6742 ms
+2026-05-15 11:42:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 168.9316 ms
+2026-05-15 11:45:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 361.0635 ms
+2026-05-15 11:55:06 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 702.3850 ms
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 11:55:07 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:02:17 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 744.5125 ms
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 12:02:18 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:07:35 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 763.4379 ms
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 12:07:36 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:08:24 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 577.2114 ms
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 12:08:24 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The partial view '_Scripts' was not found. The following locations were searched:
+/Views/Account/_Scripts.ar-EG.cshtml
+/Views/Account/_Scripts.ar.cshtml
+/Views/Account/_Scripts.cshtml
+/Views/Shared/_Scripts.ar-EG.cshtml
+/Views/Shared/_Scripts.ar.cshtml
+/Views/Shared/_Scripts.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:13:50 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 720.5971 ms
+System.InvalidOperationException: RenderSectionAsync invocation in '/Views/Shared/_Scripts.cshtml' is invalid. RenderSectionAsync can only be called from a layout page.
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureMethodCanBeInvoked(String methodName)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsync(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.Views_Shared__Scripts.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 12:13:50 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: RenderSectionAsync invocation in '/Views/Shared/_Scripts.cshtml' is invalid. RenderSectionAsync can only be called from a layout page.
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.EnsureMethodCanBeInvoked(String methodName)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPage.RenderSectionAsync(String name, Boolean required)
+   at AspNetCoreGeneratedDocument.Views_Shared__Scripts.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__15_1() in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Views\Shared\_Layout.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:17:55 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 91.9122 ms
+2026-05-15 12:18:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 11.3666 ms
+2026-05-15 12:18:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 10.1857 ms
+2026-05-15 12:18:12 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 426.9463 ms
+2026-05-15 12:18:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 156.3038 ms
+2026-05-15 12:19:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 225.5056 ms
+2026-05-15 12:19:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 147.7176 ms
+2026-05-15 12:19:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 58.3530 ms
+2026-05-15 12:19:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Profile" responded 404 in 0.2173 ms
+2026-05-15 12:19:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 60.9575 ms
+2026-05-15 12:19:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 6.4011 ms
+2026-05-15 12:19:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 7.4819 ms
+2026-05-15 12:19:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 46.2043 ms
+2026-05-15 12:19:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 6.6863 ms
+2026-05-15 12:19:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 4.5477 ms
+2026-05-15 12:21:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.3347 ms
+2026-05-15 12:21:16 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 6.8506 ms
+2026-05-15 12:21:20 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 6.4153 ms
+2026-05-15 12:21:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 74.5975 ms
+2026-05-15 12:21:29 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.6514 ms
+2026-05-15 12:21:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.3205 ms
+2026-05-15 12:21:34 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.9526 ms
+2026-05-15 12:21:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.4629 ms
+2026-05-15 12:21:45 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 159.0817 ms
+2026-05-15 12:21:45 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 59.4094 ms
+2026-05-15 12:23:40 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Exam/Index" responded 500 in 318.8205 ms
+2026-05-15 12:23:40 [User:] [IP:] [Error] Unhandled exception occurred
+2026-05-15 12:23:40 [User:] [IP:] [Error] An unhandled exception has occurred while executing the request.
+System.TypeLoadException: Could not resolve type 'AspNetCoreGeneratedDocument.Views_Shared__Layout' in assembly 'OnlineExamSystem.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+   at System.Reflection.TypeNameParser.GetTypeFromDefaultAssemblies(String typeName, ReadOnlySpan`1 nestedTypeNames)
+   at System.Reflection.TypeNameParser.GetType(String typeName, ReadOnlySpan`1 nestedTypeNames, String assemblyNameIfAny)
+   at System.Reflection.TypeNameParser.NestedNamespaceTypeName.ResolveType(TypeNameParser& parser, String containingAssemblyIfAny)
+   at System.Reflection.TypeNameParser.GetTypeHelper(Char* pTypeName, RuntimeAssembly requestingAssembly, Boolean throwOnError, Boolean requireAssemblyQualifiedName)
+   at System.Reflection.CustomAttribute._CreateCaObject(RuntimeModule pModule, RuntimeType type, IRuntimeMethodInfo pCtor, Byte** ppBlob, Byte* pEndBlob, Int32* pcNamedArgs)
+   at System.Reflection.CustomAttribute.AddCustomAttributes(ListBuilder`1& attributes, RuntimeModule decoratedModule, Int32 decoratedMetadataToken, RuntimeType attributeFilterType, Boolean mustBeInheritable, ListBuilder`1 derivedAttributes)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeModule decoratedModule, Int32 decoratedMetadataToken, Int32 pcaCount, RuntimeType attributeFilterType)
+   at System.Reflection.CustomAttribute.GetCustomAttributes(RuntimeMethodInfo method, RuntimeType caType, Boolean inherit)
+   at System.Attribute.GetCustomAttributes(MemberInfo element, Type attributeType, Boolean inherit)
+   at System.Diagnostics.StackTrace.TryResolveStateMachineMethod(MethodBase& method, Type& declaringType)
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat, StringBuilder sb)
+   at System.Diagnostics.StackTrace.ToString(TraceFormat traceFormat)
+   at System.Exception.get_StackTrace()
+   at System.Exception.ToString()
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-15 12:24:08 [User:Anonymous] [IP:::1] [Error] HTTP "GET" "/" responded 500 in 452.8282 ms
+System.InvalidOperationException: The partial view '_Header' was not found. The following locations were searched:
+/Views/Account/_Header.en-US.cshtml
+/Views/Account/_Header.en.cshtml
+/Views/Account/_Header.cshtml
+/Views/Shared/_Header.en-US.cshtml
+/Views/Shared/_Header.en.cshtml
+/Views/Shared/_Header.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__13_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 12:24:08 [User:] [IP:] [Error] Unhandled exception occurred
+System.InvalidOperationException: The partial view '_Header' was not found. The following locations were searched:
+/Views/Account/_Header.en-US.cshtml
+/Views/Account/_Header.en.cshtml
+/Views/Account/_Header.cshtml
+/Views/Shared/_Header.en-US.cshtml
+/Views/Shared/_Header.en.cshtml
+/Views/Shared/_Header.cshtml
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__13_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 12:28:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 358.1127 ms
+2026-05-15 12:28:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 40.8021 ms
+2026-05-15 12:28:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 74.6515 ms
+2026-05-15 12:29:29 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 462.8463 ms
+2026-05-15 12:29:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 272.0458 ms
+2026-05-15 12:29:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 12.3810 ms
+2026-05-15 12:29:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 12.0282 ms
+2026-05-15 12:29:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.2465 ms
+2026-05-15 12:29:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 5.6224 ms
+2026-05-15 14:50:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 324.2020 ms
+2026-05-15 14:50:13 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 41.1854 ms
+2026-05-15 14:50:13 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 62.5413 ms
+2026-05-15 15:16:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 374.4881 ms
+2026-05-15 15:17:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Register" responded 200 in 86.3291 ms
+2026-05-15 15:17:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 16.5427 ms
+2026-05-15 15:28:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 307.1770 ms
+2026-05-15 15:29:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 91.3766 ms
+2026-05-15 15:29:08 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 16.1601 ms
+2026-05-15 15:31:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 444.1235 ms
+2026-05-15 15:31:42 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 266.5603 ms
+2026-05-15 15:31:54 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 319.4559 ms
+2026-05-15 15:31:57 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 23.0716 ms
+2026-05-15 15:37:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 335.8583 ms
+2026-05-15 15:38:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 47.4445 ms
+2026-05-15 15:39:11 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 420.0118 ms
+2026-05-15 15:39:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 244.0919 ms
+2026-05-15 15:39:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 8.9487 ms
+2026-05-15 15:39:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 108.5868 ms
+2026-05-15 15:39:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 15.5347 ms
+2026-05-15 15:39:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.7866 ms
+2026-05-15 15:39:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.7008 ms
+2026-05-15 15:39:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 7.4633 ms
+2026-05-15 15:49:02 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 366.5776 ms
+2026-05-15 15:49:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 473.9432 ms
+2026-05-15 15:49:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 317.3049 ms
+2026-05-15 15:50:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 59.0090 ms
+2026-05-15 15:50:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.8415 ms
+2026-05-15 15:50:12 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 12.8590 ms
+2026-05-15 15:50:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 13.9084 ms
+2026-05-15 15:50:17 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.6269 ms
+2026-05-15 15:50:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 35.4077 ms
+2026-05-15 15:51:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 44.4651 ms
+2026-05-15 15:51:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 22.9039 ms
+2026-05-15 15:52:58 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 38.2142 ms
+2026-05-15 15:53:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 7.6222 ms
+2026-05-15 15:53:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 314.8001 ms
+2026-05-15 15:53:56 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 489.2229 ms
+2026-05-15 15:53:56 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 254.1132 ms
+2026-05-15 15:56:41 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 387.7118 ms
+2026-05-15 15:56:47 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 51.0688 ms
+2026-05-15 15:56:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 245.6772 ms
+2026-05-15 15:56:51 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 54.3859 ms
+2026-05-15 16:21:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 388.9034 ms
+2026-05-15 16:21:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 461.2369 ms
+2026-05-15 16:21:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 262.3821 ms
+2026-05-15 16:21:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 13.1865 ms
+2026-05-15 16:21:52 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.5740 ms
+2026-05-15 16:25:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 10.8397 ms
+2026-05-15 16:25:25 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 300.8372 ms
+2026-05-15 16:36:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Register" responded 200 in 76.6608 ms
+2026-05-15 16:37:07 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/Register" responded 302 in 625.6070 ms
+2026-05-15 16:37:07 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/Home/Index" responded 302 in 1.3307 ms
+2026-05-15 16:37:07 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 28.2981 ms
+2026-05-15 16:37:19 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 346.0348 ms
+2026-05-15 16:37:22 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.4121 ms
+2026-05-15 16:37:32 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 31.3128 ms
+2026-05-15 16:37:34 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 6.4985 ms
+2026-05-15 17:19:27 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 62.7756 ms
+2026-05-15 17:19:30 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.2396 ms
+2026-05-15 17:19:32 [User:Monem@test.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 10.4138 ms
+2026-05-15 17:19:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 6.8087 ms
+2026-05-15 17:19:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 273.2123 ms
+2026-05-15 17:20:35 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 574.7160 ms
+2026-05-15 17:20:35 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 290.0366 ms
+2026-05-15 17:21:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 40.5858 ms
+2026-05-15 17:21:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 173.8115 ms
+2026-05-15 17:21:04 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 38.8358 ms
+2026-05-15 17:21:06 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 46.9228 ms
+2026-05-15 17:21:11 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 41.0749 ms
+2026-05-15 17:21:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 60.7909 ms
+2026-05-15 17:21:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 42.2758 ms
+2026-05-15 17:21:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 10.8939 ms
+2026-05-15 17:22:01 [User:Kareem@gmail.com123] [IP:::1] [Information] Role 'Admin' deleted successfully.
+2026-05-15 17:22:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Roles/DeleteRole" responded 200 in 208.9969 ms
+2026-05-15 17:22:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 13.8029 ms
+2026-05-15 17:22:08 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/EditRole/e4c1fa52-9a2e-47b6-9cb1-34a6d612c8e7" responded 200 in 29.4212 ms
+2026-05-15 17:22:10 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 7.5197 ms
+2026-05-15 17:22:18 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 366.7809 ms
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 17:22:18 [User:] [IP:] [Error] Unhandled exception occurred
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 17:22:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 7.2798 ms
+2026-05-15 17:22:26 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 247.7016 ms
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 17:22:27 [User:] [IP:] [Error] Unhandled exception occurred
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 17:23:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 20.5800 ms
+2026-05-15 17:24:55 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 292.5363 ms
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 17:24:56 [User:] [IP:] [Error] Unhandled exception occurred
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 17:25:01 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/EditRole/f5d2fb63-0b3f-58c7-0dc2-45b7e723d9f8" responded 200 in 15.2835 ms
+2026-05-15 17:25:03 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 9.0627 ms
+2026-05-15 17:25:28 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "GET" "/Analytics/ExamReport" responded 500 in 215.9909 ms
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 17:25:28 [User:] [IP:] [Error] Unhandled exception occurred
+System.Exception: Exam not found
+   at OnlineExamSystem.Application.Features.Analytics.Queries.GetExamAnalytics.GetExamAnalyticsQueryHandler.Handle(GetExamAnalyticsQuery request, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Features\Analytics\Queries\GetExamAnalytics\GetExamAnalyticsQueryHandler.cs:line 23
+   at OnlineExamSystem.Application.Behaviors.AuditBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\AuditBehavior.cs:line 32
+   at OnlineExamSystem.Application.Behaviors.ValidationBehavior`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Application\Behaviors\ValidationBehavior.cs:line 40
+   at OnlineExamSystem.Web.Controllers.AnalyticsController.ExamReport(Int32 examId) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Controllers\AnalyticsController.cs:line 20
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\LoggingEnrichmentMiddleware.cs:line 25
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-15 17:25:30 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 6.1843 ms
+2026-05-15 17:25:31 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.0070 ms
+2026-05-15 17:25:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Edit/f16b345b-06e2-4fcb-ba6b-b6529d0567fc" responded 200 in 39.6537 ms
+2026-05-15 17:25:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "POST" "/Users/Edit/f16b345b-06e2-4fcb-ba6b-b6529d0567fc" responded 302 in 88.7537 ms
+2026-05-15 17:25:59 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 43.8013 ms
+2026-05-15 17:26:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 8.8808 ms
+2026-05-15 17:26:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 12.0357 ms
+2026-05-15 17:26:15 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 151.4137 ms
+2026-05-15 17:26:27 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 6.5723 ms
+2026-05-15 17:26:45 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 13.7450 ms
+2026-05-15 17:27:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 58.1458 ms
+2026-05-15 17:28:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.0874 ms
+2026-05-15 17:28:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 12.2602 ms
+2026-05-15 17:28:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 314.5611 ms
+2026-05-15 17:28:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 34.2126 ms
+2026-05-15 17:30:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 50.7952 ms
+2026-05-15 17:30:13 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 11.6459 ms
+2026-05-15 17:30:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.5862 ms
+2026-05-15 17:30:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 421.8075 ms
+2026-05-15 17:30:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 167.4508 ms
+2026-05-15 17:30:30 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Roles/ManageRoles" responded 302 in 460.9180 ms
+2026-05-15 17:30:30 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 30.5842 ms
+2026-05-15 17:30:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 26.3610 ms
+2026-05-15 17:30:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 43.2663 ms
+2026-05-15 17:35:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 18.8558 ms
+2026-05-15 17:35:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 4670.4529 ms
+2026-05-15 17:35:38 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 180.0195 ms
+2026-05-15 17:36:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 72.0492 ms
+2026-05-15 17:36:14 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.2537 ms
+2026-05-15 17:36:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.9794 ms
+2026-05-15 17:36:16 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 42.4437 ms
+2026-05-15 17:40:23 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/ViewResult/1011" responded 200 in 978.4151 ms
+2026-05-15 17:40:24 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/TakeExam/33" responded 200 in 133.9178 ms
+2026-05-15 17:40:27 [User:Anonymous] [IP:127.0.0.1] [Error] HTTP "POST" "/UserExam/SubmitExam" responded 500 in 41.9594 ms
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 17:40:27 [User:] [IP:] [Error] Unhandled exception occurred
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-15 17:59:48 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/" responded 200 in 317.5630 ms
+2026-05-15 17:59:55 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 51.3421 ms
+2026-05-15 17:59:55 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/Account/Login" responded 200 in 110.2538 ms
+2026-05-15 18:00:14 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/" responded 302 in 615.2271 ms
+2026-05-15 18:00:14 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 400.9533 ms
+2026-05-15 18:00:22 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/Users/Index" responded 200 in 223.6634 ms
+2026-05-15 18:01:59 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.9478 ms
+2026-05-15 18:02:16 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/Users/Index" responded 200 in 324.4409 ms
+2026-05-15 18:02:18 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.4795 ms
+2026-05-15 18:02:28 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/Users/Index" responded 200 in 9985.9166 ms
+2026-05-15 18:02:28 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/Users/Index" responded 200 in 29015.3956 ms
+2026-05-15 20:45:40 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/" responded 200 in 482.3875 ms
+2026-05-15 20:45:41 [User:Kareem@gmail.com123] [IP:127.0.0.1] [Information] HTTP "GET" "/" responded 200 in 534.3665 ms
+2026-05-15 20:46:11 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 296.4095 ms
+2026-05-15 20:46:48 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 17710.9102 ms
+2026-05-15 20:46:49 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 461.7136 ms
+2026-05-15 20:47:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 468.8939 ms
+2026-05-15 20:55:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 493.4755 ms
+2026-05-15 20:56:13 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 708.2568 ms
+2026-05-15 20:56:13 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 432.3359 ms
+2026-05-15 20:56:18 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 220.8063 ms
+2026-05-15 21:00:27 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 102.5740 ms
+2026-05-15 21:00:29 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.3084 ms
+2026-05-15 21:01:01 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 352.4838 ms
+2026-05-15 21:01:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 82.2918 ms
+2026-05-15 21:01:25 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 631.8337 ms
+2026-05-15 21:01:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 380.5228 ms
+2026-05-15 21:01:28 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 245.5809 ms
+2026-05-15 21:07:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 633.7335 ms
+2026-05-15 21:07:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 61.4323 ms
+2026-05-15 21:08:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 729.4563 ms
+2026-05-15 21:08:02 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 349.7885 ms
+2026-05-15 21:08:09 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 212.8935 ms
+2026-05-15 21:09:23 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 64.2770 ms
+2026-05-15 21:09:25 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 37.4865 ms
+2026-05-15 21:09:37 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 111.6065 ms
+2026-05-15 21:21:52 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 175.6968 ms
+2026-05-15 21:21:53 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 40.8174 ms
+2026-05-15 21:22:20 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 446.8535 ms
+2026-05-15 21:22:24 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 456.0032 ms
+2026-05-15 21:22:46 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 169.2898 ms
+2026-05-15 21:22:50 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 36.9135 ms
+2026-05-15 21:44:19 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 164.4778 ms
+2026-05-15 21:44:21 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.5402 ms
+2026-05-15 21:44:22 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 52.0566 ms
+2026-05-15 21:44:36 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 124.3288 ms
+2026-05-15 21:44:39 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/1" responded 200 in 114.8488 ms
+2026-05-15 21:44:42 [User:Kareem@gmail.com123] [IP:::1] [Error] HTTP "POST" "/UserExam/SubmitExam" responded 500 in 60.8036 ms
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2026-05-15 21:44:42 [User:] [IP:] [Error] Unhandled exception occurred
+System.FormatException: The input string 'examId' was not in a correct format.
+   at System.Number.ThrowFormatException[TChar](ReadOnlySpan`1 value)
+   at System.Int32.Parse(String s, NumberStyles style, IFormatProvider provider)
+   at System.ComponentModel.Int32Converter.FromString(String value, NumberFormatInfo formatInfo)
+   at System.ComponentModel.BaseNumberConverter.ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, Object value)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertSimpleType(Object value, Type destinationType, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ModelBindingHelper.ConvertTo[T](Object value, CultureInfo culture)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinder`2.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-15 21:44:48 [User:Kareem@gmail.com123] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 34.2231 ms

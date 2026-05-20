@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="PageTitle" xml:space="preserve">
+    <value>إضافة سؤال جديد</value>
+  </data>
+	<data name="AddNewQuestion" xml:space="preserve">
+    <value>إضافة سؤال جديد</value>
+  </data>
+	<data name="ExamLabel" xml:space="preserve">
+    <value>الامتحان</value>
+  </data>
+	<data name="BackToQuestions" xml:space="preserve">
+    <value>رجوع إلى الأسئلة</value>
+  </data>
+	<data name="QuestionText" xml:space="preserve">
+    <value>نص السؤال</value>
+  </data>
+	<data name="QuestionPlaceholder" xml:space="preserve">
+    <value>أدخل نص السؤال هنا...</value>
+  </data>
+	<data name="QuestionHelp" xml:space="preserve">
+    <value>اكتب سؤالاً واضحاً ومختصراً. هذا ما سيراه الطلاب.</value>
+  </data>
+	<data name="AnswerChoices" xml:space="preserve">
+    <value>خيارات الإجابة</value>
+  </data>
+	<data name="ChoicesHelp" xml:space="preserve">
+    <value>قدم 4 خيارات واختر إجابة واحدة صحيحة</value>
+  </data>
+	<data name="Option" xml:space="preserve">
+    <value>خيار</value>
+  </data>
+	<data name="OptionPlaceholder" xml:space="preserve">
+    <value>أدخل نص الخيار</value>
+  </data>
+	<data name="IsCorrect" xml:space="preserve">
+    <value>هذا هو الخيار الصحيح</value>
+  </data>
+	<data name="AllFieldsRequired" xml:space="preserve">
+    <value>جميع الحقول مطلوبة</value>
+  </data>
+	<data name="Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+	<data name="CreateQuestion" xml:space="preserve">
+    <value>إنشاء سؤال</value>
+  </data>
+	<data name="QuestionTextRequired" xml:space="preserve">
+    <value>نص السؤال مطلوب</value>
+  </data>
+	<data name="QuestionMinLength" xml:space="preserve">
+    <value>نص السؤال يجب أن يكون 5 أحرف على الأقل</value>
+  </data>
+	<data name="ChoiceRequired" xml:space="preserve">
+    <value>نص الخيار مطلوب</value>
+  </data>
+	<data name="CorrectChoiceRequired" xml:space="preserve">
+    <value>يرجى تحديد الإجابة الصحيحة</value>
+  </data>
+</root>

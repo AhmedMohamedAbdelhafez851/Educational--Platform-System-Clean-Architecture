@@ -1,8 +1,110 @@
-﻿@model IEnumerable<OnlineExamSystem.Application.DTOs.Exam.ExamListDto>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model IEnumerable<OnlineExamSystem.Application.DTOs.Exam.ExamListDto>
 
 @{
-    ViewData["Title"] = "Exam Management";
+    ViewData["Title"] = Localizer["PageTitle"];
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
 }
+
+<style>
+    /* RTL Table Styles */
+    .table th,
+    .table td {
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    @@if (isRtl) {
+        .table {
+            text-align: right;
+        }
+
+            .table th,
+            .table td {
+                text-align: right;
+            }
+
+        .dataTables_wrapper .dataTables_length,
+        .dataTables_wrapper .dataTables_filter,
+        .dataTables_wrapper .dataTables_info,
+        .dataTables_wrapper .dataTables_paginate {
+            text-align: right;
+        }
+
+            .dataTables_wrapper .dataTables_filter input {
+                margin-left: 0;
+                margin-right: 0.5em;
+            }
+    }
+
+    /* Actions Buttons Container */
+    .action-buttons {
+        display: flex;
+        gap: 0.25rem;
+        flex-wrap: nowrap;
+        min-width: max-content;
+    }
+
+        .action-buttons .btn {
+            white-space: nowrap;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+        }
+
+    /* Badge Styles */
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.65rem;
+    }
+
+    /* Table Container Overflow */
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    /* DataTables Customization */
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        margin-bottom: 1rem;
+    }
+
+    /* Make table more compact */
+    .table td, .table th {
+        padding: 0.75rem;
+    }
+
+    /* Responsive */
+    @@media (max-width: 1400px) {
+        .action-buttons .btn {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.4rem;
+        }
+
+        .action-buttons {
+            gap: 0.15rem;
+        }
+
+        .table td, .table th {
+            padding: 0.5rem;
+        }
+    }
+
+    @@media (max-width: 1200px) {
+        .action-buttons .btn i {
+            margin-right: 0;
+        }
+
+        .action-buttons .btn span {
+            display: none;
+        }
+
+        .action-buttons .btn {
+            padding: 0.35rem 0.5rem;
+        }
+    }
+</style>
 
 <div class="container-fluid mt-4">
     <div class="card shadow border-0">
@@ -10,7 +112,7 @@
         <!-- Header -->
         <div class="card-header bg-gradient d-flex justify-content-between align-items-center py-3">
             <h3 class="mb-0 fw-bold text-primary">
-                Exam Management
+                @Localizer["ExamManagement"]
             </h3>
 
             <button type="button"
@@ -21,7 +123,7 @@
                 <i class="bi bi-plus-circle fs-5"></i>
 
                 <span class="fw-semibold">
-                    Create Exam
+                    @Localizer["CreateExam"]
                 </span>
             </button>
         </div>
@@ -37,537 +139,264 @@
 
                     <thead class="table-light">
                         <tr>
-                            <th>Title</th>
-                            <th>Time (Minutes)</th>
-                            <th>Degree</th>
-                            <th>Questions</th>
-                            <th width="220">Actions</th>
+                            <th style="text-align: @(isRtl ? "right" : "left");">@Localizer["Title"]</th>
+                            <th style="text-align: @(isRtl ? "right" : "left");">@Localizer["TimeMinutes"]</th>
+                            <th style="text-align: @(isRtl ? "right" : "left");">@Localizer["Degree"]</th>
+                            <th style="text-align: @(isRtl ? "right" : "left");">@Localizer["Questions"]</th>
+                            <th style="text-align: @(isRtl ? "right" : "left"); min-width: 450px;">@Localizer["Actions"]</th>
                         </tr>
                     </thead>
 
                     <tbody>
-
                         @if (Model != null && Model.Any())
                         {
                             @foreach (var exam in Model)
                             {
                                 <tr id="exam-row-@exam.ExamId">
-
                                     <!-- Title -->
-                                    <td class="fw-semibold">
-                                        @exam.Title
-                                    </td>
+                                    <td class="fw-semibold" style="text-align: @(isRtl ? "right" : "left");">@exam.Title</td>
 
                                     <!-- Time -->
-                                    <td>
-                                        <span class="badge bg-secondary rounded-pill px-3 py-2">
-                                            @exam.DurationInMinutes
-                                        </span>
+                                    <td style="text-align: @(isRtl ? "right" : "left");">
+                                        <span class="badge bg-secondary">@exam.DurationInMinutes دقيقة</span>
                                     </td>
 
                                     <!-- Degree -->
-                                    <td>
-                                        <span class="badge bg-success rounded-pill px-3 py-2">
-                                            @exam.TotalDegree
-                                        </span>
+                                    <td style="text-align: @(isRtl ? "right" : "left");">
+                                        <span class="badge bg-success">@exam.TotalDegree درجة</span>
                                     </td>
 
                                     <!-- Questions -->
-                                    <td>
-                                        <span class="badge bg-info rounded-pill px-3 py-2">
-                                            @exam.QuestionsCount
-                                        </span>
+                                    <td style="text-align: @(isRtl ? "right" : "left");">
+                                        <span class="badge bg-info">@exam.QuestionsCount سؤال</span>
                                     </td>
 
                                     <!-- Actions -->
-                                    <td>
-
-                                        <div class="btn-group" role="group">
-
-                                            <!-- Questions -->
-                                            <a asp-controller="Question"
-                                               asp-action="Index"
-                                               asp-route-examId="@exam.ExamId"
-                                               class="btn btn-sm btn-outline-primary">
-
-                                                <i class="bi bi-list-check"></i>
-                                                Questions
+                                    <td style="text-align: @(isRtl ? "right" : "left");">
+                                        <div class="action-buttons">
+                                            <a asp-controller="Question" asp-action="Index" asp-route-examId="@exam.ExamId" class="btn btn-sm btn-outline-primary" title="@Localizer["QuestionsButton"]">
+                                                <i class="bi bi-list-check"></i> <span>@Localizer["QuestionsButton"]</span>
                                             </a>
-
-                                            <!-- Edit -->
-                                            <button type="button"
-                                                    class="btn btn-sm btn-outline-warning edit-exam-btn"
-                                                    data-id="@exam.ExamId"
-                                                    data-title="@exam.Title"
-                                                    data-time="@exam.DurationInMinutes"
-                                                    data-degree="@exam.TotalDegree">
-
-                                                <i class="bi bi-pencil-fill"></i>
+                                            <a asp-action="Invitations" asp-route-examId="@exam.ExamId" class="btn btn-sm btn-outline-success" title="@Localizer["LinksButton"]">
+                                                <i class="bi bi-link-45deg"></i> <span>@Localizer["LinksButton"]</span>
+                                            </a>
+                                            <a asp-controller="Analytics" asp-action="ExamReport" asp-route-examId="@exam.ExamId" class="btn btn-sm btn-outline-info" title="@Localizer["AnalyticsButton"]">
+                                                <i class="bi bi-graph-up"></i> <span>@Localizer["AnalyticsButton"]</span>
+                                            </a>
+                                            <button type="button" class="btn btn-sm btn-outline-warning edit-exam-btn"
+                                                    data-id="@exam.ExamId" data-title="@exam.Title"
+                                                    data-time="@exam.DurationInMinutes" data-degree="@exam.TotalDegree"
+                                                    title="@Localizer["EditButton"]">
+                                                <i class="bi bi-pencil-fill"></i> <span>@Localizer["EditButton"]</span>
                                             </button>
-
-                                            <!-- Delete -->
-                                            <button type="button"
-                                                    class="btn btn-sm btn-outline-danger delete-exam-btn"
-                                                    data-id="@exam.ExamId"
-                                                    data-title="@exam.Title">
-
-                                                <i class="bi bi-trash-fill"></i>
+                                            <button type="button" class="btn btn-sm btn-outline-danger delete-exam-btn"
+                                                    data-id="@exam.ExamId" data-title="@exam.Title"
+                                                    title="@Localizer["DeleteButton"]">
+                                                <i class="bi bi-trash-fill"></i> <span>@Localizer["DeleteButton"]</span>
                                             </button>
-
                                         </div>
-
                                     </td>
-
                                 </tr>
                             }
                         }
-
                     </tbody>
-
                 </table>
-
             </div>
-
         </div>
-
     </div>
 </div>
 
-<!-- ===================================================== -->
 <!-- CREATE MODAL -->
-<!-- ===================================================== -->
-
-<div class="modal fade"
-     id="createExamModal"
-     tabindex="-1"
-     aria-hidden="true">
-
+<div class="modal fade" id="createExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-
         <div class="modal-content border-0 shadow">
-
             <div class="modal-header bg-primary text-white">
-
                 <h5 class="modal-title">
                     <i class="bi bi-plus-circle me-2"></i>
-                    Create New Exam
+                    @Localizer["CreateNewExam"]
                 </h5>
-
-                <button type="button"
-                        class="btn-close btn-close-white"
-                        data-bs-dismiss="modal">
-                </button>
-
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-
             <form id="createExamForm">
-
                 <div class="modal-body p-4">
-
-                    <!-- Title -->
                     <div class="form-floating mb-3">
-
-                        <input type="text"
-                               class="form-control"
-                               id="examTitle"
-                               name="Title"
-                               placeholder="Exam Title"
-                               required>
-
-                        <label for="examTitle">
-                            Exam Title
-                        </label>
-
+                        <input type="text" class="form-control" id="examTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required>
+                        <label for="examTitle">@Localizer["ExamTitle"]</label>
                     </div>
-
-                    <!-- Time -->
                     <div class="form-floating mb-3">
-
-                        <input type="number"
-                               class="form-control"
-                               id="examTime"
-                               name="DurationInMinutes"
-                               placeholder="Time"
-                               min="1"
-                               required>
-
-                        <label for="examTime">
-                            Time (Minutes)
-                        </label>
-
+                        <input type="number" class="form-control" id="examTime" name="DurationInMinutes" placeholder="@Localizer["TimePlaceholder"]" min="1" required>
+                        <label for="examTime">@Localizer["TimePlaceholder"]</label>
                     </div>
-
-                    <!-- Degree -->
                     <div class="form-floating mb-3">
-
-                        <input type="number"
-                               class="form-control"
-                               id="examDegree"
-                               name="TotalDegree"
-                               placeholder="Degree"
-                               min="1"
-                               required>
-
-                        <label for="examDegree">
-                            Degree
-                        </label>
-
+                        <input type="number" class="form-control" id="examDegree" name="TotalDegree" placeholder="@Localizer["DegreePlaceholder"]" min="1" required>
+                        <label for="examDegree">@Localizer["DegreePlaceholder"]</label>
                     </div>
-
                 </div>
-
                 <div class="modal-footer bg-light">
-
-                    <button type="button"
-                            class="btn btn-outline-secondary"
-                            data-bs-dismiss="modal">
-
-                        Cancel
-                    </button>
-
-                    <button type="submit"
-                            class="btn btn-primary">
-
-                        <i class="bi bi-save me-1"></i>
-                        Create Exam
-                    </button>
-
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i> @Localizer["Save"]</button>
                 </div>
-
             </form>
-
         </div>
-
     </div>
-
 </div>
 
-<!-- ===================================================== -->
 <!-- EDIT MODAL -->
-<!-- ===================================================== -->
-
-<div class="modal fade"
-     id="editExamModal"
-     tabindex="-1"
-     aria-hidden="true">
-
+<div class="modal fade" id="editExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-
         <div class="modal-content border-0 shadow">
-
             <div class="modal-header bg-warning">
-
                 <h5 class="modal-title">
-
                     <i class="bi bi-pencil-square me-2"></i>
-                    Edit Exam
-
+                    @Localizer["UpdateExam"]
                 </h5>
-
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
-
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
-
             <form id="editExamForm">
-
                 <div class="modal-body p-4">
-
-                    <input type="hidden"
-                           id="editExamId"
-                           name="Id">
-
-                    <!-- Title -->
+                    <input type="hidden" id="editExamId" name="Id">
                     <div class="form-floating mb-3">
-
-                        <input type="text"
-                               class="form-control"
-                               id="editExamTitle"
-                               name="Title"
-                               placeholder="Exam Title"
-                               required>
-
-                        <label for="editExamTitle">
-                            Exam Title
-                        </label>
-
+                        <input type="text" class="form-control" id="editExamTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required>
+                        <label for="editExamTitle">@Localizer["ExamTitle"]</label>
                     </div>
-
-                    <!-- Time -->
                     <div class="form-floating mb-3">
-
-                        <input type="number"
-                               class="form-control"
-                               id="editExamTime"
-                               name="DurationInMinutes"
-                               min="1"
-                               required>
-
-                        <label for="editExamTime">
-                            Time (Minutes)
-                        </label>
-
+                        <input type="number" class="form-control" id="editExamTime" name="DurationInMinutes" min="1" required>
+                        <label for="editExamTime">@Localizer["TimePlaceholder"]</label>
                     </div>
-
-                    <!-- Degree -->
                     <div class="form-floating mb-3">
-
-                        <input type="number"
-                               class="form-control"
-                               id="editExamDegree"
-                               name="TotalDegree"
-                               min="1"
-                               required>
-
-                        <label for="editExamDegree">
-                            Degree
-                        </label>
-
+                        <input type="number" class="form-control" id="editExamDegree" name="TotalDegree" min="1" required>
+                        <label for="editExamDegree">@Localizer["DegreePlaceholder"]</label>
                     </div>
-
                 </div>
-
                 <div class="modal-footer bg-light">
-
-                    <button type="button"
-                            class="btn btn-outline-secondary"
-                            data-bs-dismiss="modal">
-
-                        Cancel
-                    </button>
-
-                    <button type="submit"
-                            class="btn btn-warning">
-
-                        <i class="bi bi-save me-1"></i>
-                        Update Exam
-                    </button>
-
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
+                    <button type="submit" class="btn btn-warning"><i class="bi bi-save me-1"></i> @Localizer["UpdateExam"]</button>
                 </div>
-
             </form>
-
         </div>
-
     </div>
-
 </div>
 
-<!-- ===================================================== -->
 <!-- DELETE MODAL -->
-<!-- ===================================================== -->
-
-<div class="modal fade"
-     id="deleteExamModal"
-     tabindex="-1"
-     aria-hidden="true">
-
+<div class="modal fade" id="deleteExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-
         <div class="modal-content border-0 shadow">
-
             <div class="modal-header bg-danger text-white">
-
                 <h5 class="modal-title">
-
                     <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                    Confirm Delete
-
+                    @Localizer["ConfirmDelete"]
                 </h5>
-
-                <button type="button"
-                        class="btn-close btn-close-white"
-                        data-bs-dismiss="modal">
-                </button>
-
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-
             <div class="modal-body p-4 text-center">
-
-                <i class="bi bi-trash-fill text-danger"
-                   style="font-size:3rem;"></i>
-
+                <i class="bi bi-trash-fill text-danger" style="font-size:3rem;"></i>
                 <p class="mt-3 fs-5">
-                    Are you sure you want to delete
+                    @Localizer["DeleteConfirmation"]
                     "<span id="deleteExamTitle" class="fw-bold"></span>" ?
                 </p>
-
             </div>
-
             <div class="modal-footer bg-light">
-
-                <button type="button"
-                        class="btn btn-outline-secondary"
-                        data-bs-dismiss="modal">
-
-                    Cancel
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteExam">
+                    <i class="bi bi-trash-fill me-1"></i> @Localizer["Delete"]
                 </button>
-
-                <button type="button"
-                        class="btn btn-danger"
-                        id="confirmDeleteExam">
-
-                    Delete
-                </button>
-
             </div>
-
         </div>
-
     </div>
-
 </div>
 
 @section Scripts {
-
-    <!-- DataTables -->
-    <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
-          rel="stylesheet" />
-
+    <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 
     <script>
-
         $(document).ready(function () {
+        var isRtl = @(isRtl ? "true" : "false");
 
-        // =====================================================
-        // DATATABLE
-        // =====================================================
-
-        let table = $('#examsTable').DataTable({
+        $('#examsTable').DataTable({
         responsive: true,
-        pageLength: 10
+        pageLength: 10,
+        scrollX: true,
+        language: isRtl ? {
+        sProcessing: "جارٍ التحميل...",
+        sLengthMenu: "أظهر _MENU_ مدخلات",
+        sZeroRecords: "لم يتم العثور على نتائج",
+        sInfo: "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+        sInfoEmpty: "يعرض 0 إلى 0 من أصل 0 سجل",
+        sInfoFiltered: "(تمت التصفية من مجموع _MAX_ مدخل)",
+        sSearch: "ابحث:",
+        oPaginate: {
+        sFirst: "الأول",
+        sPrevious: "السابق",
+        sNext: "التالي",
+        sLast: "الأخير"
+        }
+        } : {}
         });
 
-        // =====================================================
         // CREATE
-        // =====================================================
-
         $("#createExamForm").submit(function (e) {
-
         e.preventDefault();
-
         $.ajax({
-
         url: '/Exam/Create',
-
         type: 'POST',
-
         data: $(this).serialize(),
-
         success: function () {
-
         $('#createExamModal').modal('hide');
-
         location.reload();
         },
-
-        error: function (xhr) {
-
-        alert(xhr.responseText);
-        }
+        error: function (xhr) { alert(xhr.responseText); }
         });
         });
 
-        // =====================================================
         // OPEN EDIT
-        // =====================================================
-
         $(document).on("click", ".edit-exam-btn", function () {
-
         $("#editExamId").val($(this).data("id"));
-
         $("#editExamTitle").val($(this).data("title"));
-
         $("#editExamTime").val($(this).data("time"));
-
         $("#editExamDegree").val($(this).data("degree"));
-
         $("#editExamModal").modal("show");
         });
 
-        // =====================================================
         // EDIT
-        // =====================================================
-
         $("#editExamForm").submit(function (e) {
-
         e.preventDefault();
-
         let examId = $("#editExamId").val();
-
         $.ajax({
-
         url: '/Exam/Edit/' + examId,
-
         type: 'POST',
-
         data: $(this).serialize(),
-
         success: function () {
-
         $('#editExamModal').modal('hide');
-
         location.reload();
         },
-
-        error: function (xhr) {
-
-        alert(xhr.responseText);
-        }
+        error: function (xhr) { alert(xhr.responseText); }
         });
         });
 
-        // =====================================================
         // OPEN DELETE
-        // =====================================================
-
         $(document).on("click", ".delete-exam-btn", function () {
-
         let examId = $(this).data("id");
-
         let examTitle = $(this).data("title");
-
         $("#deleteExamTitle").text(examTitle);
-
         $("#confirmDeleteExam").data("id", examId);
-
         $("#deleteExamModal").modal("show");
         });
 
-        // =====================================================
         // DELETE
-        // =====================================================
-
         $("#confirmDeleteExam").click(function () {
-
         let examId = $(this).data("id");
-
         $.ajax({
-
         url: '/Exam/Delete/' + examId,
-
         type: 'POST',
-
         success: function () {
-
         $('#deleteExamModal').modal('hide');
-
         location.reload();
         },
-
-        error: function (xhr) {
-
-        alert(xhr.responseText);
-        }
+        error: function (xhr) { alert(xhr.responseText); }
         });
         });
-
         });
-
     </script>
 }

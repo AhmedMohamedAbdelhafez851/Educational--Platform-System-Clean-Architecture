@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Analytics.ExamAnalyticsDto
+
+<div class="table-container">
+    <div class="table-header">
+        <span class="section-title" style="margin-bottom: 0;">
+            <i class="bi bi-star-fill" style="color: #f59e0b; margin-right: 0.5rem;"></i>
+            @Localizer["TopPerformersTitle"]
+        </span>
+    </div>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>@Localizer["StudentName"]</th>
+                <th>@Localizer["Score"]</th>
+                <th>@Localizer["Status"]</th>
+                <th>@Localizer["SubmissionDate"]</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.TopStudents)
+            {
+                <tr>
+                    <td>@student.StudentName</td>
+                    <td><strong>@student.Score.ToString("F1")%</strong></td>
+                    <td><span class="badge-success"><i class="bi bi-check-circle-fill"></i> @Localizer["Passed"]</span></td>
+                    <td>@student.SubmissionDate.ToString("MMM dd, yyyy")</td>
+                </tr>
+            }
+            @if (!Model.TopStudents.Any())
+            {
+                <tr><td colspan="4" class="empty-state">@Localizer["NoSubmissions"]</td></tr>
+            }
+        </tbody>
+    </table>
+</div>

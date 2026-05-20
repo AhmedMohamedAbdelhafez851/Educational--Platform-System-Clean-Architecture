@@ -1,0 +1,137 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- Rest of your header content -->
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            <div class="brand-icon">
+                <i class="bi bi-stars"></i>
+                <i class="bi bi-journal-check"></i>
+            </div>
+            <div class="brand-text ms-2">
+                <span class="brand-name">@Localizer["AppShortTitle"]</span>
+                <span class="brand-tagline d-none d-sm-block">@Localizer["AppTagline"]</span>
+            </div>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Content -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                @if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <!-- Navigation Links (Desktop) -->
+                    <partial name="_UserMenu" />
+                }
+                else
+                {
+                    <!-- Auth Links for non-authenticated users -->
+                    <partial name="_AuthMenu" />
+                }
+
+                <!-- Language Switcher -->
+                <partial name="_LanguageSwitcher" />
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Modern Navbar Styles */
+    .navbar {
+        padding: 0.75rem 0;
+        backdrop-filter: blur(10px);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Brand Logo */
+    .brand-icon {
+        position: relative;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+    }
+
+        .brand-icon i:first-child {
+            position: absolute;
+            font-size: 0.75rem;
+            opacity: 0.7;
+            top: 6px;
+            left: 6px;
+        }
+
+        .brand-icon i:last-child {
+            font-size: 1.1rem;
+        }
+
+    .brand-text {
+        line-height: 1.2;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .brand-tagline {
+        font-size: 0.65rem;
+        opacity: 0.8;
+        letter-spacing: 0.3px;
+    }
+
+    /* Navbar Toggle */
+    .navbar-toggler {
+        border: none;
+        padding: 0.5rem;
+    }
+
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+
+    /* Mobile Menu */
+    @@media (max-width: 991px) {
+        .navbar-collapse {
+            background: rgba(26, 31, 54, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+
+            .nav-links .nav-link {
+                width: 100%;
+                padding: 0.75rem 1rem;
+            }
+
+        .user-menu .dropdown-toggle {
+            width: 100%;
+        }
+
+        .user-info {
+            flex: 1;
+        }
+    }
+</style>

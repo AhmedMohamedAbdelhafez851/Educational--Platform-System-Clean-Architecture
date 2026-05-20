@@ -1,72 +1,74 @@
+@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
 @model OnlineExamSystem.Application.DTOs.Exam.TakeExamDto
+
 @{
-    ViewData["Title"] = "Take Exam - " + Model.Title;
+    ViewData["Title"] = $"{Localizer["TakeExam"]} - {Model.Title}";
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+    var examDuration = Model.DurationInMinutes * 60;
 }
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<!DOCTYPE html>
+<html lang="@CultureInfo.CurrentUICulture.Name" dir="@(isRtl ? "rtl" : "ltr")">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Examify</title>
 
-<div class="container mt-4">
-    <div class="card shadow-lg border-0">
-        <div class="card-header bg-gradient-primary text-white py-3">
-            <div class="d-flex justify-content-between align-items-center">
-                <div>
-                    <h2 class="h4 mb-0">
-                        <i class="bi bi-file-text me-2"></i>
-                        @Model.Title
-                    </h2>
-                    <small class="text-white-50">Please answer all questions carefully</small>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/pages/take-exam.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="exam-container">
+        <div class="exam-header">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h1 class="exam-title">@Model.Title</h1>
+                    <p class="text-muted mb-0"><i class="bi bi-question-circle"></i> @Model.Questions.Count questions</p>
+                    <p class="text-muted mb-0"><i class="bi bi-clock-history"></i> Duration: @Model.DurationInMinutes minutes</p>
                 </div>
-                <div class="text-end">
-                    <div id="timer" class="badge bg-light text-dark fs-6 px-3 py-2">
-                        <i class="bi bi-clock me-1"></i>
-                        <span id="timeDisplay">00:00</span>
+                <div class="col-md-5">
+                    <div class="timer-card" id="timerCard">
+                        <div class="timer-label"><i class="bi bi-hourglass-split"></i> Time Remaining</div>
+                        <div class="timer-value" id="timeDisplay">--:--</div>
+                        <div class="timer-label mt-1" style="font-size: 0.7rem;">The exam will auto-submit when time expires</div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="card-body p-4">
-            <form id="examForm">
-                <input type="hidden" name="examId" value="@Model.ExamId" />
+        <div class="row">
+            <div class="col-lg-8">
+                <form id="examForm">
+                    <input type="hidden" name="examId" value="@Model.ExamId" />
+                    <input type="hidden" name="attemptId" value="@ViewBag.AttemptId" />
 
-                @if (Model.Questions != null && Model.Questions.Any())
-                {
-                    <div class="questions-container">
+                    <div id="questionsContainer">
                         @foreach (var question in Model.Questions.OrderBy(q => q.QuestionId))
                         {
-                            <div class="card mb-4 question-card border-0 shadow-sm">
-                                <div class="card-header bg-light py-3">
-                                    <h5 class="mb-0">
-                                        <span class="badge bg-primary rounded-pill me-2">
-                                            Q@(Model.Questions.ToList().IndexOf(question) + 1)
-                                        </span>
-                                        @question.Title
-                                    </h5>
+                            var questionIndex = Model.Questions.ToList().IndexOf(question);
+                            <div class="question-card" data-question-id="@question.QuestionId" data-index="@questionIndex">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="badge bg-primary rounded-pill me-2">@(questionIndex + 1)</span>
+                                    <h5 class="mb-0">@question.Title</h5>
                                 </div>
-                                <div class="card-body">
-                                    @if (question.Choices != null && question.Choices.Any())
+                                <div class="choices-container">
+                                    @foreach (var choice in question.Choices.OrderBy(c => c.ChoiceId))
                                     {
-                                        foreach (var choice in question.Choices.OrderBy(c => c.ChoiceId))
-                                        {
-                                            <div class="form-check mb-3">
-                                                <input class="form-check-input" type="radio"
-                                                       name="answers[@question.QuestionId]"
-                                                       value="@choice.ChoiceId"
-                                                       id="choice_@question.QuestionId@choice.ChoiceId"
-                                                       data-question="@question.QuestionId"
-                                                       required>
-
-                                                <label class="form-check-label"
-                                                       for="choice_@question.QuestionId@choice.ChoiceId">
-                                                    @choice.Text
-                                                </label>
-                                            </div>
-                                        }
-                                    }
-                                    else
-                                    {
-                                        <div class="alert alert-warning">
-                                            No choices available for this question.
+                                        <div class="choice-item" data-choice-id="@choice.ChoiceId" data-question-id="@question.QuestionId">
+                                            <input type="radio"
+                                                   name="q_@question.QuestionId"
+                                                   value="@choice.ChoiceId"
+                                                   id="q_@(question.QuestionId)_@(choice.ChoiceId)"
+                                                   class="choice-radio"
+                                                   style="display: none;" />
+                                            <label for="q_@(question.QuestionId)_@(choice.ChoiceId)" style="cursor: pointer; width: 100%; display: block;">
+                                                @choice.Text
+                                            </label>
                                         </div>
                                     }
                                 </div>
@@ -74,154 +76,229 @@
                         }
                     </div>
 
-                    <div class="mb-4">
-                        <h6 class="mb-3">Question Navigator:</h6>
-                        <div class="d-flex flex-wrap gap-2" id="questionNavigator">
-                            @for (int i = 0; i < Model.Questions.Count; i++)
-                            {
-                                <button type="button"
-                                        class="btn btn-outline-secondary nav-question"
-                                        data-index="@i">
-                                    @(i + 1)
-                                </button>
-                            }
-                        </div>
+                    <div class="text-center mt-4">
+                        <button type="button" class="btn btn-success btn-lg submit-btn" id="submitExamBtn">
+                            <i class="bi bi-check2-circle me-2"></i> Submit Exam
+                        </button>
                     </div>
+                </form>
+            </div>
 
-                    <div class="d-flex justify-content-between align-items-center mt-4 pt-3 border-top">
-                        <div>
-                            <span class="text-muted" id="answeredCount">
-                                <i class="bi bi-info-circle me-1"></i>
-                                Answered: 0 / @Model.Questions.Count
-                            </span>
-                        </div>
-                        <div>
-                            <button type="button"
-                                    id="submitExamBtn"
-                                    class="btn btn-success btn-lg px-5">
-                                <i class="bi bi-check2-circle me-2"></i>
-                                Submit Exam
-                            </button>
-                        </div>
+            <div class="col-lg-4">
+                <div class="exam-header">
+                    <h6 class="fw-bold mb-3"><i class="bi bi-grid-3x3-gap-fill me-2"></i> Question Navigator</h6>
+                    <div class="d-flex flex-wrap gap-2" id="questionNavigator">
+                        @for (int i = 0; i < Model.Questions.Count; i++)
+                        {
+                            <div class="nav-question" data-index="@i">@(i + 1)</div>
+                        }
                     </div>
-                }
-                else
-                {
-                    <div class="alert alert-warning text-center">
-                        <i class="bi bi-exclamation-triangle fs-1"></i>
-                        <h4>No Questions Available</h4>
-                        <p>This exam doesn't have any questions yet.</p>
-                        <a asp-action="Index" class="btn btn-primary">
-                            Back to Exams
-                        </a>
+                    <hr class="my-3" />
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-check-circle-fill text-success"></i> Answered</span>
+                        <span id="answeredCount">0 / @Model.Questions.Count</span>
                     </div>
-                }
-            </form>
+                    <div class="progress mt-2" style="height: 5px;">
+                        <div id="answeredProgress" class="progress-bar bg-success" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-@section Scripts {
+    <div id="timeOverlay" class="time-overlay">
+        <div class="text-center">
+            <i class="bi bi-hourglass-bottom" style="font-size: 4rem;"></i>
+            <h2 class="mt-3">Time's Up!</h2>
+            <p>Your exam time has expired. Submitting your answers...</p>
+            <div class="spinner-border mt-3" role="status"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        let timeLeft = 0;
-        let timerInterval = null;
-        let answeredQuestions = new Set();
-        let totalQuestions = @Model.Questions.Count
+        $(document).ready(function () {
+        var examDurationSeconds = @examDuration;
+        var totalQuestions = @Model.Questions.Count;
+        var timeLeft = examDurationSeconds;
+        var answeredQuestions = new Array(totalQuestions).fill(false);
+        var userAnswers = {};
+        var timerInterval;
+        var isSubmitting = false;
+        var warningShown = false;
+        var dangerShown = false;
 
-            function updateAnsweredCount() {
-                document.getElementById('answeredCount').innerHTML = '<i class="bi bi-info-circle me-1"></i>Answered: ' + answeredQuestions.size + ' / ' + totalQuestions;
-            }
+        var savedAnswers = sessionStorage.getItem('exam_@Model.ExamId');
+        if (savedAnswers) {
+        userAnswers = JSON.parse(savedAnswers);
+        for (var qId in userAnswers) {
+        var questionCard = $('.question-card[data-question-id="' + qId + '"]');
+        if (questionCard.length) {
+        var index = questionCard.data('index');
+        answeredQuestions[index] = true;
+        var choiceId = userAnswers[qId];
+        var choiceItem = $('.choice-item[data-question-id="' + qId + '"][data-choice-id="' + choiceId + '"]');
+        choiceItem.addClass('selected');
+        choiceItem.find('.choice-radio').prop('checked', true);
+        }
+        }
+        updateAnsweredCount();
+        }
 
-        function startTimer(minutes = 60) {
-            timeLeft = minutes * 60;
-            updateTimerDisplay();
+        function saveAnswers() {
+        sessionStorage.setItem('exam_@Model.ExamId', JSON.stringify(userAnswers));
+        }
 
-            if (timerInterval) clearInterval(timerInterval);
+        function startTimer() {
+        updateTimerDisplay();
+        timerInterval = setInterval(function () {
+        if (timeLeft <= 0) {
+        clearInterval(timerInterval);
+        if (!isSubmitting) {
+        submitExam(true);
+        }
+        } else {
+        timeLeft--;
+        updateTimerDisplay();
 
-            timerInterval = setInterval(() => {
-                if (timeLeft <= 0) {
-                    clearInterval(timerInterval);
-                    submitExam();
-                } else {
-                    timeLeft--;
-                    updateTimerDisplay();
-                }
-            }, 1000);
+        if (timeLeft <= examDurationSeconds * 0.3 && !warningShown && timeLeft > 60) {
+        warningShown = true;
+        $('#timerCard').addClass('warning');
+        showToast('warning', 'Time Warning', '30% of your time remaining!');
+        }
+
+        if (timeLeft <= examDurationSeconds * 0.1 && !dangerShown && timeLeft > 0) {
+        dangerShown = true;
+        $('#timerCard').removeClass('warning').addClass('danger');
+        showToast('danger', 'Time Critical!', 'Less than 10% of time remaining!');
+        }
+        }
+        }, 1000);
         }
 
         function updateTimerDisplay() {
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-
-            document.getElementById('timeDisplay').textContent = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+        var minutes = Math.floor(timeLeft / 60);
+        var seconds = timeLeft % 60;
+        var timeString = minutes.toString().padStart(2, '0') + ':' + seconds.toString().padStart(2, '0');
+        $('#timeDisplay').text(timeString);
+        document.title = '(' + timeString + ') ' + '@Model.Title';
         }
 
-        function submitExam() {
-            const formData = new FormData(document.getElementById('examForm'));
-            const answers = {};
-
-            for (let [key, value] of formData.entries()) {
-                if (key.startsWith('answers[')) {
-                    const match = key.match(/answers\[(\d+)\]/);
-                    if (match) {
-                        answers[parseInt(match[1])] = parseInt(value);
-                    }
-                }
-            }
-
-            $.ajax({
-                url: '@Url.Action("SubmitExam", "UserExam")',
-                type: 'POST',
-                data: {
-                    examId: @Model.ExamId,
-                    answers: answers
-                },
-                success: function (response) {
-                    if (response.success) {
-                        window.location.href = '@Url.Action("ViewResult", "UserExam")/' + response.submissionId;
-                    }
-                }
-            });
+        function updateAnsweredCount() {
+        var answered = answeredQuestions.filter(function (v) { return v; }).length;
+        $('#answeredCount').text(answered + ' / ' + totalQuestions);
+        $('#answeredProgress').css('width', (answered / totalQuestions * 100) + '%');
         }
 
-        $(document).ready(function () {
-            startTimer(60);
+        function showToast(type, title, message) {
+        var bgClass = type === 'warning' ? 'bg-warning' : 'bg-danger';
+        var toastHtml = `
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
+        <div class="toast align-items-center text-white ${bgClass} border-0 show" role="alert">
+        <div class="d-flex">
+        <div class="toast-body">
+        <strong>${title}</strong><br>${message}
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+        </div>
+        </div>
+        </div>
+        `;
+        $('body').append(toastHtml);
+        setTimeout(function () { $('.position-fixed').last().remove(); }, 5000);
+        }
 
-            $('input[type="radio"]').change(function () {
-                const index = $('.question-card').index($(this).closest('.question-card'));
-                answeredQuestions.add(index);
-                updateAnsweredCount();
-            });
+        $('.choice-item').click(function () {
+        if (isSubmitting) return;
+        var $choice = $(this);
+        var questionId = $choice.data('question-id');
+        var choiceId = $choice.data('choice-id');
+        var questionCard = $('.question-card[data-question-id="' + questionId + '"]');
+        var questionIndex = questionCard.data('index');
 
-            $('#submitExamBtn').click(function () {
-                submitExam();
-            });
+        $choice.find('.choice-radio').prop('checked', true);
+        $choice.closest('.choices-container').find('.choice-item').removeClass('selected');
+        $choice.addClass('selected');
 
-            updateAnsweredCount();
+        answeredQuestions[questionIndex] = true;
+        userAnswers[questionId] = choiceId;
+        saveAnswers();
+
+        $('.nav-question[data-index="' + questionIndex + '"]').addClass('answered');
+        $('.question-card[data-index="' + questionIndex + '"]').addClass('answered');
+
+        updateAnsweredCount();
+        });
+
+        $('.nav-question').click(function () {
+        var index = $(this).data('index');
+        $('.nav-question').removeClass('current');
+        $(this).addClass('current');
+        $('html, body').animate({
+        scrollTop: $('.question-card[data-index="' + index + '"]').offset().top - 100
+        }, 500);
+        setTimeout(function () { $('.nav-question').removeClass('current'); }, 2000);
+        });
+
+        function submitExam(isAutoSubmit) {
+        if (isSubmitting) return;
+        isSubmitting = true;
+
+        if (isAutoSubmit) {
+        $('#timeOverlay').css('display', 'flex');
+        }
+
+        var $btn = $('#submitExamBtn');
+        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> Submitting...');
+
+        $.ajax({
+        url: '@Url.Action("SubmitExam", "UserExam")',
+        type: 'POST',
+        data: {
+        examId: @Model.ExamId,
+        answers: userAnswers,
+        attemptId: '@ViewBag.AttemptId'
+        },
+        success: function (response) {
+        if (response.success) {
+        sessionStorage.removeItem('exam_@Model.ExamId');
+        window.location.href = '@Url.Action("ViewResult", "UserExam")/' + response.submissionId;
+        } else {
+        alert('Error: ' + response.message);
+        $btn.prop('disabled', false).html('<i class="bi bi-check2-circle me-2"></i> Submit Exam');
+        isSubmitting = false;
+        if (isAutoSubmit) $('#timeOverlay').hide();
+        }
+        },
+        error: function (xhr) {
+        alert('Error submitting exam. Please try again.');
+        $btn.prop('disabled', false).html('<i class="bi bi-check2-circle me-2"></i> Submit Exam');
+        isSubmitting = false;
+        if (isAutoSubmit) $('#timeOverlay').hide();
+        }
+        });
+        }
+
+        $('#submitExamBtn').click(function () { submitExam(false); });
+
+        window.addEventListener('beforeunload', function (e) {
+        if (Object.keys(userAnswers).length > 0 && timeLeft > 0 && !isSubmitting) {
+        var confirmationMessage = 'You have unsaved answers. Are you sure you want to leave? Your progress will be lost.';
+        e.returnValue = confirmationMessage;
+        return confirmationMessage;
+        }
+        });
+
+        startTimer();
+        updateAnsweredCount();
+
+        setInterval(function () {
+        if (Object.keys(userAnswers).length > 0) {
+        saveAnswers();
+        }
+        }, 30000);
         });
     </script>
-}
-
-<style>
-    .bg-gradient-primary {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    .question-card {
-        transition: transform .2s;
-    }
-
-        .question-card:hover {
-            transform: translateY(-2px);
-        }
-
-    .nav-question {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-    }
-</style>
+</body>
+</html>

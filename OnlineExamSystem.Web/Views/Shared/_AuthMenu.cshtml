@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+
+@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+    var isAuthPage = currentController == "Account" && (currentAction == "Login" || currentAction == "Register");
+    var isExamPage = currentController == "UserExam" && (currentAction == "Join" || currentAction == "TakeExam" || currentAction == "ViewResult");
+    var shouldHideAuth = isAuthPage || isExamPage;
+}
+
+@if (!shouldHideAuth)
+{
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="Account" asp-action="Login">
+            <i class="bi bi-box-arrow-in-right me-1"></i>@Localizer["Login"]
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="Account" asp-action="Register">
+            <i class="bi bi-person-plus me-1"></i>@Localizer["Register"]
+        </a>
+    </li>
+}

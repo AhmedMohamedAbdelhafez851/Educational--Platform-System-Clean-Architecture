@@ -1,0 +1,218 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Analytics.ExamAnalyticsDto
+
+<style>
+    .attendance-table-wrapper {
+        position: relative;
+        max-height: 500px;
+        overflow-y: auto;
+        overflow-x: auto;
+        border-radius: 0.75rem;
+        border: 1px solid #e5e7eb;
+    }
+
+    .attendance-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        min-width: 800px;
+    }
+
+        .attendance-table thead th {
+            position: sticky;
+            top: 0;
+            background: #f8fafc;
+            z-index: 10;
+            padding: 1rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #64748b;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .attendance-table tbody td {
+            padding: 0.875rem 1rem;
+            font-size: 0.875rem;
+            color: #334155;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: middle;
+        }
+
+        .attendance-table tbody tr:hover td {
+            background-color: #f8fafc;
+        }
+
+    /* Status Badges */
+    .badge-present {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.625rem;
+        background: #f0fdf4;
+        color: #10b981;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .badge-absent {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.625rem;
+        background: #fef2f2;
+        color: #ef4444;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .badge-passed {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.625rem;
+        background: #f0fdf4;
+        color: #10b981;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .badge-failed {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.25rem 0.625rem;
+        background: #fef2f2;
+        color: #ef4444;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+
+    .text-success {
+        color: #10b981;
+    }
+
+    .text-danger {
+        color: #ef4444;
+    }
+
+    /* Scrollbar Styling */
+    .attendance-table-wrapper::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .attendance-table-wrapper::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px;
+    }
+
+    .attendance-table-wrapper::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 4px;
+    }
+
+        .attendance-table-wrapper::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+
+    /* Table Info */
+    .table-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .table-count {
+        font-size: 0.75rem;
+        color: #6b7280;
+    }
+</style>
+
+<div class="table-container">
+    <div class="table-header">
+        <span class="section-title" style="margin-bottom: 0;">
+            <i class="bi bi-table" style="margin-right: 0.5rem;"></i>
+            @Localizer["AttendanceAndPerformance"]
+        </span>
+        <div class="table-count">
+            <i class="bi bi-people me-1"></i>
+            @Model.AttendanceList.Count @Localizer["Students"]
+        </div>
+    </div>
+
+    <div class="attendance-table-wrapper">
+        <table class="attendance-table" id="attendanceTable">
+            <thead>
+                <tr>
+                    <th>@Localizer["StudentName"]</th>
+                    <th>@Localizer["StudentEmail"]</th>
+                    <th>@Localizer["StudentID"]</th>
+                    <th>@Localizer["Attended"]</th>
+                    <th>@Localizer["SubmissionDate"]</th>
+                    <th>@Localizer["Score"]</th>
+                    <th>@Localizer["Status"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var student in Model.AttendanceList.OrderByDescending(s => s.Attended).ThenByDescending(s => s.Score))
+                {
+                    <tr>
+                        <td>
+                            <div class="fw-medium">@student.StudentName</div>
+                        </td>
+                        <td>@student.Email</td>
+                        <td>@(student.StudentId ?? "-")</td>
+                        <td>
+                            @if (student.Attended)
+                            {
+                                <span class="badge-present"><i class="bi bi-check-circle-fill"></i> @Localizer["Yes"]</span>
+                            }
+                            else
+                            {
+                                <span class="badge-absent"><i class="bi bi-x-circle-fill"></i> @Localizer["No"]</span>
+                            }
+                        </td>
+                        <td>@(student.SubmissionDate?.ToString("MMM dd, yyyy HH:mm") ?? "-")</td>
+                        <td>
+                            @if (student.Score.HasValue)
+                            {
+                                <strong class="@(student.Score >= 50 ? "text-success" : "text-danger")">@student.Score.Value.ToString("F1")%</strong>
+                            }
+                            else
+                            {
+                                <span>-</span>
+                            }
+                        </td>
+                        <td>
+                            @if (student.IsPassed.HasValue)
+                            {
+                                if (student.IsPassed.Value)
+                                {
+                                    <span class="badge-passed"><i class="bi bi-check-circle-fill"></i> @Localizer["Passed"]</span>
+                                }
+                                else
+                                {
+                                    <span class="badge-failed"><i class="bi bi-x-circle-fill"></i> @Localizer["Failed"]</span>
+                                }
+                            }
+                            else
+                            {
+                                <span class="text-muted">@Localizer["NotTaken"]</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

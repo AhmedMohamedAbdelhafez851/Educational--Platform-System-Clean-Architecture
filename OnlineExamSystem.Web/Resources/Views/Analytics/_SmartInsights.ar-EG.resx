@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="AtRiskStudents" xml:space="preserve">
+    <value>الطلاب المعرضين للخطر</value>
+  </data>
+	<data name="NeedImmediateAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى اهتمام فوري</value>
+  </data>
+	<data name="DifficultQuestions" xml:space="preserve">
+    <value>الأسئلة الصعبة</value>
+  </data>
+	<data name="TopPerformers" xml:space="preserve">
+    <value>الطلاب المتميزين</value>
+  </data>
+	<data name="ScoredAboveAverage" xml:space="preserve">
+    <value>طالب حصل على أعلى من المتوسط</value>
+  </data>
+	<data name="ViewDetails" xml:space="preserve">
+    <value>عرض التفاصيل</value>
+  </data>
+	<data name="ReviewQuestions" xml:space="preserve">
+    <value>مراجعة الأسئلة</value>
+  </data>
+	<data name="ViewRecognition" xml:space="preserve">
+    <value>عرض التكريم</value>
+  </data>
+	<data name="NoData" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+</root>

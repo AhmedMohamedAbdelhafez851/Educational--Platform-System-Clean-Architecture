@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="PageTitle" xml:space="preserve">
+    <value>التقارير والتحليلات</value>
+  </data>
+	<data name="Subtitle" xml:space="preserve">
+    <value>اختر امتحاناً لعرض التحليلات والتقارير المفصلة</value>
+  </data>
+	<data name="Questions" xml:space="preserve">
+    <value>أسئلة</value>
+  </data>
+	<data name="Minutes" xml:space="preserve">
+    <value>دقائق</value>
+  </data>
+	<data name="Degree" xml:space="preserve">
+    <value>درجة</value>
+  </data>
+	<data name="ViewAnalytics" xml:space="preserve">
+    <value>عرض التحليلات</value>
+  </data>
+	<data name="Invitations" xml:space="preserve">
+    <value>روابط الدعوة</value>
+  </data>
+	<data name="NoExamsFound" xml:space="preserve">
+    <value>لا توجد امتحانات</value>
+  </data>
+	<data name="NoExamsMessage" xml:space="preserve">
+    <value>لم تقم بإنشاء أي امتحانات بعد. ابدأ بإنشاء أول امتحان لك</value>
+  </data>
+	<data name="CreateFirstExam" xml:space="preserve">
+    <value>إنشاء أول امتحان</value>
+  </data>
+</root>

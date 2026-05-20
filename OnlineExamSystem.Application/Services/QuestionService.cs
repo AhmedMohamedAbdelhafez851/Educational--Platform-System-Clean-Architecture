@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineExamSystem.Application.Abstraction;
+using OnlineExamSystem.Application.DTOs.Exam;
 using OnlineExamSystem.Application.DTOs.Question;
 using OnlineExamSystem.Domains.Entities;
 
@@ -129,6 +130,18 @@ namespace OnlineExamSystem.Application.Services
             await _unitOfWork.SaveChangesAsync();
 
             _cacheService.Remove("AllExams");
+        }
+        public async Task<CreateExamDto?> GetExamByIdAsync(int examId)
+        {
+            var exam = await _unitOfWork.Repository<Exam>().GetByIdAsync(examId);
+            if (exam == null) return null;
+
+            return new CreateExamDto
+            {
+                Title = exam.Title,
+                DurationInMinutes = exam.DurationInMinutes,
+                TotalDegree = exam.TotalDegree
+            };
         }
     }
 }
