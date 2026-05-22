@@ -13,10 +13,10 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddInfrastructure(
-     this IServiceCollection services,
-     IConfiguration configuration)
+            this IServiceCollection services,
+            IConfiguration configuration)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContextPool<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection"),
                     sqlOptions =>
@@ -26,10 +26,10 @@ namespace OnlineExamSystem.Infrastructure.DependencyInjection
                             maxRetryCount: 5,
                             maxRetryDelay: TimeSpan.FromSeconds(30),
                             errorNumbersToAdd: null);
-                        sqlOptions.CommandTimeout(60);
-                    }));
+                        sqlOptions.CommandTimeout(120);
+                    }), poolSize: 128);
 
-            services.AddIdentity<Domains.Entities.ApplicationUser, IdentityRole>(options =>
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
                 options.Password.RequireDigit = true;
                 options.Password.RequiredLength = 6;

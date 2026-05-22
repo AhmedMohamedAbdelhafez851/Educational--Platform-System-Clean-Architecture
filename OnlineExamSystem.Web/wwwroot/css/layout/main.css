@@ -1,52 +1,138 @@
-﻿/* Active Navigation Link Styles */
-.nav-link.active {
-    position: relative;
+﻿/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-    .nav-link.active::after {
-        content: '';
-        position: absolute;
-        bottom: -2px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 2px;
-        background: white;
-        border-radius: 2px;
+body {
+    font-family: 'Inter', 'Cairo', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+    .card:hover {
+        box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
     }
 
-body[dir="rtl"] .nav-link.active::after {
-    left: 50%;
-    transform: translateX(-50%);
+/* Buttons */
+.btn {
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
 }
 
-/* User Dropdown Animation */
-.dropdown-menu {
-    animation: dropdownFade 0.2s ease;
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
 }
 
-@@keyframes dropdownFade {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
+    .btn-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
 
-    to {
+/* Tables */
+.table {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+    .table thead th {
+        background: #f1f5f9;
+        border-bottom: none;
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: #64748b;
+        padding: 1rem;
+    }
+
+    .table tbody td {
+        padding: 1rem;
+        vertical-align: middle;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .table tbody tr:hover td {
+        background: #f8fafc;
+    }
+
+/* Badges */
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+    .scroll-to-top.show {
         opacity: 1;
-        transform: translateY(0);
+        visibility: visible;
     }
+
+    .scroll-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+    }
+
+body[dir="rtl"] .scroll-to-top {
+    right: auto;
+    left: 2rem;
 }
 
-/* RTL Dropdown Adjustments */
-body[dir="rtl"] .dropdown-menu {
-    text-align: right;
-}
-
-body[dir="rtl"] .dropdown-item i {
-    margin-left: 0.5rem;
-    margin-right: 0;
-}
-
-body[dir="rtl"] .user-info {
-    text-align: right;
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
 }

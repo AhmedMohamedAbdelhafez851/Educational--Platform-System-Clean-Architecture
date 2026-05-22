@@ -1,33 +1,40 @@
-﻿/* RTL Support for Arabic Language */
+﻿/* RTL Specific Styles */
 body[dir="rtl"] {
     text-align: right;
 }
+
+    body[dir="rtl"] .me-1,
+    body[dir="rtl"] .me-2,
+    body[dir="rtl"] .me-3 {
+        margin-left: auto !important;
+        margin-right: 0.25rem !important;
+    }
 
     body[dir="rtl"] .ms-auto {
         margin-left: auto !important;
         margin-right: 0 !important;
     }
 
-    body[dir="rtl"] .me-1 {
-        margin-left: 0.25rem !important;
-        margin-right: 0 !important;
+    body[dir="rtl"] .text-start {
+        text-align: right !important;
     }
 
-    body[dir="rtl"] .me-2 {
-        margin-left: 0.5rem !important;
-        margin-right: 0 !important;
+    body[dir="rtl"] .text-end {
+        text-align: left !important;
     }
 
     body[dir="rtl"] .dropdown-menu {
         text-align: right;
     }
 
-    body[dir="rtl"] .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
-        border-radius: 0 0.375rem 0.375rem 0;
+    body[dir="rtl"] .input-group > :not(:first-child):not(.dropdown-menu) {
+        border-radius: 0.5rem 0 0 0.5rem;
     }
 
-    body[dir="rtl"] .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-        margin-left: 0;
-        margin-right: -1px;
-        border-radius: 0.375rem 0 0 0.375rem;
+    body[dir="rtl"] .input-group > :not(:last-child):not(.dropdown-menu) {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    body[dir="rtl"] .btn-group {
+        direction: ltr;
     }

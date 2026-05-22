@@ -8,141 +8,137 @@
     var examTitle = ViewBag.ExamTitle;
     var examId = ViewBag.ExamId;
     var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+    var totalQuestions = Model?.Count() ?? 0;
 }
 
-<div class="container py-4">
-    <div class="card shadow-sm border-0 rounded-3">
-        <div class="card-header bg-primary bg-gradient text-white py-3">
-            <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
-                <div>
-                    <h3 class="mb-0 fw-semibold">
-                        <i class="bi bi-list-check me-2"></i>@Localizer["ExamQuestions"]
-                    </h3>
-                    <p class="mb-0 opacity-75 small">@examTitle</p>
-                </div>
-                <div class="d-flex gap-2">
-                    <a asp-controller="Exam" asp-action="Index" class="btn btn-outline-light btn-sm px-3">
-                        <i class="bi bi-arrow-left me-1"></i> @Localizer["BackToExams"]
-                    </a>
-                    <a asp-controller="Question" asp-action="Add" asp-route-examId="@examId"
-                       class="btn btn-light btn-sm px-3">
-                        <i class="bi bi-plus-circle me-1"></i> @Localizer["AddQuestion"]
-                    </a>
-                </div>
+@section Styles {
+    <link href="~/css/pages/questions.css" rel="stylesheet" />
+}
+
+<div class="questions-page">
+    <!-- Header -->
+    <div class="page-header">
+        <div>
+            <div class="page-title-wrapper">
+                <i class="bi bi-question-circle-fill page-icon"></i>
+                <h1 class="page-title">@Localizer["ExamQuestions"]</h1>
+            </div>
+            <div class="exam-info">
+                <i class="bi bi-journal-bookmark-fill"></i>
+                <span>@examTitle</span>
+                <span class="separator">•</span>
+                <i class="bi bi-list-check"></i>
+                <span>@Localizer["TotalQuestions"]: @totalQuestions</span>
             </div>
         </div>
+        <div class="header-actions">
+            <a asp-controller="Exam" asp-action="Index" class="btn btn-outline-custom">
+                <i class="bi bi-arrow-left"></i>
+                <span>@Localizer["BackToExams"]</span>
+            </a>
+            <a asp-controller="Question" asp-action="Add" asp-route-examId="@examId" class="btn btn-primary-custom">
+                <i class="bi bi-plus-circle"></i>
+                <span>@Localizer["AddQuestion"]</span>
+            </a>
+        </div>
+    </div>
 
-        <div class="card-body p-0">
-            @if (Model != null && Model.Any())
+    @if (!Model.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon">
+                <i class="bi bi-question-octagon"></i>
+            </div>
+            <h3>@Localizer["NoQuestions"]</h3>
+            <p>@Localizer["NoQuestionsMessage"]</p>
+            <a asp-controller="Question" asp-action="Add" asp-route-examId="@examId" class="btn btn-primary-custom mt-3">
+                <i class="bi bi-plus-circle"></i> @Localizer["AddFirstQuestion"]
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="questions-grid">
+            @foreach (var question in Model)
             {
-                <div class="table-responsive">
-                    <table id="questionsTable" class="table table-hover mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th class="ps-4" style="width: 45%">@Localizer["Question"]</th>
-                                <th style="width: 40%">@Localizer["AnswerChoices"]</th>
-                                <th class="text-center" style="width: 15%">@Localizer["Actions"]</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var question in Model)
-                            {
-                                <tr id="question-row-@question.QuestionId">
-                                    <td class="ps-4 align-middle">
-                                        <p class="mb-0 fw-medium">@question.Title</p>
-                                    </td>
-                                    <td>
-                                        <div class="py-2">
-                                            @foreach (var choice in question.Choices)
-                                            {
-                                                <div class="d-flex align-items-center mb-1 py-1 px-2 rounded-2 @(choice.IsCorrect ? "bg-success bg-opacity-10 border-start border-4 border-success" : "")">
-                                                    <span class="me-2">
-                                                        <i class="bi @(choice.IsCorrect ? "bi-check-circle-fill text-success" : "bi-circle text-muted")"></i>
-                                                    </span>
-                                                    <span class="@(choice.IsCorrect ? "fw-medium" : "")">@choice.Text</span>
-                                                    @if (choice.IsCorrect)
-                                                    {
-                                                        <span class="badge bg-success bg-opacity-75 ms-2 small">@Localizer["Correct"]</span>
-                                                    }
-                                                </div>
-                                            }
-                                        </div>
-                                    </td>
-                                    <td class="text-center align-middle">
-                                        <div class="btn-group" role="group">
-                                            <a asp-controller="Question" asp-action="Edit" asp-route-id="@question.QuestionId"
-                                               asp-route-examId="@examId" class="btn btn-sm btn-outline-primary"
-                                               data-bs-toggle="tooltip" title="@Localizer["EditQuestion"]">
-                                                <i class="bi bi-pencil"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-sm btn-outline-danger delete-question-btn"
-                                                    data-id="@question.QuestionId" data-exam-id="@examId"
-                                                    data-bs-toggle="tooltip" title="@Localizer["DeleteQuestion"]">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }
-            else
-            {
-                <div class="p-4">
-                    <div class="alert alert-info border-0 shadow-sm d-flex align-items-center gap-3" role="alert">
-                        <div class="bg-info bg-opacity-25 p-3 rounded-circle">
-                            <i class="bi bi-info-circle-fill text-info fs-4"></i>
+                <div class="question-card" id="question-card-@question.QuestionId">
+                    <div class="question-header">
+                        <div class="question-number">
+                            <span class="number">@(Model.ToList().IndexOf(question) + 1)</span>
                         </div>
-                        <div>
-                            <h5 class="alert-heading mb-1">@Localizer["NoQuestions"]</h5>
-                            <p class="mb-0 text-muted">@Localizer["NoQuestionsMessage"]</p>
+                        <div class="question-title">
+                            <h4>@question.Title</h4>
+                        </div>
+                        <div class="question-actions">
+                            <a asp-controller="Question" asp-action="Edit" asp-route-id="@question.QuestionId" asp-route-examId="@examId"
+                               class="action-btn edit-btn" title="@Localizer["EditQuestion"]">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+                            <button type="button" class="action-btn delete-btn delete-question-btn"
+                                    data-id="@question.QuestionId" data-exam-id="@examId"
+                                    title="@Localizer["DeleteQuestion"]">
+                                <i class="bi bi-trash3"></i>
+                            </button>
                         </div>
                     </div>
-                    <div class="text-center mt-4">
-                        <a asp-controller="Question" asp-action="Add" asp-route-examId="@examId"
-                           class="btn btn-primary px-4">
-                            <i class="bi bi-plus-circle me-2"></i> @Localizer["AddFirstQuestion"]
-                        </a>
+                    <div class="question-body">
+                        <div class="choices-list">
+                            @foreach (var choice in question.Choices)
+                            {
+                                <div class="choice-item @(choice.IsCorrect ? "correct-choice" : "")">
+                                    <div class="choice-marker">
+                                        @if (choice.IsCorrect)
+                                        {
+                                            <i class="bi bi-check-circle-fill"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="bi bi-circle"></i>
+                                        }
+                                    </div>
+                                    <div class="choice-text">@choice.Text</div>
+                                    @if (choice.IsCorrect)
+                                    {
+                                        <span class="correct-badge">@Localizer["Correct"]</span>
+                                    }
+                                </div>
+                            }
+                        </div>
                     </div>
                 </div>
             }
         </div>
-    </div>
+    }
 </div>
 
 <!-- Delete Confirmation Modal -->
 <div class="modal fade" id="deleteQuestionModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-danger text-white py-3">
+        <div class="modal-content custom-modal">
+            <div class="modal-header custom-modal-header modal-danger-header">
                 <h5 class="modal-title">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>@Localizer["ConfirmDeletion"]
+                    <i class="bi bi-exclamation-triangle-fill"></i>
+                    @Localizer["ConfirmDeletion"]
                 </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
-            <div class="modal-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="bg-danger bg-opacity-10 p-3 rounded-circle me-3">
-                        <i class="bi bi-trash-fill text-danger fs-4"></i>
+            <div class="modal-body">
+                <div class="delete-warning">
+                    <i class="bi bi-trash3-fill"></i>
+                    <h4>@Localizer["DeleteQuestionTitle"]</h4>
+                    <p>@Localizer["DeleteConfirmation"]</p>
+                    <div class="warning-note">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <span>@Localizer["DeleteWarning"]</span>
                     </div>
-                    <div>
-                        <h5 class="mb-1">@Localizer["DeleteQuestionTitle"]</h5>
-                        <p class="text-muted mb-0">@Localizer["DeleteConfirmation"]</p>
-                    </div>
-                </div>
-                <div class="alert alert-warning border-0 bg-warning bg-opacity-10 d-flex align-items-center gap-2 mt-3">
-                    <i class="bi bi-exclamation-circle-fill text-warning"></i>
-                    <span class="small">@Localizer["DeleteWarning"]</span>
                 </div>
             </div>
-            <div class="modal-footer bg-light">
-                <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">
-                    <i class="bi bi-x me-1"></i> @Localizer["Cancel"]
+            <div class="modal-footer custom-modal-footer">
+                <button type="button" class="btn btn-light-custom" data-bs-dismiss="modal">
+                    <i class="bi bi-x-lg"></i> @Localizer["Cancel"]
                 </button>
-                <button type="button" class="btn btn-danger px-4" id="confirmDeleteQuestion">
-                    <i class="bi bi-trash me-1"></i> @Localizer["Delete"]
+                <button type="button" class="btn btn-danger-custom" id="confirmDeleteQuestion">
+                    <i class="bi bi-trash3"></i> @Localizer["Delete"]
                 </button>
             </div>
         </div>
@@ -157,57 +153,49 @@
         $(document).ready(function () {
             var isRtl = @(isRtl ? "true" : "false");
 
-            // Initialize tooltips
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-            tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl, { boundary: document.body });
-            });
-
             // Delete question functionality
-            $(".delete-question-btn").click(function () {
-                tooltipTriggerList.forEach(el => {
-                    var tooltip = bootstrap.Tooltip.getInstance(el);
-                    if (tooltip) tooltip.hide();
-                });
+            var currentQuestionId = null;
+            var currentExamId = null;
 
-                var questionId = $(this).data("id");
-                var examId = $(this).data("exam-id");
-                $("#confirmDeleteQuestion").data("id", questionId);
-                $("#confirmDeleteQuestion").data("exam-id", examId);
+            $(".delete-question-btn").click(function () {
+                currentQuestionId = $(this).data("id");
+                currentExamId = $(this).data("exam-id");
                 $("#deleteQuestionModal").modal("show");
             });
 
             $("#confirmDeleteQuestion").click(function () {
-                var questionId = $(this).data("id");
-                var examId = $(this).data("exam-id");
-                var $button = $(this);
-
-                $button.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["Delete"]...');
+                var $btn = $(this);
+                $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["Deleting"]...');
 
                 $.ajax({
                     url: '@Url.Action("Delete", "Question")',
                     type: 'POST',
-                    data: { id: questionId, examId: examId },
+                    data: { id: currentQuestionId, examId: currentExamId },
                     headers: { 'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val() },
                     success: function (response) {
-                        $('#deleteQuestionModal').modal('hide');
+                        $("#deleteQuestionModal").modal("hide");
                         if (response.success) {
-                            $("#question-row-" + questionId).fadeOut(300, function () {
+                            $("#question-card-" + currentQuestionId).fadeOut(300, function () {
                                 $(this).remove();
-                                if ($("#questionsTable tbody tr").length === 0) {
+                                if ($(".questions-grid .question-card").length === 0) {
                                     location.reload();
+                                } else {
+                                    // Renumber remaining questions
+                                    $(".question-card").each(function (index) {
+                                        $(this).find(".question-number .number").text(index + 1);
+                                    });
                                 }
                             });
-                            showToast('success', '@Localizer["Success"]', response.message || '@Localizer["QuestionDeleted"]');
+                            showToast("success", "@Localizer["Success"]", "@Localizer["QuestionDeleted"]");
                         } else {
-                            showToast('danger', '@Localizer["Error"]', response.message);
+                            showToast("error", "@Localizer["Error"]", response.message || "@Localizer["DeleteFailed"]");
                         }
-                        $button.prop('disabled', false).html('<i class="bi bi-trash me-1"></i> @Localizer["Delete"]');
+                        $btn.prop("disabled", false).html('<i class="bi bi-trash3"></i> @Localizer["Delete"]');
                     },
-                    error: function (xhr) {
-                        $('#deleteQuestionModal').modal('hide');
-                        showToast('danger', '@Localizer["Error"]', '@Localizer["DeleteWarning"]');
-                        $button.prop('disabled', false).html('<i class="bi bi-trash me-1"></i> @Localizer["Delete"]');
+                    error: function () {
+                        $("#deleteQuestionModal").modal("hide");
+                        showToast("error", "@Localizer["Error"]", "@Localizer["DeleteWarning"]");
+                        $btn.prop("disabled", false).html('<i class="bi bi-trash3"></i> @Localizer["Delete"]');
                     }
                 });
             });
@@ -217,17 +205,15 @@
                 var bgClass = type === 'success' ? 'bg-success' : 'bg-danger';
                 var iconClass = type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-circle-fill';
 
-                var toastHtml = `
-                            <div id="${toastId}" class="toast align-items-center border-0 ${bgClass} text-white" role="alert">
-                                <div class="d-flex">
-                                    <div class="toast-body d-flex align-items-center">
-                                        <i class="bi ${iconClass} me-2"></i>
-                                        <div><strong>${title}</strong><div>${message}</div></div>
-                                    </div>
-                                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-                                </div>
-                            </div>
-                        `;
+                var toastHtml = '<div id="' + toastId + '" class="toast align-items-center border-0 ' + bgClass + ' text-white show" role="alert">' +
+                    '<div class="d-flex">' +
+                    '<div class="toast-body d-flex align-items-center">' +
+                    '<i class="bi ' + iconClass + ' me-2"></i>' +
+                    '<div><strong>' + title + '</strong><div>' + message + '</div></div>' +
+                    '</div>' +
+                    '<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>' +
+                    '</div>' +
+                    '</div>';
 
                 $('.toast-container').append(toastHtml);
                 var toastElement = document.getElementById(toastId);

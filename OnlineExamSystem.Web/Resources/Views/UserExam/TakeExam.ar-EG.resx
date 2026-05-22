@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="TakeExam" xml:space="preserve"><value>أداء الامتحان</value></data>
+	<data name="QuestionsCount" xml:space="preserve"><value>عدد الأسئلة</value></data>
+	<data name="Duration" xml:space="preserve"><value>المدة</value></data>
+	<data name="Minutes" xml:space="preserve"><value>دقائق</value></data>
+	<data name="TimeRemaining" xml:space="preserve"><value>الوقت المتبقي</value></data>
+	<data name="SubmitExam" xml:space="preserve"><value>تسليم الامتحان</value></data>
+	<data name="QuestionNavigator" xml:space="preserve"><value>متصفح الأسئلة</value></data>
+	<data name="Answered" xml:space="preserve"><value>تمت الإجابة</value></data>
+	<data name="TimeIsUp" xml:space="preserve"><value>انتهى الوقت!</value></data>
+	<data name="AutoSubmitting" xml:space="preserve"><value>جاري تسليم الامتحان...</value></data>
+	<data name="Submitting" xml:space="preserve"><value>جاري التسليم...</value></data>
+	<data name="SubmitError" xml:space="preserve"><value>خطأ في التسليم</value></data>
+	<data name="PleaseTryAgain" xml:space="preserve"><value>يرجى المحاولة مرة أخرى</value></data>
+	<data name="UnsavedWarning" xml:space="preserve"><value>لديك إجابات غير محفوظة. هل أنت متأكد من المغادرة؟</value></data>
+	<data name="FullscreenRecommended" xml:space="preserve"><value>وضع ملء الشاشة</value></data>
+	<data name="ExitFullscreen" xml:space="preserve"><value>خروج من ملء الشاشة</value></data>
+	<data name="SecurityMessage" xml:space="preserve"><value>هذا الامتحان محمي لضمان النزاهة الأكاديمية</value></data>
+	<data name="SecureExam" xml:space="preserve"><value>امتحان آمن</value></data>
+</root>

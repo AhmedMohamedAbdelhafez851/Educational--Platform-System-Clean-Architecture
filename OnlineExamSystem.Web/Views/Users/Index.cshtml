@@ -4,281 +4,1351 @@
 @model IEnumerable<OnlineExamSystem.Domains.Entities.ApplicationUser>
 
 @{
-    ViewData["Title"] = Localizer["PageTitle"];
+    ViewData["Title"] = Localizer["UserManagement"];
     var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
+    var userRoles = ViewBag.UserRoles as Dictionary<string, List<string>>;
+    var isSuperAdmin = User.IsInRole("SuperAdmin");
 }
 
-@if (isRtl)
-{
-    <style>
-        .table th, .table td {
-            text-align: right;
-        }
-
-        .me-2 {
-            margin-left: 0.5rem !important;
-            margin-right: 0 !important;
-        }
-
-        .ms-auto {
-            margin-right: auto !important;
-            margin-left: 0 !important;
-        }
-
-        .ps-4 {
-            padding-right: 1.5rem !important;
-            padding-left: 0 !important;
-        }
-    </style>
+@section Styles {
+    <link rel="stylesheet" href="~/css/users/index.css" />
 }
 
-<div class="container py-4">
-    <div class="card shadow-sm border-0 rounded-3">
-        <div class="card-header bg-primary bg-gradient text-white py-3">
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
-                <h2 class="mb-0 fw-semibold">
-                    <i class="bi bi-people me-2"></i>@Localizer["UserManagement"]
-                </h2>
-                <a asp-action="Create" class="btn btn-light">
-                    <i class="bi bi-plus-circle me-2"></i>@Localizer["CreateNewUser"]
-                </a>
-            </div>
+<div class="users-page">
+
+    <!-- HEADER -->
+    <div class="users-page-header">
+
+        <div>
+            <h1 class="page-title">
+                <i class="bi bi-people-fill"></i>
+                @Localizer["UserManagement"]
+            </h1>
+
+            <p class="page-subtitle">
+                @Localizer["ManageUsersDescription"]
+            </p>
         </div>
-        <div class="card-body p-0">
-            @if (!Model.Any())
+
+        <div class="header-buttons">
+
+            <!-- 🔥 MANAGE ROLES BUTTON - ONLY SUPER ADMIN CAN SEE -->
+            @if (isSuperAdmin)
             {
-                <div class="p-4 text-center">
-                    <div class="alert alert-info border-0 shadow-sm" role="alert">
-                        <i class="bi bi-info-circle-fill me-2"></i>
-                        <strong>@Localizer["NoUsersFound"]</strong><br />
-                        <span class="text-muted">@Localizer["NoUsersMessage"]</span>
-                    </div>
-                </div>
+                <button type="button"
+                        class="btn btn-outline-custom"
+                        onclick="openRoleManagementModal()">
+
+                    <i class="bi bi-shield-lock"></i>
+
+                    @Localizer["ManageRoles"]
+
+                </button>
             }
-            else
-            {
-                <div class="table-responsive">
-                    <table class="table table-hover align-middle mb-0" id="userTable">
-                        <thead class="table-light">
-                            <tr>
-                                <th class="ps-4">@Localizer["FullName"]</th>
-                                <th>@Localizer["Email"]</th>
-                                <th>@Localizer["Roles"]</th>
-                                <th class="text-center" style="width: 160px">@Localizer["Actions"]</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var user in Model)
-                            {
-                                <tr id="user-@user.Id">
-                                    <td class="ps-4 fw-medium">@user.FullName</td>
-                                    <td>@user.Email</td>
-                                    <td>
-                                        @if (ViewBag.UserRoles != null && ViewBag.UserRoles.ContainsKey(user.Id))
-                                        {
-                                            <div class="d-flex flex-wrap gap-1">
-                                                @foreach (var role in ViewBag.UserRoles[user.Id])
-                                                {
-                                                    <span class="badge bg-secondary">@role</span>
-                                                }
-                                            </div>
-                                        }
-                                        else
-                                        {
-                                            <span class="text-muted fst-italic small">@Localizer["NoRolesAssigned"]</span>
-                                        }
-                                    </td>
-                                    <td>
-                                        <div class="d-flex gap-2 justify-content-center">
-                                            <a asp-controller="Roles" asp-action="ManageRoles" asp-route-userId="@user.Id"
-                                               class="btn btn-sm btn-outline-primary" title="@Localizer["ManageRoles"]">
-                                                <i class="bi bi-person-gear"></i>
-                                            </a>
-                                            <a asp-action="Edit" asp-route-id="@user.Id"
-                                               class="btn btn-sm btn-outline-primary" title="@Localizer["EditUser"]">
-                                                <i class="bi bi-pencil"></i>
-                                            </a>
-                                            <button type="button" class="btn btn-sm btn-outline-danger delete-user-btn"
-                                                    data-user-id="@user.Id" data-user-name="@user.FullName"
-                                                    title="@Localizer["DeleteUser"]">
-                                                <i class="bi bi-trash"></i>
-                                            </button>
+
+            <!-- CREATE USER BUTTON -->
+            <button type="button"
+                    class="btn btn-primary-custom"
+                    onclick="openCreateUserModal()">
+
+                <i class="bi bi-plus-circle"></i>
+
+                @Localizer["CreateNewUser"]
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- STATS -->
+    <div class="row g-4 mb-4">
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div>
+
+                    <div class="dashboard-label">
+                        @Localizer["TotalUsers"]
+                    </div>
+
+                    <h3>@Model.Count()</h3>
+
+                </div>
+
+                <div class="dashboard-icon">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div>
+
+                    <div class="dashboard-label">
+                        @Localizer["Admins"]
+                    </div>
+
+                    <h3>
+                        @Model.Count(u =>
+                        userRoles != null &&
+                        userRoles.ContainsKey(u.Id) &&
+                        userRoles[u.Id].Contains("Admin"))
+                    </h3>
+
+                </div>
+
+                <div class="dashboard-icon">
+                    <i class="bi bi-shield-lock-fill"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="dashboard-card">
+
+                <div>
+
+                    <div class="dashboard-label">
+                        @Localizer["Students"]
+                    </div>
+
+                    <h3>
+                        @Model.Count(u =>
+                        userRoles != null &&
+                        userRoles.ContainsKey(u.Id) &&
+                        userRoles[u.Id].Contains("Student"))
+                    </h3>
+
+                </div>
+
+                <div class="dashboard-icon">
+                    <i class="bi bi-mortarboard-fill"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
+    <div class="modern-table-wrapper">
+
+        <!-- TOOLBAR -->
+        <div class="table-toolbar">
+
+            <div class="search-box">
+
+                <i class="bi bi-search"></i>
+
+                <input type="text"
+                       id="userSearch"
+                       placeholder="@Localizer["SearchUsers"]" />
+
+            </div>
+
+        </div>
+
+        @if (!Model.Any())
+        {
+            <div class="empty-state">
+
+                <div class="empty-icon">
+                    <i class="bi bi-people"></i>
+                </div>
+
+                <h4>@Localizer["NoUsersFound"]</h4>
+
+                <p>@Localizer["NoUsersMessage"]</p>
+
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+
+                <table class="table modern-table align-middle"
+                       id="userTable">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>@Localizer["FullName"]</th>
+
+                            <th>@Localizer["Email"]</th>
+
+                            <th>@Localizer["Roles"]</th>
+
+                            <th class="text-center">
+                                @Localizer["Actions"]
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        @foreach (var user in Model)
+                        {
+                            <tr id="user-@user.Id">
+
+                                <!-- USER -->
+                                <td>
+
+                                    <div class="user-info">
+
+                                        <div class="user-avatar">
+                                            @(user.FullName?.Substring(0, 1).ToUpper())
                                         </div>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }
-        </div>
+
+                                        <div>
+
+                                            <div class="user-name">
+                                                @user.FullName
+                                            </div>
+
+                                            <div class="user-username">
+                                                @@@user.UserName
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <!-- EMAIL -->
+                                <td>
+                                    @user.Email
+                                </td>
+
+                                <!-- ROLES -->
+                                <td>
+
+                                    @if (userRoles != null &&
+                                   userRoles.ContainsKey(user.Id))
+                                    {
+                                        <div class="roles-wrapper">
+
+                                            @foreach (var role in userRoles[user.Id])
+                                            {
+                                                var roleClass =
+                                                role == "Admin"
+                                                ? "admin-role"
+                                                : "student-role";
+
+                                                <span class="role-badge @roleClass">
+                                                    @role
+                                                </span>
+                                            }
+
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="no-role">
+                                            @Localizer["NoRolesAssigned"]
+                                        </span>
+                                    }
+
+                                </td>
+
+                                <!-- ACTIONS -->
+                                <td>
+
+                                    <div class="table-actions">
+
+                                        <!-- ROLES -->
+                                        <button type="button"
+                                                class="action-btn role-btn"
+                                                onclick="openManageRolesModal('@user.Id','@user.FullName')">
+
+                                            <i class="bi bi-person-gear"></i>
+
+                                        </button>
+
+                                        <!-- EDIT -->
+                                        <button type="button"
+                                                class="action-btn edit-btn"
+                                                onclick="openEditUserModal('@user.Id','@user.FullName','@user.Email','@user.UserName')">
+
+                                            <i class="bi bi-pencil-square"></i>
+
+                                        </button>
+
+                                        <!-- DELETE -->
+                                        <button type="button"
+                                                class="action-btn delete-btn delete-user-btn"
+                                                data-user-id="@user.Id"
+                                                data-user-name="@user.FullName">
+
+                                            <i class="bi bi-trash3"></i>
+
+                                        </button>
+
+                                    </div>
+
+                                </td>
+
+                            </tr>
+                        }
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        }
+
     </div>
+
 </div>
 
-<!-- Delete Confirmation Modal -->
-<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+<!-- ===================================================== -->
+<!-- ROLE MANAGEMENT MODAL (Professional Version) -->
+<!-- ===================================================== -->
+
+<div class="modal fade role-management-modal"
+     id="roleManagementModal"
+     tabindex="-1">
+
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-danger text-white py-3">
-                <h5 class="modal-title" id="deleteModalLabel">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>@Localizer["ConfirmDeletion"]
+
+        <div class="modal-content custom-modal">
+
+            <div class="modal-header custom-modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-shield-lock"></i>
+
+                    @Localizer["RoleManagement"]
+
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
             </div>
-            <div class="modal-body p-4">
-                <div class="d-flex align-items-center mb-3">
-                    <div class="bg-danger bg-opacity-10 p-3 rounded-circle me-3">
-                        <i class="bi bi-person-x-fill text-danger fs-3"></i>
+
+            <div class="modal-body" style="padding: 1.5rem;">
+
+                <!-- CREATE ROLE SECTION -->
+                <div class="role-create-section">
+
+                    <div class="role-create-title">
+                        <i class="bi bi-plus-circle-fill"></i>
+                        <span>@Localizer["CreateNewRole"]</span>
                     </div>
-                    <div>
-                        <h5 class="mb-1">@Localizer["DeleteUserTitle"]</h5>
-                        <p class="text-muted mb-0">
-                            @Localizer["DeleteConfirmation"] <strong id="userNameToDelete"></strong>?
-                        </p>
+
+                    <div class="input-group-custom">
+                        <input type="text"
+                               class="form-control"
+                               id="newRoleName"
+                               placeholder="@Localizer["EnterRoleName"]" />
+
+                        <button type="button"
+                                class="btn-create-role"
+                                id="createRoleBtn">
+
+                            <i class="bi bi-save"></i>
+                            <span>@Localizer["Create"]</span>
+
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- EXISTING ROLES SECTION -->
+                <div class="roles-section-header">
+                    <i class="bi bi-list-ul"></i>
+                    <h6>@Localizer["ExistingRoles"]</h6>
+                </div>
+
+                <div class="role-management-container">
+                    <div id="rolesListContainer">
+                        <!-- Roles will be loaded here -->
                     </div>
                 </div>
-                <div class="alert alert-warning border-0 bg-warning bg-opacity-10 d-flex align-items-center gap-2 mt-3">
-                    <i class="bi bi-exclamation-circle-fill text-warning"></i>
-                    <span class="small">@Localizer["DeleteWarning"]</span>
-                </div>
+
             </div>
-            <div class="modal-footer bg-light">
-                <form id="deleteUserForm" method="post">
-                    @Html.AntiForgeryToken()
-                    <input type="hidden" id="userId" name="id" value="" />
-                    <button type="button" class="btn btn-outline-secondary px-3" data-bs-dismiss="modal">
-                        <i class="bi bi-x me-1"></i> @Localizer["Cancel"]
-                    </button>
-                    <button type="submit" class="btn btn-danger px-3" id="confirmDelete">
-                        <i class="bi bi-trash me-1"></i> @Localizer["Delete"]
-                    </button>
-                </form>
+
+            <div class="modal-footer custom-modal-footer">
+
+                <button type="button"
+                        class="btn btn-light-custom"
+                        data-bs-dismiss="modal">
+
+                    <i class="bi bi-x-lg me-1"></i>
+                    @Localizer["Close"]
+
+                </button>
+
             </div>
+
         </div>
+
     </div>
+
+</div>
+<!-- ===================================================== -->
+<!-- EDIT ROLE MODAL -->
+<!-- ===================================================== -->
+
+<div class="modal fade"
+     id="editRoleModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content custom-modal">
+
+            <div class="modal-header custom-modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-pencil-square"></i>
+
+                    @Localizer["EditRole"]
+
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <form id="editRoleForm">
+
+                <input type="hidden" id="editRoleId" />
+
+                <div class="modal-body">
+
+                    <div class="form-floating mb-3">
+
+                        <input type="text"
+                               class="form-control custom-input"
+                               id="editRoleName"
+                               required>
+
+                        <label>@Localizer["RoleName"]</label>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer custom-modal-footer">
+
+                    <button type="button"
+                            class="btn btn-light-custom"
+                            data-bs-dismiss="modal">
+
+                        @Localizer["Cancel"]
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-primary-custom">
+
+                        <i class="bi bi-save"></i>
+
+                        @Localizer["Save"]
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </div>
 
-<!-- Error Modal -->
-<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+<!-- ===================================================== -->
+<!-- CREATE USER MODAL -->
+<!-- ===================================================== -->
+
+<div class="modal fade"
+     id="createUserModal"
+     tabindex="-1">
+
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
+
+        <div class="modal-content custom-modal">
+
+            <div class="modal-header custom-modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-person-plus-fill"></i>
+
+                    @Localizer["CreateNewUser"]
+
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <form id="createUserForm">
+
+                <div class="modal-body">
+
+                    <div class="form-floating mb-3">
+
+                        <input type="text"
+                               class="form-control custom-input"
+                               id="createFullName"
+                               name="FullName"
+                               required>
+
+                        <label>@Localizer["FullName"]</label>
+
+                    </div>
+
+                    <div class="form-floating mb-3">
+
+                        <input type="email"
+                               class="form-control custom-input"
+                               id="createEmail"
+                               name="Email"
+                               required>
+
+                        <label>@Localizer["Email"]</label>
+
+                    </div>
+
+                    <div class="form-floating mb-3">
+
+                        <input type="password"
+                               class="form-control custom-input"
+                               id="createPassword"
+                               name="Password"
+                               required>
+
+                        <label>@Localizer["Password"]</label>
+
+                    </div>
+
+                    <div class="form-floating">
+
+                        <input type="password"
+                               class="form-control custom-input"
+                               id="createConfirmPassword"
+                               name="ConfirmPassword"
+                               required>
+
+                        <label>@Localizer["ConfirmPassword"]</label>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer custom-modal-footer">
+
+                    <button type="button"
+                            class="btn btn-light-custom"
+                            data-bs-dismiss="modal">
+
+                        @Localizer["Cancel"]
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-primary-custom"
+                            id="createBtn">
+
+                        <i class="bi bi-save"></i>
+
+                        @Localizer["Create"]
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- EDIT USER MODAL -->
+<!-- ===================================================== -->
+
+<div class="modal fade"
+     id="editUserModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content custom-modal">
+
+            <div class="modal-header custom-modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-pencil-square"></i>
+
+                    @Localizer["EditUser"]
+
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <form id="editUserForm">
+
+                <input type="hidden"
+                       id="editUserId"
+                       name="Id" />
+
+                <div class="modal-body">
+
+                    <div class="form-floating mb-3">
+
+                        <input type="text"
+                               class="form-control custom-input"
+                               id="editFullName"
+                               name="FullName"
+                               required>
+
+                        <label>@Localizer["FullName"]</label>
+
+                    </div>
+
+                    <div class="form-floating mb-3">
+
+                        <input type="email"
+                               class="form-control custom-input"
+                               id="editEmail"
+                               name="Email"
+                               required>
+
+                        <label>@Localizer["Email"]</label>
+
+                    </div>
+
+                    <div class="form-floating">
+
+                        <input type="text"
+                               class="form-control custom-input"
+                               id="editUserName"
+                               name="UserName"
+                               required>
+
+                        <label>@Localizer["UserName"]</label>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer custom-modal-footer">
+
+                    <button type="button"
+                            class="btn btn-light-custom"
+                            data-bs-dismiss="modal">
+
+                        @Localizer["Cancel"]
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-primary-custom"
+                            id="editBtn">
+
+                        <i class="bi bi-save"></i>
+
+                        @Localizer["Save"]
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- MANAGE USER ROLES MODAL -->
+<!-- ===================================================== -->
+
+<div class="modal fade"
+     id="manageRolesModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content custom-modal">
+
+            <div class="modal-header custom-modal-header">
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-person-gear"></i>
+
+                    @Localizer["ManageRoles"]
+
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
+            </div>
+
+            <form id="manageRolesForm">
+
+                <input type="hidden"
+                       id="manageRolesUserId"
+                       name="UserId" />
+
+                <div class="modal-body">
+
+                    <h5 id="manageRolesUserName"
+                        class="mb-4">
+                    </h5>
+
+                    <div id="rolesCheckboxList"></div>
+
+                </div>
+
+                <div class="modal-footer custom-modal-footer">
+
+                    <button type="button"
+                            class="btn btn-light-custom"
+                            data-bs-dismiss="modal">
+
+                        @Localizer["Cancel"]
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-primary-custom"
+                            id="rolesBtn">
+
+                        <i class="bi bi-save"></i>
+
+                        @Localizer["Save"]
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===================================================== -->
+<!-- DELETE USER MODAL -->
+<!-- ===================================================== -->
+
+<div class="modal fade"
+     id="deleteModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
             <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title" id="errorModalLabel">
-                    <i class="bi bi-exclamation-octagon-fill me-2"></i>@Localizer["Error"]
+
+                <h5 class="modal-title">
+
+                    <i class="bi bi-trash3"></i>
+
+                    @Localizer["DeleteUser"]
+
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal">
+                </button>
+
             </div>
-            <div class="modal-body p-4">
-                <div class="d-flex gap-3 align-items-center">
-                    <div class="bg-danger bg-opacity-10 p-3 rounded-circle">
-                        <i class="bi bi-x-circle-fill text-danger fs-1"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-2">@Localizer["DeleteFailed"]</h5>
-                        <p class="text-muted mb-0" id="errorMessage"></p>
-                    </div>
+
+            <form id="deleteUserForm">
+
+                @Html.AntiForgeryToken()
+
+                <input type="hidden"
+                       id="deleteUserId"
+                       name="id" />
+
+                <div class="modal-body">
+
+                    <p>
+
+                        @Localizer["DeleteConfirmation"]
+
+                        <strong id="userNameToDelete"></strong>
+
+                    </p>
+
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Close"]</button>
-            </div>
+
+                <div class="modal-footer">
+
+                    <button type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+
+                        @Localizer["Cancel"]
+
+                    </button>
+
+                    <button type="submit"
+                            class="btn btn-danger"
+                            id="confirmDelete">
+
+                        <i class="bi bi-trash3"></i>
+
+                        @Localizer["Delete"]
+
+                    </button>
+
+                </div>
+
+            </form>
+
         </div>
+
     </div>
+
 </div>
 
-<!-- Toast Container -->
+<!-- TOAST -->
 <div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
 
 @section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
-        $(document).ready(function () {
-            var isRtl = @(isRtl ? "true" : "false");
 
-            // Handle delete button click
-            $(".delete-user-btn").click(function () {
-                var userId = $(this).data("user-id");
-                var userName = $(this).data("user-name");
+        // =====================================================
+        // MODAL INSTANCES
+        // =====================================================
 
-                $("#userId").val(userId);
-                $("#userNameToDelete").text(userName);
-                $("#deleteModal").modal("show");
-            });
+        const createModal = new bootstrap.Modal(document.getElementById("createUserModal"));
+        const editModal = new bootstrap.Modal(document.getElementById("editUserModal"));
+        const rolesModal = new bootstrap.Modal(document.getElementById("manageRolesModal"));
+        const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+        const roleManagementModal = new bootstrap.Modal(document.getElementById("roleManagementModal"));
+        const editRoleModal = new bootstrap.Modal(document.getElementById("editRoleModal"));
 
-            // Handle delete form submission
-            $("#deleteUserForm").on("submit", function (e) {
-                e.preventDefault();
+        // =====================================================
+        // CHECK IF SUPER ADMIN
+        // =====================================================
 
-                var userId = $("#userId").val();
-                var $deleteBtn = $("#confirmDelete");
+        var isSuperAdmin = @(isSuperAdmin ? "true" : "false");
 
-                $deleteBtn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> @Localizer["Delete"]...');
+        // =====================================================
+        // CREATE USER MODAL
+        // =====================================================
 
-                $.ajax({
-                    url: '@Url.Action("DeleteConfirmed", "Users")',
-                    type: 'POST',
-                    data: {
-                        id: userId,
-                        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
-                    },
-                    success: function (response) {
-                        $("#deleteModal").modal("hide");
+        function openCreateUserModal() {
+        $("#createUserForm")[0].reset();
+        createModal.show();
+        }
 
-                        if (response.success) {
-                            $("#user-" + userId).fadeOut(300, function () {
-                                $(this).remove();
-                                if ($("#userTable tbody tr").length === 0) {
-                                    location.reload();
-                                }
-                            });
-                            showToast("success", "@Localizer["Success"]", "@Localizer["UserDeleted"]");
-                        } else {
-                            $("#errorMessage").text(response.message || "@Localizer["DeleteFailed"]");
-                            $("#errorModal").modal("show");
-                        }
-                    },
-                    error: function (xhr) {
-                        $("#deleteModal").modal("hide");
-                        var errorMessage = "@Localizer["DeleteFailed"]";
-                        try {
-                            var response = JSON.parse(xhr.responseText);
-                            if (response && response.message) errorMessage = response.message;
-                        } catch (e) { }
-                        $("#errorMessage").text(errorMessage);
-                        $("#errorModal").modal("show");
-                    },
-                    complete: function () {
-                        $deleteBtn.prop("disabled", false).html('<i class="bi bi-trash me-1"></i> @Localizer["Delete"]');
-                    }
-                });
-            });
+        $("#createUserForm").on("submit", function (e) {
+        e.preventDefault();
 
-            function showToast(type, title, message) {
-                var toastId = 'toast-' + Date.now();
-                var bgClass = type === 'success' ? 'bg-success' : 'bg-danger';
-                var iconClass = type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-circle-fill';
+        var password = $("#createPassword").val();
+        var confirmPassword = $("#createConfirmPassword").val();
 
-                var toastHtml = `
-                            <div id="${toastId}" class="toast align-items-center border-0 ${bgClass} text-white" role="alert">
-                                <div class="d-flex">
-                                    <div class="toast-body d-flex align-items-center">
-                                        <i class="bi ${iconClass} me-2"></i>
-                                        <div>
-                                            <strong>${title}</strong>
-                                            <div>${message}</div>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-                                </div>
-                            </div>
-                        `;
+        if (password !== confirmPassword) {
+        showToast("error", "Error", "Passwords do not match");
+        return;
+        }
 
-                $('.toast-container').append(toastHtml);
-                var toastElement = document.getElementById(toastId);
-                var toast = new bootstrap.Toast(toastElement, { autohide: true, delay: 5000 });
-                toast.show();
+        var $btn = $("#createBtn");
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> Creating...');
 
-                $(toastElement).on('hidden.bs.toast', function () { $(this).remove(); });
-            }
+        $.ajax({
+        url: '@Url.Action("Create", "Users")',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+        FullName: $("#createFullName").val(),
+        Email: $("#createEmail").val(),
+        Password: password,
+        ConfirmPassword: confirmPassword
+        }),
+        success: function (response) {
+        if (response.success) {
+        createModal.hide();
+        showToast("success", "Success", response.message);
+        setTimeout(function () { location.reload(); }, 1500);
+        } else {
+        showToast("error", "Error", response.message);
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Create');
+        }
+        },
+        error: function () {
+        showToast("error", "Error", "An error occurred");
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Create');
+        }
         });
+        });
+
+        // =====================================================
+        // EDIT USER MODAL
+        // =====================================================
+
+        function openEditUserModal(id, fullName, email, userName) {
+        $("#editUserId").val(id);
+        $("#editFullName").val(fullName);
+        $("#editEmail").val(email);
+        $("#editUserName").val(userName);
+        editModal.show();
+        }
+
+        $("#editUserForm").on("submit", function (e) {
+        e.preventDefault();
+
+        var $btn = $("#editBtn");
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> Saving...');
+
+        $.ajax({
+        url: '@Url.Action("Edit", "Users")',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+        Id: $("#editUserId").val(),
+        FullName: $("#editFullName").val(),
+        Email: $("#editEmail").val(),
+        UserName: $("#editUserName").val()
+        }),
+        success: function (response) {
+        if (response.success) {
+        editModal.hide();
+        showToast("success", "Success", response.message);
+        setTimeout(function () { location.reload(); }, 1500);
+        } else {
+        showToast("error", "Error", response.message);
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Save');
+        }
+        },
+        error: function () {
+        showToast("error", "Error", "An error occurred");
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Save');
+        }
+        });
+        });
+
+        // =====================================================
+        // MANAGE USER ROLES MODAL
+        // =====================================================
+
+        function openManageRolesModal(userId, userName) {
+        $("#manageRolesUserId").val(userId);
+        $("#manageRolesUserName").text("User: " + userName);
+        rolesModal.show();
+
+        $("#rolesCheckboxList").html('<div class="text-center py-4"><div class="spinner-border"></div></div>');
+
+        $.ajax({
+        url: '@Url.Action("GetUserRoles", "Users")',
+        type: 'GET',
+        data: { userId: userId },
+        success: function (response) {
+        if (response.success) {
+        var html = '';
+        response.roles.forEach(function (role) {
+        var checked = role.isAssigned ? 'checked' : '';
+        html += '<div class="form-check mb-3">' +
+        '<input type="checkbox" class="form-check-input" value="' + role.name + '" id="role_' + role.id + '" ' + checked + '>' +
+        '<label class="form-check-label" for="role_' + role.id + '">' + role.name + '</label>' +
+        '</div>';
+        });
+        $("#rolesCheckboxList").html(html);
+        }
+        },
+        error: function () {
+        $("#rolesCheckboxList").html('<div class="text-center text-danger">Error loading roles</div>');
+        }
+        });
+        }
+
+        $("#manageRolesForm").on("submit", function (e) {
+        e.preventDefault();
+
+        var selectedRoles = [];
+        $("#rolesCheckboxList input:checked").each(function () {
+        selectedRoles.push($(this).val());
+        });
+
+        var $btn = $("#rolesBtn");
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> Saving...');
+
+        $.ajax({
+        url: '@Url.Action("UpdateUserRoles", "Users")',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({
+        UserId: $("#manageRolesUserId").val(),
+        UserRoles: selectedRoles
+        }),
+        success: function (response) {
+        if (response.success) {
+        rolesModal.hide();
+        showToast("success", "Success", response.message);
+        setTimeout(function () { location.reload(); }, 1500);
+        } else {
+        showToast("error", "Error", response.message);
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Save');
+        }
+        },
+        error: function () {
+        showToast("error", "Error", "An error occurred");
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> Save');
+        }
+        });
+        });
+
+        // =====================================================
+        // DELETE USER MODAL
+        // =====================================================
+
+        $(document).on("click", ".delete-user-btn", function () {
+        var userId = $(this).data("user-id");
+        var userName = $(this).data("user-name");
+        $("#deleteUserId").val(userId);
+        $("#userNameToDelete").text(userName);
+        deleteModal.show();
+        });
+
+        $("#deleteUserForm").on("submit", function (e) {
+        e.preventDefault();
+
+        var $btn = $("#confirmDelete");
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> Deleting...');
+
+        $.ajax({
+        url: '@Url.Action("DeleteConfirmed", "Users")',
+        type: 'POST',
+        data: {
+        id: $("#deleteUserId").val(),
+        __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+        },
+        success: function (response) {
+        if (response.success) {
+        deleteModal.hide();
+        showToast("success", "Success", response.message);
+        setTimeout(function () { location.reload(); }, 1500);
+        } else {
+        showToast("error", "Error", response.message);
+        $btn.prop("disabled", false).html('<i class="bi bi-trash3"></i> Delete');
+        }
+        },
+        error: function () {
+        showToast("error", "Error", "An error occurred");
+        $btn.prop("disabled", false).html('<i class="bi bi-trash3"></i> Delete');
+        }
+        });
+        });
+
+        // =====================================================
+        // SEARCH FUNCTIONALITY
+        // =====================================================
+
+        $("#userSearch").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#userTable tbody tr").filter(function () {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+        });
+        });
+
+        // =====================================================
+        // TOAST FUNCTION
+        // =====================================================
+
+        function showToast(type, title, message) {
+        var toastId = 'toast-' + Date.now();
+        var bgClass = type === 'success' ? 'bg-success' : 'bg-danger';
+        var iconClass = type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-circle-fill';
+
+        var toastHtml = '<div id="' + toastId + '" class="toast align-items-center border-0 ' + bgClass + ' text-white" role="alert">' +
+        '<div class="d-flex">' +
+        '<div class="toast-body d-flex align-items-center">' +
+        '<i class="bi ' + iconClass + ' me-2"></i>' +
+        '<div><strong>' + title + '</strong><div>' + message + '</div></div>' +
+        '</div>' +
+        '<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>' +
+        '</div>' +
+        '</div>';
+
+        $('.toast-container').append(toastHtml);
+        var toastElement = document.getElementById(toastId);
+        var toast = new bootstrap.Toast(toastElement, { autohide: true, delay: 5000 });
+        toast.show();
+        $(toastElement).on('hidden.bs.toast', function () { $(this).remove(); });
+        }
+
+        // =====================================================
+        // ROLE MANAGEMENT MODAL (For Super Admin)
+        // =====================================================
+
+        function openRoleManagementModal() {
+        if (!isSuperAdmin) return;
+        loadRolesList();
+        $("#newRoleName").val("");
+        roleManagementModal.show();
+        }
+
+        // =====================================================
+        // LOAD ROLES LIST (Professional Cards Style)
+        // =====================================================
+
+        function loadRolesList() {
+        $("#rolesListContainer").html('<div class="text-center py-4"><div class="spinner-border text-primary"></div><p class="mt-2 text-muted">@Localizer["LoadingRoles"]</p></div>');
+
+        $.ajax({
+        url: '@Url.Action("GetAllRoles", "Roles")',
+        type: 'GET',
+        success: function (response) {
+        if (response.success && response.roles.length > 0) {
+        var html = '<div class="role-cards-container">';
+        response.roles.forEach(function (role) {
+        // Get first letter for icon
+        var firstLetter = role.name.charAt(0).toUpperCase();
+        html += '<div class="role-card">' +
+        '<div class="role-name">' +
+        '<div class="role-icon">' + firstLetter + '</div>' +
+        '<span>' + role.name + '</span>' +
+        '</div>' +
+        '<div class="role-actions">' +
+        '<button type="button" class="role-action-btn role-edit-btn" onclick="openEditRoleModal(\'' + role.id + '\', \'' + role.name.replace(/'/g, "\\'") + '\')" title="@Localizer["EditRole"]">' +
+        '<i class="bi bi-pencil-square"></i>' +
+        '</button>' +
+        '<button type="button" class="role-action-btn role-delete-btn" onclick="deleteRole(\'' + role.id + '\', \'' + role.name.replace(/'/g, "\\'") + '\')" title="@Localizer["DeleteRole"]">' +
+        '<i class="bi bi-trash3"></i>' +
+        '</button>' +
+        '</div>' +
+        '</div>';
+        });
+        html += '</div>';
+        $("#rolesListContainer").html(html);
+        } else if (response.success && response.roles.length === 0) {
+        $("#rolesListContainer").html('<div class="roles-empty-state">' +
+        '<i class="bi bi-shield-slash"></i>' +
+        '<p>@Localizer["NoRolesFound"]</p>' +
+        '</div>');
+        } else {
+        $("#rolesListContainer").html('<div class="roles-empty-state">' +
+        '<i class="bi bi-exclamation-triangle text-danger"></i>' +
+        '<p>@Localizer["FailedToLoadRoles"]</p>' +
+        '</div>');
+        }
+        },
+        error: function () {
+        $("#rolesListContainer").html('<div class="roles-empty-state">' +
+        '<i class="bi bi-wifi-off text-danger"></i>' +
+        '<p>@Localizer["ErrorLoadingRoles"]</p>' +
+        '</div>');
+        }
+        });
+        }
+        // =====================================================
+        // CREATE ROLE (FIXED)
+        // =====================================================
+
+        $("#createRoleBtn").click(function () {
+        var roleName = $("#newRoleName").val().trim();
+
+        if (!roleName) {
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: 'الرجاء إدخال اسم الصلاحية',
+        confirmButtonText: 'حسنا'
+        });
+        return;
+        }
+
+        var $btn = $(this);
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الإنشاء...');
+
+        $.ajax({
+        url: '@Url.Action("CreateRole", "Roles")',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ newRoleName: roleName }),
+        success: function (response) {
+        if (response.success) {
+        Swal.fire({
+        icon: 'success',
+        title: 'تم بنجاح',
+        text: response.message,
+        timer: 2000,
+        showConfirmButton: false
+        });
+        $("#newRoleName").val("");
+        loadRolesList();
+        } else {
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: response.message || 'فشل إنشاء الصلاحية',
+        confirmButtonText: 'حسنا'
+        });
+        }
+        },
+        error: function (xhr) {
+        var errorMsg = xhr.responseJSON?.message || 'حدث خطأ أثناء إنشاء الصلاحية';
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: errorMsg,
+        confirmButtonText: 'حسنا'
+        });
+        },
+        complete: function () {
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> <span>@Localizer["Create"]</span>');
+        }
+        });
+        });
+
+        // =====================================================
+        // EDIT ROLE (FIXED)
+        // =====================================================
+
+        function openEditRoleModal(roleId, roleName) {
+        $("#editRoleId").val(roleId);
+        $("#editRoleName").val(roleName);
+        editRoleModal.show();
+        }
+
+        $("#editRoleForm").on("submit", function (e) {
+        e.preventDefault();
+
+        var roleId = $("#editRoleId").val();
+        var roleName = $("#editRoleName").val().trim();
+
+        if (!roleName) {
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: 'الرجاء إدخال اسم الصلاحية',
+        confirmButtonText: 'حسنا'
+        });
+        return;
+        }
+
+        var $btn = $(this).find('button[type="submit"]');
+        $btn.prop("disabled", true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الحفظ...');
+
+        $.ajax({
+        url: '@Url.Action("EditRole", "Roles")',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ id: roleId, name: roleName }),
+        success: function (response) {
+        if (response.success) {
+        editRoleModal.hide();
+        Swal.fire({
+        icon: 'success',
+        title: 'تم بنجاح',
+        text: response.message,
+        timer: 2000,
+        showConfirmButton: false
+        });
+        loadRolesList();
+        } else {
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: response.message || 'فشل تحديث الصلاحية',
+        confirmButtonText: 'حسنا'
+        });
+        }
+        },
+        error: function () {
+        Swal.fire({
+        icon: 'error',
+        title: 'خطأ',
+        text: 'حدث خطأ أثناء تحديث الصلاحية',
+        confirmButtonText: 'حسنا'
+        });
+        },
+        complete: function () {
+        $btn.prop("disabled", false).html('<i class="bi bi-save"></i> @Localizer["Save"]');
+        }
+        });
+        });
+
+        // =====================================================
+        // DELETE ROLE
+        // =====================================================
+
+        function deleteRole(roleId, roleName) {
+        Swal.fire({
+        title: 'Are you sure?',
+        html: 'You are about to delete the role: <strong>' + roleName + '</strong><br>This action cannot be undone!',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#dc2626',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Yes, delete it!',
+        cancelButtonText: 'Cancel'
+        }).then((result) => {
+        if (result.isConfirmed) {
+        $.ajax({
+        url: '@Url.Action("DeleteRole", "Roles")',
+        type: 'POST',
+        data: { id: roleId },
+        success: function (response) {
+        if (response.success) {
+        Swal.fire('Deleted!', response.message, 'success');
+        loadRolesList();
+        } else {
+        Swal.fire('Error', response.message || 'Failed to delete role', 'error');
+        }
+        },
+        error: function () {
+        Swal.fire('Error', 'An error occurred', 'error');
+        }
+        });
+        }
+        });
+        }
     </script>
 }

@@ -1,181 +1,191 @@
-﻿@model List<OnlineExamSystem.Application.DTOs.Exam.ExamInvitationDto>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model List<OnlineExamSystem.Application.DTOs.Exam.ExamInvitationDto>
 @{
-    ViewData["Title"] = "Exam Invitations";
+    ViewData["Title"] = Localizer["PageTitle"];
     var examId = ViewBag.ExamId;
     var baseUrl = $"{Context.Request.Scheme}://{Context.Request.Host}";
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
 }
 
-<div class="container mt-4">
-    <div class="card shadow">
-        <div class="card-header bg-primary text-white">
-            <h3><i class="bi bi-link-45deg"></i> Exam Invitation Links</h3>
-            <p class="mb-0">Share these links with students to take the exam</p>
+@section Styles {
+    <link href="~/css/pages/invitations.css" rel="stylesheet" />
+}
+
+<div class="invitations-page">
+    <div class="page-header">
+        <div>
+            <h1 class="page-title">
+                <i class="bi bi-link-45deg"></i>
+                @Localizer["PageTitle"]
+            </h1>
+            <p class="page-subtitle">@Localizer["PageSubtitle"]</p>
         </div>
-        <div class="card-body">
-            <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#createInvitationModal">
-                <i class="bi bi-plus-circle"></i> Generate New Link
+        <div class="header-actions">
+            <button type="button" class="btn btn-primary-custom" onclick="openCreateInvitationModal()">
+                <i class="bi bi-plus-circle"></i>
+                @Localizer["GenerateNewLink"]
             </button>
-
-            <a asp-action="Index" asp-route-examId="@examId" class="btn btn-outline-secondary mb-3 ms-2">
-                <i class="bi bi-arrow-left"></i> Back to Exams
+            <a asp-action="Index" asp-route-examId="@examId" class="btn btn-outline-custom">
+                <i class="bi bi-arrow-left"></i>
+                @Localizer["BackToExams"]
             </a>
-
-            @if (!Model.Any())
-            {
-                <div class="alert alert-info text-center">
-                    <i class="bi bi-info-circle fs-1"></i>
-                    <h5>No invitation links yet</h5>
-                    <p>Click "Generate New Link" to create an invitation for students.</p>
-                </div>
-            }
-            else
-            {
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover">
-                        <thead class="table-dark">
-                            <tr>
-                                <th>Code</th>
-                                <th>Invitation Link</th>
-                                <th>Created</th>
-                                <th>Expires</th>
-                                <th>Used/Max</th>
-                                <th>Status</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var inv in Model)
-                            {
-                                var fullLink = $"{baseUrl}/UserExam/Join?code={inv.InvitationCode}";
-                                <tr>
-                                    <td>
-                                        <span class="badge bg-dark fs-6">@inv.InvitationCode</span>
-                                    </td>
-                                    <td>
-                                        <div class="input-group input-group-sm">
-                                            <input type="text" class="form-control font-monospace" value="@fullLink" readonly id="link-@inv.Id" style="min-width: 300px;">
-                                            <button class="btn btn-outline-secondary copy-link" data-link="@fullLink" data-id="@inv.Id">
-                                                <i class="bi bi-clipboard"></i> Copy
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>@inv.CreatedAt.ToString("MMM dd, yyyy HH:mm")</td>
-                                    <td>@(inv.ExpiresAt?.ToString("MMM dd, yyyy HH:mm") ?? "Never")</td>
-                                    <td>@inv.UsedCount / @inv.MaxAttempts</td>
-                                    <td>
-                                        <span class="badge @(inv.IsActive ? "bg-success" : "bg-danger")">
-                                            @(inv.IsActive ? "Active" : "Inactive")
-                                        </span>
-                                    </td>
-                                    <td>
-                                        <div class="btn-group btn-group-sm">
-                                            <button class="btn @(inv.IsActive ? "btn-warning" : "btn-success") toggle-invitation"
-                                                    data-id="@inv.Id" data-active="@inv.IsActive.ToString().ToLower()">
-                                                <i class="bi @(inv.IsActive ? "bi-pause-circle" : "bi-play-circle")"></i>
-                                                @(inv.IsActive ? "Disable" : "Enable")
-                                            </button>
-                                            <a asp-action="InvitationAttempts" asp-route-id="@inv.Id" class="btn btn-info">
-                                                <i class="bi bi-people"></i> Attempts
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            }
         </div>
     </div>
+
+    @if (!Model.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon">
+                <i class="bi bi-link-45deg"></i>
+            </div>
+            <h4>@Localizer["NoInvitations"]</h4>
+            <p>@Localizer["NoInvitationsMessage"]</p>
+        </div>
+    }
+    else
+    {
+        <div class="invitations-grid">
+            @foreach (var inv in Model)
+            {
+                var fullLink = $"{baseUrl}/UserExam/Join?code={inv.InvitationCode}";
+                <div class="invitation-card" id="invitation-@inv.Id">
+                    <div class="card-header">
+                        <div class="invitation-code">
+                            <i class="bi bi-key"></i>
+                            <span>@inv.InvitationCode</span>
+                        </div>
+                        <div class="card-status @(inv.IsActive ? "status-active" : "status-inactive")">
+                            @(inv.IsActive ? Localizer["Active"].Value : Localizer["Inactive"].Value)
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="link-container">
+                            <input type="text" class="invitation-link" value="@fullLink" readonly id="link-@inv.Id">
+                            <button class="btn-copy" onclick="copyToClipboard('@fullLink', @inv.Id)">
+                                <i class="bi bi-clipboard"></i>
+                                @Localizer["Copy"]
+                            </button>
+                        </div>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-label">@Localizer["CreatedAt"]</div>
+                                <div class="stat-value">@inv.CreatedAt.ToString("MMM dd, yyyy")</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">@Localizer["ExpiresAt"]</div>
+                                <div class="stat-value">@(inv.ExpiresAt?.ToString("MMM dd, yyyy") ?? Localizer["Never"].Value)</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">@Localizer["AttemptsUsed"]</div>
+                                <div class="stat-value">@inv.UsedCount / @inv.MaxAttempts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-action @(inv.IsActive ? "btn-disable" : "btn-enable")" onclick="toggleInvitation(@inv.Id, @(inv.IsActive.ToString().ToLower()))">
+                            <i class="bi @(inv.IsActive ? "bi-pause-circle" : "bi-play-circle")"></i>
+                            @(inv.IsActive ? Localizer["Disable"].Value : Localizer["Enable"].Value)
+                        </button>
+                        <a asp-action="InvitationAttempts" asp-route-id="@inv.Id" class="btn-action btn-attempts">
+                            <i class="bi bi-people"></i>
+                            @Localizer["ViewAttempts"]
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
 </div>
 
 <!-- Create Invitation Modal -->
 <div class="modal fade" id="createInvitationModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header bg-success text-white">
-                <h5 class="modal-title"><i class="bi bi-link-45deg"></i> Generate New Invitation Link</h5>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content custom-modal">
+            <div class="modal-header custom-modal-header">
+                <h5 class="modal-title">
+                    <i class="bi bi-plus-circle"></i>
+                    @Localizer["GenerateNewLink"]
+                </h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Expiration Date (Optional)</label>
-                    <input type="datetime-local" id="expiresAt" class="form-control">
-                    <small class="text-muted">Leave empty for no expiration</small>
+                <div class="form-group">
+                    <label class="form-label">@Localizer["ExpirationDate"]</label>
+                    <input type="datetime-local" id="expiresAt" class="form-control custom-input">
+                    <small class="form-text text-muted">@Localizer["ExpirationHelp"]</small>
                 </div>
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Max Attempts per Student</label>
-                    <input type="number" id="maxAttempts" class="form-control" value="1" min="1" max="10">
-                    <small class="text-muted">How many times a student can take this exam</small>
+                <div class="form-group">
+                    <label class="form-label">@Localizer["MaxAttempts"]</label>
+                    <input type="number" id="maxAttempts" class="form-control custom-input" value="1" min="1" max="10">
+                    <small class="form-text text-muted">@Localizer["MaxAttemptsHelp"]</small>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-success" id="generateInvitationBtn">
-                    <i class="bi bi-plus-circle"></i> Generate Link
+            <div class="modal-footer custom-modal-footer">
+                <button type="button" class="btn btn-light-custom" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
+                <button type="button" class="btn btn-primary-custom" id="generateInvitationBtn">
+                    <i class="bi bi-plus-circle"></i> @Localizer["Generate"]
                 </button>
             </div>
         </div>
     </div>
 </div>
 
+<!-- Toast Container -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3"></div>
+
 @section Scripts {
     <script>
-        // Generate invitation
+        function copyToClipboard(link, id) {
+            navigator.clipboard.writeText(link).then(function () {
+                showToast('success', '@Localizer["Copied"]', '@Localizer["LinkCopied"]');
+                var btn = document.querySelector(`#link-${id}`).nextElementSibling;
+                var originalHtml = btn.innerHTML;
+                btn.innerHTML = '<i class="bi bi-check"></i> @Localizer["Copied!"]';
+                setTimeout(function () { btn.innerHTML = originalHtml; }, 2000);
+            });
+        }
+
+        function toggleInvitation(id, isActive) {
+            $.ajax({
+                url: '@Url.Action("ToggleInvitation", "Exam")',
+                type: 'POST',
+                data: { invitationId: id, isActive: !isActive },
+                success: function () { location.reload(); },
+                error: function (xhr) { showToast('error', '@Localizer["Error"]', xhr.responseText); }
+            });
+        }
+
+        function openCreateInvitationModal() {
+            $('#expiresAt').val('');
+            $('#maxAttempts').val(1);
+            $('#createInvitationModal').modal('show');
+        }
+
         $('#generateInvitationBtn').click(function () {
             var expiresAt = $('#expiresAt').val();
             var maxAttempts = $('#maxAttempts').val();
+            var $btn = $(this);
+            $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["Generating"]...');
 
             $.ajax({
                 url: '@Url.Action("CreateInvitation", "Exam")',
                 type: 'POST',
-                data: {
-                    examId: @examId,
-                    expiresAt: expiresAt,
-                    maxAttempts: maxAttempts
-                },
-                success: function () {
-                    location.reload();
-                },
-                error: function (xhr) {
-                    alert('Error: ' + xhr.responseText);
-                }
+                data: { examId: @examId, expiresAt: expiresAt, maxAttempts: maxAttempts },
+                success: function () { location.reload(); },
+                error: function (xhr) { showToast('error', '@Localizer["Error"]', xhr.responseText); $btn.prop('disabled', false).html('<i class="bi bi-plus-circle"></i> @Localizer["Generate"]'); }
             });
         });
 
-        // Copy link to clipboard
-        $('.copy-link').click(function () {
-            var link = $(this).data('link');
-            navigator.clipboard.writeText(link).then(function () {
-                // Show temporary success message
-                var btn = $(this);
-                var originalHtml = btn.html();
-                btn.html('<i class="bi bi-check"></i> Copied!');
-                setTimeout(function () {
-                    btn.html(originalHtml);
-                }, 2000);
-            }.bind(this));
-        });
-
-        // Toggle invitation status
-        $('.toggle-invitation').click(function () {
-            var id = $(this).data('id');
-            var isActive = $(this).data('active') === 'true';
-
-            $.ajax({
-                url: '@Url.Action("ToggleInvitation", "Exam")',
-                type: 'POST',
-                data: {
-                    invitationId: id,
-                    isActive: !isActive
-                },
-                success: function () {
-                    location.reload();
-                },
-                error: function (xhr) {
-                    alert('Error: ' + xhr.responseText);
-                }
-            });
-        });
+        function showToast(type, title, message) {
+            var bgClass = type === 'success' ? 'bg-success' : 'bg-danger';
+            var iconClass = type === 'success' ? 'bi-check-circle-fill' : 'bi-exclamation-circle-fill';
+            var toastHtml = `<div class="toast align-items-center border-0 ${bgClass} text-white show" role="alert">
+                        <div class="d-flex"><div class="toast-body"><i class="bi ${iconClass} me-2"></i> <strong>${title}</strong> - ${message}</div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div>`;
+            $('.toast-container').append(toastHtml);
+            setTimeout(function () { $('.toast-container .toast').first().remove(); }, 3000);
+        }
     </script>
 }

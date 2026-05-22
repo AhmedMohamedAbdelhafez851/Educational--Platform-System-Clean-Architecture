@@ -5,13 +5,13 @@ VisualStudioVersion = 18.6.11709.129
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Domains", "OnlineExamSystem.Domains\OnlineExamSystem.Domains.csproj", "{CD912593-2D2B-4B93-B676-40AD044458A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Web", "OnlineExamSystem.Web\OnlineExamSystem.Web.csproj", "{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Tests", "OnlineExamSystem.Tests\OnlineExamSystem.Tests.csproj", "{D99A0140-13C9-48B2-8956-5A5EFB2D626E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Application", "OnlineExamSystem.Application\OnlineExamSystem.Application.csproj", "{E0790DB8-609B-49C6-A9F2-F5F69CCDC014}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Infrastructure", "OnlineExamSystem.Infrastructure\OnlineExamSystem.Infrastructure.csproj", "{5745EEF6-CAB3-4663-9502-AA09499921A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineExamSystem.Web", "OnlineExamSystem.Web\OnlineExamSystem.Web.csproj", "{F6DC8803-208F-70DA-10EF-EAB65BA78459}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,18 +35,6 @@ Global
 		{CD912593-2D2B-4B93-B676-40AD044458A4}.Release|x64.Build.0 = Release|Any CPU
 		{CD912593-2D2B-4B93-B676-40AD044458A4}.Release|x86.ActiveCfg = Release|Any CPU
 		{CD912593-2D2B-4B93-B676-40AD044458A4}.Release|x86.Build.0 = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|x64.Build.0 = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Debug|x86.Build.0 = Debug|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|x64.ActiveCfg = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|x64.Build.0 = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|x86.ActiveCfg = Release|Any CPU
-		{CC495CC8-262C-46A8-9B2F-96E739E6E8ED}.Release|x86.Build.0 = Release|Any CPU
 		{D99A0140-13C9-48B2-8956-5A5EFB2D626E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D99A0140-13C9-48B2-8956-5A5EFB2D626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D99A0140-13C9-48B2-8956-5A5EFB2D626E}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -83,6 +71,18 @@ Global
 		{5745EEF6-CAB3-4663-9502-AA09499921A8}.Release|x64.Build.0 = Release|Any CPU
 		{5745EEF6-CAB3-4663-9502-AA09499921A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{5745EEF6-CAB3-4663-9502-AA09499921A8}.Release|x86.Build.0 = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|x64.Build.0 = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6DC8803-208F-70DA-10EF-EAB65BA78459}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

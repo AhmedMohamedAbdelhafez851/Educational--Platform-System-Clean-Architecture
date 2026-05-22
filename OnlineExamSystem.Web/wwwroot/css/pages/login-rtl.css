@@ -5,7 +5,12 @@ body[dir="rtl"] .input-icon {
 }
 
 body[dir="rtl"] .form-control-custom {
-    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    padding: 0.875rem 2.75rem 0.875rem 1rem;
+}
+
+body[dir="rtl"] .password-toggle {
+    right: auto;
+    left: 1rem;
 }
 
 body[dir="rtl"] .validation-summary ul {
@@ -16,4 +21,8 @@ body[dir="rtl"] .validation-summary ul {
 body[dir="rtl"] .me-2 {
     margin-left: 0.5rem !important;
     margin-right: 0 !important;
+}
+
+body[dir="rtl"] .checkbox-wrapper {
+    flex-direction: row-reverse;
 }

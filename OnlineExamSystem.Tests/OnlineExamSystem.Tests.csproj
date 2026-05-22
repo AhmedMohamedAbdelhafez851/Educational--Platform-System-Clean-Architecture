@@ -25,7 +25,6 @@
     <ProjectReference Include="..\OnlineExamSystem.Application\OnlineExamSystem.Application.csproj" />
     <ProjectReference Include="..\OnlineExamSystem.Infrastructure\OnlineExamSystem.Infrastructure.csproj" />
     <ProjectReference Include="..\OnlineExamSystem.Domains\OnlineExamSystem.Domains.csproj" />
-    <ProjectReference Include="..\OnlineExamSystem.Web\OnlineExamSystem.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,84 +1,208 @@
-﻿@model OnlineExamSystem.Application.DTOs.Exam.JoinExamDto
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@using System.Globalization
+@inject IViewLocalizer Localizer
+@model OnlineExamSystem.Application.DTOs.Exam.JoinExamDto
+
 @{
-    ViewData["Title"] = "Join Exam";
+    ViewData["Title"] = Localizer["PageTitle"];
     Layout = "_Layout";
+    var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
 }
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-lg border-0">
-                <div class="card-header bg-gradient-primary text-white text-center py-4">
-                    <i class="bi bi-box-arrow-in-right fs-1"></i>
-                    <h3 class="mt-2 mb-0">Join Exam</h3>
-                    <p class="mb-0 opacity-75">Enter your invitation code to start</p>
+@section Styles {
+    <style>
+        .join-container {
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .join-card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .join-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            text-align: center;
+            color: white;
+        }
+
+            .join-header i {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .join-header h1 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 0.5rem;
+            }
+
+            .join-header p {
+                font-size: 0.875rem;
+                opacity: 0.9;
+            }
+
+        .join-body {
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .input-group-custom {
+            position: relative;
+        }
+
+        .input-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+        }
+
+        body[dir="rtl"] .input-icon {
+            left: auto;
+            right: 1rem;
+        }
+
+        .form-control-custom {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 0.75rem;
+            transition: all 0.2s ease;
+        }
+
+        body[dir="rtl"] .form-control-custom {
+            padding: 0.75rem 2.5rem 0.75rem 1rem;
+        }
+
+        .form-control-custom:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102,126,234,0.1);
+        }
+
+        .btn-start {
+            width: 100%;
+            padding: 0.875rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            border-radius: 0.75rem;
+            color: white;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+            .btn-start:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px -5px rgba(102,126,234,0.4);
+            }
+
+        .field-error {
+            font-size: 0.75rem;
+            color: #dc2626;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .card-footer {
+            background: #f8fafc;
+            padding: 1rem;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+            .card-footer small {
+                color: #6c757d;
+            }
+    </style>
+}
+
+<div class="join-container">
+    <div class="join-card">
+        <div class="join-header">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <h1>@Localizer["JoinExam"]</h1>
+            <p>@Localizer["EnterInvitationCode"]</p>
+        </div>
+        <div class="join-body">
+            <form asp-action="Join" method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="InvitationCode" class="form-label">@Localizer["InvitationCode"]</label>
+                    <div class="input-group-custom">
+                        <i class="bi bi-key input-icon"></i>
+                        <input asp-for="InvitationCode"
+                               class="form-control-custom text-uppercase"
+                               placeholder="@Localizer["InvitationCodePlaceholder"]"
+                               style="font-family: monospace;"
+                               autocomplete="off" />
+                    </div>
+                    <span asp-validation-for="InvitationCode" class="field-error"></span>
+                    <small class="text-muted">@Localizer["InvitationCodeHelp"]</small>
                 </div>
-                <div class="card-body p-4">
-                    <form asp-action="Join" method="post">
-                        <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
 
-                        <div class="mb-3">
-                            <label asp-for="InvitationCode" class="form-label fw-bold">
-                                <i class="bi bi-key me-1"></i> Invitation Code
-                            </label>
-                            <input asp-for="InvitationCode"
-                                   class="form-control form-control-lg text-uppercase"
-                                   placeholder="Enter code (e.g., ABC123)"
-                                   style="font-family: monospace; font-size: 1.2rem;"
-                                   value="@Model.InvitationCode">
-                            <span asp-validation-for="InvitationCode" class="text-danger"></span>
-                            <small class="text-muted">Enter the 6-character code you received from your teacher</small>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="StudentName" class="form-label fw-bold">
-                                <i class="bi bi-person me-1"></i> Full Name
-                            </label>
-                            <input asp-for="StudentName" class="form-control" placeholder="Enter your full name">
-                            <span asp-validation-for="StudentName" class="text-danger"></span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label asp-for="StudentEmail" class="form-label fw-bold">
-                                <i class="bi bi-envelope me-1"></i> Email (Optional)
-                            </label>
-                            <input asp-for="StudentEmail" type="email" class="form-control" placeholder="your@email.com">
-                            <span asp-validation-for="StudentEmail" class="text-danger"></span>
-                        </div>
-
-                        <div class="mb-4">
-                            <label asp-for="StudentId" class="form-label fw-bold">
-                                <i class="bi bi-credit-card me-1"></i> Student ID (Optional)
-                            </label>
-                            <input asp-for="StudentId" class="form-control" placeholder="Student identification number">
-                            <span asp-validation-for="StudentId" class="text-danger"></span>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                            <i class="bi bi-play-circle-fill me-2"></i> Start Exam
-                        </button>
-                    </form>
+                <div class="form-group">
+                    <label asp-for="StudentName" class="form-label">@Localizer["FullName"]</label>
+                    <div class="input-group-custom">
+                        <i class="bi bi-person input-icon"></i>
+                        <input asp-for="StudentName" class="form-control-custom" placeholder="@Localizer["FullNamePlaceholder"]" />
+                    </div>
+                    <span asp-validation-for="StudentName" class="field-error"></span>
                 </div>
-                <div class="card-footer bg-light text-center text-muted">
-                    <small>Need help? Contact your teacher for assistance.</small>
+
+                <div class="form-group">
+                    <label asp-for="StudentEmail" class="form-label">@Localizer["Email"]</label>
+                    <div class="input-group-custom">
+                        <i class="bi bi-envelope input-icon"></i>
+                        <input asp-for="StudentEmail" type="email" class="form-control-custom" placeholder="@Localizer["EmailPlaceholder"]" />
+                    </div>
                 </div>
-            </div>
+
+                <div class="form-group">
+                    <label asp-for="StudentId" class="form-label">@Localizer["StudentId"]</label>
+                    <div class="input-group-custom">
+                        <i class="bi bi-credit-card input-icon"></i>
+                        <input asp-for="StudentId" class="form-control-custom" placeholder="@Localizer["StudentIdPlaceholder"]" />
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-start">
+                    <i class="bi bi-play-circle-fill me-2"></i> @Localizer["StartExam"]
+                </button>
+            </form>
+        </div>
+        <div class="card-footer">
+            <small>@Localizer["NeedHelp"]</small>
         </div>
     </div>
 </div>
 
-<style>
-    .bg-gradient-primary {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-</style>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
-        // Auto uppercase invitation code
-        $('#InvitationCode').on('input', function () {
-            $(this).val($(this).val().toUpperCase());
+        $(document).ready(function () {
+            $('#InvitationCode').on('input', function () {
+                $(this).val($(this).val().toUpperCase());
+            });
         });
     </script>
 }

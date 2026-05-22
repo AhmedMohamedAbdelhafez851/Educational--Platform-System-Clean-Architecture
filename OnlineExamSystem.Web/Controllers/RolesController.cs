@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OnlineExamSystem.Domains.Entities;
 using OnlineExamSystem.Web.ViewModels.UserDTO;
+using System.Text.Json;
 
 namespace OnlineExamSystem.Web.Controllers
 {
+    [Authorize(Roles = "SuperAdmin")]
     public class RolesController : Controller
     {
         private readonly RoleManager<IdentityRole> _roleManager;
@@ -92,7 +95,7 @@ namespace OnlineExamSystem.Web.Controllers
             return RedirectToAction("Index", "Users");
         }
 
-        // GET: CreateRole
+        // GET: CreateRole (View)
         public IActionResult CreateRole()
         {
             var model = new ManageRolesViewModel
@@ -106,44 +109,47 @@ namespace OnlineExamSystem.Web.Controllers
             return View(model);
         }
 
-        // POST: CreateRole
+        // POST: CreateRole - API endpoint for modal (FIXED)
         [HttpPost]
-        public async Task<IActionResult> CreateRole(ManageRolesViewModel model)
+        public async Task<IActionResult> CreateRole([FromBody] CreateRoleApiModel request)
         {
-            model.Roles ??= new List<RoleDto>();
-
-            if (!string.IsNullOrWhiteSpace(model.NewRoleName))
+            try
             {
-                var newRole = new IdentityRole(model.NewRoleName);
+                if (request == null || string.IsNullOrWhiteSpace(request.NewRoleName))
+                {
+                    return Json(new { success = false, message = "Role name is required" });
+                }
+
+                var roleName = request.NewRoleName.Trim();
+
+                // Check if role exists
+                var roleExists = await _roleManager.RoleExistsAsync(roleName);
+                if (roleExists)
+                {
+                    return Json(new { success = false, message = $"Role '{roleName}' already exists" });
+                }
+
+                // Create the role
+                var newRole = new IdentityRole(roleName);
                 var result = await _roleManager.CreateAsync(newRole);
 
                 if (result.Succeeded)
                 {
-                    model.Roles.Add(new RoleDto
-                    {
-                        Id = newRole.Id,
-                        Name = newRole.Name!
-                    });
+                    _logger.LogInformation($"Role '{roleName}' created successfully.");
+                    return Json(new { success = true, message = $"Role '{roleName}' created successfully" });
                 }
-                else
-                {
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                }
+
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return Json(new { success = false, message = errors });
             }
-
-            model.Roles = await _roleManager.Roles.Select(role => new RoleDto
+            catch (Exception ex)
             {
-                Id = role.Id,
-                Name = role.Name!
-            }).ToListAsync();
-
-            return View(model);
+                _logger.LogError(ex, "Error creating role");
+                return Json(new { success = false, message = "An error occurred while creating the role" });
+            }
         }
 
-        // GET: EditRole
+        // GET: EditRole (View)
         public async Task<IActionResult> EditRole(string id)
         {
             if (string.IsNullOrWhiteSpace(id))
@@ -166,35 +172,57 @@ namespace OnlineExamSystem.Web.Controllers
             return View(model);
         }
 
-        // POST: EditRole
+        // POST: EditRole - API endpoint for modal (FIXED)
         [HttpPost]
-        public async Task<IActionResult> EdietRole(RoleDto model)
+        public async Task<IActionResult> EditRole([FromBody] EditRoleApiModel request)
         {
-            if (ModelState.IsValid)
+            try
             {
-                var role = await _roleManager.FindByIdAsync(model.Id);
+                if (request == null || string.IsNullOrWhiteSpace(request.Id) || string.IsNullOrWhiteSpace(request.Name))
+                {
+                    return Json(new { success = false, message = "Role ID and name are required" });
+                }
+
+                var role = await _roleManager.FindByIdAsync(request.Id);
                 if (role == null)
                 {
-                    return NotFound("Role not found.");
+                    return Json(new { success = false, message = "Role not found" });
                 }
 
-                role.Name = model.Name;
+                var newRoleName = request.Name.Trim();
+
+                // Check if another role with the same name exists
+                if (role.Name != newRoleName)
+                {
+                    var roleExists = await _roleManager.RoleExistsAsync(newRoleName);
+                    if (roleExists)
+                    {
+                        return Json(new { success = false, message = $"Role '{newRoleName}' already exists" });
+                    }
+                }
+
+                // Update role name
+                var oldName = role.Name;
+                role.Name = newRoleName;
                 var result = await _roleManager.UpdateAsync(role);
+
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("CreateRole");
+                    _logger.LogInformation($"Role '{oldName}' updated to '{newRoleName}' successfully.");
+                    return Json(new { success = true, message = $"Role updated successfully" });
                 }
 
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
+                var errors = string.Join(", ", result.Errors.Select(e => e.Description));
+                return Json(new { success = false, message = errors });
             }
-
-            return View(model);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error editing role");
+                return Json(new { success = false, message = "An error occurred while updating the role" });
+            }
         }
 
-        // POST: DeleteRole
+        // POST: DeleteRole (FIXED - returns JSON)
         [HttpPost]
         public async Task<IActionResult> DeleteRole(string id)
         {
@@ -211,15 +239,17 @@ namespace OnlineExamSystem.Web.Controllers
                     return Json(new { success = false, message = "Role not found." });
                 }
 
+                var roleName = role.Name;
                 var result = await _roleManager.DeleteAsync(role);
+
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation($"Role '{role.Name}' deleted successfully.");
-                    return Json(new { success = true, message = $"Role '{role.Name}' deleted successfully." });
+                    _logger.LogInformation($"Role '{roleName}' deleted successfully.");
+                    return Json(new { success = true, message = $"Role '{roleName}' deleted successfully." });
                 }
 
                 var errors = string.Join(", ", result.Errors.Select(e => e.Description));
-                _logger.LogWarning($"Failed to delete role '{role.Name}': {errors}");
+                _logger.LogWarning($"Failed to delete role '{roleName}': {errors}");
                 return Json(new { success = false, message = $"Failed to delete role: {errors}" });
             }
             catch (Exception ex)
@@ -228,5 +258,36 @@ namespace OnlineExamSystem.Web.Controllers
                 return Json(new { success = false, message = "An unexpected error occurred while deleting the role." });
             }
         }
+
+        // GET: GetAllRoles (for modal)
+        [HttpGet]
+        public async Task<IActionResult> GetAllRoles()
+        {
+            try
+            {
+                var roles = await _roleManager.Roles
+                    .Select(r => new { id = r.Id, name = r.Name })
+                    .ToListAsync();
+
+                return Json(new { success = true, roles = roles });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting roles");
+                return Json(new { success = false, message = "Error loading roles" });
+            }
+        }
+    }
+
+    // API Models for JSON requests
+    public class CreateRoleApiModel
+    {
+        public string NewRoleName { get; set; } = "";
+    }
+
+    public class EditRoleApiModel
+    {
+        public string Id { get; set; } = "";
+        public string Name { get; set; } = "";
     }
 }

@@ -1,27 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-
+	<!-- Page Title -->
 	<data name="PageTitle" xml:space="preserve">
     <value>إدارة المستخدمين</value>
   </data>
+
+	<!-- Header -->
 	<data name="UserManagement" xml:space="preserve">
     <value>إدارة المستخدمين</value>
+  </data>
+	<data name="ManageUsersDescription" xml:space="preserve">
+    <value>إدارة حسابات المستخدمين والصلاحيات</value>
   </data>
 	<data name="CreateNewUser" xml:space="preserve">
     <value>إنشاء مستخدم جديد</value>
   </data>
+	<data name="ManageRoles" xml:space="preserve">
+    <value>إدارة الصلاحيات</value>
+  </data>
+
+	<!-- Stats Cards -->
+	<data name="TotalUsers" xml:space="preserve">
+    <value>إجمالي المستخدمين</value>
+  </data>
+	<data name="Admins" xml:space="preserve">
+    <value>المشرفين</value>
+  </data>
+	<data name="Students" xml:space="preserve">
+    <value>الطلاب</value>
+  </data>
+
+	<!-- Table Headers -->
 	<data name="FullName" xml:space="preserve">
     <value>الاسم الكامل</value>
   </data>
@@ -34,16 +43,17 @@
 	<data name="Actions" xml:space="preserve">
     <value>الإجراءات</value>
   </data>
-	<data name="NoUsersFound" xml:space="preserve">
-    <value>لا يوجد مستخدمين</value>
+	<data name="SearchUsers" xml:space="preserve">
+    <value>بحث عن مستخدم...</value>
   </data>
-	<data name="NoUsersMessage" xml:space="preserve">
-    <value>لا يوجد مستخدمين في النظام حالياً. انقر على زر "إنشاء مستخدم جديد" لإضافة مستخدم أول.</value>
-  </data>
+
+	<!-- Role Badges -->
 	<data name="NoRolesAssigned" xml:space="preserve">
-    <value>لا توجد صلاحيات مخصصة</value>
+    <value>لا توجد صلاحيات</value>
   </data>
-	<data name="ManageRoles" xml:space="preserve">
+
+	<!-- Action Buttons -->
+	<data name="ManageRolesBtn" xml:space="preserve">
     <value>إدارة الصلاحيات</value>
   </data>
 	<data name="EditUser" xml:space="preserve">
@@ -52,6 +62,8 @@
 	<data name="DeleteUser" xml:space="preserve">
     <value>حذف المستخدم</value>
   </data>
+
+	<!-- Delete Modal -->
 	<data name="ConfirmDeletion" xml:space="preserve">
     <value>تأكيد الحذف</value>
   </data>
@@ -70,6 +82,8 @@
 	<data name="Delete" xml:space="preserve">
     <value>حذف</value>
   </data>
+
+	<!-- Error Modal -->
 	<data name="Error" xml:space="preserve">
     <value>خطأ</value>
   </data>
@@ -79,10 +93,72 @@
 	<data name="Close" xml:space="preserve">
     <value>إغلاق</value>
   </data>
+
+	<!-- Toast Messages -->
 	<data name="Success" xml:space="preserve">
     <value>نجاح</value>
   </data>
 	<data name="UserDeleted" xml:space="preserve">
     <value>تم حذف المستخدم بنجاح</value>
+  </data>
+
+	<!-- Empty State -->
+	<data name="NoUsersFound" xml:space="preserve">
+    <value>لا يوجد مستخدمين</value>
+  </data>
+	<data name="NoUsersMessage" xml:space="preserve">
+    <value>لا يوجد مستخدمين في النظام حالياً. انقر على زر "إنشاء مستخدم جديد" لإضافة مستخدم أول.</value>
+  </data>
+
+	<!-- Create/Edit User Modal -->
+	<data name="UserName" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+	<data name="Password" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+	<data name="ConfirmPassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+	<data name="Create" xml:space="preserve">
+    <value>إنشاء</value>
+  </data>
+	<data name="Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+
+	<!-- Role Management Modal -->
+	<data name="RoleManagement" xml:space="preserve">
+    <value>إدارة الصلاحيات</value>
+  </data>
+	<data name="CreateNewRole" xml:space="preserve">
+    <value>إنشاء صلاحية جديدة</value>
+  </data>
+	<data name="ExistingRoles" xml:space="preserve">
+    <value>الصلاحيات الحالية</value>
+  </data>
+	<data name="RoleName" xml:space="preserve">
+    <value>اسم الصلاحية</value>
+  </data>
+	<data name="EnterRoleName" xml:space="preserve">
+    <value>أدخل اسم الصلاحية</value>
+  </data>
+	<data name="EditRole" xml:space="preserve">
+    <value>تعديل الصلاحية</value>
+  </data>
+	<data name="DeleteRole" xml:space="preserve">
+    <value>حذف الصلاحية</value>
+  </data>
+	<data name="LoadingRoles" xml:space="preserve">
+    <value>جاري تحميل الصلاحيات...</value>
+  </data>
+	<data name="NoRolesFound" xml:space="preserve">
+    <value>لا توجد صلاحيات</value>
+  </data>
+	<data name="FailedToLoadRoles" xml:space="preserve">
+    <value>فشل تحميل الصلاحيات</value>
+  </data>
+	<data name="ErrorLoadingRoles" xml:space="preserve">
+    <value>خطأ في تحميل الصلاحيات</value>
   </data>
 </root>

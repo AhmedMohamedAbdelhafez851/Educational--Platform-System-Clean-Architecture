@@ -70,7 +70,7 @@
                                name="Password"
                                type="password"
                                placeholder="@Localizer["PasswordPlaceholder"]" />
-                        <button type="button" class="password-toggle" id="togglePassword">
+                        <button type="button" class="password-toggle" id="togglePassword" style="background: none; border: none; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer; z-index: 10;">
                             <i class="bi bi-eye-slash"></i>
                         </button>
                     </div>
@@ -91,13 +91,14 @@
                 </button>
 
                 <!-- Register Link -->
-@*                 <div class="register-link">
+                @*                 <div class="register-link">
                     <p>
                         @Localizer["NoAccount"]
                         <a asp-action="Register">@Localizer["CreateAccount"]</a>
                     </p>
                 </div>
- *@            </form>
+ *@
+            </form>
         </div>
     </div>
 </div>
@@ -114,198 +115,75 @@
         // CUSTOM CLIENT-SIDE VALIDATION
         // =====================================================
 
-        // Add custom validation methods
-        $.validator.addMethod("validEmail", function (value, element) {
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        return this.optional(element) || emailRegex.test(value);
-        }, "@Localizer["InvalidEmail"]");
-
-        $.validator.addMethod("strongPassword", function (value, element) {
-        if (this.optional(element)) return true;
-        // Password must be at least 6 characters
-        return value.length >= 6;
-        }, "@Localizer["PasswordMinLength"]");
-
-        // Initialize jQuery Validation
-        $("#loginForm").validate({
-        rules: {
-        Email: {
-        required: true,
-        validEmail: true,
-        maxlength: 100
-        },
-        Password: {
-        required: true,
-        strongPassword: true,
-        minlength: 6,
-        maxlength: 100
-        }
-        },
-        messages: {
-        Email: {
-        required: "@Localizer["EmailRequired"]",
-        validEmail: "@Localizer["InvalidEmail"]",
-        maxlength: "@Localizer["EmailTooLong"]"
-        },
-        Password: {
-        required: "@Localizer["PasswordRequired"]",
-        strongPassword: "@Localizer["PasswordMinLength"]",
-        minlength: "@Localizer["PasswordMinLength"]",
-        maxlength: "@Localizer["PasswordTooLong"]"
-        }
-        },
-        errorClass: "is-invalid",
-        validClass: "is-valid",
-        errorElement: "span",
-        errorPlacement: function (error, element) {
-        var fieldId = element.attr("id");
-        if (fieldId === "Email") {
-        $("#emailError").html(error);
-        element.addClass("input-error");
-        } else if (fieldId === "Password") {
-        $("#passwordError").html(error);
-        element.addClass("input-error");
-        }
-        },
-        success: function (label, element) {
-        var fieldId = $(element).attr("id");
-        if (fieldId === "Email") {
-        $("#emailError").empty();
-        $(element).removeClass("input-error");
-        } else if (fieldId === "Password") {
-        $("#passwordError").empty();
-        $(element).removeClass("input-error");
-        }
-        },
-        highlight: function (element, errorClass, validClass) {
-        $(element).addClass(errorClass).removeClass(validClass);
-        $(element).closest('.form-group').addClass('has-error');
-        },
-        unhighlight: function (element, errorClass, validClass) {
-        $(element).removeClass(errorClass).addClass(validClass);
-        $(element).closest('.form-group').removeClass('has-error');
-        },
-        submitHandler: function (form) {
-        // Show loading state
-        var $btn = $("#submitBtn");
-        var $spinner = $btn.find(".spinner-border");
-        var $btnText = $btn.find("span:first");
-
-        $btn.prop("disabled", true);
-        $spinner.show();
-        $btnText.text("@Localizer["Processing"]");
-
-        // Clear previous server errors
-        $(".server-errors").hide().empty();
-        $("#clientErrors").hide();
-
-        // Submit the form
-        form.submit();
-        },
-        invalidHandler: function (event, validator) {
-        // Scroll to first error
-        var firstError = validator.errorList[0];
-        if (firstError) {
-        $('html, body').animate({
-        scrollTop: $(firstError.element).offset().top - 100
-        }, 500);
-        $(firstError.element).focus();
-        }
-
-        // Show client error message
-        var errorCount = validator.numberOfInvalids();
-        if (errorCount > 0) {
-        $("#clientErrorMessage").text("@Localizer["PleaseFixErrors"] " + errorCount + " @Localizer["ErrorsFound"]");
-        $("#clientErrors").fadeIn();
-        setTimeout(function () {
-        $("#clientErrors").fadeOut();
-        }, 5000);
-        }
-        }
-        });
-
         // =====================================================
-        // REAL-TIME FIELD VALIDATION
+        // REAL-TIME FIELD VALIDATION WITH ANIMATION
         // =====================================================
 
-        // Email real-time validation
+        // Email real-time validation with visual feedback
         $("#Email").on("input blur", function () {
         var email = $(this).val();
         var emailRegex = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var $field = $(this);
+        var $errorSpan = $("#emailError");
 
         if (email && !emailRegex.test(email)) {
-        $("#emailError").html("@Localizer["InvalidEmail"]");
-        $(this).addClass("input-error");
+        $errorSpan.html("@Localizer["InvalidEmail"]").fadeIn(200);
+        $field.addClass("input-error is-invalid").removeClass("is-valid");
+        $field.css("border-color", "#ef4444");
         } else if (email === "") {
-        $("#emailError").html("@Localizer["EmailRequired"]");
-        $(this).addClass("input-error");
+        $errorSpan.html("@Localizer["EmailRequired"]").fadeIn(200);
+        $field.addClass("input-error is-invalid").removeClass("is-valid");
+        $field.css("border-color", "#ef4444");
+        } else if (email && emailRegex.test(email)) {
+        $errorSpan.html("").fadeOut(200);
+        $field.removeClass("input-error is-invalid").addClass("is-valid");
+        $field.css("border-color", "#10b981");
         } else {
-        $("#emailError").empty();
-        $(this).removeClass("input-error");
+        $errorSpan.html("").fadeOut(200);
+        $field.removeClass("input-error is-invalid is-valid");
+        $field.css("border-color", "");
         }
 
-        // Trigger full validation
         $("#loginForm").validate().element($(this));
         });
 
-        // Password real-time validation
+        // Password real-time validation with visual feedback
         $("#Password").on("input blur", function () {
         var password = $(this).val();
+        var $field = $(this);
+        var $errorSpan = $("#passwordError");
 
         if (password && password.length < 6) {
-        $("#passwordError").html("@Localizer["PasswordMinLength"]");
-        $(this).addClass("input-error");
+        $errorSpan.html("@Localizer["PasswordMinLength"]").fadeIn(200);
+        $field.addClass("input-error is-invalid").removeClass("is-valid");
+        $field.css("border-color", "#ef4444");
         } else if (password === "") {
-        $("#passwordError").html("@Localizer["PasswordRequired"]");
-        $(this).addClass("input-error");
+        $errorSpan.html("@Localizer["PasswordRequired"]").fadeIn(200);
+        $field.addClass("input-error is-invalid").removeClass("is-valid");
+        $field.css("border-color", "#ef4444");
+        } else if (password && password.length >= 6) {
+        $errorSpan.html("").fadeOut(200);
+        $field.removeClass("input-error is-invalid").addClass("is-valid");
+        $field.css("border-color", "#10b981");
         } else {
-        $("#passwordError").empty();
-        $(this).removeClass("input-error");
+        $errorSpan.html("").fadeOut(200);
+        $field.removeClass("input-error is-invalid is-valid");
+        $field.css("border-color", "");
         }
 
-        // Trigger full validation
         $("#loginForm").validate().element($(this));
         });
 
-        // =====================================================
-        // PASSWORD TOGGLE VISIBILITY
-        // =====================================================
-
-        $("#togglePassword").click(function () {
-        var passwordInput = $("#Password");
-        var icon = $(this).find("i");
-
-        if (passwordInput.attr("type") === "password") {
-        passwordInput.attr("type", "text");
-        icon.removeClass("bi-eye-slash").addClass("bi-eye");
-        } else {
-        passwordInput.attr("type", "password");
-        icon.removeClass("bi-eye").addClass("bi-eye-slash");
-        }
-        });
-
-        // =====================================================
-        // PREVENT MULTIPLE SUBMISSIONS
-        // =====================================================
-
-        $("#loginForm").on("submit", function (e) {
-        var $btn = $("#submitBtn");
-        if ($btn.prop("disabled")) {
-        e.preventDefault();
-        return false;
-        }
-        });
-
-        // =====================================================
-        // CLEAR ERRORS ON INPUT
-        // =====================================================
-
+        // Clear errors on focus with smooth animation
         $(".form-control-custom").on("focus", function () {
-        $(this).removeClass("input-error");
-        $(this).closest('.form-group').find('.field-error').empty();
-        $("#clientErrors").fadeOut();
-        $(".server-errors").fadeOut();
-        });
+        $(this).css("transition", "all 0.2s ease");
+        $(this).closest('.form-group').find('.field-error').fadeOut(150);
+        $("#clientErrors").fadeOut(200);
+
+        // Remove error styling if user starts typing
+        if ($(this).val().trim() !== "") {
+        $(this).removeClass("input-error is-invalid");
+        }
         });
     </script>
 

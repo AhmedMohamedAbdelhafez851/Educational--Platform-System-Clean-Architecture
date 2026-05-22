@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="PageTitle" xml:space="preserve"><value>روابط الدعوة</value></data>
+	<data name="PageSubtitle" xml:space="preserve"><value>إنشاء وإدارة روابط دعوة الامتحانات للطلاب</value></data>
+	<data name="GenerateNewLink" xml:space="preserve"><value>إنشاء رابط جديد</value></data>
+	<data name="BackToExams" xml:space="preserve"><value>رجوع إلى الامتحانات</value></data>
+	<data name="NoInvitations" xml:space="preserve"><value>لا توجد روابط دعوة</value></data>
+	<data name="NoInvitationsMessage" xml:space="preserve"><value>انقر على "إنشاء رابط جديد" لإنشاء أول رابط دعوة للامتحان</value></data>
+	<data name="Active" xml:space="preserve"><value>نشط</value></data>
+	<data name="Inactive" xml:space="preserve"><value>غير نشط</value></data>
+	<data name="Copy" xml:space="preserve"><value>نسخ</value></data>
+	<data name="Copied" xml:space="preserve"><value>تم النسخ</value></data>
+	<data name="Copied!" xml:space="preserve"><value>تم النسخ!</value></data>
+	<data name="LinkCopied" xml:space="preserve"><value>تم نسخ الرابط إلى الحافظة</value></data>
+	<data name="CreatedAt" xml:space="preserve"><value>تاريخ الإنشاء</value></data>
+	<data name="ExpiresAt" xml:space="preserve"><value>ينتهي في</value></data>
+	<data name="Never" xml:space="preserve"><value>أبداً</value></data>
+	<data name="AttemptsUsed" xml:space="preserve"><value>المحاولات</value></data>
+	<data name="Disable" xml:space="preserve"><value>تعطيل</value></data>
+	<data name="Enable" xml:space="preserve"><value>تفعيل</value></data>
+	<data name="ViewAttempts" xml:space="preserve"><value>عرض المحاولات</value></data>
+	<data name="ExpirationDate" xml:space="preserve"><value>تاريخ الانتهاء (اختياري)</value></data>
+	<data name="ExpirationHelp" xml:space="preserve"><value>اتركه فارغاً لعدم وجود تاريخ انتهاء</value></data>
+	<data name="MaxAttempts" xml:space="preserve"><value>الحد الأقصى للمحاولات لكل طالب</value></data>
+	<data name="MaxAttemptsHelp" xml:space="preserve"><value>كم مرة يمكن للطالب أداء هذا الامتحان</value></data>
+	<data name="Cancel" xml:space="preserve"><value>إلغاء</value></data>
+	<data name="Generate" xml:space="preserve"><value>إنشاء</value></data>
+	<data name="Generating" xml:space="preserve"><value>جاري الإنشاء</value></data>
+	<data name="Error" xml:space="preserve"><value>خطأ</value></data>
+</root>

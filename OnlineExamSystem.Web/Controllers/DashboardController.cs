@@ -5,7 +5,7 @@ using OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDashboar
 
 namespace OnlineExamSystem.Web.Controllers
 {
-    [Authorize(Roles = "Admin,Teacher")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
     public class DashboardController : Controller
     {
         private readonly IMediator _mediator;

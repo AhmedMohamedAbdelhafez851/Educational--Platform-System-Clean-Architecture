@@ -1,5 +1,5 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
-@using System.Globalization
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 @model IEnumerable<OnlineExamSystem.Application.DTOs.Exam.ExamListDto>
 
@@ -110,18 +110,17 @@
     <div class="card shadow border-0">
 
         <!-- Header -->
-        <div class="card-header bg-gradient d-flex justify-content-between align-items-center py-3">
-            <h3 class="mb-0 fw-bold text-primary">
+        <div class="card-header d-flex justify-content-between align-items-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 1rem 1rem 0 0;">
+            <h3 class="mb-0 fw-bold text-white">
                 @Localizer["ExamManagement"]
             </h3>
 
             <button type="button"
-                    class="btn btn-primary btn-lg px-4 rounded-pill shadow-sm d-flex align-items-center gap-2"
+                    class="btn btn-light btn-lg px-4 rounded-pill shadow-sm d-flex align-items-center gap-2"
                     data-bs-toggle="modal"
-                    data-bs-target="#createExamModal">
-
+                    data-bs-target="#createExamModal"
+                    style="background: white; color: #667eea; border: none;">
                 <i class="bi bi-plus-circle fs-5"></i>
-
                 <span class="fw-semibold">
                     @Localizer["CreateExam"]
                 </span>
@@ -206,98 +205,125 @@
     </div>
 </div>
 
+<!-- ===================================================== -->
 <!-- CREATE MODAL -->
+<!-- ===================================================== -->
 <div class="modal fade" id="createExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-primary text-white">
-                <h5 class="modal-title">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 1rem; overflow: hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: 1.25rem 1.5rem;">
+                <h5 class="modal-title text-white fw-semibold">
                     <i class="bi bi-plus-circle me-2"></i>
                     @Localizer["CreateNewExam"]
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <form id="createExamForm">
-                <div class="modal-body p-4">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="examTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required>
+                <div class="modal-body p-4" style="background: #ffffff;">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="examTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="examTitle">@Localizer["ExamTitle"]</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="examTime" name="DurationInMinutes" placeholder="@Localizer["TimePlaceholder"]" min="1" required>
+                    <div class="form-floating mb-4">
+                        <input type="number" class="form-control" id="examTime" name="DurationInMinutes" placeholder="@Localizer["TimePlaceholder"]" min="1" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="examTime">@Localizer["TimePlaceholder"]</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="examDegree" name="TotalDegree" placeholder="@Localizer["DegreePlaceholder"]" min="1" required>
+                        <input type="number" class="form-control" id="examDegree" name="TotalDegree" placeholder="@Localizer["DegreePlaceholder"]" min="1" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="examDegree">@Localizer["DegreePlaceholder"]</label>
                     </div>
                 </div>
-                <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
-                    <button type="submit" class="btn btn-primary"><i class="bi bi-save me-1"></i> @Localizer["Save"]</button>
+
+                <div class="modal-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 1rem 1.5rem;">
+                    <button type="button" class="btn px-4 py-2" data-bs-dismiss="modal" style="background: #f1f5f9; color: #64748b; border-radius: 0.75rem;">
+                        <i class="bi bi-x-lg me-1"></i> @Localizer["Cancel"]
+                    </button>
+                    <button type="submit" class="btn px-4 py-2" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0.75rem; border: none;">
+                        <i class="bi bi-save me-1"></i> @Localizer["Save"]
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+<!-- ===================================================== -->
 <!-- EDIT MODAL -->
+<!-- ===================================================== -->
 <div class="modal fade" id="editExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-warning">
-                <h5 class="modal-title">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 1rem; overflow: hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: 1.25rem 1.5rem;">
+                <h5 class="modal-title text-white fw-semibold">
                     <i class="bi bi-pencil-square me-2"></i>
                     @Localizer["UpdateExam"]
                 </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <form id="editExamForm">
-                <div class="modal-body p-4">
+                <div class="modal-body p-4" style="background: #ffffff;">
                     <input type="hidden" id="editExamId" name="Id">
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="editExamTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required>
+
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="editExamTitle" name="Title" placeholder="@Localizer["ExamTitle"]" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="editExamTitle">@Localizer["ExamTitle"]</label>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="editExamTime" name="DurationInMinutes" min="1" required>
+                    <div class="form-floating mb-4">
+                        <input type="number" class="form-control" id="editExamTime" name="DurationInMinutes" min="1" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="editExamTime">@Localizer["TimePlaceholder"]</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="number" class="form-control" id="editExamDegree" name="TotalDegree" min="1" required>
+                        <input type="number" class="form-control" id="editExamDegree" name="TotalDegree" min="1" required style="border-radius: 0.75rem; border: 1.5px solid #e2e8f0;">
                         <label for="editExamDegree">@Localizer["DegreePlaceholder"]</label>
                     </div>
                 </div>
-                <div class="modal-footer bg-light">
-                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
-                    <button type="submit" class="btn btn-warning"><i class="bi bi-save me-1"></i> @Localizer["UpdateExam"]</button>
+
+                <div class="modal-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0; padding: 1rem 1.5rem;">
+                    <button type="button" class="btn px-4 py-2" data-bs-dismiss="modal" style="background: #f1f5f9; color: #64748b; border-radius: 0.75rem;">
+                        <i class="bi bi-x-lg me-1"></i> @Localizer["Cancel"]
+                    </button>
+                    <button type="submit" class="btn px-4 py-2" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 0.75rem; border: none;">
+                        <i class="bi bi-save me-1"></i> @Localizer["Save"]
+                    </button>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+<!-- ===================================================== -->
 <!-- DELETE MODAL -->
+<!-- ===================================================== -->
 <div class="modal fade" id="deleteExamModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-            <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title">
+        <div class="modal-content border-0 shadow" style="border-radius: 1rem; overflow: hidden;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); border: none; padding: 1.25rem 1.5rem;">
+                <h5 class="modal-title text-white fw-semibold">
                     <i class="bi bi-exclamation-triangle-fill me-2"></i>
                     @Localizer["ConfirmDelete"]
                 </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 text-center">
-                <i class="bi bi-trash-fill text-danger" style="font-size:3rem;"></i>
-                <p class="mt-3 fs-5">
+            <div class="modal-body p-4 text-center" style="background: #ffffff;">
+                <div class="mb-3">
+                    <i class="bi bi-trash-fill text-danger" style="font-size: 3rem;"></i>
+                </div>
+                <p class="mb-0 fs-5">
                     @Localizer["DeleteConfirmation"]
                     "<span id="deleteExamTitle" class="fw-bold"></span>" ?
                 </p>
+                <div class="alert alert-warning mt-3" style="border-radius: 0.75rem;">
+                    <i class="bi bi-exclamation-circle-fill me-2"></i>
+                    <small>@Localizer["DeleteWarning"]</small>
+                </div>
             </div>
-            <div class="modal-footer bg-light">
-                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">@Localizer["Cancel"]</button>
-                <button type="button" class="btn btn-danger" id="confirmDeleteExam">
+            <div class="modal-footer" style="background: #f8fafc; border-top: 1px solid #e2e8f0;">
+                <button type="button" class="btn px-4 py-2" data-bs-dismiss="modal" style="background: #f1f5f9; color: #64748b; border-radius: 0.75rem;">
+                    <i class="bi bi-x-lg me-1"></i> @Localizer["Cancel"]
+                </button>
+                <button type="button" class="btn px-4 py-2" id="confirmDeleteExam" style="background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); color: white; border-radius: 0.75rem; border: none;">
                     <i class="bi bi-trash-fill me-1"></i> @Localizer["Delete"]
                 </button>
             </div>
@@ -314,6 +340,7 @@
         $(document).ready(function () {
         var isRtl = @(isRtl ? "true" : "false");
 
+        // Initialize DataTable
         $('#examsTable').DataTable({
         responsive: true,
         pageLength: 10,
@@ -335,22 +362,34 @@
         } : {}
         });
 
-        // CREATE
+        // =====================================================
+        // CREATE EXAM
+        // =====================================================
         $("#createExamForm").submit(function (e) {
         e.preventDefault();
+        var $form = $(this);
+        var $submitBtn = $form.find('button[type="submit"]');
+
+        $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> Creating...');
+
         $.ajax({
-        url: '/Exam/Create',
+        url: '@Url.Action("Create", "Exam")',
         type: 'POST',
-        data: $(this).serialize(),
+        data: $form.serialize(),
         success: function () {
         $('#createExamModal').modal('hide');
         location.reload();
         },
-        error: function (xhr) { alert(xhr.responseText); }
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $submitBtn.prop('disabled', false).html('<i class="bi bi-save me-1"></i> @Localizer["Save"]');
+        }
         });
         });
 
+        // =====================================================
         // OPEN EDIT
+        // =====================================================
         $(document).on("click", ".edit-exam-btn", function () {
         $("#editExamId").val($(this).data("id"));
         $("#editExamTitle").val($(this).data("title"));
@@ -359,42 +398,63 @@
         $("#editExamModal").modal("show");
         });
 
-        // EDIT
+        // =====================================================
+        // EDIT EXAM
+        // =====================================================
         $("#editExamForm").submit(function (e) {
         e.preventDefault();
-        let examId = $("#editExamId").val();
+        var examId = $("#editExamId").val();
+        var $form = $(this);
+        var $submitBtn = $form.find('button[type="submit"]');
+
+        $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> Updating...');
+
         $.ajax({
-        url: '/Exam/Edit/' + examId,
+        url: '@Url.Action("Edit", "Exam")/' + examId,
         type: 'POST',
-        data: $(this).serialize(),
+        data: $form.serialize(),
         success: function () {
         $('#editExamModal').modal('hide');
         location.reload();
         },
-        error: function (xhr) { alert(xhr.responseText); }
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $submitBtn.prop('disabled', false).html('<i class="bi bi-save me-1"></i> @Localizer["Save"]');
+        }
         });
         });
 
+        // =====================================================
         // OPEN DELETE
+        // =====================================================
         $(document).on("click", ".delete-exam-btn", function () {
-        let examId = $(this).data("id");
-        let examTitle = $(this).data("title");
+        var examId = $(this).data("id");
+        var examTitle = $(this).data("title");
         $("#deleteExamTitle").text(examTitle);
         $("#confirmDeleteExam").data("id", examId);
         $("#deleteExamModal").modal("show");
         });
 
-        // DELETE
+        // =====================================================
+        // DELETE EXAM
+        // =====================================================
         $("#confirmDeleteExam").click(function () {
-        let examId = $(this).data("id");
+        var examId = $(this).data("id");
+        var $btn = $(this);
+
+        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> Deleting...');
+
         $.ajax({
-        url: '/Exam/Delete/' + examId,
+        url: '@Url.Action("Delete", "Exam")/' + examId,
         type: 'POST',
         success: function () {
         $('#deleteExamModal').modal('hide');
         location.reload();
         },
-        error: function (xhr) { alert(xhr.responseText); }
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $btn.prop('disabled', false).html('<i class="bi bi-trash-fill me-1"></i> @Localizer["Delete"]');
+        }
         });
         });
         });

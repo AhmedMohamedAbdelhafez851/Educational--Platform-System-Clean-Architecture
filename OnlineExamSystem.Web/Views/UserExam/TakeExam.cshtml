@@ -5,15 +5,17 @@
 
 @{
     ViewData["Title"] = $"{Localizer["TakeExam"]} - {Model.Title}";
+    Layout = null;
     var isRtl = CultureInfo.CurrentUICulture.Name == "ar-EG";
     var examDuration = Model.DurationInMinutes * 60;
+    var fingerprint = Guid.NewGuid().ToString();
 }
 
 <!DOCTYPE html>
 <html lang="@CultureInfo.CurrentUICulture.Name" dir="@(isRtl ? "rtl" : "ltr")">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>@ViewData["Title"] - Examify</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -21,21 +23,219 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="~/css/pages/take-exam.css" rel="stylesheet" />
+
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: @(isRtl ? "'Cairo', 'Inter', sans-serif" : "'Inter', 'Cairo', sans-serif");
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+            }
+
+            .exam-container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 1.5rem;
+            }
+
+            .exam-header {
+                background: white;
+                border-radius: 20px;
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 1.5rem;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            }
+
+            .exam-title {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: #1e293b;
+                margin-bottom: 0.25rem;
+            }
+
+            .timer-card {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                border-radius: 16px;
+                padding: 1rem;
+                text-align: center;
+                color: white;
+            }
+
+                .timer-card.warning {
+                    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+                }
+
+                .timer-card.danger {
+                    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+                    animation: pulse 1s infinite;
+                }
+
+            @@keyframes pulse {
+                0%, 100% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 0.85;
+                }
+            }
+
+            .timer-value {
+                font-size: 2rem;
+                font-weight: 700;
+                font-family: monospace;
+            }
+
+            .question-card {
+                background: white;
+                border-radius: 16px;
+                padding: 1.25rem;
+                margin-bottom: 1rem;
+                border: 2px solid #e2e8f0;
+                transition: all 0.2s ease;
+            }
+
+                .question-card.answered {
+                    border-left: 4px solid #10b981;
+                }
+
+            .choice-item {
+                padding: 0.75rem 1rem;
+                border: 2px solid #e2e8f0;
+                border-radius: 12px;
+                margin-bottom: 0.75rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+            }
+
+                .choice-item:hover {
+                    border-color: #667eea;
+                    background: #eff6ff;
+                }
+
+                .choice-item.selected {
+                    border-color: #10b981;
+                    background: #f0fdf4;
+                }
+
+            .nav-question {
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                cursor: pointer;
+                border: 2px solid #e2e8f0;
+                background: white;
+                transition: all 0.2s ease;
+            }
+
+                .nav-question.answered {
+                    background: #10b981;
+                    border-color: #10b981;
+                    color: white;
+                }
+
+                .nav-question.current {
+                    background: #667eea;
+                    border-color: #667eea;
+                    color: white;
+                }
+
+            .submit-btn {
+                background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 16px;
+                transition: all 0.2s ease;
+            }
+
+                .submit-btn:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 10px 20px -5px rgba(16,185,129,0.4);
+                }
+
+            .fullscreen-badge {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: rgba(0,0,0,0.6);
+                color: white;
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-size: 11px;
+                z-index: 1000;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                backdrop-filter: blur(5px);
+            }
+
+                .fullscreen-badge:hover {
+                    background: #667eea;
+                }
+
+            .exam-footer {
+                text-align: center;
+                padding: 1rem;
+                font-size: 12px;
+                color: #94a3b8;
+                margin-top: 1rem;
+            }
+
+            .security-note {
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                background: rgba(0,0,0,0.5);
+                color: #94a3b8;
+                padding: 4px 10px;
+                border-radius: 20px;
+                font-size: 10px;
+                z-index: 1000;
+            }
+            @@media (max-width: 768px) {
+                .exam-container {
+                    padding: 1rem;
+                }
+
+                .timer-value {
+                    font-size: 1.5rem;
+                }
+
+                .nav-question {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 0.875rem;
+                }
+
+                .fullscreen-badge, .security-note {
+                    display: none;
+                }
+            }
+    </style>
 </head>
 <body>
     <div class="exam-container">
         <div class="exam-header">
             <div class="row align-items-center">
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <h1 class="exam-title">@Model.Title</h1>
-                    <p class="text-muted mb-0"><i class="bi bi-question-circle"></i> @Model.Questions.Count questions</p>
-                    <p class="text-muted mb-0"><i class="bi bi-clock-history"></i> Duration: @Model.DurationInMinutes minutes</p>
+                    <p class="text-muted mb-0"><i class="bi bi-question-circle"></i> @Localizer["QuestionsCount"]: @Model.Questions.Count</p>
+                    <p class="text-muted mb-0"><i class="bi bi-clock-history"></i> @Localizer["Duration"]: @Model.DurationInMinutes @Localizer["Minutes"]</p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="timer-card" id="timerCard">
-                        <div class="timer-label"><i class="bi bi-hourglass-split"></i> Time Remaining</div>
+                        <div class="timer-label"><i class="bi bi-hourglass-split"></i> @Localizer["TimeRemaining"]</div>
                         <div class="timer-value" id="timeDisplay">--:--</div>
-                        <div class="timer-label mt-1" style="font-size: 0.7rem;">The exam will auto-submit when time expires</div>
                     </div>
                 </div>
             </div>
@@ -46,6 +246,7 @@
                 <form id="examForm">
                     <input type="hidden" name="examId" value="@Model.ExamId" />
                     <input type="hidden" name="attemptId" value="@ViewBag.AttemptId" />
+                    <input type="hidden" name="fingerprint" id="fingerprint" value="@fingerprint" />
 
                     <div id="questionsContainer">
                         @foreach (var question in Model.Questions.OrderBy(q => q.QuestionId))
@@ -66,7 +267,7 @@
                                                    id="q_@(question.QuestionId)_@(choice.ChoiceId)"
                                                    class="choice-radio"
                                                    style="display: none;" />
-                                            <label for="q_@(question.QuestionId)_@(choice.ChoiceId)" style="cursor: pointer; width: 100%; display: block;">
+                                            <label for="q_@(question.QuestionId)_@(choice.ChoiceId)" style="cursor: pointer; width: 100%; display: block; margin: 0;">
                                                 @choice.Text
                                             </label>
                                         </div>
@@ -78,7 +279,7 @@
 
                     <div class="text-center mt-4">
                         <button type="button" class="btn btn-success btn-lg submit-btn" id="submitExamBtn">
-                            <i class="bi bi-check2-circle me-2"></i> Submit Exam
+                            <i class="bi bi-check2-circle me-2"></i> @Localizer["SubmitExam"]
                         </button>
                     </div>
                 </form>
@@ -86,7 +287,7 @@
 
             <div class="col-lg-4">
                 <div class="exam-header">
-                    <h6 class="fw-bold mb-3"><i class="bi bi-grid-3x3-gap-fill me-2"></i> Question Navigator</h6>
+                    <h6 class="fw-bold mb-3"><i class="bi bi-grid-3x3-gap-fill me-2"></i> @Localizer["QuestionNavigator"]</h6>
                     <div class="d-flex flex-wrap gap-2" id="questionNavigator">
                         @for (int i = 0; i < Model.Questions.Count; i++)
                         {
@@ -95,30 +296,44 @@
                     </div>
                     <hr class="my-3" />
                     <div class="d-flex justify-content-between">
-                        <span><i class="bi bi-check-circle-fill text-success"></i> Answered</span>
+                        <span><i class="bi bi-check-circle-fill text-success"></i> @Localizer["Answered"]</span>
                         <span id="answeredCount">0 / @Model.Questions.Count</span>
                     </div>
-                    <div class="progress mt-2" style="height: 5px;">
+                    <div class="progress mt-2" style="height: 6px;">
                         <div id="answeredProgress" class="progress-bar bg-success" style="width: 0%"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="exam-footer">
+            <small><i class="bi bi-shield-check"></i> @Localizer["SecurityMessage"]</small>
+        </div>
     </div>
 
-    <div id="timeOverlay" class="time-overlay">
+    <div id="timeOverlay" class="time-overlay" style="display: none;">
         <div class="text-center">
             <i class="bi bi-hourglass-bottom" style="font-size: 4rem;"></i>
-            <h2 class="mt-3">Time's Up!</h2>
-            <p>Your exam time has expired. Submitting your answers...</p>
+            <h2 class="mt-3">@Localizer["TimeIsUp"]</h2>
+            <p>@Localizer["AutoSubmitting"]</p>
             <div class="spinner-border mt-3" role="status"></div>
         </div>
+    </div>
+
+    <div class="fullscreen-badge" id="fullscreenBadge">
+        <i class="bi bi-arrows-fullscreen"></i> <span id="fullscreenText">@Localizer["FullscreenRecommended"]</span>
+    </div>
+    <div class="security-note">
+        <i class="bi bi-shield-lock"></i> @Localizer["SecureExam"]
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(document).ready(function () {
+        // =====================================================
+        // CONFIGURATION
+        // =====================================================
         var examDurationSeconds = @examDuration;
         var totalQuestions = @Model.Questions.Count;
         var timeLeft = examDurationSeconds;
@@ -126,9 +341,58 @@
         var userAnswers = {};
         var timerInterval;
         var isSubmitting = false;
-        var warningShown = false;
-        var dangerShown = false;
+        var hasSubmitted = false;
+        var violationCount = 0;
 
+        // =====================================================
+        // GENERATE UNIQUE DEVICE FINGERPRINT
+        // =====================================================
+        function generateDeviceFingerprint() {
+        var fingerprint = {
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        platform: navigator.platform,
+        screenResolution: screen.width + 'x' + screen.height,
+        timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+        touchSupport: 'ontouchstart' in window
+        };
+        return btoa(JSON.stringify(fingerprint));
+        }
+
+        var deviceFingerprint = generateDeviceFingerprint();
+        $('#fingerprint').val(deviceFingerprint);
+
+        // Send fingerprint to server (optional - can be added to SubmitExam)
+
+        // =====================================================
+        // GENTLE FULLSCREEN (User controls, no force)
+        // =====================================================
+        function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+        console.log('Fullscreen not supported');
+        });
+        $('#fullscreenText').text('@Localizer["ExitFullscreen"]');
+        } else {
+        document.exitFullscreen();
+        $('#fullscreenText').text('@Localizer["FullscreenRecommended"]');
+        }
+        }
+
+        $('#fullscreenBadge').click(toggleFullscreen);
+
+        // Track fullscreen changes silently (no alerts)
+        document.addEventListener('fullscreenchange', function () {
+        if (document.fullscreenElement) {
+        $('#fullscreenText').text('@Localizer["ExitFullscreen"]');
+        } else {
+        $('#fullscreenText').text('@Localizer["FullscreenRecommended"]');
+        }
+        });
+
+        // =====================================================
+        // SAVE & RESTORE ANSWERS
+        // =====================================================
         var savedAnswers = sessionStorage.getItem('exam_@Model.ExamId');
         if (savedAnswers) {
         userAnswers = JSON.parse(savedAnswers);
@@ -147,31 +411,36 @@
         }
 
         function saveAnswers() {
+        if (!hasSubmitted) {
         sessionStorage.setItem('exam_@Model.ExamId', JSON.stringify(userAnswers));
         }
+        }
 
+        function clearAnswers() {
+        sessionStorage.removeItem('exam_@Model.ExamId');
+        }
+
+        // =====================================================
+        // TIMER (Gentle, no annoying alerts)
+        // =====================================================
         function startTimer() {
         updateTimerDisplay();
         timerInterval = setInterval(function () {
         if (timeLeft <= 0) {
         clearInterval(timerInterval);
-        if (!isSubmitting) {
+        if (!isSubmitting && !hasSubmitted) {
         submitExam(true);
         }
         } else {
         timeLeft--;
         updateTimerDisplay();
 
-        if (timeLeft <= examDurationSeconds * 0.3 && !warningShown && timeLeft > 60) {
-        warningShown = true;
+        // Visual warnings only (no popups)
+        if (timeLeft <= examDurationSeconds * 0.3 && !$('#timerCard').hasClass('warning')) {
         $('#timerCard').addClass('warning');
-        showToast('warning', 'Time Warning', '30% of your time remaining!');
         }
-
-        if (timeLeft <= examDurationSeconds * 0.1 && !dangerShown && timeLeft > 0) {
-        dangerShown = true;
+        if (timeLeft <= examDurationSeconds * 0.1 && !$('#timerCard').hasClass('danger')) {
         $('#timerCard').removeClass('warning').addClass('danger');
-        showToast('danger', 'Time Critical!', 'Less than 10% of time remaining!');
         }
         }
         }, 1000);
@@ -191,26 +460,11 @@
         $('#answeredProgress').css('width', (answered / totalQuestions * 100) + '%');
         }
 
-        function showToast(type, title, message) {
-        var bgClass = type === 'warning' ? 'bg-warning' : 'bg-danger';
-        var toastHtml = `
-        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 9999;">
-        <div class="toast align-items-center text-white ${bgClass} border-0 show" role="alert">
-        <div class="d-flex">
-        <div class="toast-body">
-        <strong>${title}</strong><br>${message}
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
-        </div>
-        </div>
-        </div>
-        `;
-        $('body').append(toastHtml);
-        setTimeout(function () { $('.position-fixed').last().remove(); }, 5000);
-        }
-
+        // =====================================================
+        // ANSWER SELECTION
+        // =====================================================
         $('.choice-item').click(function () {
-        if (isSubmitting) return;
+        if (isSubmitting || hasSubmitted) return;
         var $choice = $(this);
         var questionId = $choice.data('question-id');
         var choiceId = $choice.data('choice-id');
@@ -231,6 +485,9 @@
         updateAnsweredCount();
         });
 
+        // =====================================================
+        // QUESTION NAVIGATOR
+        // =====================================================
         $('.nav-question').click(function () {
         var index = $(this).data('index');
         $('.nav-question').removeClass('current');
@@ -238,19 +495,24 @@
         $('html, body').animate({
         scrollTop: $('.question-card[data-index="' + index + '"]').offset().top - 100
         }, 500);
-        setTimeout(function () { $('.nav-question').removeClass('current'); }, 2000);
+        setTimeout(function () { $('.nav-question').removeClass('current'); }, 1500);
         });
 
+        // =====================================================
+        // SUBMIT EXAM
+        // =====================================================
         function submitExam(isAutoSubmit) {
-        if (isSubmitting) return;
+        if (isSubmitting || hasSubmitted) return;
         isSubmitting = true;
+        hasSubmitted = true;
 
         if (isAutoSubmit) {
         $('#timeOverlay').css('display', 'flex');
         }
 
         var $btn = $('#submitExamBtn');
-        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> Submitting...');
+        var originalText = $btn.html();
+        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["Submitting"]...');
 
         $.ajax({
         url: '@Url.Action("SubmitExam", "UserExam")',
@@ -258,46 +520,108 @@
         data: {
         examId: @Model.ExamId,
         answers: userAnswers,
-        attemptId: '@ViewBag.AttemptId'
+        attemptId: '@ViewBag.AttemptId',
+        fingerprint: deviceFingerprint
         },
         success: function (response) {
         if (response.success) {
-        sessionStorage.removeItem('exam_@Model.ExamId');
+        clearAnswers();
         window.location.href = '@Url.Action("ViewResult", "UserExam")/' + response.submissionId;
         } else {
-        alert('Error: ' + response.message);
-        $btn.prop('disabled', false).html('<i class="bi bi-check2-circle me-2"></i> Submit Exam');
+        showGentleNotification('@Localizer["SubmitError"]', response.message);
+        $btn.prop('disabled', false).html(originalText);
         isSubmitting = false;
+        hasSubmitted = false;
         if (isAutoSubmit) $('#timeOverlay').hide();
         }
         },
         error: function (xhr) {
-        alert('Error submitting exam. Please try again.');
-        $btn.prop('disabled', false).html('<i class="bi bi-check2-circle me-2"></i> Submit Exam');
+        showGentleNotification('@Localizer["SubmitError"]', '@Localizer["PleaseTryAgain"]');
+        $btn.prop('disabled', false).html(originalText);
         isSubmitting = false;
+        hasSubmitted = false;
         if (isAutoSubmit) $('#timeOverlay').hide();
         }
         });
         }
 
+        function showGentleNotification(title, message) {
+        // Gentle toast notification (not intrusive)
+        var toastHtml = '<div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 9999; margin-top: 70px;">' +
+        '<div class="toast align-items-center text-white bg-danger border-0 show" role="alert">' +
+        '<div class="d-flex"><div class="toast-body"><strong>' + title + '</strong><br>' + message + '</div>' +
+        '<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>';
+        $('body').append(toastHtml);
+        setTimeout(function () { $('.position-fixed').last().remove(); }, 4000);
+        }
+
         $('#submitExamBtn').click(function () { submitExam(false); });
 
+        // =====================================================
+        // GENTLE ANTI-CHEATING (No annoying alerts)
+        // =====================================================
+        var tabSwitchCount = 0;
+        var visibilityWarnings = [];
+
+        document.addEventListener('visibilitychange', function () {
+        if (document.hidden && timeLeft > 0 && !isSubmitting && !hasSubmitted) {
+        tabSwitchCount++;
+        visibilityWarnings.push({
+        timestamp: new Date().toISOString(),
+        type: 'tab_switch',
+        count: tabSwitchCount
+        });
+
+        // Store in sessionStorage for server-side logging later
+        sessionStorage.setItem('examViolations', JSON.stringify(visibilityWarnings));
+
+        // Only show after 5 violations (very lenient)
+        if (tabSwitchCount >= 5) {
+        showGentleNotification('تنبيه', 'تم تسجيل عدة خروجات من صفحة الامتحان. يرجى عدم مغادرة الصفحة.');
+        }
+
+        // Auto-submit after 10 violations
+        if (tabSwitchCount >= 10 && !hasSubmitted) {
+        showGentleNotification('تنبيه', 'سيتم تسليم الامتحان تلقائياً');
+        setTimeout(function () { submitExam(true); }, 2000);
+        }
+        }
+        });
+
+        // Prevent right-click (silent)
+        document.addEventListener('contextmenu', function (e) { e.preventDefault(); return false; });
+
+        // Prevent keyboard shortcuts (silent)
+        document.addEventListener('keydown', function (e) {
+        if (e.key === 'F12') { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.shiftKey && e.key === 'I') { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.key === 'u') { e.preventDefault(); return false; }
+        });
+
+        // Block print screen (silent)
+        document.addEventListener('keyup', function (e) {
+        if (e.key === 'PrintScreen') { navigator.clipboard.writeText(''); }
+        });
+
+        // Page leave warning (standard browser behavior)
         window.addEventListener('beforeunload', function (e) {
-        if (Object.keys(userAnswers).length > 0 && timeLeft > 0 && !isSubmitting) {
-        var confirmationMessage = 'You have unsaved answers. Are you sure you want to leave? Your progress will be lost.';
+        if (Object.keys(userAnswers).length > 0 && timeLeft > 0 && !isSubmitting && !hasSubmitted) {
+        var confirmationMessage = '@Localizer["UnsavedWarning"]';
         e.returnValue = confirmationMessage;
         return confirmationMessage;
         }
         });
 
-        startTimer();
-        updateAnsweredCount();
-
+        // Auto-save every 30 seconds
         setInterval(function () {
-        if (Object.keys(userAnswers).length > 0) {
+        if (Object.keys(userAnswers).length > 0 && !hasSubmitted) {
         saveAnswers();
         }
         }, 30000);
+
+        // Start the exam
+        startTimer();
+        updateAnsweredCount();
         });
     </script>
 </body>

@@ -1,6 +1,8 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using OnlineExamSystem.Application.Abstraction;
 using OnlineExamSystem.Application.DTOs.Exam;
 using OnlineExamSystem.Application.Features.Exams.Commands.CreateExam;
 using OnlineExamSystem.Application.Features.Exams.Commands.CreateExamInvitation;
@@ -8,8 +10,8 @@ using OnlineExamSystem.Application.Features.Exams.Commands.DeleteExam;
 using OnlineExamSystem.Application.Features.Exams.Commands.ToggleInvitation;
 using OnlineExamSystem.Application.Features.Exams.Commands.UpdateExam;
 using OnlineExamSystem.Application.Features.Exams.Queries.GetAllExams;
-using OnlineExamSystem.Application.Features.Exams.Queries.GetExamById;
 using OnlineExamSystem.Application.Features.Exams.Queries.GetExamInvitations;
+using OnlineExamSystem.Domains.Entities.OnlineExamSystem.Domains.Entities;
 
 namespace OnlineExamSystem.Web.Controllers
 {
@@ -17,11 +19,14 @@ namespace OnlineExamSystem.Web.Controllers
     public class ExamController : Controller
     {
         private readonly IMediator _mediator;
+        private readonly IUnitOfWork _unitOfWork;  // Add this line
 
-        public ExamController(IMediator mediator)
+        public ExamController(IMediator mediator, IUnitOfWork unitOfWork)  // Add IUnitOfWork parameter
         {
             _mediator = mediator;
+            _unitOfWork = unitOfWork;  // Add this line
         }
+
 
         // =====================================================
         // INDEX
@@ -96,11 +101,29 @@ namespace OnlineExamSystem.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> InvitationAttempts(int id)
         {
-            var invitations = await _mediator.Send(new GetExamInvitationsQuery(0)); // You need to get specific invitation
-            var invitation = invitations.FirstOrDefault(i => i.Id == id);
+            var invitation = await _unitOfWork.Repository<ExamInvitation>()
+                .GetQueryable()
+                .Include(i => i.Attempts)
+                .ThenInclude(a => a.Submission)
+                .FirstOrDefaultAsync(i => i.Id == id);
+
             if (invitation == null) return NotFound();
 
-            return View(invitation.Attempts);
+            var attempts = invitation.Attempts.Select(a => new ExamInvitationAttemptDto
+            {
+                Id = a.Id,
+                StudentName = a.StudentName,
+                StudentEmail = a.StudentEmail,
+                StartedAt = a.StartedAt,
+                CompletedAt = a.CompletedAt,
+                IsCompleted = a.IsCompleted,
+                Score = a.Submission?.Score
+            }).ToList();
+
+            ViewBag.ExamId = invitation.ExamId;
+            return View(attempts);
         }
+    
+
     }
 }

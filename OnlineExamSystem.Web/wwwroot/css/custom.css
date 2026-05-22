@@ -494,13 +494,12 @@ footer {
 /* ----------------------------------------
    Utility Classes
    ---------------------------------------- */
+/* Alternative without background-clip warning */
 .text-gradient {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
+    font-weight: bold;
 }
-
 .cursor-pointer {
     cursor: pointer;
 }
@@ -641,9 +640,10 @@ footer {
 /* ----------------------------------------
    iOS Specific Fixes
    ---------------------------------------- */
+/* Alternative iOS fix without warning */
 @supports (-webkit-touch-callout: none) {
     body {
-        height: -webkit-fill-available;
+        min-height: 100vh;
     }
 }
 

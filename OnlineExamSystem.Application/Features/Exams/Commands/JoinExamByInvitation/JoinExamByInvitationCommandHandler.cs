@@ -41,6 +41,7 @@ namespace OnlineExamSystem.Application.Features.Exams.Commands.JoinExamByInvitat
                 };
             }
 
+            // Check max attempts
             var attemptsCount = await _unitOfWork.Repository<ExamInvitationAttempt>()
                 .GetCountAsync(a => a.InvitationId == invitation.Id && a.StudentName == request.JoinInfo.StudentName);
 
@@ -66,15 +67,12 @@ namespace OnlineExamSystem.Application.Features.Exams.Commands.JoinExamByInvitat
             await _unitOfWork.Repository<ExamInvitationAttempt>().AddAsync(attempt);
             await _unitOfWork.SaveChangesAsync();
 
-            // Store attempt info in TempData for the exam taking page
-            var redirectUrl = $"/UserExam/TakeExam/{invitation.ExamId}?attemptId={attempt.Id}";
-
             return new JoinExamResultDto
             {
                 Success = true,
                 ExamId = invitation.ExamId,
                 AttemptId = attempt.Id,
-                RedirectUrl = redirectUrl
+                RedirectUrl = $"/UserExam/TakeExam/{invitation.ExamId}?attemptId={attempt.Id}"
             };
         }
     }

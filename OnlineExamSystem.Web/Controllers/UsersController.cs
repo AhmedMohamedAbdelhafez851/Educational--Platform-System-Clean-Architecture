@@ -1,256 +1,409 @@
-
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OnlineExamSystem.Application.Abstraction;
 using OnlineExamSystem.Domains.Entities;
 using OnlineExamSystem.Web.ViewModels.UserDTO;
 
-
 namespace OnlineExamSystem.Web.Controllers
 {
-    //[Authorize(Roles ="Admin")]
-    [Authorize(Roles = "SuperAdmin")]
-
     public class UsersController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController( 
-     UserManager<ApplicationUser> userManager,
-     RoleManager<IdentityRole> roleManager,
-     IUnitOfWork unitOfWork) // Add this line
+        public UsersController(
+            UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
+            ILogger<UsersController> logger)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _unitOfWork = unitOfWork; // Add this line
+            _logger = logger;
         }
 
+        // =====================================================
+        // INDEX
+        // =====================================================
 
-        // GET: Users
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var users = _userManager.Users.ToList();
-            var userRoles = new Dictionary<string, IList<string>>();
-
-            foreach (var user in users)
+            try
             {
-                var roles = await _userManager.GetRolesAsync(user);
-                userRoles[user.Id] = roles;
-            }
+                var users = await _userManager.Users
+                    .OrderBy(x => x.FullName)
+                    .ToListAsync();
 
-            ViewBag.UserRoles = userRoles;
-            return View(users);
-        }
+                var userRoles = new Dictionary<string, List<string>>();
 
-        // GET: Users/Details/5
-        public async Task<IActionResult> Details(string id)
-        {
-            if (id == null) return NotFound();
-
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return NotFound();
-
-            var userRoles = await _userManager.GetRolesAsync(user);
-            var allRoles = await _roleManager.Roles.ToListAsync();
-
-            var model = new EditUserRolesViewModel
-            {
-                UserId = user.Id,
-                FullName = user.FullName!,
-                Email = user.Email!,
-                UserRoles = userRoles,
-                AllRoles = allRoles
-            };
-
-            return View(model);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdateUserRoles(EditUserRolesViewModel model)
-        {
-            var user = await _userManager.FindByIdAsync(model.UserId);
-            if (user == null) return NotFound();
-
-            var userRoles = await _userManager.GetRolesAsync(user);
-            var selectedRoles = model.SelectedRoles ?? new List<string>();
-
-            var result = await _userManager.AddToRolesAsync(user, selectedRoles.Except(userRoles));
-            if (!result.Succeeded)
-            {
-                ModelState.AddModelError("", "Failed to add roles.");
-                return View("Details", model);
-            }
-
-            result = await _userManager.RemoveFromRolesAsync(user, userRoles.Except(selectedRoles));
-            if (!result.Succeeded)
-            {
-                ModelState.AddModelError("", "Failed to remove roles.");
-                return View("Details", model);
-            }
-
-            return RedirectToAction(nameof(Details), new { id = user.Id });
-        }
-
-        // GET: Users/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Users/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CreateUserViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var existingUser = await _userManager.FindByEmailAsync(model.Email);
-                if (existingUser != null)
+                foreach (var user in users)
                 {
-                    ModelState.AddModelError("Email", "This email is already in use.");
-                    return View(model);
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    userRoles[user.Id] = roles.ToList();
+                }
+
+                ViewBag.UserRoles = userRoles;
+
+                return View(users);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading users");
+
+                return View(new List<ApplicationUser>());
+            }
+        }
+
+        // =====================================================
+        // CREATE USER
+        // =====================================================
+
+        [HttpPost]
+        public async Task<IActionResult> Create(
+            [FromBody] CreateUserViewModel model)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    var errors = ModelState.Values
+                        .SelectMany(v => v.Errors)
+                        .Select(e => e.ErrorMessage);
+
+                    return Json(new
+                    {
+                        success = false,
+                        message = string.Join(", ", errors)
+                    });
+                }
+
+                var emailExists =
+                    await _userManager.FindByEmailAsync(model.Email);
+
+                if (emailExists != null)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Email already exists"
+                    });
                 }
 
                 var user = new ApplicationUser
                 {
-                    UserName = model.Email,
+                    FullName = model.FullName,
                     Email = model.Email,
-                    FullName = model.FullName
+                    UserName = model.Email,
+                    EmailConfirmed = true
                 };
 
-                var result = await _userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
+                var result =
+                    await _userManager.CreateAsync(
+                        user,
+                        model.Password);
 
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
-            }
-
-            return View(model);
-        }
-
-        // GET: Users/Edit/5
-        public async Task<IActionResult> Edit(string id)
-        {
-            if (id == null) return NotFound();
-
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return NotFound();
-
-            var model = new EditUserViewModel
-            {
-                Id = user.Id,
-                FullName = user.FullName,
-                Email = user.Email!,
-                UserName = user.UserName!
-            };
-
-            return View(model);
-        }
-
-        // POST: Users/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, EditUserViewModel model)
-        {
-            if (id != model.Id) return NotFound();
-
-            var user = await _userManager.FindByIdAsync(id);
-            if (user == null) return NotFound();
-
-            if (ModelState.IsValid)
-            {
-                user.UserName = model.UserName;
-                user.Email = model.Email;
-                user.FullName = model.FullName;
-
-                var result = await _userManager.UpdateAsync(user);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction(nameof(Index));
-                }
-
-                foreach (var error in result.Errors)
-                {
-                    ModelState.AddModelError("", error.Description);
-                }
-            }
-
-            return View(model);
-        }
-
-        // POST: Users/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
-        {
-            using var transaction = await _unitOfWork.BeginTransactionAsync();
-            try
-            {
-                var user = await _userManager.FindByIdAsync(id);
-                if (user == null)
-                {
-                    return Json(new { success = false, message = "User not found." });
-                }
-
-                // 1. Delete UserAnswers and ExamSubmissions
-                var submissions = await _unitOfWork.Repository<ExamSubmission>()
-                    .GetAllIncludingAsync(s => s.Answers)
-                    .Result
-                    .Where(s => s.UserId == user.Id)
-                    .ToListAsync();
-
-                foreach (var submission in submissions)
-                {
-                    // Delete UserAnswers
-                    foreach (var answer in submission.Answers.ToList())
-                    {
-                        await _unitOfWork.Repository<UserAnswer>().DeleteAsync(answer);
-                    }
-                    // Delete ExamSubmission
-                    await _unitOfWork.Repository<ExamSubmission>().DeleteAsync(submission);
-                }
-
-                await _unitOfWork.SaveChangesAsync();
-
-                // 2. Remove user roles
-                var roles = await _userManager.GetRolesAsync(user);
-                if (roles.Any())
-                {
-                    await _userManager.RemoveFromRolesAsync(user, roles);
-                }
-
-                // 3. Delete the user
-                var result = await _userManager.DeleteAsync(user);
                 if (!result.Succeeded)
                 {
-                    throw new Exception("Failed to delete user: " + string.Join(", ", result.Errors.Select(e => e.Description)));
+                    return Json(new
+                    {
+                        success = false,
+                        message = string.Join(
+                            ", ",
+                            result.Errors.Select(x => x.Description))
+                    });
                 }
 
-                transaction.Commit();
+                // DEFAULT ROLE
+                if (await _roleManager.RoleExistsAsync("Student"))
+                {
+                    await _userManager.AddToRoleAsync(user, "Student");
+                }
 
-                return Json(new { success = true });
+                return Json(new
+                {
+                    success = true,
+                    message = "User created successfully"
+                });
             }
             catch (Exception ex)
             {
-                transaction.Rollback();
+                _logger.LogError(ex, "Error creating user");
+
                 return Json(new
                 {
                     success = false,
-                    message = "Error deleting user. Details: " + ex.Message
+                    message = "An error occurred while creating user"
                 });
             }
         }
 
-        // Other controller actions (e.g., Index, Create, Edit) remain unchanged
+        // =====================================================
+        // EDIT USER
+        // =====================================================
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(
+            [FromBody] EditUserViewModel model)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Invalid data"
+                    });
+                }
+
+                var user =
+                    await _userManager.FindByIdAsync(model.Id);
+
+                if (user == null)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "User not found"
+                    });
+                }
+
+                var emailExists =
+                    await _userManager.Users.AnyAsync(x =>
+                        x.Email == model.Email &&
+                        x.Id != model.Id);
+
+                if (emailExists)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Email already exists"
+                    });
+                }
+
+                user.FullName = model.FullName;
+                user.Email = model.Email;
+                user.UserName = model.UserName;
+
+                var result =
+                    await _userManager.UpdateAsync(user);
+
+                if (!result.Succeeded)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = string.Join(
+                            ", ",
+                            result.Errors.Select(x => x.Description))
+                    });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    message = "User updated successfully"
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error editing user");
+
+                return Json(new
+                {
+                    success = false,
+                    message = "An error occurred while updating user"
+                });
+            }
+        }
+
+        // =====================================================
+        // DELETE USER
+        // =====================================================
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            try
+            {
+                var user =
+                    await _userManager.FindByIdAsync(id);
+
+                if (user == null)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "User not found"
+                    });
+                }
+
+                var result =
+                    await _userManager.DeleteAsync(user);
+
+                if (!result.Succeeded)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = string.Join(
+                            ", ",
+                            result.Errors.Select(x => x.Description))
+                    });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    message = "User deleted successfully"
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error deleting user");
+
+                return Json(new
+                {
+                    success = false,
+                    message = "An error occurred while deleting user"
+                });
+            }
+        }
+
+        // =====================================================
+        // GET USER ROLES
+        // =====================================================
+
+        [HttpGet]
+        public async Task<IActionResult> GetUserRoles(string userId)
+        {
+            try
+            {
+                var user =
+                    await _userManager.FindByIdAsync(userId);
+
+                if (user == null)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "User not found"
+                    });
+                }
+
+                var allRoles =
+                    await _roleManager.Roles.ToListAsync();
+
+                var userRoles =
+                    await _userManager.GetRolesAsync(user);
+
+                var roles = allRoles.Select(x => new RoleDto
+                {
+                    Id = x.Id,
+                    Name = x.Name ?? "",
+                    IsAssigned = userRoles.Contains(x.Name!)
+                }).ToList();
+
+                return Json(new
+                {
+                    success = true,
+                    roles
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error loading roles");
+
+                return Json(new
+                {
+                    success = false,
+                    message = "Error loading roles"
+                });
+            }
+        }
+
+        // =====================================================
+        // UPDATE USER ROLES
+        // =====================================================
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateUserRoles(
+            [FromBody] ManageRolesViewModel model)
+        {
+            try
+            {
+                var user =
+                    await _userManager.FindByIdAsync(model.UserId);
+
+                if (user == null)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "User not found"
+                    });
+                }
+
+                var selectedRoles =
+                    model.UserRoles ?? new List<string>();
+
+                var currentRoles =
+                    await _userManager.GetRolesAsync(user);
+
+                var rolesToRemove =
+                    currentRoles.Except(selectedRoles);
+
+                var removeResult =
+                    await _userManager.RemoveFromRolesAsync(
+                        user,
+                        rolesToRemove);
+
+                if (!removeResult.Succeeded)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Failed removing roles"
+                    });
+                }
+
+                var rolesToAdd =
+                    selectedRoles.Except(currentRoles);
+
+                var addResult =
+                    await _userManager.AddToRolesAsync(
+                        user,
+                        rolesToAdd);
+
+                if (!addResult.Succeeded)
+                {
+                    return Json(new
+                    {
+                        success = false,
+                        message = "Failed adding roles"
+                    });
+                }
+
+                return Json(new
+                {
+                    success = true,
+                    message = "Roles updated successfully"
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating roles");
+
+                return Json(new
+                {
+                    success = false,
+                    message = "Error updating roles"
+                });
+            }
+        }
     }
 }

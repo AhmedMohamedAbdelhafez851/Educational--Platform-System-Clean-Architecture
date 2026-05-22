@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="PageTitle" xml:space="preserve"><value>محاولات الطلاب</value></data>
+	<data name="BackToInvitations" xml:space="preserve"><value>رجوع إلى الروابط</value></data>
+	<data name="StudentName" xml:space="preserve"><value>اسم الطالب</value></data>
+	<data name="Email" xml:space="preserve"><value>البريد الإلكتروني</value></data>
+	<data name="StartedAt" xml:space="preserve"><value>تاريخ البدء</value></data>
+	<data name="CompletedAt" xml:space="preserve"><value>تاريخ الإكمال</value></data>
+	<data name="Status" xml:space="preserve"><value>الحالة</value></data>
+	<data name="Score" xml:space="preserve"><value>الدرجة</value></data>
+	<data name="Completed" xml:space="preserve"><value>مكتمل</value></data>
+	<data name="InProgress" xml:space="preserve"><value>قيد التقدم</value></data>
+	<data name="NoAttempts" xml:space="preserve"><value>لا توجد محاولات</value></data>
+	<data name="NoAttemptsMessage" xml:space="preserve"><value>لم يقم أي طالب بأداء هذا الامتحان بعد</value></data>
+</root>

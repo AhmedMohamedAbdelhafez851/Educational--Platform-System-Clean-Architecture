@@ -26,17 +26,10 @@ namespace OnlineExamSystem.Web.Controllers
         [HttpGet]
         public IActionResult Login(string returnUrl = null!)
         {
-            // ✅ FIX: If user is already authenticated, redirect to dashboard
+            // If user is already authenticated, redirect to appropriate dashboard
             if (User.Identity?.IsAuthenticated == true)
             {
-                if (User.IsInRole("Admin") || User.IsInRole("Teacher"))
-                {
-                    return RedirectToAction("Index", "Exam");
-                }
-                else
-                {
-                    return RedirectToAction("Index", "UserExam");
-                }
+                return RedirectToDashboard();
             }
 
             ViewData["ReturnUrl"] = returnUrl;
@@ -62,15 +55,8 @@ namespace OnlineExamSystem.Web.Controllers
 
                 if (result.Succeeded)
                 {
-                    // Redirect to dashboard based on role
-                    if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Teacher"))
-                    {
-                        return RedirectToAction("Index", "Exam");
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "UserExam");
-                    }
+                    // Redirect based on role
+                    return RedirectToDashboard();
                 }
                 else if (result.IsLockedOut)
                 {
@@ -85,20 +71,52 @@ namespace OnlineExamSystem.Web.Controllers
             return View(model);
         }
 
+        // ✅ Helper method to redirect users based on their role
+        private IActionResult RedirectToDashboard()
+        {
+            var user = _userManager.GetUserAsync(User).Result;
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var roles = _userManager.GetRolesAsync(user).Result;
+
+            // SuperAdmin -> Dashboard (General Dashboard)
+            if (roles.Contains("SuperAdmin"))
+            {
+                return RedirectToAction("Index", "Dashboard");
+            }
+
+            // Admin -> Dashboard (General Dashboard)
+            if (roles.Contains("Admin"))
+            {
+                return RedirectToAction("Index", "Dashboard");
+            }
+
+            // Teacher -> Exam Management
+            if (roles.Contains("Teacher"))
+            {
+                return RedirectToAction("Index", "Exam");
+            }
+
+            // Student -> User Exam (Take exams)
+            if (roles.Contains("Student"))
+            {
+                return RedirectToAction("Index", "UserExam");
+            }
+
+            // Default fallback
+            return RedirectToAction("Index", "Home");
+        }
+
         [HttpGet]
         public IActionResult Register()
         {
-            // ✅ FIX: If user is already authenticated, redirect to dashboard
+            // If user is already authenticated, redirect to dashboard
             if (User.Identity?.IsAuthenticated == true)
             {
-                if (User.IsInRole("Admin") || User.IsInRole("Teacher"))
-                {
-                    return RedirectToAction("Index", "Exam");
-                }
-                else
-                {
-                    return RedirectToAction("Index", "UserExam");
-                }
+                return RedirectToDashboard();
             }
 
             return View();
@@ -133,15 +151,8 @@ namespace OnlineExamSystem.Web.Controllers
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    // Redirect to dashboard based on role
-                    if (await _userManager.IsInRoleAsync(user, "Admin") || await _userManager.IsInRoleAsync(user, "Teacher"))
-                    {
-                        return RedirectToAction("Index", "Exam");
-                    }
-                    else
-                    {
-                        return RedirectToAction("Index", "UserExam");
-                    }
+                    // Redirect based on role after registration
+                    return RedirectToDashboard();
                 }
 
                 foreach (var error in result.Errors)
@@ -193,22 +204,7 @@ namespace OnlineExamSystem.Web.Controllers
 
                 if (string.IsNullOrEmpty(returnUrl))
                 {
-                    if (User.Identity?.IsAuthenticated == true)
-                    {
-                        var user = _userManager.GetUserAsync(User).Result;
-                        if (user != null)
-                        {
-                            if (_userManager.IsInRoleAsync(user, "Admin").Result || _userManager.IsInRoleAsync(user, "Teacher").Result)
-                            {
-                                return RedirectToAction("Index", "Exam");
-                            }
-                            else
-                            {
-                                return RedirectToAction("Index", "UserExam");
-                            }
-                        }
-                    }
-                    return RedirectToAction("Login", "Account");
+                    return RedirectToDashboard();
                 }
 
                 if (Url.IsLocalUrl(returnUrl))
@@ -216,7 +212,7 @@ namespace OnlineExamSystem.Web.Controllers
                     return Redirect(returnUrl);
                 }
 
-                return RedirectToAction("Login", "Account");
+                return RedirectToDashboard();
             }
             catch
             {

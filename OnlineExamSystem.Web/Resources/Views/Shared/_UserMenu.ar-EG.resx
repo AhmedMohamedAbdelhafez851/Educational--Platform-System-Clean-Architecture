@@ -34,4 +34,7 @@
 	<data name="Logout" xml:space="preserve">
     <value>تسجيل الخروج</value>
   </data>
+	<data name="ManageRoles" xml:space="preserve">
+    <value>إدارة الصلاحيات</value>
+</data>
 </root>

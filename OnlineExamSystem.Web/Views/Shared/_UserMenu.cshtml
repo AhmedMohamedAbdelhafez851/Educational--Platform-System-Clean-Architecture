@@ -1,5 +1,4 @@
 ﻿@using Microsoft.AspNetCore.Mvc.Localization
-@using System.Globalization
 @inject IViewLocalizer Localizer
 @using Microsoft.AspNetCore.Identity
 @using OnlineExamSystem.Domains.Entities
@@ -14,16 +13,19 @@
     var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
 }
 
-<div class="nav-links d-none d-lg-flex align-items-center gap-2">
-    <!-- Dashboard - Everyone can see -->
-    <a asp-controller="Dashboard" asp-action="Index"
-       class="nav-link @(currentController == "Dashboard" ? "active" : "")">
-        <i class="bi bi-speedometer2 me-1"></i>
-        <span>@Localizer["Dashboard"]</span>
-    </a>
+<div class="nav-links">
+    <!-- Dashboard - SuperAdmin and Admin can see -->
+    @if (isSuperAdmin || isAdmin)
+    {
+        <a asp-controller="Dashboard" asp-action="Index"
+           class="nav-link @(currentController == "Dashboard" ? "active" : "")">
+            <i class="bi bi-speedometer2 me-1"></i>
+            <span>@Localizer["Dashboard"]</span>
+        </a>
+    }
 
-    <!-- Exams - Teachers and Admins can see -->
-    @if (isAdmin || isTeacher)
+    <!-- Exams - SuperAdmin, Admin, and Teacher can see -->
+    @if (isSuperAdmin || isAdmin || isTeacher)
     {
         <a asp-controller="Exam" asp-action="Index"
            class="nav-link @((currentController == "Exam" || currentController == "Question") ? "active" : "")">
@@ -32,8 +34,8 @@
         </a>
     }
 
-    <!-- Analytics - Teachers and Admins can see -->
-    @if (isAdmin || isTeacher)
+    <!-- Analytics - SuperAdmin, Admin, and Teacher can see -->
+    @if (isSuperAdmin || isAdmin || isTeacher)
     {
         <a asp-controller="Analytics" asp-action="Overview"
            class="nav-link @(currentController == "Analytics" ? "active" : "")">
@@ -52,8 +54,8 @@
         </a>
     }
 
-    <!-- Students view (if not admin/teacher) -->
-    @if (!isAdmin && !isTeacher)
+    <!-- Student view - Only for Students -->
+    @if (!isSuperAdmin && !isAdmin && !isTeacher)
     {
         <a asp-controller="UserExam" asp-action="Index"
            class="nav-link @(currentController == "UserExam" ? "active" : "")">
@@ -63,23 +65,22 @@
     }
 </div>
 
-<!-- User Menu -->
+<!-- User Dropdown Menu -->
 <div class="user-menu dropdown">
-    <a class="dropdown-toggle d-flex align-items-center gap-2" href="#" id="userDropdown" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
         <div class="user-avatar">
             <i class="bi bi-person-fill"></i>
         </div>
-        <div class="user-info d-none d-md-block">
+        <div class="user-info">
             <div class="user-name">@(User.Identity?.Name ?? "User")</div>
             <div class="user-role">
                 @if (isSuperAdmin)
                 {
-                    <span>Super Administrator</span>
+                    <span>Super Admin</span>
                 }
                 else if (isAdmin)
                 {
-                    <span>Administrator</span>
+                    <span>Admin</span>
                 }
                 else if (isTeacher)
                 {
@@ -91,13 +92,9 @@
                 }
             </div>
         </div>
-    </a>
+        <i class="bi bi-chevron-down dropdown-arrow"></i>
+    </button>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-        <li>
-            <a class="dropdown-item" asp-controller="Account" asp-action="Profile">
-                <i class="bi bi-person me-2"></i>@Localizer["MyProfile"]
-            </a>
-        </li>
         <li>
             <a class="dropdown-item" asp-controller="UserExam" asp-action="Index">
                 <i class="bi bi-pencil-square me-2"></i>@Localizer["MyExams"]
@@ -113,122 +110,88 @@
 </div>
 
 <style>
+    /* Navigation Links Container */
     .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
         margin-right: 1rem;
     }
 
-    .nav-link {
-        padding: 0.5rem 1rem;
-        border-radius: 12px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        transition: all 0.2s ease;
-        color: rgba(255, 255, 255, 0.8);
-        position: relative;
+    /* Dropdown arrow animation */
+    .dropdown-arrow {
+        transition: transform 0.2s ease;
+        font-size: 0.75rem;
+        color: rgba(255,255,255,0.7);
     }
 
-        .nav-link:hover {
-            color: white;
-            background: rgba(255, 255, 255, 0.1);
-        }
-
-        .nav-link.active {
-            color: white;
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-            .nav-link.active::after {
-                content: '';
-                position: absolute;
-                bottom: -2px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 30px;
-                height: 2px;
-                background: white;
-                border-radius: 2px;
-            }
-
-    body[dir="rtl"] .nav-links {
-        margin-right: 0;
-        margin-left: 1rem;
+    .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+        transform: rotate(180deg);
     }
 
-    .user-menu {
-        position: relative;
-    }
-
-        .user-menu .dropdown-toggle {
-            text-decoration: none;
-            color: white;
-            padding: 0.25rem 0.5rem;
-            border-radius: 40px;
-            transition: all 0.2s ease;
-        }
-
-            .user-menu .dropdown-toggle:hover {
-                background: rgba(255, 255, 255, 0.1);
-            }
-
-    .user-avatar {
-        width: 36px;
-        height: 36px;
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1rem;
-    }
-
-    .user-info {
-        text-align: left;
-    }
-
-    body[dir="rtl"] .user-info {
-        text-align: right;
-    }
-
-    .user-name {
-        font-size: 0.875rem;
-        font-weight: 600;
-        line-height: 1.2;
-    }
-
-    .user-role {
-        font-size: 0.625rem;
-        opacity: 0.7;
-        line-height: 1.2;
-    }
-
-    .dropdown-item {
-        padding: 0.5rem 1rem;
-        font-size: 0.875rem;
-        transition: all 0.2s ease;
-    }
-
-        .dropdown-item:hover {
-            background-color: #f3f4f6;
-        }
-
-        .dropdown-item i {
-            width: 1.25rem;
-        }
-
+    /* Mobile Styles */
     @@media (max-width: 991px) {
         .nav-links {
             flex-direction: column;
             width: 100%;
             margin-right: 0;
             margin-bottom: 1rem;
+            gap: 0.5rem;
         }
 
         .nav-link {
             width: 100%;
+            text-align: center;
+            justify-content: center;
         }
 
-            .nav-link.active::after {
-                display: none;
+            .nav-link i {
+                margin-right: 0.5rem;
             }
+
+        .user-menu {
+            width: 100%;
+        }
+
+            .user-menu .dropdown-toggle {
+                width: 100%;
+                justify-content: space-between;
+                padding: 0.75rem;
+            }
+
+        .user-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .dropdown-menu {
+            position: static !important;
+            width: 100%;
+            margin-top: 0.5rem;
+            transform: none !important;
+            box-shadow: none;
+            background: rgba(255,255,255,0.95);
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+    }
+
+    /* RTL Support */
+    body[dir="rtl"] .user-info {
+        text-align: right;
+    }
+
+    body[dir="rtl"] .nav-links {
+        margin-right: 0;
+        margin-left: 1rem;
+    }
+
+    @@media (max-width: 991px) {
+        body[dir="rtl"] .nav-links {
+            margin-left: 0;
+        }
+
+        body[dir="rtl"] .user-info {
+            text-align: right;
+        }
     }
 </style>

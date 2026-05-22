@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<data name="PageTitle" xml:space="preserve">
+    <value>الانضمام إلى الامتحان</value>
+  </data>
+	<data name="JoinExam" xml:space="preserve">
+    <value>الانضمام إلى الامتحان</value>
+  </data>
+	<data name="EnterInvitationCode" xml:space="preserve">
+    <value>أدخل رمز الدعوة للبدء</value>
+  </data>
+	<data name="InvitationCode" xml:space="preserve">
+    <value>رمز الدعوة</value>
+  </data>
+	<data name="InvitationCodePlaceholder" xml:space="preserve">
+    <value>أدخل الرمز (مثل ABC123)</value>
+  </data>
+	<data name="InvitationCodeHelp" xml:space="preserve">
+    <value>أدخل الرمز المكون من 6 أحرف الذي تلقيته من معلمك</value>
+  </data>
+	<data name="FullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+	<data name="FullNamePlaceholder" xml:space="preserve">
+    <value>أدخل اسمك الكامل</value>
+  </data>
+	<data name="Email" xml:space="preserve">
+    <value>البريد الإلكتروني (اختياري)</value>
+  </data>
+	<data name="EmailPlaceholder" xml:space="preserve">
+    <value>بريدك الإلكتروني</value>
+  </data>
+	<data name="StudentId" xml:space="preserve">
+    <value>رقم الطالب (اختياري)</value>
+  </data>
+	<data name="StudentIdPlaceholder" xml:space="preserve">
+    <value>الرقم التعريفي للطالب</value>
+  </data>
+	<data name="StartExam" xml:space="preserve">
+    <value>بدء الامتحان</value>
+  </data>
+	<data name="NeedHelp" xml:space="preserve">
+    <value>بحاجة إلى مساعدة؟ اتصل بمعلمك</value>
+  </data>
+</root>

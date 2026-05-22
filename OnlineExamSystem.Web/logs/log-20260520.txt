@@ -1,1 +1,704 @@
 2026-05-20 09:21:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 428.9216 ms
+2026-05-20 09:57:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 459.4396 ms
+2026-05-20 09:58:04 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 71.0167 ms
+2026-05-20 09:58:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 97.5781 ms
+2026-05-20 09:58:07 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 7.3287 ms
+2026-05-20 09:58:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 18.3009 ms
+2026-05-20 09:58:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 116.1762 ms
+2026-05-20 09:58:58 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 162.8745 ms
+2026-05-20 09:59:07 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 34.9135 ms
+2026-05-20 09:59:24 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 37.7437 ms
+2026-05-20 10:00:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 48.0732 ms
+2026-05-20 10:00:51 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 38.3813 ms
+2026-05-20 10:01:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 157.6334 ms
+2026-05-20 10:01:08 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/12" responded 200 in 1075.8969 ms
+2026-05-20 10:01:08 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 1077.1604 ms
+2026-05-20 10:01:13 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 1857.8476 ms
+2026-05-20 10:03:26 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 62.7800 ms
+2026-05-20 10:05:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 612.4605 ms
+2026-05-20 10:05:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 266.5501 ms
+2026-05-20 10:06:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 61.0367 ms
+2026-05-20 10:06:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.7507 ms
+2026-05-20 10:06:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 20.4355 ms
+2026-05-20 10:06:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 163.3719 ms
+2026-05-20 10:06:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.3200 ms
+2026-05-20 10:06:54 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 27.9563 ms
+2026-05-20 10:06:57 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 1831.6958 ms
+2026-05-20 10:07:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.7085 ms
+2026-05-20 10:09:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 81.8035 ms
+2026-05-20 10:09:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 22.9395 ms
+2026-05-20 10:09:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 32.8298 ms
+2026-05-20 10:09:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 49.4882 ms
+2026-05-20 10:09:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.6109 ms
+2026-05-20 10:09:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 31.1987 ms
+2026-05-20 10:09:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 8.8724 ms
+2026-05-20 10:09:52 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 7.6546 ms
+2026-05-20 10:36:16 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 710.3956 ms
+2026-05-20 10:36:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 66.7239 ms
+2026-05-20 10:38:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 327.0127 ms
+2026-05-20 10:39:02 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 192.6574 ms
+2026-05-20 10:40:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 55.6183 ms
+2026-05-20 10:40:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 20.6371 ms
+2026-05-20 10:42:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 3174.4385 ms
+2026-05-20 10:42:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 370.5194 ms
+2026-05-20 10:45:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 11.4637 ms
+2026-05-20 10:45:17 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 49.0593 ms
+2026-05-20 10:45:52 [User:superadmin@examify.com] [IP:::1] [Error] Failed executing DbCommand ("65,054"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='60']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedAt], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0"
+2026-05-20 10:45:52 [User:superadmin@examify.com] [IP:::1] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e9074205-13b8-429c-86e7-a7e624613494
+Error Number:؜-2,State:0,Class:11"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:e9074205-13b8-429c-86e7-a7e624613494
+Error Number:؜-2,State:0,Class:11
+2026-05-20 10:45:53 [User:superadmin@examify.com] [IP:::1] [Error] HTTP "GET" "/Exam/Index" responded 500 in 65827.8286 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AspNetCoreGeneratedDocument.Views_Shared__UserMenu.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Header.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__17_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:e9074205-13b8-429c-86e7-a7e624613494
+Error Number:؜-2,State:0,Class:11
+2026-05-20 10:45:53 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at AspNetCoreGeneratedDocument.Views_Shared__UserMenu.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Header.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.RenderPartialViewAsync(TextWriter writer, Object model, IView view)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.<ExecuteAsync>b__17_1()
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at OnlineExamSystem.Web.Middleware.LoggingEnrichmentMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+ClientConnectionId:e9074205-13b8-429c-86e7-a7e624613494
+Error Number:؜-2,State:0,Class:11
+2026-05-20 10:46:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 13.8631 ms
+2026-05-20 10:46:08 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 57617.0915 ms
+2026-05-20 10:46:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.1021 ms
+2026-05-20 10:46:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 11.2101 ms
+2026-05-20 10:46:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.5584 ms
+2026-05-20 10:58:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 324.5151 ms
+2026-05-20 11:02:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 690.3347 ms
+2026-05-20 11:02:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 70.5771 ms
+2026-05-20 11:02:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 10.3740 ms
+2026-05-20 11:02:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 8.5573 ms
+2026-05-20 11:02:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 8.7644 ms
+2026-05-20 11:06:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.3367 ms
+2026-05-20 11:06:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 8.1762 ms
+2026-05-20 11:08:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 20.3354 ms
+2026-05-20 11:08:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.6942 ms
+2026-05-20 11:14:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 350.3426 ms
+2026-05-20 11:15:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 44.1525 ms
+2026-05-20 11:16:44 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 639.6145 ms
+2026-05-20 11:16:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 551.3414 ms
+2026-05-20 11:17:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 1.0942 ms
+2026-05-20 11:17:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 55.5701 ms
+2026-05-20 11:26:23 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 470.9006 ms
+2026-05-20 11:30:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 101.3217 ms
+2026-05-20 11:31:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 43.2081 ms
+2026-05-20 11:32:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.5795 ms
+2026-05-20 12:24:16 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 414.0378 ms
+2026-05-20 12:25:28 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 546.1793 ms
+2026-05-20 12:25:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 324.3113 ms
+2026-05-20 12:25:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 52.5576 ms
+2026-05-20 12:25:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 197.8080 ms
+2026-05-20 12:25:54 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 13.7160 ms
+2026-05-20 12:25:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 12.7698 ms
+2026-05-20 12:48:52 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 443.2902 ms
+2026-05-20 12:50:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 89.9691 ms
+2026-05-20 12:51:26 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 44.3683 ms
+2026-05-20 12:51:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 23.6235 ms
+2026-05-20 12:53:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 371.1900 ms
+2026-05-20 12:53:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 434.3845 ms
+2026-05-20 12:53:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 1104.4505 ms
+2026-05-20 12:54:31 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 84.2885 ms
+2026-05-20 13:01:27 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 133.1167 ms
+2026-05-20 13:02:29 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 572.5644 ms
+2026-05-20 13:02:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 29.2691 ms
+2026-05-20 13:04:08 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 35.2386 ms
+2026-05-20 13:04:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 566.4051 ms
+2026-05-20 13:10:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 3.3533 ms
+2026-05-20 13:10:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 33.0031 ms
+2026-05-20 13:16:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 773.9518 ms
+2026-05-20 13:18:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 118.3191 ms
+2026-05-20 13:19:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 19.2505 ms
+2026-05-20 13:22:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 409.7303 ms
+2026-05-20 13:23:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 117.8732 ms
+2026-05-20 13:25:22 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 67.8465 ms
+2026-05-20 13:25:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.1926 ms
+2026-05-20 13:32:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 424.0888 ms
+2026-05-20 13:32:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1504 ms
+2026-05-20 13:33:21 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 45.9832 ms
+2026-05-20 13:33:46 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 319.7717 ms
+2026-05-20 13:34:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 127.7262 ms
+2026-05-20 13:35:17 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 21.4713 ms
+2026-05-20 13:36:01 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 574.0222 ms
+2026-05-20 13:36:14 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 463.7888 ms
+2026-05-20 13:36:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 228.0651 ms
+2026-05-20 13:36:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 217.5548 ms
+2026-05-20 13:36:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 63.2808 ms
+2026-05-20 13:37:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 48.0334 ms
+2026-05-20 13:37:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 205.2841 ms
+2026-05-20 13:37:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 266.7780 ms
+2026-05-20 13:37:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.1008 ms
+2026-05-20 13:37:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 22.7664 ms
+2026-05-20 13:37:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.2364 ms
+2026-05-20 13:38:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 61.8042 ms
+2026-05-20 13:38:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.0163 ms
+2026-05-20 13:38:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.7313 ms
+2026-05-20 13:38:57 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 25.7779 ms
+2026-05-20 13:39:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 22.9316 ms
+2026-05-20 13:39:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.9340 ms
+2026-05-20 13:39:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 54.4757 ms
+2026-05-20 13:39:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 25.2775 ms
+2026-05-20 13:39:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 120.1418 ms
+2026-05-20 13:39:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 22.7512 ms
+2026-05-20 13:40:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 139.2662 ms
+2026-05-20 13:40:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/InvitationAttempts/5" responded 404 in 18.3565 ms
+2026-05-20 13:40:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 28.4577 ms
+2026-05-20 13:40:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 52.9681 ms
+2026-05-20 13:40:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 25.8312 ms
+2026-05-20 13:40:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 13.1446 ms
+2026-05-20 13:40:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 25.3617 ms
+2026-05-20 13:40:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/ToggleInvitation" responded 200 in 14.6264 ms
+2026-05-20 13:40:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 23.5950 ms
+2026-05-20 13:41:35 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 79.6885 ms
+2026-05-20 13:41:42 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/Join" responded 200 in 10.1549 ms
+2026-05-20 13:42:05 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/UserExam/Join" responded 302 in 151.6196 ms
+2026-05-20 13:42:05 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 132.6775 ms
+2026-05-20 13:43:15 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "POST" "/UserExam/SubmitExam" responded 200 in 370.7283 ms
+2026-05-20 13:43:15 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/ViewResult/14" responded 200 in 112.7134 ms
+2026-05-20 13:43:29 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 36.7886 ms
+2026-05-20 13:44:12 [User:Anonymous] [IP:127.0.0.1] [Information] HTTP "GET" "/" responded 200 in 9.3681 ms
+2026-05-20 14:43:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 342.5082 ms
+2026-05-20 14:45:21 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 736.5478 ms
+2026-05-20 14:51:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 678.8519 ms
+2026-05-20 14:51:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/5" responded 200 in 316.7214 ms
+2026-05-20 14:53:10 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 406.5726 ms
+2026-05-20 14:53:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 166.3885 ms
+2026-05-20 14:53:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 38.6540 ms
+2026-05-20 14:53:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.5797 ms
+2026-05-20 14:59:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 209.2952 ms
+2026-05-20 14:59:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/5" responded 200 in 239.1217 ms
+2026-05-20 14:59:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 268.3967 ms
+2026-05-20 15:02:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 269.5333 ms
+2026-05-20 15:02:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.9184 ms
+2026-05-20 15:03:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 101.5332 ms
+2026-05-20 15:04:08 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.7469 ms
+2026-05-20 15:05:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Invitations" responded 200 in 133.9388 ms
+2026-05-20 15:05:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 59.3365 ms
+2026-05-20 15:07:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 71.3731 ms
+2026-05-20 15:11:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 1318.2531 ms
+2026-05-20 15:12:20 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 654.3520 ms
+2026-05-20 15:12:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 388.2535 ms
+2026-05-20 15:12:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 627.8157 ms
+2026-05-20 15:12:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 32.0238 ms
+2026-05-20 15:13:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 360.6621 ms
+2026-05-20 15:13:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 78.2583 ms
+2026-05-20 15:13:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 238.5998 ms
+2026-05-20 15:13:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 32.3789 ms
+2026-05-20 15:13:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 45.9339 ms
+2026-05-20 15:17:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 36.3840 ms
+2026-05-20 15:19:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 46.8247 ms
+2026-05-20 15:19:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 73.9458 ms
+2026-05-20 15:20:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 34.8403 ms
+2026-05-20 15:20:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 31.1376 ms
+2026-05-20 15:20:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 121.7713 ms
+2026-05-20 15:20:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 33.6512 ms
+2026-05-20 15:20:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 16.8456 ms
+2026-05-20 15:20:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 47.0432 ms
+2026-05-20 15:20:25 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 27.8130 ms
+2026-05-20 15:20:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 23.6855 ms
+2026-05-20 15:20:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.8871 ms
+2026-05-20 15:20:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 91.7935 ms
+2026-05-20 15:21:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 31.6003 ms
+2026-05-20 15:21:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.4997 ms
+2026-05-20 15:21:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 53.7946 ms
+2026-05-20 15:21:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.3861 ms
+2026-05-20 15:22:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Edit/b258c893-3188-4795-baba-3e3e1aabc546" responded 200 in 59.3572 ms
+2026-05-20 15:22:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 35.9970 ms
+2026-05-20 15:22:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 17.0274 ms
+2026-05-20 15:22:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 31.5491 ms
+2026-05-20 15:23:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 40.1526 ms
+2026-05-20 15:23:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 42.2647 ms
+2026-05-20 15:23:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 31.3375 ms
+2026-05-20 15:23:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 32.6953 ms
+2026-05-20 15:24:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 95.4696 ms
+2026-05-20 15:27:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 211.4618 ms
+2026-05-20 15:27:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 44.7810 ms
+2026-05-20 15:28:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 84.1658 ms
+2026-05-20 15:29:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 190.4115 ms
+2026-05-20 15:29:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 159.6425 ms
+2026-05-20 15:29:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 523.2242 ms
+2026-05-20 15:31:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Edit/0551bfa5-1214-4e85-8972-c3e4acd52553" responded 200 in 43.8528 ms
+2026-05-20 15:31:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 43.3380 ms
+2026-05-20 15:31:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 87.6878 ms
+2026-05-20 15:34:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 64.8181 ms
+2026-05-20 15:34:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 85.1393 ms
+2026-05-20 15:35:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 548.7403 ms
+2026-05-20 15:35:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 79.8826 ms
+2026-05-20 15:35:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 19.8172 ms
+2026-05-20 15:35:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 16.5985 ms
+2026-05-20 15:38:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 35.1942 ms
+2026-05-20 15:38:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.8204 ms
+2026-05-20 15:38:26 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.5286 ms
+2026-05-20 15:39:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 215.5051 ms
+2026-05-20 15:39:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 63.7342 ms
+2026-05-20 15:39:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 75.7713 ms
+2026-05-20 15:39:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 27.4371 ms
+2026-05-20 15:39:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 28.9749 ms
+2026-05-20 15:39:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 67.6507 ms
+2026-05-20 15:39:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 26.2982 ms
+2026-05-20 15:39:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 31.4529 ms
+2026-05-20 15:39:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 130.7467 ms
+2026-05-20 15:40:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 302 in 3.7219 ms
+2026-05-20 15:40:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 53.0325 ms
+2026-05-20 15:40:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 136.6750 ms
+2026-05-20 15:40:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Create" responded 200 in 24.6360 ms
+2026-05-20 15:40:08 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 43.7115 ms
+2026-05-20 15:40:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 120.2194 ms
+2026-05-20 15:41:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 65.7344 ms
+2026-05-20 15:51:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 154.8908 ms
+2026-05-20 15:51:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 53.7864 ms
+2026-05-20 15:51:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 35.5197 ms
+2026-05-20 15:51:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 27.0798 ms
+2026-05-20 15:51:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Edit/0551bfa5-1214-4e85-8972-c3e4acd52553" responded 200 in 24.0583 ms
+2026-05-20 15:51:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 36.3079 ms
+2026-05-20 15:51:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 34.1581 ms
+2026-05-20 15:51:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.3901 ms
+2026-05-20 15:58:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 420.6630 ms
+2026-05-20 15:59:00 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 631.1299 ms
+2026-05-20 15:59:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 372.4103 ms
+2026-05-20 15:59:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 241.4471 ms
+2026-05-20 15:59:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 66.8949 ms
+2026-05-20 15:59:16 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-20 15:59:21 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-20 15:59:23 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-20 15:59:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Edit" responded 400 in 10.3621 ms
+2026-05-20 15:59:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 343.5194 ms
+2026-05-20 15:59:55 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context) in C:\Users\HAFEZ\Downloads\Compressed\Online_Exam_Management-main\OnlineExamSystem.Web\Middleware\ExceptionMiddleware.cs:line 22
+2026-05-20 16:00:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 400 in 13.1667 ms
+2026-05-20 16:05:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 358.3020 ms
+2026-05-20 16:09:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 582.9888 ms
+2026-05-20 16:09:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 347.0358 ms
+2026-05-20 16:09:54 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 211.7927 ms
+2026-05-20 16:09:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 44.8283 ms
+2026-05-20 16:11:31 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 346.0182 ms
+2026-05-20 16:11:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 29.0464 ms
+2026-05-20 16:11:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 40.8194 ms
+2026-05-20 16:11:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 40.0887 ms
+2026-05-20 16:11:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 28.4771 ms
+2026-05-20 16:12:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 31.7357 ms
+2026-05-20 16:12:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 44.5509 ms
+2026-05-20 16:12:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 21.0661 ms
+2026-05-20 16:14:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 38.5362 ms
+2026-05-20 16:14:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 61.4521 ms
+2026-05-20 16:14:31 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 74.9319 ms
+2026-05-20 16:14:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 33.0192 ms
+2026-05-20 16:14:57 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 38.1394 ms
+2026-05-20 16:14:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 30.5568 ms
+2026-05-20 16:15:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 31.9525 ms
+2026-05-20 16:15:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 25.2681 ms
+2026-05-20 16:16:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 70.1975 ms
+2026-05-20 16:16:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 45.3857 ms
+2026-05-20 16:16:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 24.6242 ms
+2026-05-20 16:16:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 34.6148 ms
+2026-05-20 16:20:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 52.4043 ms
+2026-05-20 16:20:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/ManageRoles" responded 200 in 39.5111 ms
+2026-05-20 16:20:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 32.8891 ms
+2026-05-20 16:20:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 89.6761 ms
+2026-05-20 16:20:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 38.8298 ms
+2026-05-20 16:21:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 400 in 16.1961 ms
+2026-05-20 16:22:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 23.0080 ms
+2026-05-20 16:22:08 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-20 16:22:45 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-20 16:23:03 [User:] [IP:] [Error] Unhandled exception occurred
+Microsoft.AspNetCore.Routing.Matching.AmbiguousMatchException: The request matched multiple endpoints. Matches: 
+
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+OnlineExamSystem.Web.Controllers.UsersController.UpdateUserRoles (OnlineExamSystem.Web)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ReportAmbiguity(Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.ProcessFinalCandidates(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DefaultEndpointSelector.Select(HttpContext httpContext, Span`1 candidateState)
+   at Microsoft.AspNetCore.Routing.Matching.DfaMatcher.MatchAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware.Invoke(HttpContext context)
+   at OnlineExamSystem.Web.Middleware.ExceptionMiddleware.Invoke(HttpContext context)
+2026-05-20 16:27:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 448.8969 ms
+2026-05-20 16:28:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 740.1568 ms
+2026-05-20 16:28:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 397.1564 ms
+2026-05-20 16:28:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 191.0295 ms
+2026-05-20 16:28:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 64.2990 ms
+2026-05-20 16:28:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/UpdateUserRoles" responded 200 in 334.4604 ms
+2026-05-20 16:28:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 72.7871 ms
+2026-05-20 16:28:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 19.6375 ms
+2026-05-20 16:28:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/UpdateUserRoles" responded 200 in 360.4402 ms
+2026-05-20 16:28:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 40.4424 ms
+2026-05-20 16:29:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 200 in 145.0806 ms
+2026-05-20 16:38:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 257.7190 ms
+2026-05-20 16:38:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/css/users/index.css" responded 404 in 0.1155 ms
+2026-05-20 16:40:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/css/users/index.css" responded 404 in 0.0130 ms
+2026-05-20 16:42:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 481.4917 ms
+2026-05-20 16:42:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 692.5485 ms
+2026-05-20 16:42:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 402.5184 ms
+2026-05-20 16:43:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 174.8049 ms
+2026-05-20 16:43:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 6.2810 ms
+2026-05-20 16:43:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 343.5091 ms
+2026-05-20 16:45:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 120.1700 ms
+2026-05-20 16:45:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1071 ms
+2026-05-20 16:49:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0149 ms
+2026-05-20 16:53:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 506.5164 ms
+2026-05-20 16:53:46 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 41.1200 ms
+2026-05-20 16:53:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 131.8725 ms
+2026-05-20 16:54:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 591.8712 ms
+2026-05-20 16:54:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 394.9458 ms
+2026-05-20 16:54:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 202.0805 ms
+2026-05-20 16:54:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 51.5209 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 27.6810 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 21.2212 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 27.1342 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 16.9446 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 22.9258 ms
+2026-05-20 16:54:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 17.6959 ms
+2026-05-20 16:54:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 14.8325 ms
+2026-05-20 16:54:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.2361 ms
+2026-05-20 16:55:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 28.0403 ms
+2026-05-20 16:55:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 16.5827 ms
+2026-05-20 16:55:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 9.6306 ms
+2026-05-20 16:55:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 18.4705 ms
+2026-05-20 16:59:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 346.1218 ms
+2026-05-20 17:03:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 110.6226 ms
+2026-05-20 17:03:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 39.3749 ms
+2026-05-20 17:03:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 42.3713 ms
+2026-05-20 17:03:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 13.7854 ms
+2026-05-20 17:04:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 95.7535 ms
+2026-05-20 17:07:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 89.7116 ms
+2026-05-20 17:11:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 123.8654 ms
+2026-05-20 17:11:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 36.2607 ms
+2026-05-20 17:11:54 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 54.9198 ms
+2026-05-20 17:12:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 22.3886 ms
+2026-05-20 17:12:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.0074 ms
+2026-05-20 17:12:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 25.0245 ms
+2026-05-20 17:12:28 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 44.2089 ms
+2026-05-20 17:13:08 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 67.2170 ms
+2026-05-20 17:13:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 48.2974 ms
+2026-05-20 17:13:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 44.7103 ms
+2026-05-20 17:13:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.6591 ms
+2026-05-20 17:13:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 46.1857 ms
+2026-05-20 17:27:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 71.0694 ms
+2026-05-20 17:28:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Edit" responded 200 in 387.2414 ms
+2026-05-20 17:28:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 28.9686 ms
+2026-05-20 17:28:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 200 in 33.9788 ms
+2026-05-20 17:28:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 37.3022 ms
+2026-05-20 17:28:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 85.1945 ms
+2026-05-20 17:28:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 46.8911 ms
+2026-05-20 17:28:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 28.1265 ms
+2026-05-20 17:28:48 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 39.8517 ms
+2026-05-20 17:29:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 81.5654 ms
+2026-05-20 17:34:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 120.5732 ms
+2026-05-20 17:34:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Edit" responded 200 in 53.2341 ms
+2026-05-20 17:34:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 37.4689 ms
+2026-05-20 17:35:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 200 in 34.4236 ms
+2026-05-20 17:35:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 200 in 386.0604 ms
+2026-05-20 17:35:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 82.7208 ms
+2026-05-20 17:36:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 53.1726 ms
+2026-05-20 17:36:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/UpdateUserRoles" responded 200 in 101.5793 ms
+2026-05-20 17:36:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 45.5812 ms
+2026-05-20 17:37:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 522.5252 ms
+2026-05-20 17:37:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 53.6472 ms
+2026-05-20 17:37:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 38.7389 ms
+2026-05-20 17:56:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 1003.5102 ms
+2026-05-20 17:56:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 858.9274 ms
+2026-05-20 17:56:33 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 472.6454 ms
+2026-05-20 17:56:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 636.3528 ms
+2026-05-20 17:57:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 65.6493 ms
+2026-05-20 17:57:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28.2363 ms
+2026-05-20 17:57:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 382.2314 ms
+2026-05-20 17:57:48 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.8845 ms
+2026-05-20 17:57:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 30.1402 ms
+2026-05-20 17:57:50 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 67.5562 ms
+2026-05-20 18:00:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/GetUserRoles" responded 200 in 80.4158 ms
+2026-05-20 18:00:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Edit" responded 200 in 422.7184 ms
+2026-05-20 18:00:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 84.6539 ms
+2026-05-20 18:02:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 8.9791 ms
+2026-05-20 18:02:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 383.8139 ms
+2026-05-20 18:02:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 64.3351 ms
+2026-05-20 18:02:19 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 46.9760 ms
+2026-05-20 18:02:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 33.7154 ms
+2026-05-20 18:02:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 57.7470 ms
+2026-05-20 18:02:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 27.7081 ms
+2026-05-20 18:02:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.4820 ms
+2026-05-20 18:02:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 31.4373 ms
+2026-05-20 18:02:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 43.8734 ms
+2026-05-20 18:02:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 0.5420 ms
+2026-05-20 18:02:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 25.8116 ms
+2026-05-20 18:50:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 846.9072 ms
+2026-05-20 18:50:45 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 593.4347 ms
+2026-05-20 18:50:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 675.7095 ms
+2026-05-20 18:51:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 207.8014 ms
+2026-05-20 18:51:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 48.4508 ms
+2026-05-20 18:51:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.4787 ms
+2026-05-20 18:51:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 40.3101 ms
+2026-05-20 18:51:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 216.8331 ms
+2026-05-20 18:51:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 30.8597 ms
+2026-05-20 18:51:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 48.5946 ms
+2026-05-20 18:54:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 74.7853 ms
+2026-05-20 18:54:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 57.7024 ms
+2026-05-20 18:55:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 483.0756 ms
+2026-05-20 18:55:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 557.5996 ms
+2026-05-20 18:55:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 714.0135 ms
+2026-05-20 18:57:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 75.6163 ms
+2026-05-20 18:57:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 64.6253 ms
+2026-05-20 18:58:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 102.7589 ms
+2026-05-20 18:58:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 199.0808 ms
+2026-05-20 18:58:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 49.3132 ms
+2026-05-20 18:58:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 238.9744 ms
+2026-05-20 19:00:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 73.5876 ms
+2026-05-20 19:02:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 125.7539 ms
+2026-05-20 19:02:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 68.3451 ms
+2026-05-20 19:02:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 87.3766 ms
+2026-05-20 19:06:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 371.2235 ms
+2026-05-20 19:06:54 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 474.4727 ms
+2026-05-20 19:06:55 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 718.0286 ms
+2026-05-20 19:08:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 78.2489 ms
+2026-05-20 19:08:30 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 127.1363 ms
+2026-05-20 19:08:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Profile" responded 404 in 0.1944 ms
+2026-05-20 19:12:53 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/CreateRole" responded 200 in 256.4836 ms
+2026-05-20 19:13:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 139.1220 ms
+2026-05-20 19:13:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 64.6038 ms
+2026-05-20 19:13:11 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 52.0918 ms
+2026-05-20 19:13:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 11.7736 ms
+2026-05-20 19:13:16 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.9757 ms
+2026-05-20 19:21:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 516.9532 ms
+2026-05-20 19:22:40 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 532.4890 ms
+2026-05-20 19:22:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 644.6769 ms
+2026-05-20 19:22:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 131.9680 ms
+2026-05-20 19:22:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 36.8515 ms
+2026-05-20 19:22:46 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 24.9619 ms
