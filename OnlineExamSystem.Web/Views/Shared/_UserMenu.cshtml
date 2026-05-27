@@ -65,9 +65,14 @@
     }
 </div>
 
-<!-- User Dropdown Menu -->
+<!-- User Dropdown Menu - Fixed Bootstrap Dropdown -->
 <div class="user-menu dropdown">
-    <button class="dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <button class="btn btn-link dropdown-toggle user-dropdown-btn"
+            type="button"
+            id="userDropdownMenuButton"
+            data-bs-toggle="dropdown"
+            data-bs-auto-close="outside"
+            aria-expanded="false">
         <div class="user-avatar">
             <i class="bi bi-person-fill"></i>
         </div>
@@ -94,7 +99,7 @@
         </div>
         <i class="bi bi-chevron-down dropdown-arrow"></i>
     </button>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdownMenuButton">
         <li>
             <a class="dropdown-item" asp-controller="UserExam" asp-action="Index">
                 <i class="bi bi-pencil-square me-2"></i>@Localizer["MyExams"]
@@ -110,54 +115,97 @@
 </div>
 
 <style>
-    /* Navigation Links Container */
-    .nav-links {
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
-        margin-right: 1rem;
+    /* User Dropdown Button Styles */
+    .user-dropdown-btn {
+        display: flex !important;
+        align-items: center !important;
+        gap: 0.5rem !important;
+        padding: 0.25rem 0.5rem !important;
+        border-radius: 40px !important;
+        text-decoration: none !important;
+        color: white !important;
+        transition: all 0.2s ease !important;
+        background: none !important;
+        border: none !important;
     }
+
+        .user-dropdown-btn:hover {
+            background: rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+        }
+
+        .user-dropdown-btn:focus {
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .user-dropdown-btn.show {
+            background: rgba(255, 255, 255, 0.15) !important;
+        }
 
     /* Dropdown arrow animation */
     .dropdown-arrow {
         transition: transform 0.2s ease;
         font-size: 0.75rem;
-        color: rgba(255,255,255,0.7);
+        color: rgba(255, 255, 255, 0.7);
     }
 
-    .dropdown-toggle[aria-expanded="true"] .dropdown-arrow {
+    .user-dropdown-btn[aria-expanded="true"] .dropdown-arrow {
         transform: rotate(180deg);
+    }
+
+    /* Dropdown menu styles */
+    .dropdown-menu {
+        animation: dropdownFade 0.2s ease;
+        border: none;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 0.5rem;
+        min-width: 200px;
+        z-index: 1050;
+    }
+
+    @@keyframes dropdownFade {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+        .dropdown-item:hover {
+            background-color: #f1f5f9;
+        }
+
+        .dropdown-item i {
+            width: 1.25rem;
+        }
+
+    .dropdown-divider {
+        margin: 0.25rem 0;
     }
 
     /* Mobile Styles */
     @@media (max-width: 991px) {
-        .nav-links {
-            flex-direction: column;
+        .user-dropdown-btn {
             width: 100%;
-            margin-right: 0;
-            margin-bottom: 1rem;
-            gap: 0.5rem;
+            justify-content: space-between;
+            padding: 0.75rem !important;
         }
-
-        .nav-link {
-            width: 100%;
-            text-align: center;
-            justify-content: center;
-        }
-
-            .nav-link i {
-                margin-right: 0.5rem;
-            }
-
-        .user-menu {
-            width: 100%;
-        }
-
-            .user-menu .dropdown-toggle {
-                width: 100%;
-                justify-content: space-between;
-                padding: 0.75rem;
-            }
 
         .user-info {
             flex: 1;
@@ -170,8 +218,8 @@
             margin-top: 0.5rem;
             transform: none !important;
             box-shadow: none;
-            background: rgba(255,255,255,0.95);
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.95);
         }
     }
 
@@ -180,16 +228,7 @@
         text-align: right;
     }
 
-    body[dir="rtl"] .nav-links {
-        margin-right: 0;
-        margin-left: 1rem;
-    }
-
     @@media (max-width: 991px) {
-        body[dir="rtl"] .nav-links {
-            margin-left: 0;
-        }
-
         body[dir="rtl"] .user-info {
             text-align: right;
         }

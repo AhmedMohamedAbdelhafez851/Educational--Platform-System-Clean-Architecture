@@ -1,9 +1,8 @@
 ﻿/* =====================================================
    EXAM MANAGEMENT PAGE - Premium SaaS Design
-   Educational Platform | Arabic RTL Optimized
    ===================================================== */
 
-/* CSS Variables - Modern Design System */
+/* CSS Variables */
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
@@ -32,14 +31,11 @@
     --radius-md: 0.75rem;
     --radius-lg: 1rem;
     --radius-xl: 1.5rem;
-    --shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
-    --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.1);
+    --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
     --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1);
     --transition-fast: 150ms ease;
     --transition-normal: 200ms ease;
-    --transition-slow: 300ms ease;
 }
 
 /* Base Container */
@@ -49,9 +45,7 @@
     margin: 0 auto;
 }
 
-/* =====================================================
-   HEADER SECTION
-   ===================================================== */
+/* Header */
 .page-header {
     display: flex;
     justify-content: space-between;
@@ -124,17 +118,7 @@
         box-shadow: var(--shadow-lg);
     }
 
-    .btn-create-exam:active {
-        transform: translateY(0);
-    }
-
-    .btn-create-exam i {
-        font-size: 1.125rem;
-    }
-
-/* =====================================================
-   STATS CARDS
-   ===================================================== */
+/* Stats Cards */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -185,11 +169,6 @@
         color: white;
     }
 
-.stat-info {
-    display: flex;
-    flex-direction: column;
-}
-
 .stat-value {
     font-size: 1.75rem;
     font-weight: 700;
@@ -204,14 +183,12 @@
     letter-spacing: 0.03em;
 }
 
-/* =====================================================
-   TABLE CONTAINER
-   ===================================================== */
+/* Table Container */
 .table-container {
     background: white;
     border-radius: var(--radius-xl);
     border: 1px solid var(--gray-200);
-    overflow: hidden;
+    overflow: visible;
     box-shadow: var(--shadow-xs);
 }
 
@@ -254,9 +231,12 @@
         box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
     }
 
-/* =====================================================
-   EXAMS TABLE
-   ===================================================== */
+.table-responsive {
+    overflow-x: auto;
+    overflow-y: visible !important;
+}
+
+/* Exams Table */
 .exams-table {
     width: 100%;
     border-collapse: collapse;
@@ -280,13 +260,9 @@
         border-bottom: 1px solid var(--gray-100);
     }
 
-    .exams-table tbody tr {
-        transition: background var(--transition-fast);
+    .exams-table tbody tr:hover td {
+        background: var(--gray-50);
     }
-
-        .exams-table tbody tr:hover td {
-            background: var(--gray-50);
-        }
 
 /* Exam Title Cell */
 .exam-title-cell {
@@ -340,11 +316,7 @@
     gap: 0.25rem;
 }
 
-    .meta-item i {
-        font-size: 0.625rem;
-    }
-
-/* Duration Cell */
+/* Badges */
 .duration-badge {
     display: inline-flex;
     align-items: center;
@@ -357,12 +329,18 @@
     color: var(--gray-600);
 }
 
-    .duration-badge i {
-        font-size: 0.75rem;
-        color: var(--primary);
-    }
+.degree-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.75rem;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #d97706;
+}
 
-/* Questions Cell */
 .questions-count {
     display: inline-flex;
     align-items: center;
@@ -377,59 +355,51 @@
         color: var(--primary);
     }
 
-/* =====================================================
-   ACTIONS DROPDOWN - Three Dot Menu
-   ===================================================== */
+/* Dropdown Menu */
 .actions-cell {
-    width: 60px;
+    width: 70px;
     text-align: center;
+    position: static;
 }
 
 .actions-dropdown {
-    position: relative;
-    display: inline-block;
+    position: static;
 }
 
 .dropdown-trigger {
-    background: none;
+    background: var(--gray-100);
     border: none;
     padding: 0.5rem;
     cursor: pointer;
     color: var(--gray-500);
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
     .dropdown-trigger:hover {
-        background: var(--gray-100);
+        background: var(--gray-200);
         color: var(--gray-700);
     }
 
-    .dropdown-trigger i {
-        font-size: 1.25rem;
-    }
-
 .dropdown-menu-custom {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    min-width: 200px;
+    position: fixed !important;
+    min-width: 180px;
     background: white;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-lg);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.15), 0 8px 10px -6px rgba(0,0,0,0.1);
     padding: 0.5rem;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-8px);
-    transition: all var(--transition-fast);
+    z-index: 99999 !important;
+    display: none;
     border: 1px solid var(--gray-200);
 }
 
     .dropdown-menu-custom.show {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+        display: block !important;
     }
 
 .dropdown-item {
@@ -473,13 +443,7 @@
         background: var(--danger-bg) !important;
     }
 
-    .text-danger i {
-        color: var(--danger) !important;
-    }
-
-/* =====================================================
-   MODAL STYLES - Redesigned with Labels
-   ===================================================== */
+/* Modal Styles */
 .custom-modal {
     border-radius: var(--radius-xl);
     overflow: hidden;
@@ -506,11 +470,6 @@
     justify-content: center;
 }
 
-    .modal-header-icon i {
-        font-size: 1.25rem;
-        color: white;
-    }
-
 .modal-title {
     font-size: 1.125rem;
     font-weight: 600;
@@ -518,16 +477,6 @@
     margin: 0;
     flex: 1;
 }
-
-.modal-header .btn-close {
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
-    transition: opacity var(--transition-fast);
-}
-
-    .modal-header .btn-close:hover {
-        opacity: 1;
-    }
 
 .modal-body {
     padding: 1.5rem;
@@ -546,10 +495,6 @@
 .form-group {
     margin-bottom: 1.25rem;
 }
-
-    .form-group:last-child {
-        margin-bottom: 0;
-    }
 
 .form-row {
     display: grid;
@@ -581,11 +526,7 @@
         box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
     }
 
-    .form-control::placeholder {
-        color: var(--gray-400);
-    }
-
-/* Modal Buttons */
+/* Buttons */
 .btn-secondary {
     background: var(--gray-100);
     color: var(--gray-600);
@@ -593,9 +534,7 @@
     padding: 0.5rem 1.25rem;
     border-radius: var(--radius-md);
     font-weight: 500;
-    font-size: 0.875rem;
     cursor: pointer;
-    transition: all var(--transition-fast);
 }
 
     .btn-secondary:hover {
@@ -609,9 +548,7 @@
     padding: 0.5rem 1.25rem;
     border-radius: var(--radius-md);
     font-weight: 500;
-    font-size: 0.875rem;
     cursor: pointer;
-    transition: all var(--transition-fast);
 }
 
     .btn-primary:hover {
@@ -626,17 +563,9 @@
     padding: 0.5rem 1.25rem;
     border-radius: var(--radius-md);
     font-weight: 500;
-    font-size: 0.875rem;
     cursor: pointer;
-    transition: all var(--transition-fast);
 }
 
-    .btn-danger:hover {
-        transform: translateY(-1px);
-        box-shadow: var(--shadow-md);
-    }
-
-/* Danger Modal */
 .modal-danger .modal-header {
     background: linear-gradient(135deg, var(--danger) 0%, #b91c1c 100%);
 }
@@ -667,17 +596,9 @@
     gap: 0.5rem;
     font-size: 0.75rem;
     color: var(--danger);
-    text-align: left;
 }
 
-    .warning-note i {
-        font-size: 1rem;
-        margin: 0;
-    }
-
-/* =====================================================
-   EMPTY STATE
-   ===================================================== */
+/* Empty State */
 .empty-state {
     text-align: center;
     padding: 3rem;
@@ -718,22 +639,22 @@
     padding: 0.625rem 1.5rem;
     border-radius: 2rem;
     font-weight: 500;
-    font-size: 0.875rem;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
-    transition: all var(--transition-normal);
 }
 
-    .empty-state-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: var(--shadow-lg);
-    }
+/* DataTables Fixes */
+.dataTables_wrapper {
+    overflow: visible !important;
+}
 
-/* =====================================================
-   RTL SUPPORT - Arabic Language
-   ===================================================== */
+.dataTables_scrollBody {
+    overflow: visible !important;
+}
+
+/* RTL Support */
 [dir="rtl"] .exam-management {
     text-align: right;
 }
@@ -755,21 +676,12 @@
     padding: 0.5rem 2rem 0.5rem 0.75rem;
 }
 
-[dir="rtl"] .dropdown-menu-custom {
-    right: auto;
-    left: 0;
-}
-
 [dir="rtl"] .dropdown-item {
     text-align: right;
 }
 
 [dir="rtl"] .modal-footer {
     flex-direction: row-reverse;
-}
-
-[dir="rtl"] .warning-note {
-    text-align: right;
 }
 
 [dir="rtl"] .stats-grid {
@@ -781,20 +693,12 @@
     text-align: right;
 }
 
-/* =====================================================
-   RESPONSIVE DESIGN
-   ===================================================== */
-@media (max-width: 1024px) {
+/* Mobile Responsive */
+@media (max-width: 768px) {
     .exam-management {
         padding: 1rem;
     }
 
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
     .page-header {
         flex-direction: column;
         align-items: flex-start;
@@ -826,8 +730,14 @@
         align-items: flex-start;
     }
 
-    .exam-meta {
-        flex-wrap: wrap;
+    .dropdown-menu-custom {
+        position: fixed !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: calc(100% - 20px) !important;
+        max-width: 280px !important;
+        min-width: auto !important;
     }
 }
 
@@ -857,75 +767,7 @@
         padding: 1rem;
     }
 
-    .dropdown-menu-custom {
-        position: fixed;
-        top: auto;
-        right: 1rem;
-        left: 1rem;
-        width: auto;
-        min-width: auto;
+    .actions-cell {
+        width: 50px;
     }
-}
-
-/* =====================================================
-   MOBILE-SPECIFIC STYLES
-   ===================================================== */
-
-/* تحسين القائمة المنسدلة على الموبايل */
-@media (max-width: 768px) {
-    .actions-dropdown {
-        position: static;
-    }
-
-    .dropdown-menu-custom {
-        position: fixed !important;
-        max-width: calc(100% - 20px);
-        width: auto;
-        min-width: 200px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        z-index: 10000 !important;
-    }
-
-        .dropdown-menu-custom.show {
-            display: block;
-        }
-
-    .dropdown-trigger {
-        padding: 10px;
-        min-width: 44px;
-        min-height: 44px;
-    }
-
-        .dropdown-trigger i {
-            font-size: 1.5rem;
-        }
-
-    .dropdown-item {
-        padding: 12px 16px;
-        font-size: 1rem;
-    }
-
-        .dropdown-item i {
-            font-size: 1.25rem;
-        }
-}
-
-/* تحسين منطقة اللمس للأزرار */
-.dropdown-trigger {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-    .dropdown-trigger:active {
-        background: var(--gray-100);
-        transform: scale(0.95);
-    }
-
-/* منع التمرير الخلفي عند فتح القائمة */
-body.dropdown-open {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
 }

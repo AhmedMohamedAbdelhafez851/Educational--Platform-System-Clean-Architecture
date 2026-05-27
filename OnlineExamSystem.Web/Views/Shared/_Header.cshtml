@@ -1,38 +1,94 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
+﻿
+@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 
+@{
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+    var action = ViewContext.RouteData.Values["action"]?.ToString();
+
+    var isLoginPage = controller == "Account" && action == "Login";
+}
+
 <nav class="navbar navbar-expand-lg">
+
     <div class="container">
+
         <!-- Brand Logo -->
         <a class="navbar-brand" href="/">
+
             <div class="brand-wrapper">
+
                 <div class="brand-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="32" height="32" rx="8" fill="url(#brandGradient)" />
-                        <path d="M10 22L16 10L22 22H18L16 18L14 22H10Z" fill="white" />
+
+                    <svg width="32"
+                         height="32"
+                         viewBox="0 0 32 32"
+                         fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+
+                        <rect width="32"
+                              height="32"
+                              rx="8"
+                              fill="url(#brandGradient)" />
+
+                        <path d="M10 22L16 10L22 22H18L16 18L14 22H10Z"
+                              fill="white" />
+
                         <defs>
-                            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <linearGradient id="brandGradient"
+                                            x1="0%"
+                                            y1="0%"
+                                            x2="100%"
+                                            y2="100%">
+
                                 <stop offset="0%" stop-color="#667eea" />
                                 <stop offset="100%" stop-color="#764ba2" />
+
                             </linearGradient>
                         </defs>
+
                     </svg>
+
                 </div>
+
                 <div class="brand-text">
-                    <span class="brand-name">@Localizer["AppShortTitle"]</span>
-                    <span class="brand-tagline">@Localizer["AppTagline"]</span>
+
+                    <span class="brand-name">
+                        @Localizer["AppShortTitle"]
+                    </span>
+
+                    <span class="brand-tagline">
+                        @Localizer["AppTagline"]
+                    </span>
+
                 </div>
+
             </div>
+
         </a>
 
         <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        @if (!isLoginPage)
+        {
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-        <!-- Navigation Content -->
-        <div class="collapse navbar-collapse" id="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+        }
+
+        <!-- Navigation -->
+        <div class="@(isLoginPage ? "navbar-login-mobile" : "collapse navbar-collapse")"
+             id="navbarNav">
+
             <ul class="navbar-nav ms-auto">
+
                 @if (User.Identity?.IsAuthenticated ?? false)
                 {
                     <partial name="_UserMenu" />
@@ -41,13 +97,19 @@
                 {
                     <partial name="_AuthMenu" />
                 }
+
                 <partial name="_LanguageSwitcher" />
+
             </ul>
+
         </div>
+
     </div>
+
 </nav>
 
 <style>
+
     .navbar {
         padding: 0.75rem 0;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -58,7 +120,6 @@
         transition: all 0.3s ease;
     }
 
-    /* Brand Styles */
     .navbar-brand {
         padding: 0;
         transition: transform 0.2s ease;
@@ -100,7 +161,6 @@
         letter-spacing: 0.2px;
     }
 
-    /* Toggle Button */
     .navbar-toggler {
         border: none;
         padding: 0.5rem;
@@ -114,7 +174,7 @@
         }
 
         .navbar-toggler:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
             border-radius: 8px;
         }
 
@@ -122,7 +182,6 @@
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
-    /* Navigation Links */
     .nav-links {
         display: flex;
         align-items: center;
@@ -136,19 +195,19 @@
         font-size: 0.875rem;
         font-weight: 500;
         transition: all 0.2s ease;
-        color: rgba(255, 255, 255, 0.85);
+        color: rgba(255,255,255,0.85);
         position: relative;
         white-space: nowrap;
     }
 
         .nav-link:hover {
             color: white;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255,255,255,0.1);
         }
 
         .nav-link.active {
             color: white;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255,255,255,0.15);
         }
 
             .nav-link.active::after {
@@ -163,7 +222,6 @@
                 border-radius: 2px;
             }
 
-    /* User Menu */
     .user-menu {
         position: relative;
     }
@@ -182,13 +240,13 @@
         }
 
             .user-menu .dropdown-toggle:hover {
-                background: rgba(255, 255, 255, 0.1);
+                background: rgba(255,255,255,0.1);
             }
 
     .user-avatar {
         width: 36px;
         height: 36px;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255,255,255,0.2);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -215,7 +273,6 @@
         line-height: 1.2;
     }
 
-    /* Dropdown Menu */
     .dropdown-menu {
         animation: dropdownFade 0.2s ease;
         border: none;
@@ -226,6 +283,7 @@
     }
 
     @@keyframes dropdownFade {
+
         from {
             opacity: 0;
             transform: translateY(-10px);
@@ -259,10 +317,8 @@
         margin: 0.25rem 0;
     }
 
-    /* =====================================================
-           MOBILE RESPONSIVE STYLES
-        ===================================================== */
     @@media (max-width: 991px) {
+
         .navbar {
             padding: 0.5rem 0;
         }
@@ -275,7 +331,7 @@
             max-height: calc(100vh - 70px);
             overflow-y: auto;
         }
-        /* Mobile navigation links */
+
         .nav-links {
             flex-direction: column;
             width: 100%;
@@ -293,7 +349,7 @@
             .nav-link.active::after {
                 display: none;
             }
-        /* Mobile user menu */
+
         .user-menu {
             width: 100%;
         }
@@ -322,7 +378,7 @@
         .dropdown-item {
             padding: 0.625rem 1rem;
         }
-        /* Language switcher on mobile */
+
         .language-switcher {
             width: 100%;
             margin-top: 0.5rem;
@@ -334,10 +390,33 @@
                 color: white;
                 border: 1px solid rgba(255,255,255,0.3);
             }
+        /* Login Page Mobile */
+
+        .navbar-login-mobile {
+            display: flex !important;
+            justify-content: flex-end;
+            align-items: center;
+            width: auto;
+        }
+
+            .navbar-login-mobile .navbar-nav {
+                flex-direction: row;
+                align-items: center;
+                margin-left: auto;
+            }
+
+            .navbar-login-mobile .language-switcher {
+                width: auto;
+                margin-top: 0;
+            }
+
+            .navbar-login-mobile .form-select {
+                min-width: 120px;
+            }
     }
 
-    /* Small mobile devices */
     @@media (max-width: 576px) {
+
         .brand-name {
             font-size: 1rem;
         }
@@ -356,9 +435,6 @@
         }
     }
 
-    /* =====================================================
-           RTL SUPPORT
-        ===================================================== */
     body[dir="rtl"] .user-info {
         text-align: right;
     }
@@ -369,6 +445,7 @@
     }
 
     @@media (max-width: 991px) {
+
         body[dir="rtl"] .user-info {
             text-align: right;
         }
@@ -377,23 +454,30 @@
             margin-left: 0;
         }
     }
+
 </style>
 
 <script>
-    // =====================================================
-    // MOBILE MENU ENHANCEMENTS
-    // =====================================================
+
     (function () {
+
         'use strict';
 
-        // Close mobile menu when clicking outside
         document.addEventListener('click', function (event) {
+
             var navbar = document.getElementById('navbarNav');
             var toggler = document.querySelector('.navbar-toggler');
 
-            if (navbar && navbar.classList.contains('show')) {
-                if (!navbar.contains(event.target) && !toggler.contains(event.target)) {
+            if (!toggler || !navbar)
+                return;
+
+            if (navbar.classList.contains('show')) {
+
+                if (!navbar.contains(event.target) &&
+                    !toggler.contains(event.target)) {
+
                     var bsCollapse = bootstrap.Collapse.getInstance(navbar);
+
                     if (bsCollapse) {
                         bsCollapse.hide();
                     }
@@ -401,13 +485,20 @@
             }
         });
 
-        // Close dropdown menus when clicking outside
         document.addEventListener('click', function (event) {
+
             var dropdowns = document.querySelectorAll('.dropdown-menu.show');
+
             dropdowns.forEach(function (dropdown) {
+
                 var toggle = dropdown.previousElementSibling;
-                if (toggle && !toggle.contains(event.target) && !dropdown.contains(event.target)) {
+
+                if (toggle &&
+                    !toggle.contains(event.target) &&
+                    !dropdown.contains(event.target)) {
+
                     var bsDropdown = bootstrap.Dropdown.getInstance(toggle);
+
                     if (bsDropdown) {
                         bsDropdown.hide();
                     }
@@ -415,52 +506,6 @@
             });
         });
 
-        // Handle dropdown toggle on mobile to prevent auto-hide issues
-        var dropdownToggles = document.querySelectorAll('.user-menu .dropdown-toggle');
-        dropdownToggles.forEach(function (toggle) {
-            toggle.addEventListener('click', function (e) {
-                if (window.innerWidth <= 991) {
-                    e.preventDefault();
-                    var dropdown = this.nextElementSibling;
-                    if (dropdown.classList.contains('show')) {
-                        dropdown.classList.remove('show');
-                    } else {
-                        // Close other open dropdowns
-                        document.querySelectorAll('.dropdown-menu.show').forEach(function (menu) {
-                            menu.classList.remove('show');
-                        });
-                        dropdown.classList.add('show');
-                    }
-                }
-            });
-        });
-
-        // Close mobile menu when window is resized above mobile breakpoint
-        var resizeTimer;
-        window.addEventListener('resize', function () {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function () {
-                if (window.innerWidth > 991) {
-                    var navbar = document.getElementById('navbarNav');
-                    if (navbar && navbar.classList.contains('show')) {
-                        var bsCollapse = bootstrap.Collapse.getInstance(navbar);
-                        if (bsCollapse) {
-                            bsCollapse.hide();
-                        }
-                    }
-                }
-            }, 250);
-        });
-
-        // Prevent body scroll when mobile menu is open (optional)
-        var navbarNav = document.getElementById('navbarNav');
-        if (navbarNav) {
-            navbarNav.addEventListener('show.bs.collapse', function () {
-                document.body.style.overflow = 'hidden';
-            });
-            navbarNav.addEventListener('hide.bs.collapse', function () {
-                document.body.style.overflow = '';
-            });
-        }
     })();
+
 </script>

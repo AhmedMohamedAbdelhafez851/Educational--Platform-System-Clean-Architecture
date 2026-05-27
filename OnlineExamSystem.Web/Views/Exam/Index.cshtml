@@ -5,7 +5,7 @@
 
 @{
     ViewData["Title"] = "إدارة الامتحانات";
-    var isRtl = true;
+//    var isRtl = true;
 }
 
 @section Styles {
@@ -93,6 +93,7 @@
                         <tr>
                             <th>عنوان الامتحان</th>
                             <th>المدة</th>
+                            <th>الدرجة</th>
                             <th>الأسئلة</th>
                             <th class="actions-column">إجراءات</th>
                         </tr>
@@ -100,7 +101,7 @@
                     <tbody>
                         @foreach (var exam in Model)
                         {
-                            <tr id="exam-row-@exam.ExamId" class="exam-row">
+                            <tr id="exam-row-@exam.ExamId" class="exam-row" data-exam-id="@exam.ExamId">
                                 <td class="exam-title-cell">
                                     <div class="exam-info">
                                         <div class="exam-icon">
@@ -120,25 +121,31 @@
                                             </div>
                                         </div>
                                     </div>
-                                 </td>
+                                </td>
                                 <td class="exam-duration-cell">
                                     <div class="duration-badge">
                                         <i class="bi bi-hourglass-split"></i>
                                         <span>@exam.DurationInMinutes د</span>
                                     </div>
-                                 </td>
+                                </td>
+                                <td class="exam-degree-cell">
+                                    <div class="degree-badge">
+                                        <i class="bi bi-star-fill"></i>
+                                        <span>@exam.TotalDegree</span>
+                                    </div>
+                                </td>
                                 <td class="exam-questions-cell">
                                     <div class="questions-count">
                                         <i class="bi bi-question-circle"></i>
                                         <span>@exam.QuestionsCount</span>
                                     </div>
-                                 </td>
+                                </td>
                                 <td class="actions-cell">
                                     <div class="actions-dropdown">
-                                        <button class="dropdown-trigger" data-exam-id="@exam.ExamId" aria-label="إجراءات">
+                                        <button type="button" class="dropdown-trigger" data-exam-id="@exam.ExamId" data-exam-title="@exam.Title" aria-label="إجراءات">
                                             <i class="bi bi-three-dots-vertical"></i>
                                         </button>
-                                        <div class="dropdown-menu-custom" id="dropdown-@exam.ExamId" data-exam-id="@exam.ExamId">
+                                        <div class="dropdown-menu-custom" id="dropdown-@exam.ExamId">
                                             <a asp-controller="Question" asp-action="Index" asp-route-examId="@exam.ExamId" class="dropdown-item">
                                                 <i class="bi bi-list-check"></i>
                                                 <span>إدارة الأسئلة</span>
@@ -152,24 +159,24 @@
                                                 <span>عرض التحليلات</span>
                                             </a>
                                             <div class="dropdown-divider"></div>
-                                            <button type="button" class="dropdown-item edit-exam-btn" 
-                                                    data-id="@exam.ExamId" 
-                                                    data-title="@exam.Title" 
-                                                    data-time="@exam.DurationInMinutes" 
+                                            <button type="button" class="dropdown-item edit-exam-btn"
+                                                    data-id="@exam.ExamId"
+                                                    data-title="@exam.Title"
+                                                    data-time="@exam.DurationInMinutes"
                                                     data-degree="@exam.TotalDegree">
                                                 <i class="bi bi-pencil-square"></i>
                                                 <span>تعديل الامتحان</span>
                                             </button>
-                                            <button type="button" class="dropdown-item delete-exam-btn text-danger" 
-                                                    data-id="@exam.ExamId" 
+                                            <button type="button" class="dropdown-item delete-exam-btn text-danger"
+                                                    data-id="@exam.ExamId"
                                                     data-title="@exam.Title">
                                                 <i class="bi bi-trash3"></i>
                                                 <span>حذف الامتحان</span>
                                             </button>
                                         </div>
                                     </div>
-                                 </td>
-                             </tr>
+                                </td>
+                            </tr>
                         }
                     </tbody>
                 </table>
@@ -193,18 +200,18 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="examTitle" class="form-label">عنوان الامتحان</label>
-                        <input type="text" class="form-control" id="examTitle" name="Title" 
+                        <input type="text" class="form-control" id="examTitle" name="Title"
                                placeholder="أدخل عنوان الامتحان" required autocomplete="off">
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label for="examTime" class="form-label">المدة (دقائق)</label>
-                            <input type="number" class="form-control" id="examTime" name="DurationInMinutes" 
+                            <input type="number" class="form-control" id="examTime" name="DurationInMinutes"
                                    placeholder="60" min="1" value="60" required>
                         </div>
                         <div class="form-group">
                             <label for="examDegree" class="form-label">الدرجة الكلية</label>
-                            <input type="number" class="form-control" id="examDegree" name="TotalDegree" 
+                            <input type="number" class="form-control" id="examDegree" name="TotalDegree"
                                    placeholder="100" min="1" value="100" required>
                         </div>
                     </div>
@@ -288,233 +295,266 @@
 @section Scripts {
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
-    
+
     <script>
-        $(document).ready(function() {
-            var activeDropdown = null;
-            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        $(document).ready(function () {
+        var activeDropdown = null;
+        var currentOpenDropdownId = null;
 
-            // تهيئة جدول البيانات
-            var table = $('#examsTable').DataTable({
-                responsive: true,
-                pageLength: isMobile ? 5 : 10,
-                language: {
-                    sProcessing: "جارٍ التحميل...",
-                    sLengthMenu: "أظهر _MENU_ مدخلات",
-                    sZeroRecords: "لم يتم العثور على نتائج",
-                    sInfo: "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
-                    sInfoEmpty: "يعرض 0 إلى 0 من أصل 0 سجل",
-                    sInfoFiltered: "(تمت التصفية من مجموع _MAX_ مدخل)",
-                    sSearch: "ابحث:",
-                    oPaginate: {
-                        sFirst: "الأول",
-                        sPrevious: "السابق",
-                        sNext: "التالي",
-                        sLast: "الأخير"
-                    }
-                },
-                columnDefs: [
-                    { orderable: false, targets: -1 }
-                ]
-            });
+        // =====================================================
+        // INITIALIZE DATATABLE
+        // =====================================================
+        var table = $('#examsTable').DataTable({
+        responsive: true,
+        pageLength: 10,
+        scrollY: false,
+        scrollX: false,
+        language: {
+        sProcessing: "جارٍ التحميل...",
+        sLengthMenu: "أظهر _MENU_ مدخلات",
+        sZeroRecords: "لم يتم العثور على نتائج",
+        sInfo: "إظهار _START_ إلى _END_ من أصل _TOTAL_ مدخل",
+        sInfoEmpty: "يعرض 0 إلى 0 من أصل 0 سجل",
+        sInfoFiltered: "(تمت التصفية من مجموع _MAX_ مدخل)",
+        sSearch: "ابحث:",
+        oPaginate: {
+        sFirst: "الأول",
+        sPrevious: "السابق",
+        sNext: "التالي",
+        sLast: "الأخير"
+        }
+        },
+        columnDefs: [
+        { orderable: false, targets: -1 }
+        ],
+        drawCallback: function () {
+        setTimeout(function () {
+        attachDropdownEvents();
+        }, 10);
+        }
+        });
 
-            // البحث المخصص
-            $('#searchExams').on('keyup', function() {
-                table.search($(this).val()).draw();
-            });
+        // Custom search
+        $('#searchExams').on('keyup', function () {
+        table.search($(this).val()).draw();
+        });
 
-            // =====================================================
-            // معالج القائمة المنسدلة - متوافق مع الموبايل
-            // =====================================================
-            
-            // فتح القائمة عند النقر على زر الثلاث نقاط
-            $(document).on('click', '.dropdown-trigger', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                
-                var examId = $(this).data('exam-id');
-                var dropdown = $('#dropdown-' + examId);
-                var triggerButton = $(this);
-                
-                // إغلاق جميع القوائم الأخرى
-                $('.dropdown-menu-custom.show').not(dropdown).removeClass('show');
-                
-                // تبديل القائمة الحالية
-                if (dropdown.hasClass('show')) {
-                    dropdown.removeClass('show');
-                    activeDropdown = null;
-                } else {
-                    // تحديد موقع القائمة بناءً على نوع الجهاز
-                    if (isMobile) {
-                        // على الموبايل: نضع القائمة في منتصف الشاشة تقريباً
-                        var buttonOffset = triggerButton.offset();
-                        var windowHeight = $(window).height();
-                        var dropdownHeight = 280; // ارتفاع تقريبي للقائمة
-                        var topPosition = buttonOffset.top - 20;
-                        
-                        if (topPosition + dropdownHeight > windowHeight) {
-                            topPosition = windowHeight - dropdownHeight - 10;
-                        }
-                        
-                        dropdown.css({
-                            'position': 'fixed',
-                            'top': topPosition + 'px',
-                            'right': '10px',
-                            'left': 'auto',
-                            'min-width': '200px',
-                            'z-index': 9999
-                        });
-                    } else {
-                        // على سطح المكتب: نضع القائمة بجوار الزر
-                        dropdown.css({
-                            'position': 'absolute',
-                            'top': '100%',
-                            'right': '0',
-                            'left': 'auto'
-                        });
-                    }
-                    
-                    dropdown.addClass('show');
-                    activeDropdown = dropdown;
-                }
-            });
-            
-            // إغلاق القائمة عند النقر خارجها
-            $(document).on('click', function(e) {
-                if (!$(e.target).closest('.actions-dropdown').length) {
-                    $('.dropdown-menu-custom.show').removeClass('show');
-                    $('.dropdown-menu-custom').css('position', '');
-                    activeDropdown = null;
-                }
-            });
-            
-            // إغلاق القائمة عند الضغط على زر الإلغاء
-            $(document).on('click', '.dropdown-item', function() {
-                $('.dropdown-menu-custom.show').removeClass('show');
-                $('.dropdown-menu-custom').css('position', '');
-                activeDropdown = null;
-            });
-            
-            // إغلاق القائمة عند الضغط على Escape
-            $(document).on('keydown', function(e) {
-                if (e.key === 'Escape' && activeDropdown) {
-                    activeDropdown.removeClass('show');
-                    activeDropdown.css('position', '');
-                    activeDropdown = null;
-                }
-            });
+        // =====================================================
+        // DROPDOWN FUNCTIONS
+        // =====================================================
 
-            // =====================================================
-            // نافذة إنشاء امتحان جديد
-            // =====================================================
-            $('#openCreateModalBtn, #openCreateModalBtnEmpty').on('click', function() {
-                $('#createExamForm')[0].reset();
-                $('#createExamModal').modal('show');
-            });
+        function attachDropdownEvents() {
+        $(document).off('click', '.dropdown-trigger');
+        $(document).off('click', dropdownOutsideClickHandler);
+        $(document).off('keydown', escapeKeyHandler);
 
-            $("#createExamForm").submit(function(e) {
-                e.preventDefault();
-                var $form = $(this);
-                var $submitBtn = $form.find('.btn-primary');
-                
-                $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الإنشاء...');
+        $(document).on('click', '.dropdown-trigger', dropdownClickHandler);
+        $(document).on('click', dropdownOutsideClickHandler);
+        $(document).on('keydown', escapeKeyHandler);
+        }
 
-                $.ajax({
-                    url: '@Url.Action("Create", "Exam")',
-                    type: 'POST',
-                    data: $form.serialize(),
-                    success: function() {
-                        $('#createExamModal').modal('hide');
-                        location.reload();
-                    },
-                    error: function(xhr) {
-                        alert(xhr.responseText);
-                        $submitBtn.prop('disabled', false).html('إنشاء الامتحان');
-                    }
-                });
-            });
+        function dropdownClickHandler(e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-            // =====================================================
-            // تعديل الامتحان
-            // =====================================================
-            $(document).on("click", ".edit-exam-btn", function() {
-                $("#editExamId").val($(this).data("id"));
-                $("#editExamTitle").val($(this).data("title"));
-                $("#editExamTime").val($(this).data("time"));
-                $("#editExamDegree").val($(this).data("degree"));
-                $("#editExamModal").modal("show");
-                $('.dropdown-menu-custom.show').removeClass('show');
-                $('.dropdown-menu-custom').css('position', '');
-            });
+        var $trigger = $(this);
+        var examId = $trigger.data('exam-id');
+        var $dropdown = $('#dropdown-' + examId);
 
-            $("#editExamForm").submit(function(e) {
-                e.preventDefault();
-                var examId = $("#editExamId").val();
-                var $form = $(this);
-                var $submitBtn = $form.find('.btn-primary');
-                
-                $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الحفظ...');
+        if (!$dropdown.length) {
+        return;
+        }
 
-                $.ajax({
-                    url: '@Url.Action("Edit", "Exam")/' + examId,
-                    type: 'POST',
-                    data: $form.serialize(),
-                    success: function() {
-                        $('#editExamModal').modal('hide');
-                        location.reload();
-                    },
-                    error: function(xhr) {
-                        alert(xhr.responseText);
-                        $submitBtn.prop('disabled', false).html('حفظ التغييرات');
-                    }
-                });
-            });
+        if (currentOpenDropdownId === examId && $dropdown.hasClass('show')) {
+        closeAllDropdowns();
+        return;
+        }
 
-            // =====================================================
-            // حذف الامتحان
-            // =====================================================
-            $(document).on("click", ".delete-exam-btn", function() {
-                var examId = $(this).data("id");
-                var examTitle = $(this).data("title");
-                $("#deleteExamTitle").text(examTitle);
-                $("#confirmDeleteExam").data("id", examId);
-                $("#deleteExamModal").modal("show");
-                $('.dropdown-menu-custom.show').removeClass('show');
-                $('.dropdown-menu-custom').css('position', '');
-            });
+        closeAllDropdowns();
 
-            $("#confirmDeleteExam").click(function() {
-                var examId = $(this).data("id");
-                var $btn = $(this);
-                
-                $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الحذف...');
+        var isMobile = window.innerWidth <= 768;
 
-                $.ajax({
-                    url: '@Url.Action("Delete", "Exam")/' + examId,
-                    type: 'POST',
-                    success: function() {
-                        $('#deleteExamModal').modal('hide');
-                        location.reload();
-                    },
-                    error: function(xhr) {
-                        alert(xhr.responseText);
-                        $btn.prop('disabled', false).html('حذف الامتحان');
-                    }
-                });
-            });
-            
-            // معالجة مشكلة اللمس على الموبايل
-            if (isMobile) {
-                // منع التمرير الخلفي عند فتح القائمة
-                $('.dropdown-menu-custom').on('touchmove', function(e) {
-                    e.stopPropagation();
-                });
-                
-                // تحسين تجربة اللمس للأزرار
-                $('.dropdown-trigger').on('touchstart', function(e) {
-                    // لا نحتاج لفعل إضافي، فقط نضمن أن الحدث يعمل
-                });
-            }
+        if (isMobile) {
+        $dropdown.css({
+        'position': 'fixed',
+        'top': '50%',
+        'left': '50%',
+        'right': 'auto',
+        'bottom': 'auto',
+        'transform': 'translate(-50%, -50%)',
+        'width': '280px',
+        'max-width': 'calc(100% - 20px)',
+        'display': 'block'
+        });
+        } else {
+        var triggerRect = $trigger[0].getBoundingClientRect();
+        var dropdownHeight = $dropdown.outerHeight();
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+
+        var topPosition = triggerRect.bottom + 5;
+        var bottomPosition = windowHeight - triggerRect.top + 5;
+
+        if (topPosition + dropdownHeight > windowHeight - 10) {
+        $dropdown.css({
+        'top': 'auto',
+        'bottom': bottomPosition + 'px'
+        });
+        } else {
+        $dropdown.css({
+        'top': topPosition + 'px',
+        'bottom': 'auto'
+        });
+        }
+
+        var leftPosition = triggerRect.left - $dropdown.outerWidth() - 5;
+
+        if (leftPosition < 10) {
+        leftPosition = triggerRect.right + 5;
+        }
+
+        if (leftPosition + $dropdown.outerWidth() > windowWidth - 10) {
+        leftPosition = windowWidth - $dropdown.outerWidth() - 10;
+        }
+        if (leftPosition < 10) {
+        leftPosition = 10;
+        }
+
+        $dropdown.css({
+        'position': 'fixed',
+        'left': leftPosition + 'px',
+        'right': 'auto',
+        'display': 'block'
+        });
+        }
+
+        $dropdown.addClass('show');
+        currentOpenDropdownId = examId;
+        activeDropdown = $dropdown;
+        }
+
+        function dropdownOutsideClickHandler(e) {
+        if (!$(e.target).closest('.dropdown-trigger').length &&
+        !$(e.target).closest('.dropdown-menu-custom').length) {
+        closeAllDropdowns();
+        }
+        }
+
+        function escapeKeyHandler(e) {
+        if (e.key === 'Escape') {
+        closeAllDropdowns();
+        }
+        }
+
+        function closeAllDropdowns() {
+        $('.dropdown-menu-custom').removeClass('show').css('display', '');
+        activeDropdown = null;
+        currentOpenDropdownId = null;
+        }
+
+        attachDropdownEvents();
+
+        $(window).on('resize scroll', function () {
+        closeAllDropdowns();
+        });
+
+        // =====================================================
+        // CREATE EXAM
+        // =====================================================
+        $('#openCreateModalBtn, #openCreateModalBtnEmpty').on('click', function () {
+        $('#createExamForm')[0].reset();
+        $('#createExamModal').modal('show');
+        closeAllDropdowns();
+        });
+
+        $("#createExamForm").submit(function (e) {
+        e.preventDefault();
+        var $form = $(this);
+        var $submitBtn = $form.find('.btn-primary');
+
+        $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الإنشاء...');
+
+        $.ajax({
+        url: '@Url.Action("Create", "Exam")',
+        type: 'POST',
+        data: $form.serialize(),
+        success: function () {
+        $('#createExamModal').modal('hide');
+        location.reload();
+        },
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $submitBtn.prop('disabled', false).html('إنشاء الامتحان');
+        }
+        });
+        });
+
+        // =====================================================
+        // EDIT EXAM
+        // =====================================================
+        $(document).on("click", ".edit-exam-btn", function () {
+        $("#editExamId").val($(this).data("id"));
+        $("#editExamTitle").val($(this).data("title"));
+        $("#editExamTime").val($(this).data("time"));
+        $("#editExamDegree").val($(this).data("degree"));
+        $("#editExamModal").modal("show");
+        closeAllDropdowns();
+        });
+
+        $("#editExamForm").submit(function (e) {
+        e.preventDefault();
+        var examId = $("#editExamId").val();
+        var $form = $(this);
+        var $submitBtn = $form.find('.btn-primary');
+
+        $submitBtn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الحفظ...');
+
+        $.ajax({
+        url: '@Url.Action("Edit", "Exam")/' + examId,
+        type: 'POST',
+        data: $form.serialize(),
+        success: function () {
+        $('#editExamModal').modal('hide');
+        location.reload();
+        },
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $submitBtn.prop('disabled', false).html('حفظ التغييرات');
+        }
+        });
+        });
+
+        // =====================================================
+        // DELETE EXAM
+        // =====================================================
+        $(document).on("click", ".delete-exam-btn", function () {
+        var examId = $(this).data("id");
+        var examTitle = $(this).data("title");
+        $("#deleteExamTitle").text(examTitle);
+        $("#confirmDeleteExam").data("id", examId);
+        $("#deleteExamModal").modal("show");
+        closeAllDropdowns();
+        });
+
+        $("#confirmDeleteExam").click(function () {
+        var examId = $(this).data("id");
+        var $btn = $(this);
+
+        $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> جاري الحذف...');
+
+        $.ajax({
+        url: '@Url.Action("Delete", "Exam")/' + examId,
+        type: 'POST',
+        success: function () {
+        $('#deleteExamModal').modal('hide');
+        location.reload();
+        },
+        error: function (xhr) {
+        alert(xhr.responseText);
+        $btn.prop('disabled', false).html('حذف الامتحان');
+        }
+        });
+        });
         });
     </script>
 }

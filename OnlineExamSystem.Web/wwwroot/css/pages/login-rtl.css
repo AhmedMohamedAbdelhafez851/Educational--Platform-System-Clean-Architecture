@@ -1,7 +1,8 @@
-﻿/* RTL Specific Styles for Login Page */
+﻿/* RTL Specific Styles for Login Page - No Scroll */
+
 body[dir="rtl"] .input-icon {
-    right: 1rem;
     left: auto;
+    right: 1rem;
 }
 
 body[dir="rtl"] .form-control-custom {
@@ -13,16 +14,26 @@ body[dir="rtl"] .password-toggle {
     left: 1rem;
 }
 
-body[dir="rtl"] .validation-summary ul {
-    padding-right: 1.25rem;
-    padding-left: 0;
+/* Mobile RTL */
+@media (max-width: 640px) {
+    body[dir="rtl"] .form-control-custom {
+        padding: 0.6rem 2.25rem 0.6rem 1rem;
+    }
+
+    body[dir="rtl"] .input-icon {
+        right: 0.8rem;
+        left: auto;
+    }
+
+    body[dir="rtl"] .password-toggle {
+        left: 0.8rem;
+        right: auto;
+    }
 }
 
-body[dir="rtl"] .me-2 {
-    margin-left: 0.5rem !important;
-    margin-right: 0 !important;
-}
-
-body[dir="rtl"] .checkbox-wrapper {
-    flex-direction: row-reverse;
+/* Extra Small RTL */
+@media (max-width: 480px) {
+    body[dir="rtl"] .form-control-custom {
+        padding: 0.55rem 2rem 0.55rem 1rem;
+    }
 }

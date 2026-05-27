@@ -10,14 +10,347 @@
             ? (User.IsInRole("Admin") ? "/Exam" : "/UserExam")
             : "/Account/Login")
         : currentPath + currentQuery;
+
+    var isArabic = CultureInfo.CurrentUICulture.Name == "ar-EG";
+    var currentLangLabel = isArabic ? "العربية" : "English";
+    var currentLangFlag = isArabic ? "AR" : "EN";
 }
 
-<li class="nav-item language-switcher">
-    <form asp-controller="Account" asp-action="SetLanguage" method="post" class="form-inline">
+<li class="nav-item language-switcher-wrapper">
+
+    <!-- Hidden forms — one per language, submitted by JS -->
+    <form id="lang-form-en" asp-controller="Account" asp-action="SetLanguage" method="post" style="display:none;">
         <input type="hidden" name="returnUrl" value="@returnUrl" />
-        <select name="culture" class="form-select form-select-sm" onchange="this.form.submit()" style="background-color: rgba(255,255,255,0.2); color: white; border: none;">
-            <option value="en-US" selected="@(CultureInfo.CurrentUICulture.Name == "en-US")">English</option>
-            <option value="ar-EG" selected="@(CultureInfo.CurrentUICulture.Name == "ar-EG")">العربية</option>
-        </select>
+        <input type="hidden" name="culture" value="en-US" />
     </form>
+    <form id="lang-form-ar" asp-controller="Account" asp-action="SetLanguage" method="post" style="display:none;">
+        <input type="hidden" name="returnUrl" value="@returnUrl" />
+        <input type="hidden" name="culture" value="ar-EG" />
+    </form>
+
+    <!-- Custom Dropdown Trigger -->
+    <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-trigger" type="button" aria-haspopup="listbox" aria-expanded="false" id="langTriggerBtn">
+            <span class="lang-badge">@currentLangFlag</span>
+            <span class="lang-label">@currentLangLabel</span>
+            <svg class="lang-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+
+        <!-- Dropdown Panel -->
+        <ul class="lang-dropdown" role="listbox" id="langDropdown">
+            <li class="lang-option @(!isArabic ? "lang-option--active" : "")"
+                role="option"
+                data-form="lang-form-en"
+                tabindex="0">
+                <span class="lang-option-badge">EN</span>
+                <span class="lang-option-text">English</span>
+                @if (!isArabic)
+                {
+                    <svg class="lang-check" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                }
+            </li>
+            <li class="lang-option @(isArabic ? "lang-option--active" : "")"
+                role="option"
+                data-form="lang-form-ar"
+                tabindex="0">
+                <span class="lang-option-badge">AR</span>
+                <span class="lang-option-text">العربية</span>
+                @if (isArabic)
+                {
+                    <svg class="lang-check" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M2.5 7L5.5 10L11.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                }
+            </li>
+        </ul>
+    </div>
 </li>
+
+<style>
+    /* =====================================================
+           LANGUAGE SWITCHER — CUSTOM DROPDOWN
+           Matches the app's purple gradient navbar theme
+        ===================================================== */
+
+    .language-switcher-wrapper {
+        display: flex;
+        align-items: center;
+        margin-left: 0.5rem;
+    }
+
+    body[dir="rtl"] .language-switcher-wrapper {
+        margin-left: 0;
+        margin-right: 0.5rem;
+    }
+
+    /* ---------- Trigger Button ---------- */
+    .lang-switcher {
+        position: relative;
+    }
+
+    .lang-trigger {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.65rem;
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 10px;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        white-space: nowrap;
+        font-family: inherit;
+        line-height: 1;
+    }
+
+        .lang-trigger:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.45);
+        }
+
+        .lang-trigger:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4);
+        }
+
+    /* Active state when open */
+    .lang-switcher.open .lang-trigger {
+        background: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* ---------- Badge (EN / AR pill) ---------- */
+    .lang-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 22px;
+        height: 22px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.25);
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+    }
+
+    .lang-label {
+        font-size: 0.8rem;
+    }
+
+    /* ---------- Chevron Rotation ---------- */
+    .lang-chevron {
+        transition: transform 0.2s ease;
+        color: rgba(255, 255, 255, 0.8);
+        flex-shrink: 0;
+    }
+
+    .lang-switcher.open .lang-chevron {
+        transform: rotate(180deg);
+    }
+
+    /* ---------- Dropdown Panel ---------- */
+    .lang-dropdown {
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right: 0;
+        min-width: 160px;
+        background: linear-gradient(145deg, #5c6bc0 0%, #6a3fa0 100%);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 14px;
+        padding: 0.4rem;
+        list-style: none;
+        margin: 0;
+        z-index: 9999;
+        box-shadow: 0 8px 32px rgba(102, 126, 234, 0.45), 0 2px 8px rgba(0, 0, 0, 0.2);
+        /* Entrance animation */
+        animation: langDropIn 0.18s ease forwards;
+        transform-origin: top right;
+    }
+
+    body[dir="rtl"] .lang-dropdown {
+        right: auto;
+        left: 0;
+        transform-origin: top left;
+    }
+
+    .lang-switcher.open .lang-dropdown {
+        display: block;
+    }
+
+    @@keyframes langDropIn {
+        from {
+            opacity: 0;
+            transform: scale(0.92) translateY(-6px);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    }
+
+    /* ---------- Individual Option ---------- */
+    .lang-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 0.65rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background 0.15s ease;
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 0.85rem;
+        font-family: inherit;
+    }
+
+        .lang-option:hover {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .lang-option:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+    /* Active / selected option */
+    .lang-option--active {
+        background: rgba(255, 255, 255, 0.18);
+        color: white;
+        font-weight: 600;
+    }
+
+    /* Option badge */
+    .lang-option-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 7px;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+    }
+
+    .lang-option--active .lang-option-badge {
+        background: rgba(255, 255, 255, 0.35);
+    }
+
+    .lang-option-text {
+        flex: 1;
+    }
+
+    /* Checkmark icon for active option */
+    .lang-check {
+        color: rgba(255, 255, 255, 0.9);
+        flex-shrink: 0;
+    }
+
+    /* ---------- Mobile ---------- */
+    @@media (max-width: 991px) {
+        .language-switcher-wrapper {
+            width: 100%;
+            margin-top: 0.5rem;
+            margin-left: 0;
+        }
+
+        body[dir="rtl"] .language-switcher-wrapper {
+            margin-right: 0;
+        }
+
+        .lang-switcher {
+            width: 100%;
+        }
+
+        .lang-trigger {
+            width: 100%;
+            justify-content: space-between;
+            padding: 0.65rem 0.85rem;
+            border-radius: 12px;
+            font-size: 0.875rem;
+        }
+
+        .lang-dropdown {
+            position: static;
+            display: none;
+            width: 100%;
+            box-shadow: none;
+            border-color: rgba(255, 255, 255, 0.2);
+            margin-top: 0.4rem;
+            animation: none;
+        }
+
+        .lang-switcher.open .lang-dropdown {
+            display: block;
+        }
+    }
+</style>
+
+<script>
+    (function () {
+        'use strict';
+
+        var switcher = document.getElementById('langSwitcher');
+        var triggerBtn = document.getElementById('langTriggerBtn');
+        var dropdown = document.getElementById('langDropdown');
+
+        if (!switcher || !triggerBtn || !dropdown) return;
+
+        // ---- Toggle open/close ----
+        triggerBtn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var isOpen = switcher.classList.toggle('open');
+            triggerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        // ---- Select an option ----
+        var options = dropdown.querySelectorAll('.lang-option');
+        options.forEach(function (opt) {
+            opt.addEventListener('click', function () {
+                var formId = this.getAttribute('data-form');
+                var form = document.getElementById(formId);
+                if (form) { form.submit(); }
+            });
+
+            // Keyboard accessibility
+            opt.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    var formId = this.getAttribute('data-form');
+                    var form = document.getElementById(formId);
+                    if (form) { form.submit(); }
+                }
+            });
+        });
+
+        // ---- Close when clicking outside ----
+        document.addEventListener('click', function (e) {
+            if (!switcher.contains(e.target)) {
+                switcher.classList.remove('open');
+                triggerBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // ---- Close on Escape ----
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && switcher.classList.contains('open')) {
+                switcher.classList.remove('open');
+                triggerBtn.setAttribute('aria-expanded', 'false');
+                triggerBtn.focus();
+            }
+        });
+    })();
+</script>

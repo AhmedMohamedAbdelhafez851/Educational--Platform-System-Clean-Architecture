@@ -1,0 +1,65 @@
+2026-05-24 09:56:52 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-24 09:58:03 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-24 09:58:14 [User:] [IP:] [Error] Failed executing DbCommand ("5,005"ms) [Parameters=[""], CommandType='Text', CommandTimeout='120']"
+""CREATE DATABASE [OnlineExamDb_1];"
+2026-05-24 10:00:57 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-24 10:16:10 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 150.9508 ms
+2026-05-24 10:16:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 1877.9188 ms
+2026-05-24 10:16:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 209.0925 ms
+2026-05-24 10:16:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 75.7467 ms
+2026-05-24 10:29:00 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 266.5917 ms
+2026-05-24 10:30:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 13.4566 ms
+2026-05-24 10:30:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 74.0034 ms
+2026-05-24 15:12:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 617.7915 ms
+2026-05-24 15:13:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 819.7109 ms
+2026-05-24 15:13:21 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 5169.1696 ms
+2026-05-24 15:13:21 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 452.9595 ms
+2026-05-24 15:13:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 136.9480 ms
+2026-05-24 15:19:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 84.8752 ms
+2026-05-24 15:22:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 417.5939 ms
+2026-05-24 15:23:01 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 449.2580 ms
+2026-05-24 15:23:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 410.9634 ms
+2026-05-24 15:23:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 119.6015 ms
+2026-05-24 15:27:15 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1815 ms
+2026-05-24 16:38:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 447.3455 ms
+2026-05-24 16:39:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 434.7333 ms
+2026-05-24 16:39:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 553.7975 ms
+2026-05-24 16:39:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 148.2850 ms
+2026-05-24 16:56:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 82.8080 ms
+2026-05-24 17:03:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 100.6016 ms
+2026-05-24 17:07:39 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 51.2561 ms
+2026-05-24 17:08:23 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 51.8483 ms
+2026-05-24 17:10:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 393.3080 ms
+2026-05-24 17:10:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 422.9986 ms
+2026-05-24 17:10:41 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 495.0179 ms
+2026-05-24 17:10:47 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 131.0028 ms
+2026-05-24 17:10:57 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0925 ms
+2026-05-24 17:11:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0241 ms
+2026-05-24 17:18:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0260 ms
+2026-05-24 17:19:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 90.5279 ms
+2026-05-24 17:19:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0208 ms
+2026-05-24 17:25:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 102.2179 ms
+2026-05-24 17:25:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0300 ms
+2026-05-24 17:29:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 422.1594 ms
+2026-05-24 17:30:01 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 405.2381 ms
+2026-05-24 17:30:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 516.9422 ms
+2026-05-24 17:30:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 161.7072 ms
+2026-05-24 17:30:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Question/Index" responded 200 in 188.3775 ms
+2026-05-24 17:30:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 64.3176 ms
+2026-05-24 17:32:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1383 ms
+2026-05-24 17:32:48 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 9.2512 ms
+2026-05-24 17:32:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 25.7980 ms
+2026-05-24 17:33:20 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 261.3123 ms
+2026-05-24 17:33:20 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 62.6369 ms
+2026-05-24 17:35:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 60.8744 ms
+2026-05-24 17:37:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 63.1002 ms
+2026-05-24 17:37:12 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 364.3315 ms
+2026-05-24 17:38:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 59152.9598 ms
+2026-05-24 17:38:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 38550.4059 ms
+2026-05-24 17:38:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 48036.0559 ms
+2026-05-24 17:38:13 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 50202.1856 ms
+2026-05-24 17:38:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 36634.9443 ms
+2026-05-24 17:38:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/ExamReport" responded 200 in 40665.3621 ms
+2026-05-24 17:41:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/8" responded 200 in 186.1862 ms
+2026-05-24 17:41:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/19" responded 200 in 186.4084 ms
+2026-05-24 17:47:48 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 60.5029 ms

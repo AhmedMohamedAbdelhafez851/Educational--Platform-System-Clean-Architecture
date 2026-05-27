@@ -9,7 +9,10 @@
         public double AverageStudentScore { get; set; }
         public int StudentsNeedingAttention { get; set; }
         public double AttendanceRate { get; set; }
-
+        // Add these if missing
+        public int ActiveStudents { get; set; }
+        public double HighestScore { get; set; }
+        public double LowestScore { get; set; }
         // Recent Exams
         public List<RecentExamDto> RecentExams { get; set; } = new();
 

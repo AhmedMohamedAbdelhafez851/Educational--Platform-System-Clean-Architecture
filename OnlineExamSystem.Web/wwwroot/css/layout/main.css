@@ -1,18 +1,29 @@
-﻿/* Global Styles */
+﻿/* =========================================
+   GLOBAL RESET
+========================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* =========================================
+   BODY
+========================================= */
+
 body {
     font-family: 'Inter', 'Cairo', sans-serif;
     background: #f8fafc;
     color: #1e293b;
     line-height: 1.5;
+    min-height: 100vh;
 }
 
-/* Wrapper */
+/* =========================================
+   WRAPPER LAYOUT
+========================================= */
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -23,16 +34,23 @@ body {
     flex: 1;
 }
 
-/* Container */
+/* =========================================
+   CONTAINER
+========================================= */
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
-/* Cards */
+/* =========================================
+   CARDS
+========================================= */
+
 .card {
-    background: white;
+    background: #ffffff;
     border-radius: 24px;
     border: none;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
@@ -43,7 +61,10 @@ body {
         box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
     }
 
-/* Buttons */
+/* =========================================
+   BUTTONS
+========================================= */
+
 .btn {
     border-radius: 12px;
     padding: 0.5rem 1rem;
@@ -61,7 +82,10 @@ body {
         box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
 
-/* Tables */
+/* =========================================
+   TABLES
+========================================= */
+
 .table {
     border-radius: 16px;
     overflow: hidden;
@@ -88,7 +112,10 @@ body {
         background: #f8fafc;
     }
 
-/* Badges */
+/* =========================================
+   BADGES
+========================================= */
+
 .badge {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
@@ -96,7 +123,10 @@ body {
     font-size: 0.75rem;
 }
 
-/* Scroll to Top */
+/* =========================================
+   SCROLL TO TOP BUTTON
+========================================= */
+
 .scroll-to-top {
     position: fixed;
     bottom: 2rem;
@@ -130,9 +160,178 @@ body[dir="rtl"] .scroll-to-top {
     left: 2rem;
 }
 
-/* Responsive */
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+    .footer-links a {
+        transition: all 0.2s ease;
+        font-size: 0.95rem;
+    }
+
+        .footer-links a:hover {
+            opacity: 0.85;
+            transform: translateY(-1px);
+        }
+
+.social-icons a {
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+    .social-icons a:hover {
+        transform: translateY(-2px);
+        opacity: 0.85;
+    }
+
+/* =========================================
+   TOAST NOTIFICATIONS
+========================================= */
+
+.toast-notification {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 2000;
+}
+
+.toast {
+    min-width: 320px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+body[dir="rtl"] .toast-notification {
+    right: auto;
+    left: 20px;
+}
+
+/* =========================================
+   LOGIN PAGE LAYOUT
+========================================= */
+
+body.login-page {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+    body.login-page .wrapper {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body.login-page .main-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    body.login-page .container {
+        width: 100%;
+    }
+
+    body.login-page footer {
+        margin-top: auto;
+    }
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .footer-links {
+        gap: 1rem;
+    }
+
+    .toast {
+        min-width: 280px;
+    }
+}
+
 @media (max-width: 768px) {
+
     .container {
-        padding: 0 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .toast-notification {
+        top: 80px;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .toast {
+        min-width: auto;
+        width: 100%;
+    }
+
+    /* LOGIN PAGE MOBILE */
+
+    body.login-page {
+        overflow-y: auto;
+    }
+
+        body.login-page .main-content {
+            padding: 1rem 0;
+            align-items: center;
+        }
+
+        body.login-page .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+}
+
+@media (max-width: 576px) {
+
+    footer {
+        padding: 1.5rem 0;
+    }
+
+    .footer-links {
+        gap: 0.75rem;
+    }
+
+        .footer-links a {
+            font-size: 0.85rem;
+        }
+
+    .social-icons a {
+        font-size: 1rem;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 0.75rem;
+    }
+
+    .card {
+        border-radius: 20px;
     }
 }

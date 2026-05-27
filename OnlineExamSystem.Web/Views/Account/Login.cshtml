@@ -9,7 +9,9 @@
 }
 
 @section Styles {
+
     <link href="~/css/pages/login.css" rel="stylesheet" />
+
     @if (CultureInfo.CurrentUICulture.Name == "ar-EG")
     {
         <link href="~/css/pages/login-rtl.css" rel="stylesheet" />
@@ -17,229 +19,406 @@
 }
 
 <div class="login-container">
+
     <div class="login-card">
-        <!-- Header -->
+
+        <!-- =========================================
+             HEADER
+        ========================================== -->
+
         <div class="login-header">
+
             <div class="logo-icon">
                 <i class="bi bi-journal-bookmark-fill"></i>
             </div>
+
             <h1>@Localizer["WelcomeBack"]</h1>
+
             <p>@Localizer["SignInMessage"]</p>
+
         </div>
 
-        <!-- Body -->
+        <!-- =========================================
+             BODY
+        ========================================== -->
+
         <div class="login-body">
-            <form id="loginForm" asp-action="Login" method="post">
+
+            <form id="loginForm"
+                  asp-action="Login"
+                  method="post"
+                  novalidate>
+
                 @Html.AntiForgeryToken()
-                <input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
 
-                <!-- Validation Summary (Server-side errors) -->
-                <div asp-validation-summary="All" class="validation-summary server-errors" style="display: none;"></div>
+                <input type="hidden"
+                       name="returnUrl"
+                       value="@ViewData["ReturnUrl"]" />
 
-                <!-- Client-side Error Container -->
-                <div id="clientErrors" class="validation-summary client-errors" style="display: none;">
-                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
-                    <span id="clientErrorMessage"></span>
-                </div>
+                <!-- =========================================
+                     EMAIL
+                ========================================== -->
 
-                <!-- Email Field -->
-                <div class="form-group" id="emailGroup">
-                    <label asp-for="Email" class="form-label">@Localizer["EmailLabel"]</label>
+                <div class="form-group">
+
+                    <label asp-for="Email"
+                           class="form-label">
+
+                        @Localizer["EmailLabel"]
+
+                    </label>
+
                     <div class="input-group-custom">
+
                         <i class="bi bi-envelope-fill input-icon"></i>
+
                         <input asp-for="Email"
                                class="form-control-custom"
                                id="Email"
-                               name="Email"
                                type="email"
                                placeholder="@Localizer["EmailPlaceholder"]"
                                autocomplete="off" />
+
                     </div>
-                    <span asp-validation-for="Email" class="text-danger small field-error" id="emailError"></span>
-                    <div class="invalid-feedback-custom" id="emailInvalidFeedback"></div>
+
                 </div>
 
-                <!-- Password Field -->
-                <div class="form-group" id="passwordGroup">
-                    <label asp-for="Password" class="form-label">@Localizer["PasswordLabel"]</label>
-                    <div class="input-group-custom">
+                <!-- =========================================
+                     PASSWORD
+                ========================================== -->
+
+                <div class="form-group">
+
+                    <label asp-for="Password"
+                           class="form-label">
+
+                        @Localizer["PasswordLabel"]
+
+                    </label>
+
+                    <div class="input-group-custom password-wrapper">
+
                         <i class="bi bi-lock-fill input-icon"></i>
+
                         <input asp-for="Password"
-                               class="form-control-custom"
+                               class="form-control-custom password-input"
                                id="Password"
-                               name="Password"
                                type="password"
                                placeholder="@Localizer["PasswordPlaceholder"]" />
-                        <button type="button" class="password-toggle" id="togglePassword" style="background: none; border: none; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer; z-index: 10;">
-                            <i class="bi bi-eye-slash"></i>
+
+                        <button type="button"
+                                class="password-toggle"
+                                id="togglePassword"
+                                aria-label="Toggle Password">
+
+                            <i class="bi bi-eye-fill"></i>
+
                         </button>
+
                     </div>
-                    <span asp-validation-for="Password" class="text-danger small field-error" id="passwordError"></span>
+
                 </div>
 
-                <!-- Remember Me -->
+                <!-- =========================================
+                     REMEMBER ME
+                ========================================== -->
+
                 <label class="checkbox-wrapper">
-                    <input asp-for="RememberMe" type="checkbox" id="RememberMe" name="RememberMe" />
-                    <label asp-for="RememberMe">@Localizer["RememberMe"]</label>
+
+                    <input asp-for="RememberMe"
+                           type="checkbox" />
+
+                    <span>
+                        @Localizer["RememberMe"]
+                    </span>
+
                 </label>
 
-                <!-- Submit Button -->
-                <button type="submit" id="submitBtn" class="btn-login">
+                <!-- =========================================
+                     LOGIN BUTTON
+                ========================================== -->
+
+                <button type="submit"
+                        id="submitBtn"
+                        class="btn-login">
+
                     <i class="bi bi-box-arrow-in-right me-2"></i>
-                    <span>@Localizer["LoginButton"]</span>
-                    <span class="spinner-border spinner-border-sm ms-2" style="display: none;"></span>
+
+                    <span>
+                        @Localizer["LoginButton"]
+                    </span>
+
+                    <span class="spinner-border spinner-border-sm ms-2"
+                          style="display: none;">
+                    </span>
+
                 </button>
 
-                <!-- Register Link -->
-                @*                 <div class="register-link">
-                    <p>
-                        @Localizer["NoAccount"]
-                        <a asp-action="Register">@Localizer["CreateAccount"]</a>
-                    </p>
-                </div>
- *@
             </form>
+
         </div>
+
     </div>
+
 </div>
 
 @section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation-unobtrusive@4.0.0/dist/jquery.validate.unobtrusive.min.js"></script>
 
     <script>
+
         $(document).ready(function () {
 
-        // =====================================================
-        // CUSTOM CLIENT-SIDE VALIDATION
-        // =====================================================
+            // =========================================
+            // PASSWORD TOGGLE
+            // =========================================
 
-        // =====================================================
-        // REAL-TIME FIELD VALIDATION WITH ANIMATION
-        // =====================================================
+            $("#togglePassword").on("click", function () {
 
-        // Email real-time validation with visual feedback
-        $("#Email").on("input blur", function () {
-        var email = $(this).val();
-        var emailRegex = /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        var $field = $(this);
-        var $errorSpan = $("#emailError");
+                const passwordInput = $("#Password");
 
-        if (email && !emailRegex.test(email)) {
-        $errorSpan.html("@Localizer["InvalidEmail"]").fadeIn(200);
-        $field.addClass("input-error is-invalid").removeClass("is-valid");
-        $field.css("border-color", "#ef4444");
-        } else if (email === "") {
-        $errorSpan.html("@Localizer["EmailRequired"]").fadeIn(200);
-        $field.addClass("input-error is-invalid").removeClass("is-valid");
-        $field.css("border-color", "#ef4444");
-        } else if (email && emailRegex.test(email)) {
-        $errorSpan.html("").fadeOut(200);
-        $field.removeClass("input-error is-invalid").addClass("is-valid");
-        $field.css("border-color", "#10b981");
-        } else {
-        $errorSpan.html("").fadeOut(200);
-        $field.removeClass("input-error is-invalid is-valid");
-        $field.css("border-color", "");
-        }
+                const icon = $(this).find("i");
 
-        $("#loginForm").validate().element($(this));
+                const isPassword =
+                    passwordInput.attr("type") === "password";
+
+                passwordInput.attr(
+                    "type",
+                    isPassword ? "text" : "password"
+                );
+
+                icon.toggleClass("bi-eye-fill");
+                icon.toggleClass("bi-eye-slash-fill");
+
+            });
+            // =========================================
+            // EMAIL VALIDATION
+            // =========================================
+
+            $("#Email").on("input blur", function () {
+
+                const value = $(this).val().trim();
+
+                const emailRegex =
+                    /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                if (value === "") {
+
+                    $(this)
+                        .removeClass("is-valid")
+                        .removeClass("is-invalid");
+
+                    return;
+                }
+
+                if (emailRegex.test(value)) {
+
+                    $(this)
+                        .removeClass("is-invalid")
+                        .addClass("is-valid");
+                }
+                else {
+
+                    $(this)
+                        .removeClass("is-valid")
+                        .addClass("is-invalid");
+                }
+
+            });
+
+            // =========================================
+            // PASSWORD VALIDATION
+            // =========================================
+
+            $("#Password").on("input blur", function () {
+
+                const value = $(this).val().trim();
+
+                if (value === "") {
+
+                    $(this)
+                        .removeClass("is-valid")
+                        .removeClass("is-invalid");
+
+                    return;
+                }
+
+                if (value.length >= 6) {
+
+                    $(this)
+                        .removeClass("is-invalid")
+                        .addClass("is-valid");
+                }
+                else {
+
+                    $(this)
+                        .removeClass("is-valid")
+                        .addClass("is-invalid");
+                }
+
+            });
+
+            // =========================================
+            // SUBMIT BUTTON LOADING
+            // =========================================
+
+            $("#loginForm").on("submit", function (e) {
+
+                const email = $("#Email");
+                const password = $("#Password");
+
+                let isValid = true;
+
+                // Email validation
+
+                const emailValue = email.val().trim();
+
+                const emailRegex =
+                    /^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                if (!emailRegex.test(emailValue)) {
+
+                    email.addClass("is-invalid");
+
+                    isValid = false;
+                }
+
+                // Password validation
+
+                if (password.val().trim().length < 6) {
+
+                    password.addClass("is-invalid");
+
+                    isValid = false;
+                }
+
+                // Prevent submit
+
+                if (!isValid) {
+
+                    e.preventDefault();
+
+                    return;
+                }
+
+                // Loading state
+
+                $("#submitBtn")
+                    .prop("disabled", true);
+
+                $("#submitBtn .spinner-border")
+                    .show();
+
+            });
+
         });
 
-        // Password real-time validation with visual feedback
-        $("#Password").on("input blur", function () {
-        var password = $(this).val();
-        var $field = $(this);
-        var $errorSpan = $("#passwordError");
-
-        if (password && password.length < 6) {
-        $errorSpan.html("@Localizer["PasswordMinLength"]").fadeIn(200);
-        $field.addClass("input-error is-invalid").removeClass("is-valid");
-        $field.css("border-color", "#ef4444");
-        } else if (password === "") {
-        $errorSpan.html("@Localizer["PasswordRequired"]").fadeIn(200);
-        $field.addClass("input-error is-invalid").removeClass("is-valid");
-        $field.css("border-color", "#ef4444");
-        } else if (password && password.length >= 6) {
-        $errorSpan.html("").fadeOut(200);
-        $field.removeClass("input-error is-invalid").addClass("is-valid");
-        $field.css("border-color", "#10b981");
-        } else {
-        $errorSpan.html("").fadeOut(200);
-        $field.removeClass("input-error is-invalid is-valid");
-        $field.css("border-color", "");
-        }
-
-        $("#loginForm").validate().element($(this));
-        });
-
-        // Clear errors on focus with smooth animation
-        $(".form-control-custom").on("focus", function () {
-        $(this).css("transition", "all 0.2s ease");
-        $(this).closest('.form-group').find('.field-error').fadeOut(150);
-        $("#clientErrors").fadeOut(200);
-
-        // Remove error styling if user starts typing
-        if ($(this).val().trim() !== "") {
-        $(this).removeClass("input-error is-invalid");
-        }
-        });
     </script>
 
     <style>
-        /* Validation Styles */
-        .input-error {
-        border-color: #dc2626 !important;
-        background-color: #fef2f2 !important;
+
+        /* =========================================
+                   INPUTS
+                ========================================== */
+
+        .form-control-custom {
+            transition: all 0.2s ease;
+            border: 1.5px solid #e2e8f0;
         }
 
-        .is-valid {
-        border-color: #10b981 !important;
+            .form-control-custom:focus {
+                outline: none;
+                border-color: #667eea;
+                box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.10);
+            }
+
+            /* =========================================
+                   INVALID
+                ========================================== */
+
+            .form-control-custom.is-invalid {
+                border-color: #ef4444 !important;
+                box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.08);
+                background-color: #fff;
+            }
+
+            /* =========================================
+                   VALID
+                ========================================== */
+
+            .form-control-custom.is-valid {
+                border-color: #10b981 !important;
+                background-color: #fff;
+            }
+
+        /* =========================================
+                   PASSWORD INPUT
+                ========================================== */
+
+        .password-wrapper {
+            position: relative;
         }
 
-        .field-error {
-        font-size: 0.75rem;
-        margin-top: 0.25rem;
-        display: block;
-        }
-
-        .client-errors {
-        background-color: #fef2f2;
-        border-color: #fecaca;
-        color: #dc2626;
-        margin-bottom: 1rem;
+        .password-input {
+            padding-right: 3rem;
         }
 
         .password-toggle {
-        position: absolute;
-        right: 1rem;
-        background: none;
-        border: none;
-        color: #9ca3af;
-        cursor: pointer;
-        z-index: 10;
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            transform: translateY(-50%);
+            border: none;
+            background: transparent;
+            color: #94a3b8;
+            cursor: pointer;
+            z-index: 10;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+            .password-toggle:hover {
+                background: #f1f5f9;
+                color: #475569;
+            }
+
+            .password-toggle:focus {
+                outline: none;
+            }
+
+            .password-toggle i {
+                font-size: 1rem;
+                pointer-events: none;
+            }
+
+        /* =========================================
+                   RTL
+                ========================================== */
+
+        body[dir="rtl"] .password-input {
+            padding-right: 1rem;
+            padding-left: 3rem;
         }
 
         body[dir="rtl"] .password-toggle {
-        right: auto;
-        left: 1rem;
+            right: auto;
+            left: 1rem;
         }
 
-        .has-error .form-control-custom {
-        border-color: #dc2626;
-        }
+        /* =========================================
+                   BUTTON
+                ========================================== */
 
         .btn-login:disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
+            opacity: 0.7;
+            cursor: not-allowed;
         }
 
-        /* Loading Spinner */
         .spinner-border-sm {
-        width: 1rem;
-        height: 1rem;
-        border-width: 0.15em;
+            width: 1rem;
+            height: 1rem;
+            border-width: 0.15em;
         }
     </style>
 }

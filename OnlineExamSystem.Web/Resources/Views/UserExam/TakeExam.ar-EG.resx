@@ -18,4 +18,20 @@
 	<data name="ExitFullscreen" xml:space="preserve"><value>خروج من ملء الشاشة</value></data>
 	<data name="SecurityMessage" xml:space="preserve"><value>هذا الامتحان محمي لضمان النزاهة الأكاديمية</value></data>
 	<data name="SecureExam" xml:space="preserve"><value>امتحان آمن</value></data>
+
+	<data name="Unsure" xml:space="preserve">
+    <value>غير متأكد</value>
+</data>
+	<data name="AnsweredUnsure" xml:space="preserve">
+    <value>مجاب وغير متأكد</value>
+</data>
+	<data name="UnsureQuestions" xml:space="preserve">
+    <value>أسئلة غير متأكد</value>
+</data>
+	<data name="QuestionMarkedUnsure" xml:space="preserve">
+    <value>تم وضع علامة غير متأكد على هذا السؤال</value>
+</data>
+	<data name="UnsureRemoved" xml:space="preserve">
+    <value>تم إزالة علامة غير متأكد</value>
+</data>
 </root>

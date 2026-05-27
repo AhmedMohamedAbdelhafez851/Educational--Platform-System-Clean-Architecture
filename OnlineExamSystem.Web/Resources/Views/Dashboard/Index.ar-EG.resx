@@ -146,4 +146,84 @@
 	<data name="NoInsights" xml:space="preserve">
     <value>لا توجد رؤى متاحة</value>
   </data>
+
+	<!-- Smart Insights Resources -->
+	<data name="ExcellentPerformance" xml:space="preserve">
+    <value>أداء ممتاز! متوسط الدرجات</value>
+  </data>
+	<data name="GoodPerformance" xml:space="preserve">
+    <value>أداء جيد. متوسط الدرجات</value>
+  </data>
+	<data name="NeedsImprovement" xml:space="preserve">
+    <value>أداء الطلاب بحاجة إلى تحسين. متوسط الدرجات</value>
+  </data>
+	<data name="OneStudentNeedsAttention" xml:space="preserve">
+    <value>طالب بحاجة إلى متابعة فورية</value>
+  </data>
+	<data name="MultipleStudentsNeedAttention" xml:space="preserve">
+    <value>طلاب بحاجة إلى متابعة فورية</value>
+  </data>
+	<data name="ReviewStudents" xml:space="preserve">
+    <value>مراجعة الطلاب</value>
+  </data>
+	<data name="AttendanceCritical" xml:space="preserve">
+    <value>نسبة الحضور حرجة</value>
+  </data>
+	<data name="AttendanceVeryLow" xml:space="preserve">
+    <value>نسبة الحضور منخفضة جداً</value>
+  </data>
+	<data name="AttendanceLow" xml:space="preserve">
+    <value>نسبة الحضور منخفضة</value>
+  </data>
+	<data name="AttendanceRecommendation" xml:space="preserve">
+    <value>يوصى بتحفيز الطلاب على المشاركة</value>
+  </data>
+	<data name="ExcellentAttendance" xml:space="preserve">
+    <value>نسبة حضور ممتازة. استمر بنفس المستوى!</value>
+  </data>
+	<data name="ViewAttendance" xml:space="preserve">
+    <value>عرض الحضور</value>
+  </data>
+	<data name="NewExamCreated" xml:space="preserve">
+    <value>امتحان جديد: "تم إنشاؤه بنجاح</value>
+  </data>
+	<data name="ViewAnalytics" xml:space="preserve">
+    <value>عرض التحليلات</value>
+  </data>
+	<data name="WelcomeStart" xml:space="preserve">
+    <value>مرحباً! ابدأ بإنشاء أول امتحان لك لتفعيل النظام</value>
+  </data>
+	<data name="CreateExam" xml:space="preserve">
+    <value>إنشاء امتحان</value>
+  </data>
+	<data name="ExcellentAllStudents" xml:space="preserve">
+    <value>أداء رائع! جميع الطلاب يحققون نتائج مميزة. استمر في تقديم محتوى عالي الجودة</value>
+  </data>
+	<data name="ViewStatistics" xml:space="preserve">
+    <value>عرض الإحصائيات</value>
+  </data>
+	<data name="ViewDetails" xml:space="preserve">
+    <value>عرض التفاصيل</value>
+  </data>
+	<data name="FailedInExams" xml:space="preserve">
+    <value>رسب في امتحان(ات)</value>
+  </data>
+	<data name="Student" xml:space="preserve">
+    <value>طالب</value>
+  </data>
+	<data name="AnonymousStudent" xml:space="preserve">
+    <value>طالب مجهول</value>
+  </data>
+	<data name="CompletedExam" xml:space="preserve">
+    <value>أكمل الامتحان</value>
+  </data>
+	<data name="Unknown" xml:space="preserve">
+    <value>غير معروف</value>
+  </data>
+	<data name="ExamCreated" xml:space="preserve">
+    <value>تم إنشاء امتحان جديد</value>
+  </data>
+	<data name="Scheduled" xml:space="preserve">
+    <value>مجدول</value>
+  </data>
 </root>

@@ -24,213 +24,199 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="~/css/pages/take-exam.css" rel="stylesheet" />
 
+    <!-- Additional styles for Unsure feature - No conflicts with existing -->
     <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            body {
-                font-family: @(isRtl ? "'Cairo', 'Inter', sans-serif" : "'Inter', 'Cairo', sans-serif");
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                min-height: 100vh;
-            }
-
-            .exam-container {
-                max-width: 1400px;
-                margin: 0 auto;
-                padding: 1.5rem;
-            }
-
-            .exam-header {
-                background: white;
-                border-radius: 20px;
-                padding: 1.25rem 1.5rem;
-                margin-bottom: 1.5rem;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            }
-
-            .exam-title {
-                font-size: 1.5rem;
-                font-weight: 700;
-                color: #1e293b;
-                margin-bottom: 0.25rem;
-            }
-
-            .timer-card {
-                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-                border-radius: 16px;
-                padding: 1rem;
-                text-align: center;
-                color: white;
-            }
-
-                .timer-card.warning {
-                    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-                }
-
-                .timer-card.danger {
-                    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
-                    animation: pulse 1s infinite;
-                }
-
-            @@keyframes pulse {
-                0%, 100% {
-                    opacity: 1;
-                }
-
-                50% {
-                    opacity: 0.85;
-                }
-            }
-
-            .timer-value {
-                font-size: 2rem;
-                font-weight: 700;
-                font-family: monospace;
-            }
-
-            .question-card {
-                background: white;
-                border-radius: 16px;
-                padding: 1.25rem;
-                margin-bottom: 1rem;
-                border: 2px solid #e2e8f0;
-                transition: all 0.2s ease;
-            }
-
-                .question-card.answered {
-                    border-left: 4px solid #10b981;
-                }
-
-            .choice-item {
-                padding: 0.75rem 1rem;
-                border: 2px solid #e2e8f0;
-                border-radius: 12px;
-                margin-bottom: 0.75rem;
+            /* Unsure Button Styles */
+            .btn-unsure {
+                background: transparent;
+                border: 1px solid #f59e0b;
+                color: #f59e0b;
+                padding: 0.25rem 0.75rem;
+                border-radius: 2rem;
+                font-size: 0.75rem;
+                font-weight: 500;
                 cursor: pointer;
                 transition: all 0.2s ease;
-            }
-
-                .choice-item:hover {
-                    border-color: #667eea;
-                    background: #eff6ff;
-                }
-
-                .choice-item.selected {
-                    border-color: #10b981;
-                    background: #f0fdf4;
-                }
-
-            .nav-question {
-                width: 40px;
-                height: 40px;
-                border-radius: 10px;
                 display: inline-flex;
                 align-items: center;
-                justify-content: center;
-                font-weight: 600;
-                cursor: pointer;
-                border: 2px solid #e2e8f0;
-                background: white;
-                transition: all 0.2s ease;
+                gap: 0.25rem;
             }
 
-                .nav-question.answered {
+                .btn-unsure:hover {
+                    background: #fffbeb;
+                    transform: scale(1.02);
+                }
+
+                .btn-unsure.active {
+                    background: #f59e0b;
+                    color: white;
+                    border-color: #f59e0b;
+                }
+
+                .btn-unsure i {
+                    font-size: 0.75rem;
+                }
+
+            /* Question Card Unsure State */
+            .question-card.unsure {
+                border-left: 4px solid #f59e0b;
+                background: #fffbeb;
+            }
+
+            .question-card.answered.unsure {
+                border-left: 4px solid #10b981;
+                background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+                border-right: 2px solid #f59e0b;
+            }
+
+            /* Navigator Unsure State */
+            .nav-question.unsure {
+                background: #f59e0b;
+                border-color: #f59e0b;
+                color: white;
+            }
+
+            .nav-question.answered.unsure {
+                background: linear-gradient(135deg, #10b981 0%, #f59e0b 100%);
+                border-color: #10b981;
+                color: white;
+                position: relative;
+            }
+
+                .nav-question.answered.unsure::after {
+                    content: '?';
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    background: #f59e0b;
+                    color: white;
+                    font-size: 8px;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: bold;
+                }
+
+            /* Navigator Legend */
+            .nav-legend {
+                display: flex;
+                gap: 1rem;
+                flex-wrap: wrap;
+                margin-bottom: 1rem;
+                padding-bottom: 0.75rem;
+                border-bottom: 1px solid #e5e7eb;
+            }
+
+            .legend-item {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                color: #6b7280;
+            }
+
+            .legend-box {
+                width: 24px;
+                height: 24px;
+                border-radius: 8px;
+                border: 2px solid #e5e7eb;
+            }
+
+                .legend-box.answered {
                     background: #10b981;
                     border-color: #10b981;
-                    color: white;
                 }
 
-                .nav-question.current {
-                    background: #667eea;
-                    border-color: #667eea;
-                    color: white;
+                .legend-box.unsure {
+                    background: #f59e0b;
+                    border-color: #f59e0b;
                 }
 
-            .submit-btn {
-                background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-                border: none;
-                padding: 1rem 2rem;
+                .legend-box.answered-unsure {
+                    background: linear-gradient(135deg, #10b981 0%, #f59e0b 100%);
+                    border-color: #10b981;
+                }
+
+                .legend-box.current {
+                    background: #3b82f6;
+                    border-color: #3b82f6;
+                }
+
+            /* Question Header Layout */
+            .question-header {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .question-title-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+            }
+
+            .question-badge {
+                background: #6366f1;
+                color: white;
+                border-radius: 2rem;
+                padding: 0.25rem 0.75rem;
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+
+            .question-title {
                 font-size: 1rem;
                 font-weight: 600;
-                border-radius: 16px;
-                transition: all 0.2s ease;
+                color: #1f2937;
+                margin: 0;
             }
 
-                .submit-btn:hover {
-                    transform: translateY(-2px);
-                    box-shadow: 0 10px 20px -5px rgba(16,185,129,0.4);
-                }
-
-            .fullscreen-badge {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background: rgba(0,0,0,0.6);
-                color: white;
-                padding: 6px 12px;
-                border-radius: 20px;
-                font-size: 11px;
-                z-index: 1000;
-                cursor: pointer;
-                transition: all 0.2s ease;
-                backdrop-filter: blur(5px);
+            /* RTL Support for Unsure Feature */
+            body[dir="rtl"] .question-card.unsure {
+                border-left: 2px solid #e5e7eb;
+                border-right: 4px solid #f59e0b;
             }
 
-                .fullscreen-badge:hover {
-                    background: #667eea;
-                }
-
-            .exam-footer {
-                text-align: center;
-                padding: 1rem;
-                font-size: 12px;
-                color: #94a3b8;
-                margin-top: 1rem;
+            body[dir="rtl"] .question-card.answered.unsure {
+                border-left: 2px solid #f59e0b;
+                border-right: 4px solid #10b981;
             }
 
-            .security-note {
-                position: fixed;
-                bottom: 20px;
-                left: 20px;
-                background: rgba(0,0,0,0.5);
-                color: #94a3b8;
-                padding: 4px 10px;
-                border-radius: 20px;
-                font-size: 10px;
-                z-index: 1000;
+            body[dir="rtl"] .nav-question.answered.unsure::after {
+                right: auto;
+                left: -5px;
             }
-            @@media (max-width: 768px) {
-                .exam-container {
-                    padding: 1rem;
-                }
 
-                .timer-value {
-                    font-size: 1.5rem;
-                }
-
-                .nav-question {
-                    width: 35px;
-                    height: 35px;
-                    font-size: 0.875rem;
-                }
-
-                .fullscreen-badge, .security-note {
-                    display: none;
-                }
+            /* Unsure Progress Bar */
+            .unsure-progress {
+                margin-top: 0.5rem;
             }
+
+                .unsure-progress .progress-bar {
+                    background: #f59e0b;
+                }
     </style>
 </head>
 <body>
     <div class="exam-container">
+        <!-- Header -->
         <div class="exam-header">
             <div class="row align-items-center">
                 <div class="col-md-8">
                     <h1 class="exam-title">@Model.Title</h1>
-                    <p class="text-muted mb-0"><i class="bi bi-question-circle"></i> @Localizer["QuestionsCount"]: @Model.Questions.Count</p>
-                    <p class="text-muted mb-0"><i class="bi bi-clock-history"></i> @Localizer["Duration"]: @Model.DurationInMinutes @Localizer["Minutes"]</p>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-question-circle"></i> @Localizer["QuestionsCount"]: @Model.Questions.Count
+                    </p>
+                    <p class="text-muted mb-0">
+                        <i class="bi bi-clock-history"></i> @Localizer["Duration"]: @Model.DurationInMinutes @Localizer["Minutes"]
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <div class="timer-card" id="timerCard">
@@ -242,6 +228,7 @@
         </div>
 
         <div class="row">
+            <!-- Questions Area -->
             <div class="col-lg-8">
                 <form id="examForm">
                     <input type="hidden" name="examId" value="@Model.ExamId" />
@@ -252,10 +239,18 @@
                         @foreach (var question in Model.Questions.OrderBy(q => q.QuestionId))
                         {
                             var questionIndex = Model.Questions.ToList().IndexOf(question);
-                            <div class="question-card" data-question-id="@question.QuestionId" data-index="@questionIndex">
-                                <div class="d-flex align-items-center mb-3">
-                                    <span class="badge bg-primary rounded-pill me-2">@(questionIndex + 1)</span>
-                                    <h5 class="mb-0">@question.Title</h5>
+                            <div class="question-card" data-question-id="@question.QuestionId" data-index="@questionIndex" id="question-card-@question.QuestionId">
+                                <div class="question-header">
+                                    <div class="question-title-wrapper">
+                                        <span class="question-badge">@Localizer["Question"] @(questionIndex + 1)</span>
+                                        <h5 class="question-title">@question.Title</h5>
+                                    </div>
+                                    <div class="question-actions">
+                                        <button type="button" class="btn-unsure unsure-btn" data-question-id="@question.QuestionId">
+                                            <i class="bi bi-question-lg"></i>
+                                            <span>@Localizer["Unsure"]</span>
+                                        </button>
+                                    </div>
                                 </div>
                                 <div class="choices-container">
                                     @foreach (var choice in question.Choices.OrderBy(c => c.ChoiceId))
@@ -285,22 +280,62 @@
                 </form>
             </div>
 
+            <!-- Navigator Sidebar -->
             <div class="col-lg-4">
                 <div class="exam-header">
-                    <h6 class="fw-bold mb-3"><i class="bi bi-grid-3x3-gap-fill me-2"></i> @Localizer["QuestionNavigator"]</h6>
+                    <h6 class="fw-bold mb-3">
+                        <i class="bi bi-grid-3x3-gap-fill me-2"></i> @Localizer["QuestionNavigator"]
+                    </h6>
+
+                    <!-- Legend for colors -->
+                    <div class="nav-legend">
+                        <div class="legend-item">
+                            <div class="legend-box answered"></div>
+                            <span>@Localizer["Answered"]</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-box unsure"></div>
+                            <span>@Localizer["Unsure"]</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-box answered-unsure"></div>
+                            <span>@Localizer["AnsweredUnsure"]</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-box current"></div>
+                            <span>@Localizer["Current"]</span>
+                        </div>
+                    </div>
+
                     <div class="d-flex flex-wrap gap-2" id="questionNavigator">
                         @for (int i = 0; i < Model.Questions.Count; i++)
                         {
-                            <div class="nav-question" data-index="@i">@(i + 1)</div>
+                            <div class="nav-question" data-index="@i" data-question-id="@Model.Questions[i].QuestionId">
+                                @(i + 1)
+                            </div>
                         }
                     </div>
+
                     <hr class="my-3" />
+
+                    <!-- Answered Progress -->
                     <div class="d-flex justify-content-between">
                         <span><i class="bi bi-check-circle-fill text-success"></i> @Localizer["Answered"]</span>
                         <span id="answeredCount">0 / @Model.Questions.Count</span>
                     </div>
                     <div class="progress mt-2" style="height: 6px;">
                         <div id="answeredProgress" class="progress-bar bg-success" style="width: 0%"></div>
+                    </div>
+
+                    <hr class="my-3" />
+
+                    <!-- Unsure Progress (NEW) -->
+                    <div class="d-flex justify-content-between">
+                        <span><i class="bi bi-question-circle-fill text-warning"></i> @Localizer["UnsureQuestions"]</span>
+                        <span id="unsureCount">0 / @Model.Questions.Count</span>
+                    </div>
+                    <div class="progress mt-2 unsure-progress" style="height: 6px;">
+                        <div id="unsureProgress" class="progress-bar" style="width: 0%"></div>
                     </div>
                 </div>
             </div>
@@ -311,6 +346,7 @@
         </div>
     </div>
 
+    <!-- Time Overlay -->
     <div id="timeOverlay" class="time-overlay" style="display: none;">
         <div class="text-center">
             <i class="bi bi-hourglass-bottom" style="font-size: 4rem;"></i>
@@ -320,9 +356,11 @@
         </div>
     </div>
 
+    <!-- Fullscreen Badge -->
     <div class="fullscreen-badge" id="fullscreenBadge">
         <i class="bi bi-arrows-fullscreen"></i> <span id="fullscreenText">@Localizer["FullscreenRecommended"]</span>
     </div>
+
     <div class="security-note">
         <i class="bi bi-shield-lock"></i> @Localizer["SecureExam"]
     </div>
@@ -338,14 +376,16 @@
         var totalQuestions = @Model.Questions.Count;
         var timeLeft = examDurationSeconds;
         var answeredQuestions = new Array(totalQuestions).fill(false);
+        var unsureQuestions = new Array(totalQuestions).fill(false);
         var userAnswers = {};
         var timerInterval;
         var isSubmitting = false;
         var hasSubmitted = false;
-        var violationCount = 0;
+        var tabSwitchCount = 0;
+        var visibilityWarnings = [];
 
         // =====================================================
-        // GENERATE UNIQUE DEVICE FINGERPRINT
+        // GENERATE DEVICE FINGERPRINT
         // =====================================================
         function generateDeviceFingerprint() {
         var fingerprint = {
@@ -362,10 +402,8 @@
         var deviceFingerprint = generateDeviceFingerprint();
         $('#fingerprint').val(deviceFingerprint);
 
-        // Send fingerprint to server (optional - can be added to SubmitExam)
-
         // =====================================================
-        // GENTLE FULLSCREEN (User controls, no force)
+        // FULLSCREEN FUNCTIONALITY
         // =====================================================
         function toggleFullscreen() {
         if (!document.fullscreenElement) {
@@ -381,7 +419,6 @@
 
         $('#fullscreenBadge').click(toggleFullscreen);
 
-        // Track fullscreen changes silently (no alerts)
         document.addEventListener('fullscreenchange', function () {
         if (document.fullscreenElement) {
         $('#fullscreenText').text('@Localizer["ExitFullscreen"]');
@@ -394,6 +431,8 @@
         // SAVE & RESTORE ANSWERS
         // =====================================================
         var savedAnswers = sessionStorage.getItem('exam_@Model.ExamId');
+        var savedUnsure = sessionStorage.getItem('exam_unsure_@Model.ExamId');
+
         if (savedAnswers) {
         userAnswers = JSON.parse(savedAnswers);
         for (var qId in userAnswers) {
@@ -405,23 +444,102 @@
         var choiceItem = $('.choice-item[data-question-id="' + qId + '"][data-choice-id="' + choiceId + '"]');
         choiceItem.addClass('selected');
         choiceItem.find('.choice-radio').prop('checked', true);
+        updateQuestionCardStyle(questionCard, index);
         }
         }
-        updateAnsweredCount();
+        }
+
+        if (savedUnsure) {
+        var unsureData = JSON.parse(savedUnsure);
+        for (var i = 0; i < unsureData.length; i++) {
+        if (unsureData[i]) {
+        unsureQuestions[i] = true;
+        var questionCard = $('.question-card[data-index="' + i + '"]');
+        if (questionCard.length) {
+        updateQuestionCardStyle(questionCard, i);
+        }
+        }
+        }
+        updateUnsureCount();
         }
 
         function saveAnswers() {
         if (!hasSubmitted) {
         sessionStorage.setItem('exam_@Model.ExamId', JSON.stringify(userAnswers));
+        sessionStorage.setItem('exam_unsure_@Model.ExamId', JSON.stringify(unsureQuestions));
         }
         }
 
         function clearAnswers() {
         sessionStorage.removeItem('exam_@Model.ExamId');
+        sessionStorage.removeItem('exam_unsure_@Model.ExamId');
         }
 
         // =====================================================
-        // TIMER (Gentle, no annoying alerts)
+        // UPDATE QUESTION CARD STYLES
+        // =====================================================
+        function updateQuestionCardStyle(questionCard, index) {
+        var isAnswered = answeredQuestions[index];
+        var isUnsure = unsureQuestions[index];
+
+        questionCard.removeClass('answered unsure');
+
+        if (isAnswered && isUnsure) {
+        questionCard.addClass('answered unsure');
+        } else if (isAnswered) {
+        questionCard.addClass('answered');
+        } else if (isUnsure) {
+        questionCard.addClass('unsure');
+        }
+
+        var navButton = $('.nav-question[data-index="' + index + '"]');
+        navButton.removeClass('answered unsure');
+
+        if (isAnswered && isUnsure) {
+        navButton.addClass('answered unsure');
+        } else if (isAnswered) {
+        navButton.addClass('answered');
+        } else if (isUnsure) {
+        navButton.addClass('unsure');
+        } else {
+        navButton.removeClass('answered unsure');
+        }
+        }
+
+        // =====================================================
+        // UNSURE BUTTON HANDLER
+        // =====================================================
+        $('.unsure-btn').click(function (e) {
+        e.stopPropagation();
+        if (isSubmitting || hasSubmitted) return;
+
+        var questionId = $(this).data('question-id');
+        var questionCard = $('.question-card[data-question-id="' + questionId + '"]');
+        var index = questionCard.data('index');
+
+        unsureQuestions[index] = !unsureQuestions[index];
+        updateQuestionCardStyle(questionCard, index);
+        updateUnsureCount();
+        saveAnswers();
+
+        var $btn = $(this);
+        if (unsureQuestions[index]) {
+        $btn.addClass('active');
+        showGentleNotification('@Localizer["Info"]', '@Localizer["QuestionMarkedUnsure"]', 'info');
+        } else {
+        $btn.removeClass('active');
+        showGentleNotification('@Localizer["Info"]', '@Localizer["UnsureRemoved"]', 'info');
+        }
+        });
+
+        function updateUnsureCount() {
+        var unsure = unsureQuestions.filter(function (v) { return v; }).length;
+        $('#unsureCount').text(unsure + ' / ' + totalQuestions);
+        $('#unsureProgress').css('width', (unsure / totalQuestions * 100) + '%');
+        }
+
+        // =====================================================
+        // TIMER
         // =====================================================
         function startTimer() {
         updateTimerDisplay();
@@ -435,7 +553,6 @@
         timeLeft--;
         updateTimerDisplay();
 
-        // Visual warnings only (no popups)
         if (timeLeft <= examDurationSeconds * 0.3 && !$('#timerCard').hasClass('warning')) {
         $('#timerCard').addClass('warning');
         }
@@ -465,6 +582,7 @@
         // =====================================================
         $('.choice-item').click(function () {
         if (isSubmitting || hasSubmitted) return;
+
         var $choice = $(this);
         var questionId = $choice.data('question-id');
         var choiceId = $choice.data('choice-id');
@@ -477,10 +595,9 @@
 
         answeredQuestions[questionIndex] = true;
         userAnswers[questionId] = choiceId;
-        saveAnswers();
 
-        $('.nav-question[data-index="' + questionIndex + '"]').addClass('answered');
-        $('.question-card[data-index="' + questionIndex + '"]').addClass('answered');
+        updateQuestionCardStyle(questionCard, questionIndex);
+        saveAnswers();
 
         updateAnsweredCount();
         });
@@ -495,7 +612,9 @@
         $('html, body').animate({
         scrollTop: $('.question-card[data-index="' + index + '"]').offset().top - 100
         }, 500);
-        setTimeout(function () { $('.nav-question').removeClass('current'); }, 1500);
+        setTimeout(function () {
+        $('.nav-question').removeClass('current');
+        }, 1500);
         });
 
         // =====================================================
@@ -514,6 +633,20 @@
         var originalText = $btn.html();
         $btn.prop('disabled', true).html('<span class="spinner-border spinner-border-sm me-2"></span> @Localizer["Submitting"]...');
 
+        // Collect unsure questions for analytics
+        var unsureData = [];
+        for (var i = 0; i < totalQuestions; i++) {
+        if (unsureQuestions[i]) {
+        var questionCard = $('.question-card[data-index="' + i + '"]');
+        if (questionCard.length) {
+        unsureData.push({
+        questionId: questionCard.data('question-id'),
+        questionIndex: i
+        });
+        }
+        }
+        }
+
         $.ajax({
         url: '@Url.Action("SubmitExam", "UserExam")',
         type: 'POST',
@@ -521,14 +654,15 @@
         examId: @Model.ExamId,
         answers: userAnswers,
         attemptId: '@ViewBag.AttemptId',
-        fingerprint: deviceFingerprint
+        fingerprint: deviceFingerprint,
+        unsureQuestions: JSON.stringify(unsureData)
         },
         success: function (response) {
         if (response.success) {
         clearAnswers();
         window.location.href = '@Url.Action("ViewResult", "UserExam")/' + response.submissionId;
         } else {
-        showGentleNotification('@Localizer["SubmitError"]', response.message);
+        showGentleNotification('@Localizer["SubmitError"]', response.message, 'error');
         $btn.prop('disabled', false).html(originalText);
         isSubmitting = false;
         hasSubmitted = false;
@@ -536,7 +670,7 @@
         }
         },
         error: function (xhr) {
-        showGentleNotification('@Localizer["SubmitError"]', '@Localizer["PleaseTryAgain"]');
+        showGentleNotification('@Localizer["SubmitError"]', '@Localizer["PleaseTryAgain"]', 'error');
         $btn.prop('disabled', false).html(originalText);
         isSubmitting = false;
         hasSubmitted = false;
@@ -545,24 +679,21 @@
         });
         }
 
-        function showGentleNotification(title, message) {
-        // Gentle toast notification (not intrusive)
+        function showGentleNotification(title, message, type) {
+        var bgClass = type === 'error' ? 'bg-danger' : (type === 'info' ? 'bg-info' : 'bg-success');
         var toastHtml = '<div class="position-fixed top-0 start-50 translate-middle-x p-3" style="z-index: 9999; margin-top: 70px;">' +
-        '<div class="toast align-items-center text-white bg-danger border-0 show" role="alert">' +
+        '<div class="toast align-items-center text-white ' + bgClass + ' border-0 show" role="alert">' +
         '<div class="d-flex"><div class="toast-body"><strong>' + title + '</strong><br>' + message + '</div>' +
         '<button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button></div></div></div>';
         $('body').append(toastHtml);
-        setTimeout(function () { $('.position-fixed').last().remove(); }, 4000);
+        setTimeout(function () { $('.position-fixed').last().remove(); }, 3000);
         }
 
         $('#submitExamBtn').click(function () { submitExam(false); });
 
         // =====================================================
-        // GENTLE ANTI-CHEATING (No annoying alerts)
+        // ANTI-CHEATING MEASURES
         // =====================================================
-        var tabSwitchCount = 0;
-        var visibilityWarnings = [];
-
         document.addEventListener('visibilitychange', function () {
         if (document.hidden && timeLeft > 0 && !isSubmitting && !hasSubmitted) {
         tabSwitchCount++;
@@ -571,39 +702,31 @@
         type: 'tab_switch',
         count: tabSwitchCount
         });
-
-        // Store in sessionStorage for server-side logging later
         sessionStorage.setItem('examViolations', JSON.stringify(visibilityWarnings));
 
-        // Only show after 5 violations (very lenient)
         if (tabSwitchCount >= 5) {
-        showGentleNotification('تنبيه', 'تم تسجيل عدة خروجات من صفحة الامتحان. يرجى عدم مغادرة الصفحة.');
+        showGentleNotification('@Localizer["Warning"]', '@Localizer["MultipleTabSwitches"]', 'warning');
         }
-
-        // Auto-submit after 10 violations
         if (tabSwitchCount >= 10 && !hasSubmitted) {
-        showGentleNotification('تنبيه', 'سيتم تسليم الامتحان تلقائياً');
+        showGentleNotification('@Localizer["Warning"]', '@Localizer["AutoSubmitWarning"]', 'warning');
         setTimeout(function () { submitExam(true); }, 2000);
         }
         }
         });
 
-        // Prevent right-click (silent)
+        // Prevent right-click
         document.addEventListener('contextmenu', function (e) { e.preventDefault(); return false; });
 
-        // Prevent keyboard shortcuts (silent)
+        // Prevent keyboard shortcuts
         document.addEventListener('keydown', function (e) {
         if (e.key === 'F12') { e.preventDefault(); return false; }
         if (e.ctrlKey && e.shiftKey && e.key === 'I') { e.preventDefault(); return false; }
         if (e.ctrlKey && e.key === 'u') { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.key === 's') { e.preventDefault(); return false; }
+        if (e.ctrlKey && e.key === 'p') { e.preventDefault(); return false; }
         });
 
-        // Block print screen (silent)
-        document.addEventListener('keyup', function (e) {
-        if (e.key === 'PrintScreen') { navigator.clipboard.writeText(''); }
-        });
-
-        // Page leave warning (standard browser behavior)
+        // Page leave warning
         window.addEventListener('beforeunload', function (e) {
         if (Object.keys(userAnswers).length > 0 && timeLeft > 0 && !isSubmitting && !hasSubmitted) {
         var confirmationMessage = '@Localizer["UnsavedWarning"]';
@@ -619,9 +742,13 @@
         }
         }, 30000);
 
-        // Start the exam
+        // Initialize
         startTimer();
         updateAnsweredCount();
+        updateUnsureCount();
+
+        // Mark current question on load
+        $('.nav-question[data-index="0"]').addClass('current');
         });
     </script>
 </body>

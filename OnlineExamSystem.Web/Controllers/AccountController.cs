@@ -38,36 +38,100 @@ namespace OnlineExamSystem.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null!)
+        public async Task<IActionResult> Login(
+     LoginViewModel model,
+     string returnUrl = null!)
         {
             ViewData["ReturnUrl"] = returnUrl;
 
-            if (ModelState.IsValid)
+            // =============================================
+            // BASIC VALIDATION
+            // =============================================
+
+            if (!ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
-                if (user == null)
-                {
-                    ModelState.AddModelError(string.Empty, _localizer["EmailNotFound"]);
-                    return View(model);
-                }
-
-                var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: true);
-
-                if (result.Succeeded)
-                {
-                    // Redirect based on role
-                    return RedirectToDashboard();
-                }
-                else if (result.IsLockedOut)
-                {
-                    ModelState.AddModelError(string.Empty, _localizer["AccountLocked"]);
-                    return View(model);
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, _localizer["InvalidCredentials"]);
-                }
+                return View(model);
             }
+
+            // =============================================
+            // FIND USER
+            // =============================================
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+
+            // Prevent email enumeration attack
+            // Don't reveal if email exists or not
+
+            if (user == null)
+            {
+                ViewBag.InvalidLogin = true;
+
+                return View(model);
+            }
+
+            // =============================================
+            // CHECK LOCKOUT
+            // =============================================
+
+            if (await _userManager.IsLockedOutAsync(user))
+            {
+                var lockoutEnd =
+                    await _userManager.GetLockoutEndDateAsync(user);
+
+                if (lockoutEnd.HasValue)
+                {
+                    var remaining =
+                        lockoutEnd.Value.UtcDateTime - DateTime.UtcNow;
+
+                    ViewBag.LockedOut = true;
+
+                    ViewBag.LockoutSeconds =
+                        Math.Max((int)remaining.TotalSeconds, 0);
+                }
+
+                return View(model);
+            }
+
+            // =============================================
+            // LOGIN ATTEMPT
+            // =============================================
+
+            var result =
+                await _signInManager.PasswordSignInAsync(
+                    user.UserName!,
+                    model.Password,
+                    model.RememberMe,
+                    lockoutOnFailure: true
+                );
+
+            // =============================================
+            // SUCCESS
+            // =============================================
+
+            if (result.Succeeded)
+            {
+                return RedirectToDashboard();
+            }
+
+            // =============================================
+            // LOCKED
+            // =============================================
+
+            if (result.IsLockedOut)
+            {
+                ViewBag.LockedOut = true;
+
+                ViewBag.LockoutSeconds = 60;
+
+                return View(model);
+            }
+
+            // =============================================
+            // INVALID LOGIN
+            // =============================================
+
+            ViewBag.InvalidLogin = true;
+
             return View(model);
         }
 

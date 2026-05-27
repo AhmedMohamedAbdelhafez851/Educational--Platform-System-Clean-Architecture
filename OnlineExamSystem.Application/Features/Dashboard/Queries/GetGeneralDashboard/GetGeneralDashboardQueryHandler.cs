@@ -101,10 +101,10 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
                 .Select(x => new AttentionStudentDto
                 {
                     UserId = "",
-                    StudentName = x.StudentName ?? "Student",
-                    Issue = $"Failed {x.FailedCount} exam(s)",
+                    StudentName = x.StudentName ?? "طالب",
+                    Issue = $"رسب في {x.FailedCount} امتحان(ات)",
                     LatestScore = x.LatestScore,
-                    Status = "Critical"
+                    Status = "حرج"
                 }).ToList();
 
             // Recent Activities
@@ -118,10 +118,10 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
             foreach (var sub in recentSubmissions)
             {
                 var exam = exams.FirstOrDefault(e => e.ExamId == sub.ExamId);
-                var studentName = sub.StudentName ?? sub.User?.UserName ?? "Anonymous";
+                var studentName = sub.StudentName ?? sub.User?.UserName ?? "طالب مجهول";
                 recentActivities.Add(new ActivityDto
                 {
-                    Message = $"{studentName} completed exam: {exam?.Title ?? "Unknown"}",
+                    Message = $"{studentName} أكمل الامتحان: {exam?.Title ?? "غير معروف"}",
                     Timestamp = sub.SubmissionDate,
                     Icon = sub.IsPassed ? "check-circle-fill" : "x-circle-fill",
                     Color = sub.IsPassed ? "success" : "danger",
@@ -134,7 +134,7 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
                 .Take(5)
                 .Select(e => new ActivityDto
                 {
-                    Message = $"New exam created: {e.Title}",
+                    Message = $"تم إنشاء امتحان جديد: {e.Title}",
                     Timestamp = e.CreatedDate,
                     Icon = "file-text",
                     Color = "primary",
@@ -153,11 +153,11 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
                     Title = e.Title,
                     DateTime = e.CreatedDate.AddDays(7),
                     StudentCount = allUniqueStudents,
-                    Status = "Scheduled"
+                    Status = "مجدول"
                 }).ToList();
 
-            // Smart Insights
-            var smartInsights = GenerateInsights(averageScore, studentsNeedingAttention, attendanceRate, exams);
+            // Smart Insights - Arabic Version
+            var smartInsights = GenerateArabicInsights(averageScore, studentsNeedingAttention, attendanceRate, exams);
 
             return new GeneralDashboardDto
             {
@@ -175,17 +175,18 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
             };
         }
 
-        private List<InsightDto> GenerateInsights(double averageScore, int strugglingStudents, double attendanceRate, List<Exam> exams)
+        private List<InsightDto> GenerateArabicInsights(double averageScore, int strugglingStudents, double attendanceRate, List<Exam> exams)
         {
             var insights = new List<InsightDto>();
 
+            // Insight 1: Average Score Performance
             if (averageScore >= 75)
             {
                 insights.Add(new InsightDto
                 {
-                    Message = $"Excellent performance! Average score is {averageScore:F1}%",
+                    Message = $"⭐ أداء ممتاز! متوسط الدرجات {averageScore:F1}%",
                     Type = "success",
-                    ActionText = "View details",
+                    ActionText = "عرض التفاصيل",
                     ActionUrl = "/Exam"
                 });
             }
@@ -193,9 +194,9 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
             {
                 insights.Add(new InsightDto
                 {
-                    Message = $"Good performance. Average score is {averageScore:F1}%",
+                    Message = $"📊 أداء جيد. متوسط الدرجات {averageScore:F1}%",
                     Type = "info",
-                    ActionText = "View details",
+                    ActionText = "عرض التفاصيل",
                     ActionUrl = "/Exam"
                 });
             }
@@ -203,34 +204,56 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
             {
                 insights.Add(new InsightDto
                 {
-                    Message = $"Student performance needs improvement. Average score is {averageScore:F1}%",
+                    Message = $"⚠️ أداء الطلاب بحاجة إلى تحسين. متوسط الدرجات {averageScore:F1}%",
                     Type = "warning",
-                    ActionText = "View struggling students",
+                    ActionText = "عرض الطلاب",
                     ActionUrl = "/Users"
                 });
             }
 
+            // Insight 2: Struggling Students
             if (strugglingStudents > 0)
             {
                 insights.Add(new InsightDto
                 {
-                    Message = $"{strugglingStudents} students need immediate attention",
+                    Message = strugglingStudents == 1
+                        ? $"👨‍🎓 {strugglingStudents} طالب بحاجة إلى متابعة فورية"
+                        : $"👥 {strugglingStudents} طلاب بحاجة إلى متابعة فورية",
                     Type = "warning",
-                    ActionText = "Review students",
+                    ActionText = "مراجعة الطلاب",
                     ActionUrl = "/Users"
                 });
             }
 
+            // Insight 3: Attendance Rate
             if (attendanceRate < 70 && attendanceRate > 0)
+            {
+                string attendanceMessage = attendanceRate < 30
+                    ? "⚠️ حرجة"
+                    : attendanceRate < 50
+                        ? "⚠️ منخفضة جداً"
+                        : "⚠️ منخفضة";
+
+                insights.Add(new InsightDto
+                {
+                    Message = $"📅 نسبة الحضور {attendanceMessage} ({attendanceRate:F1}%). يوصى بتحفيز الطلاب على المشاركة",
+                    Type = "warning",
+                    ActionText = "عرض الحضور",
+                    ActionUrl = "/Users"
+                });
+            }
+            else if (attendanceRate >= 90 && attendanceRate > 0)
             {
                 insights.Add(new InsightDto
                 {
-                    Message = $"Attendance rate is low ({attendanceRate:F1}%). Consider engaging students",
-                    Type = "warning",
-                    ActionText = "View attendance"
+                    Message = $"🎉 نسبة حضور ممتازة ({attendanceRate:F1}%). استمر بنفس المستوى!",
+                    Type = "success",
+                    ActionText = "عرض التفاصيل",
+                    ActionUrl = "/Users"
                 });
             }
 
+            // Insight 4: Recent Exam Created
             if (exams.Count > 0)
             {
                 var lastExam = exams.OrderByDescending(e => e.CreatedDate).FirstOrDefault();
@@ -238,12 +261,36 @@ namespace OnlineExamSystem.Application.Features.Dashboard.Queries.GetGeneralDash
                 {
                     insights.Add(new InsightDto
                     {
-                        Message = $"Recent exam: {lastExam.Title} was created",
+                        Message = $"📝 امتحان جديد: \"{lastExam.Title}\" تم إنشاؤه بنجاح",
                         Type = "info",
-                        ActionText = "View analytics",
+                        ActionText = "عرض التحليلات",
                         ActionUrl = $"/Analytics/ExamReport?examId={lastExam.ExamId}"
                     });
                 }
+            }
+
+            // Insight 5: No Exams Yet
+            if (exams.Count == 0)
+            {
+                insights.Add(new InsightDto
+                {
+                    Message = "✨ مرحباً! ابدأ بإنشاء أول امتحان لك لتفعيل النظام",
+                    Type = "info",
+                    ActionText = "إنشاء امتحان",
+                    ActionUrl = "/Exam/Create"
+                });
+            }
+
+            // Insight 6: Great Performance - No struggling students
+            if (strugglingStudents == 0 && averageScore >= 70 && exams.Count > 0)
+            {
+                insights.Insert(0, new InsightDto
+                {
+                    Message = "🏆 أداء رائع! جميع الطلاب يحققون نتائج مميزة. استمر في تقديم محتوى عالي الجودة",
+                    Type = "success",
+                    ActionText = "عرض الإحصائيات",
+                    ActionUrl = "/Exam"
+                });
             }
 
             return insights;

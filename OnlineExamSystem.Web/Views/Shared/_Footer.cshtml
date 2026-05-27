@@ -42,3 +42,95 @@
         <small class="text-white-50 mt-2 d-block">@Localizer["Version"] 2.0</small>
     </div>
 </footer>
+<style>
+/* =========================================
+FOOTER
+========================================= */
+
+footer {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+padding: 1rem 0;
+margin-top: auto;
+}
+
+.footer-links {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+margin-bottom: 0.75rem !important;
+}
+
+.footer-links a {
+transition: all 0.2s ease;
+font-size: 0.8rem;
+opacity: 0.95;
+}
+
+.footer-links a:hover {
+opacity: 0.85;
+transform: translateY(-1px);
+}
+
+.social-icons {
+margin-bottom: 0.75rem !important;
+}
+
+.social-icons a {
+font-size: 0.9rem;
+transition: all 0.2s ease;
+display: inline-block;
+}
+
+.social-icons a:hover {
+transform: translateY(-2px);
+opacity: 0.85;
+}
+
+footer p {
+font-size: 0.8rem;
+margin-bottom: 0.25rem !important;
+}
+
+footer small {
+font-size: 0.7rem;
+}
+
+
+/* =========================================
+MOBILE FOOTER
+========================================= */
+
+@@media (max-width: 768px) {
+
+footer {
+padding: 0.85rem 0;
+}
+
+.footer-links {
+gap: 0.75rem;
+margin-bottom: 0.5rem !important;
+}
+
+.footer-links a {
+font-size: 0.72rem;
+}
+
+.social-icons {
+margin-bottom: 0.5rem !important;
+}
+
+.social-icons a {
+font-size: 0.82rem;
+}
+
+footer p {
+font-size: 0.72rem;
+}
+
+footer small {
+font-size: 0.65rem;
+}
+}
+</style>

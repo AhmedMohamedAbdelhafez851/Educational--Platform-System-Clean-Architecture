@@ -1,0 +1,253 @@
+2026-05-25 10:29:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 372.6587 ms
+2026-05-25 10:29:11 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 36.3478 ms
+2026-05-25 10:29:11 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 82.1970 ms
+2026-05-25 10:48:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 79.6214 ms
+2026-05-25 10:48:25 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 13.6253 ms
+2026-05-25 10:48:25 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 19.4893 ms
+2026-05-25 10:48:31 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.5326 ms
+2026-05-25 10:48:31 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 15.1859 ms
+2026-05-25 10:48:36 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.0436 ms
+2026-05-25 10:48:36 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.8138 ms
+2026-05-25 10:52:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.0604 ms
+2026-05-25 10:52:59 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 34.5518 ms
+2026-05-25 11:37:15 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 11:39:30 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 576.9608 ms
+2026-05-25 11:42:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 351.2786 ms
+2026-05-25 11:42:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 374.0278 ms
+2026-05-25 11:46:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 143.3255 ms
+2026-05-25 11:46:07 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 36.7889 ms
+2026-05-25 11:46:07 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 269.6566 ms
+2026-05-25 11:46:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 25.4554 ms
+2026-05-25 11:48:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/8" responded 200 in 664.7920 ms
+2026-05-25 11:48:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/19" responded 200 in 666.7130 ms
+2026-05-25 11:51:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 6.9738 ms
+2026-05-25 11:51:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 32.1395 ms
+2026-05-25 11:51:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.1451 ms
+2026-05-25 11:51:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 30.8414 ms
+2026-05-25 11:52:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1140 ms
+2026-05-25 11:54:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.9895 ms
+2026-05-25 11:54:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 34.1301 ms
+2026-05-25 11:54:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0449 ms
+2026-05-25 12:11:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 24.6578 ms
+2026-05-25 12:12:15 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0097 ms
+2026-05-25 12:15:00 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0249 ms
+2026-05-25 12:15:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 38.5402 ms
+2026-05-25 12:15:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0562 ms
+2026-05-25 12:26:01 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 100.6106 ms
+2026-05-25 12:26:01 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 123.8791 ms
+2026-05-25 12:26:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.7087 ms
+2026-05-25 12:27:54 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 12:30:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 533.6504 ms
+2026-05-25 12:31:35 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 113.0753 ms
+2026-05-25 12:31:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 33.6246 ms
+2026-05-25 12:31:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 14.5347 ms
+2026-05-25 12:31:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1408 ms
+2026-05-25 12:32:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0245 ms
+2026-05-25 12:32:49 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 25.2329 ms
+2026-05-25 12:32:55 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 24.0970 ms
+2026-05-25 12:33:26 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 541.6429 ms
+2026-05-25 12:33:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 549.0470 ms
+2026-05-25 12:33:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 54.8340 ms
+2026-05-25 12:33:36 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 41.7285 ms
+2026-05-25 12:33:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 8.0791 ms
+2026-05-25 12:33:43 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 63.5113 ms
+2026-05-25 12:33:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 35.3602 ms
+2026-05-25 12:34:10 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0160 ms
+2026-05-25 12:34:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.9524 ms
+2026-05-25 12:34:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 16.4398 ms
+2026-05-25 12:34:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0163 ms
+2026-05-25 12:35:24 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 32.7603 ms
+2026-05-25 12:35:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 20.7286 ms
+2026-05-25 12:35:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 37.1318 ms
+2026-05-25 12:36:05 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 21.6821 ms
+2026-05-25 12:36:09 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 20.7945 ms
+2026-05-25 12:36:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 9.6081 ms
+2026-05-25 12:36:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 32.9157 ms
+2026-05-25 12:36:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 88.0592 ms
+2026-05-25 12:39:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 78.6484 ms
+2026-05-25 12:39:56 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 134.9440 ms
+2026-05-25 12:40:29 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 28.6501 ms
+2026-05-25 12:40:29 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 133.9989 ms
+2026-05-25 12:40:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 56.4877 ms
+2026-05-25 12:41:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 77.0568 ms
+2026-05-25 12:41:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 88.6961 ms
+2026-05-25 12:42:47 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 12:45:50 [User:] [IP:] [Error] Failed executing DbCommand ("125,040"ms) [Parameters=[""], CommandType='Text', CommandTimeout='120']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Exams] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2026-05-25 12:45:50 [User:] [IP:] [Error] An exception occurred while iterating over the results of a query for context type '"OnlineExamSystem.Infrastructure.Persistence.ApplicationDbContext"'."
+""Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a9af1383-d9f1-4c17-8ea0-3c87fc15e1f4
+Error Number:-2,State:0,Class:11"
+Microsoft.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+ ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SplitQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:a9af1383-d9f1-4c17-8ea0-3c87fc15e1f4
+Error Number:-2,State:0,Class:11
+2026-05-25 12:51:01 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 12:52:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 712.9782 ms
+2026-05-25 12:53:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 20401.5770 ms
+2026-05-25 12:53:02 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 570.3573 ms
+2026-05-25 12:53:02 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 511.4930 ms
+2026-05-25 12:53:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 14.4450 ms
+2026-05-25 12:53:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 13.0972 ms
+2026-05-25 12:53:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 46.6954 ms
+2026-05-25 12:53:52 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 2523.4928 ms
+2026-05-25 12:53:52 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 54.1905 ms
+2026-05-25 12:54:01 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/UserExam/Index" responded 200 in 293.8808 ms
+2026-05-25 12:54:05 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 124.0081 ms
+2026-05-25 12:54:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 88.0968 ms
+2026-05-25 12:54:09 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 68.0573 ms
+2026-05-25 12:54:25 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 4.9740 ms
+2026-05-25 12:54:25 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 125.2091 ms
+2026-05-25 12:54:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 19.1557 ms
+2026-05-25 12:54:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 40.8589 ms
+2026-05-25 12:56:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 30545.9251 ms
+2026-05-25 12:56:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 28320.3922 ms
+2026-05-25 12:56:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 19788.3192 ms
+2026-05-25 12:56:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 31645.2128 ms
+2026-05-25 12:57:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 2.0570 ms
+2026-05-25 12:57:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 33.2290 ms
+2026-05-25 12:57:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.5694 ms
+2026-05-25 12:57:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 11.3373 ms
+2026-05-25 12:57:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1652 ms
+2026-05-25 12:58:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0145 ms
+2026-05-25 13:02:05 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0104 ms
+2026-05-25 13:03:37 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 203.0082 ms
+2026-05-25 13:03:37 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 50.5793 ms
+2026-05-25 13:04:04 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.1178 ms
+2026-05-25 13:05:27 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.3007 ms
+2026-05-25 13:05:27 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 75.3700 ms
+2026-05-25 13:07:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 73.1376 ms
+2026-05-25 13:08:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 60.1815 ms
+2026-05-25 13:08:35 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 47.8463 ms
+2026-05-25 13:08:40 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 0.3892 ms
+2026-05-25 13:08:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 22.0744 ms
+2026-05-25 13:09:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 34.8234 ms
+2026-05-25 13:10:50 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.3882 ms
+2026-05-25 13:10:50 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 11.8081 ms
+2026-05-25 13:10:58 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.4879 ms
+2026-05-25 13:10:58 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 24.9216 ms
+2026-05-25 13:11:03 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.7622 ms
+2026-05-25 13:11:03 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 14.9827 ms
+2026-05-25 13:12:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 200.6646 ms
+2026-05-25 13:12:38 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 62.1474 ms
+2026-05-25 13:12:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.1255 ms
+2026-05-25 13:12:44 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 25.7998 ms
+2026-05-25 13:13:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 2.2383 ms
+2026-05-25 13:13:51 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 62.5358 ms
+2026-05-25 13:13:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.2811 ms
+2026-05-25 13:13:58 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 26.7949 ms
+2026-05-25 13:17:17 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 72.0174 ms
+2026-05-25 13:17:42 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Account/Logout" responded 302 in 9.7861 ms
+2026-05-25 13:17:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 21.7227 ms
+2026-05-25 13:17:56 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 13.2687 ms
+2026-05-25 13:27:41 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 112.3041 ms
+2026-05-25 13:29:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 15.0312 ms
+2026-05-25 13:32:28 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 41.7067 ms
+2026-05-25 13:32:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 45.2967 ms
+2026-05-25 13:32:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 8.6300 ms
+2026-05-25 13:33:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 46.6989 ms
+2026-05-25 16:51:54 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 203.1831 ms
+2026-05-25 16:58:11 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 57.9640 ms
+2026-05-25 17:00:37 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 127.2301 ms
+2026-05-25 17:00:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.7708 ms
+2026-05-25 17:00:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 44.8332 ms
+2026-05-25 17:01:14 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 113.7548 ms
+2026-05-25 17:01:19 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 9.6154 ms
+2026-05-25 17:01:32 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 29.4895 ms
+2026-05-25 17:01:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 17.9460 ms
+2026-05-25 17:02:04 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.6273 ms
+2026-05-25 17:02:04 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 29.7145 ms
+2026-05-25 17:02:46 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.4652 ms
+2026-05-25 17:02:46 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 23.6923 ms
+2026-05-25 17:03:34 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 8.7509 ms
+2026-05-25 17:03:34 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 26.0776 ms
+2026-05-25 17:03:38 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.3450 ms
+2026-05-25 17:03:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 8.9572 ms
+2026-05-25 17:17:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 131.9907 ms
+2026-05-25 17:17:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 11.2756 ms
+2026-05-25 17:17:53 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 30.4252 ms
+2026-05-25 17:18:33 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.9966 ms
+2026-05-25 17:18:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 30.7694 ms
+2026-05-25 17:18:45 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.4919 ms
+2026-05-25 17:18:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.4380 ms
+2026-05-25 17:18:48 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.3259 ms
+2026-05-25 17:18:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 14.6899 ms
+2026-05-25 17:21:25 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/18" responded 200 in 1006.3827 ms
+2026-05-25 17:21:28 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 222.9276 ms
+2026-05-25 17:21:33 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 16.9694 ms
+2026-05-25 17:21:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 13.4892 ms
+2026-05-25 17:25:11 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.6809 ms
+2026-05-25 17:25:11 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 25.3353 ms
+2026-05-25 17:25:19 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.3816 ms
+2026-05-25 17:25:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 44.3203 ms
+2026-05-25 17:25:30 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.5093 ms
+2026-05-25 17:25:30 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 11.8191 ms
+2026-05-25 17:26:24 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.3389 ms
+2026-05-25 17:26:39 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.6196 ms
+2026-05-25 17:26:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 29.8867 ms
+2026-05-25 17:26:39 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0265 ms
+2026-05-25 17:26:47 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 1.1037 ms
+2026-05-25 17:26:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 13.0990 ms
+2026-05-25 17:26:47 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0224 ms
+2026-05-25 17:27:06 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 2.5331 ms
+2026-05-25 17:27:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 10.5132 ms
+2026-05-25 17:27:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/.well-known/appspecific/com.chrome.devtools.json" responded 404 in 0.0222 ms
+2026-05-25 17:28:09 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 0.3621 ms
+2026-05-25 17:28:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 34.5491 ms
+2026-05-25 18:56:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 871.4625 ms
+2026-05-25 18:57:18 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/Account/SetLanguage" responded 302 in 52.7192 ms
+2026-05-25 18:57:18 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 147.4856 ms
+2026-05-25 18:58:12 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 31.4112 ms
+2026-05-25 18:59:51 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 25.8574 ms
+2026-05-25 19:00:52 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 579.7219 ms
+2026-05-25 19:02:41 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 248.1787 ms
+2026-05-25 19:02:49 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 213.7847 ms
+2026-05-25 19:03:30 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 200 in 192.6056 ms
+2026-05-25 19:05:36 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 19:07:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 571.0674 ms
+2026-05-25 19:09:42 [User:] [IP:] [Error] An error occurred using the connection to database '"OnlineExamDb_1"' on server '"DESKTOP-TE0FMV1\SQLEXPRESS"'.
+2026-05-25 19:11:57 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 777.7587 ms
+2026-05-25 19:12:32 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 123.3430 ms
+2026-05-25 19:15:45 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 359.8644 ms
+2026-05-25 19:16:53 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 26423.4846 ms
+2026-05-25 19:16:54 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 422.7063 ms
+2026-05-25 19:17:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/" responded 302 in 36.2943 ms
+2026-05-25 19:17:14 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 54.0623 ms
