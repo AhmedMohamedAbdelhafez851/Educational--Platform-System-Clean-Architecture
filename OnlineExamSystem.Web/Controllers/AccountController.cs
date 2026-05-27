@@ -7,6 +7,7 @@ using OnlineExamSystem.Web.ViewModels.UserDTO;
 
 namespace OnlineExamSystem.Web.Controllers
 {
+    // this controller i will refeator later to be more modular and follow single responsibility principle
     public class AccountController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
