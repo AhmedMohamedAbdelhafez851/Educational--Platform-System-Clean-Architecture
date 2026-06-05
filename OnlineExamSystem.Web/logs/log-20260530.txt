@@ -23,3 +23,9 @@
 2026-05-30 16:15:06 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/12" responded 200 in 161.1553 ms
 2026-05-30 16:15:20 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/Account/Login" responded 200 in 68.2878 ms
 2026-05-30 16:20:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 83.4491 ms
+2026-05-30 17:44:26 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 234.2421 ms
+2026-05-30 18:03:40 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/TakeExam/6" responded 200 in 118.9353 ms
+2026-05-30 18:03:42 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/8" responded 200 in 95.7467 ms
+2026-05-30 18:03:43 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/9" responded 200 in 83.4916 ms
+2026-05-30 18:03:44 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/12" responded 200 in 51.3581 ms
+2026-05-30 18:03:48 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/UserExam/ViewResult/5" responded 200 in 46.0381 ms

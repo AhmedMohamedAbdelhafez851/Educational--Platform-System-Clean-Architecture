@@ -1,33 +1,37 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
+using OnlineExamSystem.Application.Abstraction;
 using OnlineExamSystem.Domains.Entities;
 using OnlineExamSystem.Web.ViewModels.UserDTO;
 
 namespace OnlineExamSystem.Web.Controllers
 {
-    // this controller i will refeator later to be more modular and follow single responsibility principle
     public class AccountController : Controller
     {
-        private readonly UserManager<ApplicationUser> _userManager;
-        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IAuthService _authService;
+        private readonly IRedirectionService _redirectionService;
+        private readonly ILanguageService _languageService;
         private readonly IStringLocalizer<AccountController> _localizer;
 
         public AccountController(
-            UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager,
+            IAuthService authService,
+            IRedirectionService redirectionService,
+            ILanguageService languageService,
             IStringLocalizer<AccountController> localizer)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
+            _authService = authService;
+            _redirectionService = redirectionService;
+            _languageService = languageService;
             _localizer = localizer;
         }
+
+        // =====================================================
+        // LOGIN
+        // =====================================================
 
         [HttpGet]
         public IActionResult Login(string returnUrl = null!)
         {
-            // If user is already authenticated, redirect to appropriate dashboard
             if (User.Identity?.IsAuthenticated == true)
             {
                 return RedirectToDashboard();
@@ -39,151 +43,63 @@ namespace OnlineExamSystem.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(
-     LoginViewModel model,
-     string returnUrl = null!)
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null!)
         {
             ViewData["ReturnUrl"] = returnUrl;
-
-            // =============================================
-            // BASIC VALIDATION
-            // =============================================
 
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            // =============================================
-            // FIND USER
-            // =============================================
-
-            var user = await _userManager.FindByEmailAsync(model.Email);
-
-            // Prevent email enumeration attack
-            // Don't reveal if email exists or not
+            var user = await _authService.FindUserByEmailAsync(model.Email);
 
             if (user == null)
             {
-                ViewBag.InvalidLogin = true;
-
+                SetLoginError();
                 return View(model);
             }
 
-            // =============================================
-            // CHECK LOCKOUT
-            // =============================================
-
-            if (await _userManager.IsLockedOutAsync(user))
+            if (await _authService.IsUserLockedOutAsync(user))
             {
-                var lockoutEnd =
-                    await _userManager.GetLockoutEndDateAsync(user);
-
-                if (lockoutEnd.HasValue)
-                {
-                    var remaining =
-                        lockoutEnd.Value.UtcDateTime - DateTime.UtcNow;
-
-                    ViewBag.LockedOut = true;
-
-                    ViewBag.LockoutSeconds =
-                        Math.Max((int)remaining.TotalSeconds, 0);
-                }
-
+                var remainingSeconds = await _authService.GetLockoutRemainingSecondsAsync(user);
+                SetLockoutError(remainingSeconds ?? 60);
                 return View(model);
             }
 
-            // =============================================
-            // LOGIN ATTEMPT
-            // =============================================
-
-            var result =
-                await _signInManager.PasswordSignInAsync(
-                    user.UserName!,
-                    model.Password,
-                    model.RememberMe,
-                    lockoutOnFailure: true
-                );
-
-            // =============================================
-            // SUCCESS
-            // =============================================
+            var result = await _authService.PasswordSignInAsync(
+                user.UserName!,
+                model.Password,
+                model.RememberMe,
+                lockoutOnFailure: true
+            );
 
             if (result.Succeeded)
             {
-                return RedirectToDashboard();
+                return await RedirectToDashboardAsync();
             }
-
-            // =============================================
-            // LOCKED
-            // =============================================
 
             if (result.IsLockedOut)
             {
-                ViewBag.LockedOut = true;
-
-                ViewBag.LockoutSeconds = 60;
-
+                SetLockoutError(60);
                 return View(model);
             }
 
-            // =============================================
-            // INVALID LOGIN
-            // =============================================
-
-            ViewBag.InvalidLogin = true;
-
+            SetLoginError();
             return View(model);
         }
 
-        // ✅ Helper method to redirect users based on their role
-        private IActionResult RedirectToDashboard()
-        {
-            var user = _userManager.GetUserAsync(User).Result;
-            if (user == null)
-            {
-                return RedirectToAction("Login", "Account");
-            }
-
-            var roles = _userManager.GetRolesAsync(user).Result;
-
-            // SuperAdmin -> Dashboard (General Dashboard)
-            if (roles.Contains("SuperAdmin"))
-            {
-                return RedirectToAction("Index", "Dashboard");
-            }
-
-            // Admin -> Dashboard (General Dashboard)
-            if (roles.Contains("Admin"))
-            {
-                return RedirectToAction("Index", "Dashboard");
-            }
-
-            // Teacher -> Exam Management
-            if (roles.Contains("Teacher"))
-            {
-                return RedirectToAction("Index", "Exam");
-            }
-
-            // Student -> User Exam (Take exams)
-            if (roles.Contains("Student"))
-            {
-                return RedirectToAction("Index", "UserExam");
-            }
-
-            // Default fallback
-            return RedirectToAction("Index", "Home");
-        }
+        // =====================================================
+        // REGISTER
+        // =====================================================
 
         [HttpGet]
         public IActionResult Register()
         {
-            // If user is already authenticated, redirect to dashboard
             if (User.Identity?.IsAuthenticated == true)
             {
                 return RedirectToDashboard();
             }
-
             return View();
         }
 
@@ -191,48 +107,41 @@ namespace OnlineExamSystem.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(CreateUserViewModel model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var user = new ApplicationUser
-                {
-                    FullName = model.FullName,
-                    UserName = model.Email,
-                    Email = model.Email
-                };
+                return View(model);
+            }
 
-                var result = await _userManager.CreateAsync(user, model.Password);
+            var user = new ApplicationUser
+            {
+                FullName = model.FullName,
+                UserName = model.Email,
+                Email = model.Email
+            };
 
-                if (result.Succeeded)
-                {
-                    if (!string.IsNullOrEmpty(model.CapturedImageData))
-                    {
-                        var base64Data = model.CapturedImageData.Split(',')[1];
-                        var imageBytes = Convert.FromBase64String(base64Data);
-                        var imagePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", $"{user.Id}.png");
+            var result = await _authService.CreateUserAsync(user, model.Password);
 
-                        Directory.CreateDirectory(Path.GetDirectoryName(imagePath)!);
-                        await System.IO.File.WriteAllBytesAsync(imagePath, imageBytes);
-                    }
-
-                    await _signInManager.SignInAsync(user, isPersistent: false);
-
-                    // Redirect based on role after registration
-                    return RedirectToDashboard();
-                }
-
+            if (!result.Succeeded)
+            {
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError(string.Empty, error.Description);
                 }
+                return View(model);
             }
 
-            return View(model);
+            await _authService.SignInAsync(user, isPersistent: false);
+            return await RedirectToDashboardAsync();
         }
+
+        // =====================================================
+        // LOGOUT
+        // =====================================================
 
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
-            await _signInManager.SignOutAsync();
+            await _authService.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
 
@@ -240,9 +149,24 @@ namespace OnlineExamSystem.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> LogoutPost()
         {
-            await _signInManager.SignOutAsync();
+            await _authService.SignOutAsync();
             return RedirectToAction("Login", "Account");
         }
+
+        // =====================================================
+        // LANGUAGE
+        // =====================================================
+
+        [HttpPost]
+        public IActionResult SetLanguage(string culture, string returnUrl)
+        {
+            _languageService.SetLanguageCookie(HttpContext, culture);
+            return _languageService.HandleLanguageChange(culture, returnUrl, RedirectToDashboard);
+        }
+
+        // =====================================================
+        // OTHER
+        // =====================================================
 
         [HttpGet]
         public IActionResult AccessDenied(string returnUrl = null!)
@@ -251,38 +175,29 @@ namespace OnlineExamSystem.Web.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult SetLanguage(string culture, string returnUrl)
+        // =====================================================
+        // PRIVATE HELPERS
+        // =====================================================
+
+        private async Task<IActionResult> RedirectToDashboardAsync()
         {
-            try
-            {
-                Response.Cookies.Append(
-                    CookieRequestCultureProvider.DefaultCookieName,
-                    CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                    new CookieOptions
-                    {
-                        Expires = DateTimeOffset.UtcNow.AddYears(1),
-                        IsEssential = true,
-                        HttpOnly = true
-                    }
-                );
+            return await _redirectionService.RedirectToDashboardAsync(User);
+        }
 
-                if (string.IsNullOrEmpty(returnUrl))
-                {
-                    return RedirectToDashboard();
-                }
+        private IActionResult RedirectToDashboard()
+        {
+            return RedirectToDashboardAsync().GetAwaiter().GetResult();
+        }
 
-                if (Url.IsLocalUrl(returnUrl))
-                {
-                    return Redirect(returnUrl);
-                }
+        private void SetLoginError()
+        {
+            ViewBag.InvalidLogin = true;
+        }
 
-                return RedirectToDashboard();
-            }
-            catch
-            {
-                return RedirectToAction("Login", "Account");
-            }
+        private void SetLockoutError(int seconds)
+        {
+            ViewBag.LockedOut = true;
+            ViewBag.LockoutSeconds = seconds;
         }
     }
 }

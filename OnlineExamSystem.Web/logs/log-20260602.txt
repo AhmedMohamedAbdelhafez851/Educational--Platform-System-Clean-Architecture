@@ -1,0 +1,12 @@
+2026-06-02 19:48:09 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 627.2451 ms
+2026-06-02 19:48:59 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 507.8248 ms
+2026-06-02 19:48:59 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 479.8364 ms
+2026-06-02 19:49:03 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 164.1605 ms
+2026-06-02 19:49:06 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 37.1667 ms
+2026-06-02 19:49:07 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 192.8337 ms
+2026-06-02 19:51:32 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Users/Create" responded 200 in 593.8991 ms
+2026-06-02 19:51:34 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 70.9084 ms
+2026-06-02 19:51:45 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/GetAllRoles" responded 200 in 29.8578 ms
+2026-06-02 19:51:49 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Analytics/Overview" responded 200 in 26.1107 ms
+2026-06-02 23:22:22 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Users/Index" responded 200 in 122.0309 ms
+2026-06-02 23:22:24 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Roles/GetAllRoles" responded 200 in 9.8455 ms

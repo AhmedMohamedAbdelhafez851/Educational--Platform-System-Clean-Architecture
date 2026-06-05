@@ -1,0 +1,9 @@
+2026-06-05 19:47:32 [User:] [IP:] [Information] Database already exists. Checking for pending migrations...
+2026-06-05 19:47:33 [User:] [IP:] [Information] ✅ Database is up to date.
+2026-06-05 19:47:33 [User:] [IP:] [Information] 📚 Test data already exists, skipping seeding...
+2026-06-05 19:47:38 [User:Anonymous] [IP:::1] [Information] HTTP "GET" "/" responded 200 in 434.6889 ms
+2026-06-05 19:48:16 [User:Anonymous] [IP:::1] [Information] HTTP "POST" "/" responded 302 in 502.1480 ms
+2026-06-05 19:48:16 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Dashboard/Index" responded 200 in 485.1672 ms
+2026-06-05 19:48:18 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 155.5002 ms
+2026-06-05 19:48:40 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "POST" "/Exam/Create" responded 200 in 345.1538 ms
+2026-06-05 19:48:40 [User:superadmin@examify.com] [IP:::1] [Information] HTTP "GET" "/Exam/Index" responded 200 in 78.2911 ms

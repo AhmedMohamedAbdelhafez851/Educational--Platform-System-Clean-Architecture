@@ -31,6 +31,11 @@ namespace OnlineExamSystem.Application.DependencyInjection
                 typeof(IPipelineBehavior<,>),
                 typeof(AuditBehavior<,>));
 
+            // ✅ NEW: Account Services
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IRedirectionService, RedirectionService>();
+            services.AddScoped<ILanguageService, LanguageService>();
+
             // ✅ Cache
             services.AddMemoryCache();
 
