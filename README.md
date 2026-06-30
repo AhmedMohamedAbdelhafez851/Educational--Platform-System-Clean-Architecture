@@ -1,7 +1,6 @@
 # 📚 Online Exam System
 
-[![Live Demo](https://img.shields.io/badge/demo-live-green)]([http://ahmedaabdelhafez-001-site1.atempurl.com/Account/Login](http://hafez222-001-site1.ftempurl.com/Account/Login))
-[![.NET Version](https://img.shields.io/badge/.NET-8.0-purple)](https://dotnet.microsoft.com/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-28a745?style=for-the-badge&logo=google-chrome&logoColor=white)](http://hafez222-001-site1.ftempurl.com/Account/Login)[![.NET Version](https://img.shields.io/badge/.NET-8.0-purple)](https://dotnet.microsoft.com/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Arabic Support](https://img.shields.io/badge/lang-العربية-red)](http://ahmedaabdelhafez-001-site1.atempurl.com/Account/Login?culture=ar-EG)
 
